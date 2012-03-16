@@ -1,11 +1,23 @@
-var task = require('../lib/task.js');
+/* global describe, it */
+
+var Task = require('../lib/task.js');
 
 describe('task.delay()', function() {
     it('should run a task delayed', function(done) {
-        done();
+        var task = new Task();
+        task.delay(1, done);
     });
 
     it('should run a task at interval', function(done) {
-        done();
+        var task  = new Task(),
+            count = 0;
+        task.repeat(1, function() {
+            count = count + 1;
+            console.log(count);
+            if (count > 2) {
+              task.stop();
+              done();
+            }
+        });
     });
 });
