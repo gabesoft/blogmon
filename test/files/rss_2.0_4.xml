@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+  >
+
+  <channel>
+    <title>node blog</title>
+    <atom:link href="http://blog.nodejs.org/feed/" rel="self" type="application/rss+xml" />
+    <link>http://blog.nodejs.org</link>
+    <description></description>
+    <lastBuildDate>Thu, 15 Mar 2012 17:37:07 +0000</lastBuildDate>
+    <language>en</language>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <generator>http://wordpress.com/</generator>
+    <cloud domain='blog.nodejs.org' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+    <image>
+      <url>http://s2.wp.com/i/buttonw-com.png</url>
+      <title>node blog</title>
+      <link>http://blog.nodejs.org</link>
+    </image>
+    <atom:link rel="search" type="application/opensearchdescription+xml" href="http://blog.nodejs.org/osd.xml" title="node blog" />
+    <atom:link rel='hub' href='http://blog.nodejs.org/?pushpress=hub'/>
+    <item>
+      <title>Version 0.6.13 (stable)</title>
+      <link>http://blog.nodejs.org/2012/03/15/version-0-6-13-stable/</link>
+      <comments>http://blog.nodejs.org/2012/03/15/version-0-6-13-stable/#comments</comments>
+      <pubDate>Thu, 15 Mar 2012 17:37:02 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=458</guid>
+      <description><![CDATA[2012.03.15 Version 0.6.13 (stable) Windows: Many libuv test fixes (Bert Belder) Windows: avoid uv_guess_handle crash in when fd &#60; 0 (Bert Belder) Map EBUSY and ENOTEMPTY errors (Bert Belder) Windows: include syscall in fs errors (Bert Belder) Fix fs.watch ENOSYS &#8230; <a href="http://blog.nodejs.org/2012/03/15/version-0-6-13-stable/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=458&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.03.15 Version 0.6.13 (stable)</p>
+        <ul>
+          <li>
+            <p>Windows: Many libuv test fixes (Bert Belder)</p>
+          </li>
+          <li>
+            <p>Windows: avoid uv_guess_handle crash in when fd &lt; 0 (Bert Belder)</p>
+          </li>
+          <li>
+            <p>Map EBUSY and ENOTEMPTY errors (Bert Belder)</p>
+          </li>
+          <li>
+            <p>Windows: include syscall in fs errors (Bert Belder)</p>
+          </li>
+          <li>
+            <p>Fix fs.watch ENOSYS on Linux kernel version mismatch (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>Update npm to 1.1.9</p>
+            <p>
+              - upgrade node-gyp to 0.3.5 (Nathan Rajlich)<br />
+              - Fix isaacs/npm#2249 Add cache-max and cache-min configs<br />
+              - Properly redirect across https/http registry requests<br />
+              - log config usage if undefined key in set function (Kris Windham)<br />
+              - Add support for os/cpu fields in package.json (Adam Blackburn)<br />
+              - Automatically node-gyp packages containing a binding.gyp<br />
+              - Fix failures unpacking in UNC shares<br />
+              - Never create un-listable directories<br />
+              - Handle cases where an optionalDependency fails to build
+            </p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.6.13/node-v0.6.13.tar.gz">http://nodejs.org/dist/v0.6.13/node-v0.6.13.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.6.13/node-v0.6.13.msi">http://nodejs.org/dist/v0.6.13/node-v0.6.13.msi</a></p>
+        <p>Macintosh Installer: <a href="http://nodejs.org/dist/v0.6.13/node-v0.6.13.pkg">http://nodejs.org/dist/v0.6.13/node-v0.6.13.pkg</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.6.13/">http://nodejs.org/docs/v0.6.13/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.6.13/api/">http://nodejs.org/docs/v0.6.13/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/458/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/458/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/458/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/458/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/458/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/458/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/458/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/458/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/458/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/458/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/458/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/458/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/458/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/458/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=458&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/03/15/version-0-6-13-stable/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Version 0.7.6 (unstable)</title>
+      <link>http://blog.nodejs.org/2012/03/13/version-0-7-6-unstable/</link>
+      <comments>http://blog.nodejs.org/2012/03/13/version-0-7-6-unstable/#comments</comments>
+      <pubDate>Tue, 13 Mar 2012 21:12:30 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=453</guid>
+      <description><![CDATA[2012.03.13, Version 0.7.6 (unstable) Upgrade v8 to 3.9.17 Upgrade npm to 1.1.8 - Add support for os/cpu fields in package.json (Adam Blackburn) - Automatically node-gyp packages containing a binding.gyp - Fix failures unpacking in UNC shares - Never create un-listable &#8230; <a href="http://blog.nodejs.org/2012/03/13/version-0-7-6-unstable/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=453&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.03.13, Version 0.7.6 (unstable)</p>
+        <ul>
+          <li>
+            <p>Upgrade v8 to 3.9.17</p>
+          </li>
+          <li>
+            <p>Upgrade npm to 1.1.8</p>
+            <p>
+              - Add support for os/cpu fields in package.json (Adam Blackburn)<br />
+              - Automatically node-gyp packages containing a binding.gyp<br />
+              - Fix failures unpacking in UNC shares<br />
+              - Never create un-listable directories<br />
+              - Handle cases where an optionalDependency fails to build
+            </p>
+          </li>
+          <li>
+            <p>events: newListener emit correct fn when using &apos;once&apos; (Roly Fentanes)</p>
+          </li>
+          <li>
+            <p>url: Ignore empty port component (Łukasz Walukiewicz)</p>
+          </li>
+          <li>
+            <p>module: replace &apos;children&apos; array (isaacs)</p>
+          </li>
+          <li>
+            <p>tls: parse multiple values of a key in ssl certificate (Sambasiva Suda)</p>
+          </li>
+          <li>
+            <p>cluster: support passing of named pipes (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>Windows: include syscall in fs errors (Bert Belder)</p>
+          </li>
+          <li>
+            <p>http: #2888 Emit end event only once (Igor Zinkovsky)</p>
+          </li>
+          <li>
+            <p>readline: add multiline support (Rlidwka)</p>
+          </li>
+          <li>
+            <p>process: add <code>process.hrtime()</code> (Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>net, http, https: add localAddress option (Dmitry Nizovtsev)</p>
+          </li>
+          <li>
+            <p>addon improvements (Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>build improvements (Ben Noordhuis, Sadique Ali, T.C. Hollingsworth, Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>add support for &quot;SEARCH&quot; request methods (Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>expose the zlib and http_parser version in process.versions (Nathan Rajlich)</p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.7.6/node-v0.7.6.tar.gz">http://nodejs.org/dist/v0.7.6/node-v0.7.6.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.7.6/node-v0.7.6.msi">http://nodejs.org/dist/v0.7.6/node-v0.7.6.msi</a></p>
+        <p>Windows x64 Files: <a href="http://nodejs.org/dist/v0.7.6/x64/">http://nodejs.org/dist/v0.7.6/x64/</a></p>
+        <p>Macintosh Installer (Universal): <a href="http://nodejs.org/dist/v0.7.6/node-v0.7.6.pkg">http://nodejs.org/dist/v0.7.6/node-v0.7.6.pkg</a></p>
+        <p>Other release files: <a href="http://nodejs.org/dist/v0.7.6/">http://nodejs.org/dist/v0.7.6/</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.7.6/">http://nodejs.org/docs/v0.7.6/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.7.6/api/">http://nodejs.org/docs/v0.7.6/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/453/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/453/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/453/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/453/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/453/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/453/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/453/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/453/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/453/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/453/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/453/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/453/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/453/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/453/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=453&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/03/13/version-0-7-6-unstable/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Version 0.6.12 (stable)</title>
+      <link>http://blog.nodejs.org/2012/03/02/version-0-6-12-stable/</link>
+      <comments>http://blog.nodejs.org/2012/03/02/version-0-6-12-stable/#comments</comments>
+      <pubDate>Fri, 02 Mar 2012 21:22:49 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=451</guid>
+      <description><![CDATA[2012.03.02 Version 0.6.12 (stable) Upgrade V8 to 3.6.6.24 dtrace ustack helper improvements (Dave Pacheco) API Documentation refactor (isaacs) #2827 net: fix race write() before and after connect() (koichik) #2554 #2567 throw if fs args for &apos;start&apos; or &apos;end&apos; are strings &#8230; <a href="http://blog.nodejs.org/2012/03/02/version-0-6-12-stable/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=451&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.03.02 Version 0.6.12 (stable)</p>
+        <ul>
+          <li>
+            <p>Upgrade V8 to 3.6.6.24</p>
+          </li>
+          <li>
+            <p>dtrace ustack helper improvements (Dave Pacheco)</p>
+          </li>
+          <li>
+            <p>API Documentation refactor (isaacs)</p>
+          </li>
+          <li>
+            <p>#2827 net: fix race write() before and after connect() (koichik)</p>
+          </li>
+          <li>
+            <p>#2554 #2567 throw if fs args for &apos;start&apos; or &apos;end&apos; are strings (AJ ONeal)</p>
+          </li>
+          <li>
+            <p>punycode: Update to v1.0.0 (Mathias Bynens)</p>
+          </li>
+          <li>
+            <p>Make a fat binary for the OS X pkg (isaacs)</p>
+          </li>
+          <li>
+            <p>Fix hang on accessing process.stdin (isaacs)</p>
+          </li>
+          <li>
+            <p>repl: make tab completion work on non-objects (Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>Fix fs.watch on OS X (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>Fix #2515 nested setTimeouts cause premature process exit (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>windows: fix time conversion in stat (Igor Zinkovsky)</p>
+          </li>
+          <li>
+            <p>windows: fs: handle EOF in read (Brandon Philips)</p>
+          </li>
+          <li>
+            <p>windows: avoid IOCP short-circuit on non-ifs lsps (Igor Zinkovsky)</p>
+          </li>
+          <li>
+            <p>Upgrade npm to 1.1.4 (isaacs)</p>
+            <p>
+              - windows fixes<br />
+              - Bundle nested bundleDependencies properly<br />
+              - install: support &#8211;save with url install targets<br />
+              - shrinkwrap: behave properly with url-installed modules<br />
+              - support installing uncompressed tars or single file modules from urls etc.<br />
+              - don&apos;t run make clean on rebuild<br />
+              - support HTTPS-over-HTTP proxy tunneling
+            </p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.6.12/node-v0.6.12.tar.gz">http://nodejs.org/dist/v0.6.12/node-v0.6.12.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.6.12/node-v0.6.12.msi">http://nodejs.org/dist/v0.6.12/node-v0.6.12.msi</a></p>
+        <p>Macintosh Installer: <a href="http://nodejs.org/dist/v0.6.12/node-v0.6.12.pkg">http://nodejs.org/dist/v0.6.12/node-v0.6.12.pkg</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.6.12/">http://nodejs.org/docs/v0.6.12/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.6.12/api/">http://nodejs.org/docs/v0.6.12/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/451/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/451/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/451/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/451/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/451/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/451/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/451/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/451/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/451/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/451/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/451/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/451/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/451/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/451/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=451&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/03/02/version-0-6-12-stable/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Managing Node.js Dependencies with Shrinkwrap</title>
+      <link>http://blog.nodejs.org/2012/02/27/managing-node-js-dependencies-with-shrinkwrap/</link>
+      <comments>http://blog.nodejs.org/2012/02/27/managing-node-js-dependencies-with-shrinkwrap/#comments</comments>
+      <pubDate>Mon, 27 Feb 2012 18:51:59 +0000</pubDate>
+      <dc:creator>Dave Pacheco</dc:creator>
+      <category><![CDATA[npm]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=444</guid>
+      <description><![CDATA[Photo by Luc Viatour (flickr) Managing dependencies is a fundamental problem in building complex software. The terrific success of github and npm have made code reuse especially easy in the Node world, where packages don&#039;t exist in isolation but rather &#8230; <a href="http://blog.nodejs.org/2012/02/27/managing-node-js-dependencies-with-shrinkwrap/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=444&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>
+          <div style="float:right;text-align:center;font-size:x-small;margin:5px;"><a href="http://www.flickr.com/photos/luc_viatour/4247957432/"><img class="size-medium wp-image-652" style="border:1px #000000 solid;" title="Web" src="http://dtrace.org/blogs/dap/files/2012/02/web-300x300.jpg" alt="" width="250" height="250" /></a><br />
+            Photo by Luc Viatour (flickr)</div>
+          <p>Managing dependencies is a fundamental problem in building complex software. The terrific success of github and <a href="http://npmjs.org/">npm</a> have made code reuse especially easy in the Node world, where packages don&#039;t exist in isolation but rather as nodes in a large graph. The software is constantly changing (releasing new versions), and each package has its own constraints about what other packages it requires to run (dependencies). npm keeps track of these constraints, and authors express what kind of changes are compatible using <a href="http://npmjs.org/doc/semver.html">semantic versioning</a>, allowing authors to specify that their package will work with even future versions of its dependencies as long as the semantic versions are assigned properly.</p>
+          <p>This does mean that when you &quot;npm install&quot; a package with dependencies, there&#039;s no guarantee that you&#039;ll get the same set of code now that you would have gotten an hour ago, or that you would get if you were to run it again an hour later. You may get a bunch of bug fixes now that weren&#039;t available an hour ago. This is great during development, where you want to keep up with changes upstream. It&#039;s not necessarily what you want for deployment, though, where you want to validate whatever bits you&#039;re actually shipping.</p>
+          <p>Put differently, <strong>it&#039;s understood that all software changes incur some risk, and it&#039;s critical to be able to manage this risk on your own terms</strong>. Taking that risk in development is good because by definition that&#039;s when you&#039;re incorporating and testing software changes. On the other hand, if you&#039;re shipping production software, you probably don&#039;t want to take this risk when cutting a release candidate (i.e. build time) or when you actually ship (i.e. deploy time) because you want to validate whatever you ship.</p>
+          <p>You can address a simple case of this problem by only depending on specific versions of packages, allowing no semver flexibility at all, but this falls apart when you depend on packages that don&#039;t also adopt the same principle. Many of us at Joyent started wondering: can we generalize this approach?</p>
+          <h2>Shrinkwrapping packages</h2>
+          <p>That brings us to <a href="http://npmjs.org/doc/shrinkwrap.html">npm shrinkwrap</a><a href="#note1-note" name="note1-top">[1]</a>:</p>
+          <pre><code>NAME
+              npm-shrinkwrap -- Lock down dependency versions
+
+              SYNOPSIS
+              npm shrinkwrap
+
+              DESCRIPTION
+              This  command  locks down the versions of a package&#039;s dependencies so
+              that you can control exactly which versions of each  dependency  will
+              be used when your package is installed.</code></pre>
+          <p>Let&#039;s consider package A:</p>
+          <pre><code>{
+              &quot;name&quot;: &quot;A&quot;,
+              &quot;version&quot;: &quot;0.1.0&quot;,
+              &quot;dependencies&quot;: {
+              &quot;B&quot;: &quot;&lt;0.1.0&quot;
+              }
+              }</code></pre>
+          <p>package B:</p>
+          <pre><code>{
+              &quot;name&quot;: &quot;B&quot;,
+              &quot;version&quot;: &quot;0.0.1&quot;,
+              &quot;dependencies&quot;: {
+              &quot;C&quot;: &quot;&lt;0.1.0&quot;
+              }
+              }</code></pre>
+          <p>and package C:</p>
+          <pre><code>{
+              &quot;name&quot;: &quot;C,
+              &quot;version&quot;: &quot;0.0.1&quot;
+              }</code></pre>
+          <p>If these are the only versions of A, B, and C available in the registry, then a normal &quot;npm install A&quot; will install:</p>
+          <pre><code>A@0.1.0
+              └─┬ B@0.0.1
+              └── C@0.0.1</code></pre>
+          <p>Then if B@0.0.2 is published, then a fresh &quot;npm install A&quot; will install:</p>
+          <pre><code>A@0.1.0
+              └─┬ B@0.0.2
+              └── C@0.0.1</code></pre>
+          <p>assuming the new version did not modify B&#039;s dependencies. Of course, the new version of B could include a new version of C and any number of new dependencies. As we said before, if A&#039;s author doesn&#039;t want that, she could specify a dependency on B@0.0.1. But if A&#039;s author and B&#039;s author are not the same person, there&#039;s no way for A&#039;s author to say that she does not want to pull in newly published versions of C when B hasn&#039;t changed at all.</p>
+          <p>In this case, A&#039;s author can use</p>
+          <pre><code># npm shrinkwrap</code></pre>
+          <p>This generates npm-shrinkwrap.json, which will look something like this:</p>
+          <pre><code>{
+              &quot;name&quot;: &quot;A&quot;,
+              &quot;dependencies&quot;: {
+              &quot;B&quot;: {
+              &quot;version&quot;: &quot;0.0.1&quot;,
+              &quot;dependencies&quot;: {
+              &quot;C&quot;: {  &quot;version&quot;: &quot;0.1.0&quot; }
+              }
+              }
+              }
+              }</code></pre>
+          <p>The shrinkwrap command has locked down the dependencies based on what&#039;s currently installed in node_modules.  <strong>When &quot;npm install&quot; installs a package with a npm-shrinkwrap.json file in the package root, the shrinkwrap file (rather than package.json files) completely drives the installation of that package and all of its dependencies (recursively).</strong>  So now the author publishes A@0.1.0, and subsequent installs of this package will use B@0.0.1 and C@0.1.0, regardless the dependencies and versions listed in A&#039;s, B&#039;s, and C&#039;s package.json files.  If the authors of B and C publish new versions, they won&#039;t be used to install A because the shrinkwrap refers to older versions.  Even if you generate a new shrinkwrap, it will still reference the older versions, since &quot;npm shrinkwrap&quot; uses what&#039;s installed locally rather than what&#039;s available in the registry. </p>
+          <h4>Using shrinkwrapped packages</h4>
+          <p>Using a shrinkwrapped package is no different than using any other package: you can &quot;npm install&quot; it by hand, or add a dependency to your package.json file and &quot;npm install&quot; it.</p>
+          <h4>Building shrinkwrapped packages</h4>
+          <p>To shrinkwrap an existing package:</p>
+          <ol>
+            <li>Run &quot;npm install&quot; in the package root to install the current versions of all dependencies.</li>
+            <li>Validate that the package works as expected with these versions.</li>
+            <li>Run &quot;npm shrinkwrap&quot;, add npm-shrinkwrap.json to git, and publish your package.</li>
+          </ol>
+          <p>To add or update a dependency in a shrinkwrapped package:</p>
+          <ol>
+            <li>Run &quot;npm install&quot; in the package root to install the current versions of all dependencies.</li>
+            <li>Add or update dependencies. &quot;npm install&quot; each new or updated package individually and then update package.json.</li>
+            <li>Validate that the package works as expected with the new dependencies.</li>
+            <li>Run &quot;npm shrinkwrap&quot;, commit the new npm-shrinkwrap.json, and publish your package.</li>
+          </ol>
+          <p>You can still use <a href="http://npmjs.org/doc/outdated.html">npm outdated(1)</a> to view which dependencies have newer versions available.</p>
+          <p>For more details, check out the full docs on <a href="http://npmjs.org/doc/shrinkwrap.html">npm shrinkwrap</a>, from which much of the above is taken.</p>
+          <h2>Why not just check <code>node_modules</code> into git?</h2>
+          <p>One previously <a href="http://www.mikealrogers.com/posts/nodemodules-in-git.html">proposed solution</a> is to &quot;npm install&quot; your dependencies during development and commit the results into source control. Then you deploy your app from a specific git SHA knowing you&#039;ve got exactly the same bits that you tested in development. This does address the problem, but it has its own issues: for one, binaries are tricky because you need to &quot;npm install&quot; them to get their sources, but this builds the [system-dependent] binary too. You can avoid checking in the binaries and use &quot;npm rebuild&quot; at build time, but we&#039;ve had a lot of difficulty trying to do this.<a href="#note2-note" name="note2-top">[2]</a> At best, this is second-class treatment for binary modules, which are critical for many important types of Node applications.<a href="#note3-note" name="note3-top">[3]</a></p>
+          <p>Besides the issues with binary modules, this approach just felt wrong to many of us. There&#039;s a reason we don&#039;t check binaries into source control, and it&#039;s not just because they&#039;re platform-dependent. (After all, we could build and check in binaries for all supported platforms and operating systems.) It&#039;s because that approach is error-prone and redundant: error-prone because it introduces a new human failure mode where someone checks in a source change but doesn&#039;t regenerate all the binaries, and redundant because the binaries can always be built from the sources alone. An important principle of software version control is that you don&#039;t check in files derived directly from other files by a simple transformation.<a href="#note4-note" name="note4-top">[4]</a> Instead, you check in the original sources and automate the transformations via the build process.</p>
+          <p>Dependencies are just like binaries in this regard: they&#039;re files derived from a simple transformation of something else that is (or could easily be) already available: the name and version of the dependency. Checking them in has all the same problems as checking in binaries: people could update package.json without updating the checked-in module (or vice versa). Besides that, adding new dependencies has to be done by hand, introducing more opportunities for error (checking in the wrong files, not checking in certain files, inadvertently changing files, and so on). Our feeling was: why check in this whole dependency tree (and create a mess for binary add-ons) when we could just check in the package name and version and have the build process do the rest?</p>
+          <p>Finally, the approach of checking in node_modules doesn&#039;t really scale for us. We&#039;ve got at least a dozen repos that will use restify, and it doesn&#039;t make sense to check that in everywhere when we could instead just specify which version each one is using. There&#039;s another principle at work here, which is <strong>separation of concerns</strong>: each repo specifies <em>what</em> it needs, while the build process figures out <em>where to get it</em>.</p>
+          <h2>What if an author republishes an existing version of a package?</h2>
+          <p>We&#039;re not suggesting deploying a shrinkwrapped package directly and running &quot;npm install&quot; to install from shrinkwrap in production. We already have a build process to deal with binary modules and other automateable tasks. That&#039;s where we do the &quot;npm install&quot;. We tar up the result and distribute the tarball. Since we test each build before shipping, we won&#039;t deploy something we didn&#039;t test.</p>
+          <p>It&#039;s still possible to pick up newly published versions of existing packages at build time. We assume force publish is not that common in the first place, let alone force publish that breaks compatibility. If you&#039;re worried about this, you can use git SHAs in the shrinkwrap or even consider maintaining a mirror of the part of the npm registry that you use and require human confirmation before mirroring unpublishes.</p>
+          <h2>Final thoughts</h2>
+          <p>Of course, the details of each use case matter a lot, and the world doesn&#039;t have to pick just one solution. If you like checking in node_modules, you should keep doing that. We&#039;ve chosen the shrinkwrap route because that works better for us.</p>
+          <p>It&#039;s not exactly news that Joyent is heavy on Node. Node is the heart of our SmartDataCenter (SDC) product, whose public-facing web portal, public API, Cloud Analytics, provisioning, billing, heartbeating, and other services are all implemented in Node. That&#039;s why it&#039;s so important to us to have robust components (like <a href="https://github.com/trentm/node-bunyan">logging</a> and <a href="http://mcavage.github.com/node-restify/">REST</a>) and tools for <a href="http://dtrace.org/blogs/dap/2012/01/13/playing-with-nodev8-postmortem-debugging/">understanding production failures post mortem</a>, <a href="http://dtrace.org/blogs/dap/2012/01/05/where-does-your-node-program-spend-its-time/">profile Node apps in production</a>, and now managing Node dependencies. Again, we&#039;re interested to hear feedback from others using these tools.</p>
+          <hr />
+          Dave Pacheco blogs at <a href="http://dtrace.org/blogs/dap/">dtrace.org</a>.</p>
+        <p><a href="#note1-top" name="note1-note">[1]</a> Much of this section is taken directly from the &quot;npm shrinkwrap&quot; documentation.</p>
+        <p><a href="#note2-top" name="note2-note">[2]</a> We&#039;ve had a lot of trouble with checking in node_modules with binary dependencies. The first problem is figuring out exactly which files <em>not</em> to check in (<em>.o, </em>.node, <em>.dynlib, </em>.so, *.a, &#8230;). When <a href="https://twitter.com/#!/mcavage">Mark</a> went to apply this to one of our internal services, the &quot;npm rebuild&quot; step blew away half of the dependency tree because it ran &quot;make clean&quot;, which in dependency <a href="http://ldapjs.org/">ldapjs</a> brings the repo to a clean slate by blowing away its dependencies. Later, a new (but highly experienced) engineer on our team was tasked with fixing a bug in our Node-based DHCP server. To fix the bug, we went with a new dependency. He tried checking in node_modules, which added 190,000 lines of code (to this repo that was previously a few hundred LOC). And despite doing everything he could think of to do this correctly and test it properly, the change broke the build because of the binary modules. So having tried this approach a few times now, it appears quite difficult to get right, and as I pointed out above, the lack of actual documentation and real world examples suggests others either aren&#039;t using binary modules (which we know isn&#039;t true) or haven&#039;t had much better luck with this approach.</p>
+        <p><a href="#note3-top" name="note3-note">[3]</a> Like a good Node-based distributed system, our architecture uses lots of small HTTP servers. Each of these serves a REST API using <a href="http://mcavage.github.com/node-restify/">restify</a>. restify uses the binary module <a href="https://github.com/chrisa/node-dtrace-provider">node-dtrace-provider</a>, which gives each of our services <a href="http://mcavage.github.com/node-restify/#DTrace">deep DTrace-based observability for free</a>. So literally almost all of our components are or will soon be depending on a binary add-on. Additionally, the foundation of <a href="http://dtrace.org/blogs/dap/2011/03/01/welcome-to-cloud-analytics/">Cloud Analytics</a> are a pair of binary modules that extract data from <a href="https://github.com/bcantrill/node-libdtrace">DTrace</a> and <a href="https://github.com/bcantrill/node-kstat">kstat</a>. So this isn&#039;t a corner case for us, and we don&#039;t believe we&#039;re exceptional in this regard. The popular <a href="https://github.com/pietern/hiredis-node">hiredis</a> package for interfacing with redis from Node is also a binary module.</p>
+        <p><a href="#note4-top" name="note4-note">[4]</a> Note that I said this is an important principle for <em>software version control</em>, not using git in general. People use git for lots of things where checking in binaries and other derived files is probably fine. Also, I&#039;m not interested in proselytizing; if you want to do this for software version control too, go ahead. But don&#039;t do it out of ignorance of existing successful software engineering practices.</p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/444/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/444/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/444/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/444/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/444/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/444/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/444/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/444/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/444/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/444/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/444/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/444/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/444/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/444/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=444&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/02/27/managing-node-js-dependencies-with-shrinkwrap/feed/</wfw:commentRss>
+      <slash:comments>10</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">davepacheco</media:title>
+      </media:content>
+
+      <media:content url="http://dtrace.org/blogs/dap/files/2012/02/web-300x300.jpg" medium="image">
+        <media:title type="html">Web</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Version 0.7.5 (unstable)</title>
+      <link>http://blog.nodejs.org/2012/02/23/version-0-7-5-unstable/</link>
+      <comments>http://blog.nodejs.org/2012/02/23/version-0-7-5-unstable/#comments</comments>
+      <pubDate>Thu, 23 Feb 2012 22:45:21 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=440</guid>
+      <description><![CDATA[2012.02.23, Version 0.7.5 (unstable) startup speed improvements (Maciej Małecki) crypto: add function getDiffieHellman() (Tomasz Buchert) buffer: support decoding of URL-safe base64 (Ben Noordhuis) Make QueryString.parse() even faster (Brian White) url: decode url entities in auth section (Ben Noordhuis) http: support &#8230; <a href="http://blog.nodejs.org/2012/02/23/version-0-7-5-unstable/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=440&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.02.23, Version 0.7.5 (unstable)</p>
+        <ul>
+          <li>
+            <p>startup speed improvements (Maciej Małecki)</p>
+          </li>
+          <li>
+            <p>crypto: add function getDiffieHellman() (Tomasz Buchert)</p>
+          </li>
+          <li>
+            <p>buffer: support decoding of URL-safe base64 (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>Make QueryString.parse() even faster (Brian White)</p>
+          </li>
+          <li>
+            <p>url: decode url entities in auth section (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>http: support PURGE request method (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>http: Generate Date headers on responses (Mark Nottingham)</p>
+          </li>
+          <li>
+            <p>Fix #2762: Add callback to close function. (Mikeal Rogers)</p>
+          </li>
+          <li>
+            <p>dgram: fix out-of-bound memory read (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>repl: add automatic loading of built-in libs (Brandon Benvie)</p>
+          </li>
+          <li>
+            <p>repl: remove double calls where possible (Fedor Indutny)</p>
+          </li>
+          <li>
+            <p>Readline improvements. Related: #2737 #2756 (Colton Baker)</p>
+          </li>
+          <li>
+            <p>build: disable -fomit-frame-pointer on solaris (Dave Pacheco)</p>
+          </li>
+          <li>
+            <p>build: arch detection improvements (Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>build: Make a fat binary for the OS X <code>make pkg</code>. (Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>jslint src/ and lib/ on &apos;make test&apos; (isaacs)</p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.7.5/node-v0.7.5.tar.gz">http://nodejs.org/dist/v0.7.5/node-v0.7.5.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.7.5/node-v0.7.5.msi">http://nodejs.org/dist/v0.7.5/node-v0.7.5.msi</a></p>
+        <p>Macintosh Installer: <a href="http://nodejs.org/dist/v0.7.5/node-v0.7.5.pkg">http://nodejs.org/dist/v0.7.5/node-v0.7.5.pkg</a></p>
+        <p>Other release files: <a href="http://nodejs.org/dist/v0.7.5/">http://nodejs.org/dist/v0.7.5/</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.7.5/">http://nodejs.org/docs/v0.7.5/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.7.5/api/">http://nodejs.org/docs/v0.7.5/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/440/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/440/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/440/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/440/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/440/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/440/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/440/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/440/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/440/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/440/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/440/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/440/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/440/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/440/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=440&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/02/23/version-0-7-5-unstable/feed/</wfw:commentRss>
+      <slash:comments>2</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Version 0.6.11 (stable)</title>
+      <link>http://blog.nodejs.org/2012/02/17/version-0-6-11-stable/</link>
+      <comments>http://blog.nodejs.org/2012/02/17/version-0-6-11-stable/#comments</comments>
+      <pubDate>Fri, 17 Feb 2012 21:32:55 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=437</guid>
+      <description><![CDATA[2012.02.17 Version 0.6.11 (stable) http: allow multiple WebSocket RFC6455 headers (Einar Otto Stangvik) http: allow multiple WWW-Authenticate headers (Ben Noordhuis) windows: support unicode argv and environment variables (Bert Belder) tls: mitigate session renegotiation attacks (Ben Noordhuis) tcp, pipe: don&apos;t assert &#8230; <a href="http://blog.nodejs.org/2012/02/17/version-0-6-11-stable/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=437&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.02.17 Version 0.6.11 (stable)</p>
+        <ul>
+          <li>
+            <p>http: allow multiple WebSocket RFC6455 headers (Einar Otto Stangvik)</p>
+          </li>
+          <li>
+            <p>http: allow multiple WWW-Authenticate headers (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>windows: support unicode argv and environment variables (Bert Belder)</p>
+          </li>
+          <li>
+            <p>tls: mitigate session renegotiation attacks (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>tcp, pipe: don&apos;t assert on uv_accept() errors (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>tls: Allow establishing secure connection on the existing socket (koichik)</p>
+          </li>
+          <li>
+            <p>dgram: handle close of dgram socket before DNS lookup completes (Seth Fitzsimmons)</p>
+          </li>
+          <li>
+            <p>windows: Support half-duplex pipes (Igor Zinkovsky)</p>
+          </li>
+          <li>
+            <p>build: disable omit-frame-pointer on solaris systems (Dave Pacheco)</p>
+          </li>
+          <li>
+            <p>debugger: fix &#8211;debug-brk (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>net: fix large file downloads failing (koichik)</p>
+          </li>
+          <li>
+            <p>fs: fix ReadStream failure to read from existing fd (Christopher Jeffrey)</p>
+          </li>
+          <li>
+            <p>net: destroy socket on DNS error (Stefan Rusu)</p>
+          </li>
+          <li>
+            <p>dtrace: add missing translator (Dave Pacheco)</p>
+          </li>
+          <li>
+            <p>unix: don&apos;t flush tty on switch to raw mode (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>windows: reset brightness when reverting to default text color (Bert Belder)</p>
+          </li>
+          <li>
+            <p>npm: update to 1.1.1</p>
+            <p>- Update which, fstream, mkdirp, request, and rimraf<br />- Fix #2123 Set path properly for lifecycle scripts on windows<br />- Mark the root as seen, so we don&apos;t recurse into it. Fixes #1838. (Martin Cooper)</p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.6.11/node-v0.6.11.tar.gz">http://nodejs.org/dist/v0.6.11/node-v0.6.11.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.6.11/node-v0.6.11.msi">http://nodejs.org/dist/v0.6.11/node-v0.6.11.msi</a></p>
+        <p>Macintosh Installer: <a href="http://nodejs.org/dist/v0.6.11/node-v0.6.11.pkg">http://nodejs.org/dist/v0.6.11/node-v0.6.11.pkg</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.6.11/">http://nodejs.org/docs/v0.6.11/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.6.11/api/">http://nodejs.org/docs/v0.6.11/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/437/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/437/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/437/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/437/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/437/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/437/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/437/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/437/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/437/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/437/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/437/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/437/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/437/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/437/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=437&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/02/17/version-0-6-11-stable/feed/</wfw:commentRss>
+      <slash:comments>5</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Node v0.7.4 (unstable)</title>
+      <link>http://blog.nodejs.org/2012/02/15/version-0-7-4-unstable/</link>
+      <comments>http://blog.nodejs.org/2012/02/15/version-0-7-4-unstable/#comments</comments>
+      <pubDate>Wed, 15 Feb 2012 19:38:35 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=432</guid>
+      <description><![CDATA[2012.02.14, Version 0.7.4 (unstable) Upgrade V8 to 3.9.5 Upgrade npm to 1.1.1 build: Detect host_arch better (Karl Skomski) debugger: export debug_port to process (Fedor Indutny) api docs: CSS bug fixes (isaacs) build: use -fPIC for native addons on UNIX (Nathan &#8230; <a href="http://blog.nodejs.org/2012/02/15/version-0-7-4-unstable/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=432&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.02.14, Version 0.7.4 (unstable)</p>
+        <ul>
+          <li>
+            <p>Upgrade V8 to 3.9.5</p>
+          </li>
+          <li>
+            <p>Upgrade npm to 1.1.1</p>
+          </li>
+          <li>
+            <p>build: Detect host_arch better (Karl Skomski)</p>
+          </li>
+          <li>
+            <p>debugger: export <code>debug_port</code> to <code>process</code> (Fedor Indutny)</p>
+          </li>
+          <li>
+            <p>api docs: CSS bug fixes (isaacs)</p>
+          </li>
+          <li>
+            <p>build: use -fPIC for native addons on UNIX (Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>Re-add top-level v8::Locker (Marcel Laverdet)</p>
+          </li>
+          <li>
+            <p>Move images out of the dist tarballs (isaacs)</p>
+          </li>
+          <li>
+            <p>libuv: Remove uv_export and uv_import (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>build: Support x64 build on Windows (Igor Zinkovsky)</p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.7.4/node-v0.7.4.tar.gz">http://nodejs.org/dist/v0.7.4/node-v0.7.4.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.7.4/node-v0.7.4.msi">http://nodejs.org/dist/v0.7.4/node-v0.7.4.msi</a></p>
+        <p>Macintosh Installer: <a href="http://nodejs.org/dist/v0.7.4/node-v0.7.4.pkg">http://nodejs.org/dist/v0.7.4/node-v0.7.4.pkg</a></p>
+        <p>Other release files: <a href="http://nodejs.org/dist/v0.7.4/">http://nodejs.org/dist/v0.7.4/</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.7.4/">http://nodejs.org/docs/v0.7.4/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.7.4/api/">http://nodejs.org/docs/v0.7.4/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/432/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/432/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/432/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/432/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/432/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/432/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/432/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/432/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/432/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/432/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/432/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/432/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/432/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/432/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=432&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/02/15/version-0-7-4-unstable/feed/</wfw:commentRss>
+      <slash:comments>2</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Node v0.7.3 (unstable)</title>
+      <link>http://blog.nodejs.org/2012/02/07/node-v0-7-3/</link>
+      <comments>http://blog.nodejs.org/2012/02/07/node-v0-7-3/#comments</comments>
+      <pubDate>Wed, 08 Feb 2012 01:08:27 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=428</guid>
+      <description><![CDATA[2012.02.07, Version 0.7.3 (unstable) Upgrade V8 to 3.9.2 Revert support for isolates. (Ben Noordhuis) cluster: Cleanup docs, event handling, and process.disconnect (Andreas Madsen) gyp_addon: link with node.lib on Windows (Nathan Rajlich) http: fix case where http-parser is freed twice (koichik) &#8230; <a href="http://blog.nodejs.org/2012/02/07/node-v0-7-3/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=428&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.02.07, Version 0.7.3 (unstable)</p>
+        <ul>
+          <li>
+            <p>Upgrade V8 to 3.9.2</p>
+          </li>
+          <li>
+            <p>Revert support for isolates. (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>cluster: Cleanup docs, event handling, and process.disconnect (Andreas Madsen)</p>
+          </li>
+          <li>
+            <p>gyp_addon: link with node.lib on Windows (Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>http: fix case where http-parser is freed twice (koichik)</p>
+          </li>
+          <li>
+            <p>Windows: disable RTTI and exceptions (Bert Belder)</p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.7.3/node-v0.7.3.tar.gz">http://nodejs.org/dist/v0.7.3/node-v0.7.3.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.7.3/node-v0.7.3.msi">http://nodejs.org/dist/v0.7.3/node-v0.7.3.msi</a></p>
+        <p>Macintosh Installer: <a href="http://nodejs.org/dist/v0.7.3/node-v0.7.3.pkg">http://nodejs.org/dist/v0.7.3/node-v0.7.3.pkg</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.7.3/">http://nodejs.org/docs/v0.7.3/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.7.3/api/">http://nodejs.org/docs/v0.7.3/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/428/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/428/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/428/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/428/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/428/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/428/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/428/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/428/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/428/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/428/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/428/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/428/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/428/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/428/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=428&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/02/07/node-v0-7-3/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Node v0.6.10</title>
+      <link>http://blog.nodejs.org/2012/02/02/node-v0-6-10/</link>
+      <comments>http://blog.nodejs.org/2012/02/02/node-v0-6-10/#comments</comments>
+      <pubDate>Fri, 03 Feb 2012 01:22:03 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=426</guid>
+      <description><![CDATA[2012.02.02, Version 0.6.10 (stable) Update V8 to 3.6.6.20 Add npm msysgit bash shim to msi installer (isaacs) buffers: fix intermittent out of bounds error (Ben Noordhuis) buffers: honor length argument in base64 decoder (Ben Noordhuis) windows: Fix path.exists regression (Bert &#8230; <a href="http://blog.nodejs.org/2012/02/02/node-v0-6-10/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=426&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.02.02, Version 0.6.10 (stable)</p>
+        <ul>
+          <li>
+            <p>Update V8 to 3.6.6.20</p>
+          </li>
+          <li>
+            <p>Add npm msysgit bash shim to msi installer (isaacs)</p>
+          </li>
+          <li>
+            <p>buffers: fix intermittent out of bounds error (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>buffers: honor length argument in base64 decoder (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>windows: Fix path.exists regression (Bert Belder)</p>
+          </li>
+          <li>
+            <p>Make QueryString.parse run faster (Philip Tellis)</p>
+          </li>
+          <li>
+            <p>http: avoid freeing http-parser objects too early (koichik)</p>
+          </li>
+          <li>
+            <p>timers: add v0.4 compatibility hack (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>Proper EPERM error code support (Igor Zinkovsky, Brandon Philips)</p>
+          </li>
+          <li>
+            <p>dgram: Implement udp multicast methods on windows (Bert Belder)</p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.6.10/node-v0.6.10.tar.gz">http://nodejs.org/dist/v0.6.10/node-v0.6.10.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.6.10/node-v0.6.10.msi">http://nodejs.org/dist/v0.6.10/node-v0.6.10.msi</a></p>
+        <p>Macintosh Installer: <a href="http://nodejs.org/dist/v0.6.10/node-v0.6.10.pkg">http://nodejs.org/dist/v0.6.10/node-v0.6.10.pkg</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.6.10/">http://nodejs.org/docs/v0.6.10/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.6.10/api/">http://nodejs.org/docs/v0.6.10/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/426/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/426/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/426/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/426/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/426/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/426/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/426/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/426/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/426/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/426/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/426/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/426/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/426/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/426/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=426&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/02/02/node-v0-6-10/feed/</wfw:commentRss>
+      <slash:comments>4</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Node v0.7.2 (unstable)</title>
+      <link>http://blog.nodejs.org/2012/02/01/node-v0-7-2-unstable/</link>
+      <comments>http://blog.nodejs.org/2012/02/01/node-v0-7-2-unstable/#comments</comments>
+      <pubDate>Wed, 01 Feb 2012 21:13:04 +0000</pubDate>
+      <dc:creator>Isaac Schlueter</dc:creator>
+      <category><![CDATA[release]]></category>
+
+      <guid isPermaLink="false">http://blog.nodejs.org/?p=423</guid>
+      <description><![CDATA[2012.02.01, Version 0.7.2 (unstable) Update V8 to 3.8.9 Support for sharing streams across Isolates (Igor Zinkovsky) #2636 &#8211; Fix case where http_parsers are freed too early (koichik) url: Support for IPv6 addresses in URLs (Łukasz Walukiewicz) child_process: Add disconnect() method &#8230; <a href="http://blog.nodejs.org/2012/02/01/node-v0-7-2-unstable/">Continue reading <span class="meta-nav">&#8594;</span></a><img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=423&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></description>
+      <content:encoded><![CDATA[<p>2012.02.01, Version 0.7.2 (unstable)</p>
+        <ul>
+          <li>
+            <p>Update V8 to 3.8.9</p>
+          </li>
+          <li>
+            <p>Support for sharing streams across Isolates (Igor Zinkovsky)</p>
+          </li>
+          <li>
+            <p>#2636 &#8211; Fix case where http_parsers are freed too early (koichik)</p>
+          </li>
+          <li>
+            <p>url: Support for IPv6 addresses in URLs (Łukasz Walukiewicz)</p>
+          </li>
+          <li>
+            <p>child_process: Add disconnect() method to child processes (Andreas Madsen)</p>
+          </li>
+          <li>
+            <p>fs: add O_EXCL support, exclusive open file (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>fs: more specific error messages (Tj Holowaychuk)</p>
+          </li>
+          <li>
+            <p>tty: emit &#8216;unknown&#8217; key event if key sequence not found (Dan VerWeire, Nathan Rajlich)</p>
+          </li>
+          <li>
+            <p>build: compile release build too if BUILDTYPE=Debug (Ben Noordhuis)</p>
+          </li>
+          <li>
+            <p>module: fix &#8211;debug-brk on symlinked scripts (Fedor Indutny)</p>
+          </li>
+          <li>
+            <p>zlib: fix <code>Failed to set dictionary</code> issue (Fedor Indutny)</p>
+          </li>
+          <li>
+            <p>waf: predict target arch for OS X (Fedor Indutny)</p>
+          </li>
+        </ul>
+        <p>Source Code: <a href="http://nodejs.org/dist/v0.7.2/node-v0.7.2.tar.gz">http://nodejs.org/dist/v0.7.2/node-v0.7.2.tar.gz</a></p>
+        <p>Windows Installer: <a href="http://nodejs.org/dist/v0.7.2/node-v0.7.2.msi">http://nodejs.org/dist/v0.7.2/node-v0.7.2.msi</a></p>
+        <p>Macintosh Installer: <a href="http://nodejs.org/dist/v0.7.2/node-v0.7.2.pkg">http://nodejs.org/dist/v0.7.2/node-v0.7.2.pkg</a></p>
+        <p>Website: <a href="http://nodejs.org/docs/v0.7.2/">http://nodejs.org/docs/v0.7.2/</a></p>
+        <p>Documentation: <a href="http://nodejs.org/docs/v0.7.2/api/">http://nodejs.org/docs/v0.7.2/api/</a></p>
+        <br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/nodeblog.wordpress.com/423/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/nodeblog.wordpress.com/423/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/nodeblog.wordpress.com/423/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/nodeblog.wordpress.com/423/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gofacebook/nodeblog.wordpress.com/423/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/facebook/nodeblog.wordpress.com/423/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gotwitter/nodeblog.wordpress.com/423/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/twitter/nodeblog.wordpress.com/423/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/nodeblog.wordpress.com/423/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/nodeblog.wordpress.com/423/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/nodeblog.wordpress.com/423/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/nodeblog.wordpress.com/423/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/nodeblog.wordpress.com/423/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/nodeblog.wordpress.com/423/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=blog.nodejs.org&amp;blog=21260551&amp;post=423&amp;subd=nodeblog&amp;ref=&amp;feed=1" width="1" height="1" />]]></content:encoded>
+      <wfw:commentRss>http://blog.nodejs.org/2012/02/01/node-v0-7-2-unstable/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+
+      <media:content url="" medium="image">
+        <media:title type="html">isaacschlueter</media:title>
+      </media:content>
+    </item>
+  </channel>
+</rss>

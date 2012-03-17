@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+  xml:base="http://labnotes.org/wp-atom.php"
+  >
+  <title type="text">Labnotes</title>
+  <subtitle type="text"></subtitle>
+
+  <updated>2012-03-17T15:00:52Z</updated>
+
+  <link rel="alternate" type="text/html" href="http://labnotes.org" />
+  <id>http://labnotes.org/feed/atom/</id>
+  <link rel="self" type="application/atom+xml" href="http://labnotes.org/feed/atom/" />
+
+  <generator uri="http://wordpress.org/" version="3.3.1">WordPress</generator>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 344 – Great care, cynicism and greed]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/17/rounded-corners-344-great-care-cynicism-and-greed/" />
+    <id>http://labnotes.org/?p=1706</id>
+    <updated>2012-03-17T03:35:52Z</updated>
+    <published>2012-03-17T15:00:52Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[200 A wonderful reference to all the HTTP status codes. ? Graphemica &#8211; For people who ? letters, numbers, punctuation, &#38;c: full text search for Unicode characters. Faster JavaScript performance myths. Reading Hot of the press, from PragProg, Build Awesome Command-Line Applications in Ruby: Control Your Computer, Simplify Your Life and Working With Unix Processes, the only book addressing Unix [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/17/rounded-corners-344-great-care-cynicism-and-greed/"><![CDATA[<p><strong>200</strong> A wonderful reference to <a href="http://httpstatus.es/">all the HTTP status codes</a>.</p>
+      <p><strong>?</strong> <a href="http://graphemica.com/">Graphemica</a> &#8211; For people who ? letters, numbers, punctuation, &amp;c: full text search for Unicode characters.</p>
+      <p><strong>Faster</strong> <a href="https://docs.google.com/a/labnotes.org/present/view?id=0Ac0YlG9vMA2LZHE1MnpycF8yMGZ6ZnZxa2hy&amp;pli=1">JavaScript performance myths</a>.</p>
+      <p><strong>Reading</strong> Hot of the press, from PragProg, <a href="http://pragprog.com/book/dccar/build-awesome-command-line-applications-in-ruby?utm_source=wynn">Build Awesome Command-Line Applications in Ruby: Control Your Computer, Simplify Your Life</a> and <a href="http://workingwithunixprocesses.com/">Working With Unix Processes</a>, the only book addressing Unix programming specifically for Ruby developers.</p>
+      <p><strong>Sense</strong> Brilliant quote from <a href="http://www.thisislondon.co.uk/lifestyle/london-life/sir-jonathan-ive-the-iman-cometh-7562170.html">Jonathan Ive</a> on what ills other mobile/consumer/PC companies:</p>
+      <blockquote><p>as consumers … we sense where has been great care in the design, and when there is cynicism and greed</p></blockquote>
+      <p><strong>Impressive</strong> If you like <a href="http://bartaz.github.com/impress.js/#/bored">impress.js</a>, you&#8217;re going to love what Harish Sivaramakrishnan is doing with <a href="http://hsivaram.com/tech/2012/03/15/preview-impressionist-a-visual-editor-for-impress-js/">Impressionist</a>.</p>
+      <p><strong>QotD</strong> <a href="https://twitter.com/#!/mperham/status/179615369361768449">Mike Perham again</a>:</p>
+      <blockquote><p>Only three things are certain in life: death, taxes and an absurdly low default of 1024 open files in Linux.</p></blockquote>
+      <p>&nbsp;</p>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/17/rounded-corners-344-great-care-cynicism-and-greed/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/17/rounded-corners-344-great-care-cynicism-and-greed/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 343 – Make it a little better every single day.]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/16/rounded-corners-343-make-it-a-little-better-every-single-day/" />
+    <id>http://labnotes.org/?p=1705</id>
+    <updated>2012-03-17T03:32:26Z</updated>
+    <published>2012-03-17T03:32:26Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[Looking good Vanity 1.8.0 is out: support for Rails 3.2 and many many bug fixes  All thanks to @dougcole who pulled it together. Failsafe Etsy shares their experience with Resilient Response In Complex Systems. Must watch Last week I shared a link to this presentation, here&#8217;s the video for the brilliant The Mythical Team Month. Brewing CoffeeScript Cookbook is [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/16/rounded-corners-343-make-it-a-little-better-every-single-day/"><![CDATA[<p><a href="http://www.shoeboxblog.com/"><img class="alignnone" src="http://www.shoeboxblog.com/wp-content/uploads/2012/03/medical-diagnosis1.jpg" alt="" width="330" height="353" /></a></p>
+      <p><strong>Looking good</strong> <a href="http://vanity.labnotes.org/">Vanity 1.8.0 is out</a>: support for Rails 3.2 and many many bug fixes  All thanks to <a href="https://twitter.com/#!/dougcole">@dougcole</a> who pulled it together.</p>
+      <p><strong>Failsafe</strong> Etsy shares their experience with <a href="http://www.slideshare.net/jallspaw/resilient-response-in-complex-systems">Resilient Response In Complex Systems</a>.</p>
+      <p><strong>Must watch</strong> Last week I shared a <a href="http://speakerdeck.com/u/searls/p/the-mythical-team-month">link to this presentation</a>, here&#8217;s the video for the brilliant <a href="http://vimeo.com/38321427">The Mythical Team Month</a>.</p>
+      <p><strong>Brewing</strong> <a href="http://coffeescriptcookbook.com/">CoffeeScript Cookbook</a> is full of community recipes of your favorite (or hated) JS dialect.</p>
+      <p><strong>Culture</strong> <a href="http://www.randsinrepose.com/archives/2012/03/13/hacking_is_important.html">Hacking is Important</a>:</p>
+      <blockquote><p>Hackers are allergic to process not because they don’t understand the value; they’re allergic to it because it violates their core values. These values are well documented in Zuckerberg’s letter: “Done is better than perfect”, “Code wins arguments”, and that “Hacker culture is extremely open and meritocratic”.</p></blockquote>
+      <p><strong>Un-troll</strong> Ryan Dahl shows how to implement <a href="https://gist.github.com/2018811">a proper fibonacci server in Node.js</a>.</p>
+      <p><strong>Help</strong> Related, <a href="http://www.softwarequalityconnection.com/2012/03/14-ways-to-contribute-to-open-source-without-being-a-programming-genius-or-a-rock-star/">14 Ways to Contribute to Open Source</a>.</p>
+      <p><strong>QotD</strong> Words to live by, <a href="https://twitter.com/#!/mperham/status/179043284964999168">Mike Perham</a>:</p>
+      <blockquote><p>Make it a little better every single day. You define &#8220;it&#8221;.</p></blockquote>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/16/rounded-corners-343-make-it-a-little-better-every-single-day/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/16/rounded-corners-343-make-it-a-little-better-every-single-day/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 342 – The NOR Machine]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/13/rounded-corners-342-mythical-team-month/" />
+    <id>http://labnotes.org/?p=1703</id>
+    <updated>2012-03-11T19:27:50Z</updated>
+    <published>2012-03-13T15:00:40Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[Inspected DTrace scripts for Mac OS. A lot more details about processes than you&#8217;ll ever get our of Activity Monitor. Mind the gap From Pinterest&#8217;s Founding Designer Shares His Dead-Simple Design Philosophy: Figure out your product’s purpose, and keep designing and re-designing it. Shrink the gap between what it does and why it exists, and don’t [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/13/rounded-corners-342-mythical-team-month/"><![CDATA[<p><strong>Inspected</strong> <a href="http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/">DTrace scripts for Mac OS</a>. A lot more details about processes than you&#8217;ll ever get our of Activity Monitor.</p>
+      <p><strong>Mind the gap</strong> From <a href="http://www.fastcodesign.com/1669189/pinterests-founding-designer-shares-his-dead-simple-design-philosophy">Pinterest&#8217;s Founding Designer Shares His Dead-Simple Design Philosophy</a>:</p>
+      <p style="padding-left: 30px;">Figure out your product’s purpose, and keep designing and re-designing it. Shrink the gap between what it does and why it exists, and don’t stop until the gap disappears. As the founder of 37Signals Jason Fried has said, “The design is done when the problem goes away.”</p>
+      <p><strong>In/out</strong> <a href="http://blog.sanctum.geek.nz/bash-process-substitution/">Bash process substitution</a>.</p>
+      <p><strong>Ren/del</strong> <a href="https://github.com/FGRibreau/redis-tool">redis-tool</a> offers glob rename nad delete. This will come in handy.</p>
+      <p><strong>Mental</strong> <a href="http://pragprog.com/magazines/2012-03/the-nor-machine">The NOR Machine</a>. A CPU with just one instruction. Impractical but fun mind bending exercise.</p>
+      <p><strong>Summary</strong> <a href="http://inoveryourhead.net/lessons-i-learned-reading-over-200-books/">200 books each distilled down to their core message</a> in &lt; 140 chars each.</p>
+      <div>
+        <p>&nbsp;</p>
+      </div>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/13/rounded-corners-342-mythical-team-month/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/13/rounded-corners-342-mythical-team-month/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 341 – hjkl]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/12/rounded-corners-341-hjkl/" />
+    <id>http://labnotes.org/?p=1702</id>
+    <updated>2012-03-11T19:25:43Z</updated>
+    <published>2012-03-12T15:00:39Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[UX Designing Great API Docs: In fact, I argue that the most important piece of UX for a developer product isn&#8217;t the homepage or the sign up process or the SDK download. It&#8217;s the API documentation! Who cares if your product is the most powerful thing in the world if no one understands how to [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/12/rounded-corners-341-hjkl/"><![CDATA[<p><img class="alignnone" src="http://www.catonmat.net/images/why-vim-uses-hjkl/adm-3a-hjkl-keyboard.jpg" alt="" width="328" height="136" /></p>
+      <p><strong>UX</strong> <a href="http://blog.parse.com/2012/01/11/designing-great-api-docs/">Designing Great API Docs</a>:</p>
+      <p style="padding-left: 30px;">In fact, I argue that the most important piece of UX for a developer product isn&#8217;t the homepage or the sign up process or the SDK download. It&#8217;s the API documentation! Who cares if your product is the most powerful thing in the world if no one understands how to use it.</p>
+      <p><strong>Reasoning</strong> From <a href="http://michaelfeathers.typepad.com/michael_feathers_blog/2008/06/the-flawed-theo.html">The Flawed Theory Behind Unit Testing</a>:</p>
+      <p style="padding-left: 30px;">All of these techniques have been shown to increase quality. And, if we look closely we can see why: all of them force us to reflect on our code.</p>
+      <p style="padding-left: 30px;">That’s the magic, and it’s why unit testing works also. When you write unit tests, TDD-style or after your development, you scrutinize, you think, and often you prevent problems without even encountering a test failure.</p>
+      <p><strong>Queuing</strong> <a href="http://www.igvita.com/2012/02/29/work-stealing-and-recursive-partitioning-with-fork-join/">Work-Stealing &amp; Recursive Partitioning with Fork/Join</a>.</p>
+      <p><strong>Partition</strong> <a href="http://aws.typepad.com/aws/2012/03/amazon-s3-performance-tips-tricks-seattle-hiring-event.html">Amazon S3 Performance Tips &amp; Tricks</a> distilled into one lesson: &#8221;keys in S3 are partitioned by prefix.&#8221;</p>
+      <p><strong>Funny</strong> <a href="http://crankypm.com/2011/03/guest-post-stages-debugging/">The five stages of debugging</a>.</p>
+      <p><strong>Pointers</strong> Here is why <a href="http://www.catonmat.net/blog/why-vim-uses-hjkl-as-arrow-keys/">vim uses the hjkl keys</a> as arrow keys.</p>
+      <p>&nbsp;</p>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/12/rounded-corners-341-hjkl/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/12/rounded-corners-341-hjkl/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 340 – Mythical Team Month]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/11/rounded-corners-340-mythical-team-month/" />
+    <id>http://labnotes.org/?p=1701</id>
+    <updated>2012-03-11T19:21:17Z</updated>
+    <published>2012-03-11T19:21:17Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[Fat content Have you measured the size of a Web page on your app? Did you know &#8220;a single tweet page on Twitter has about a 15,000-to-one ratio of garbage to content&#8221;. Options An interesting way to look at technical debt: Bad code isn’t Technical Debt, it’s an unhedged Call Option. So that makes refactoring like [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/11/rounded-corners-340-mythical-team-month/"><![CDATA[<p><strong>Fat content</strong> Have you <a href="http://mike.teczno.com/notes/bandwidth.html">measured the size of a Web page</a> on your app? Did you know &#8220;a single tweet page on Twitter has about a 15,000-to-one ratio of garbage to content&#8221;.</p>
+      <p><strong>Options</strong> An interesting way to look at technical debt: <a href="http://www.higherorderlogic.com/2010/07/bad-code-isnt-technical-debt-its-an-unhedged-call-option/">Bad code isn’t Technical Debt, it’s an unhedged Call Option</a>.</p>
+      <p style="padding-left: 30px;">So that makes refactoring like buying an option too. I pay a premium now so that I have more choices about where I might take the code later. This is a mundane and obvious activity in many aspects of business—although not, it seems, software development.</p>
+      <p><strong>Boxed</strong> <a href="http://www.vcarrer.com/2012/03/box-css-framework.html">Box &#8211; CSS Framework</a>. A CSS framework based on box-sizing: border-box and display: inline-block. If you don&#8217;t care for IE6/7, this is a better way to construct your layout.</p>
+      <p><strong>Fail at scale</strong> Another illuminating peek at <a href="http://techblog.netflix.com/2012/02/fault-tolerance-in-high-volume.html">how Netflix handles high volume fault tolerance</a>.</p>
+      <p><strong>Easy</strong> <a href="https://github.com/felixge/nodeguide.com/pull/15#issuecomment-4226115">How to not be a sexist software developer</a>. A pull request.</p>
+      <p><strong>Must read</strong>  <a href="http://speakerdeck.com/u/searls/p/the-mythical-team-month">The Mythical Team-Month</a>. Do small teams go faster, why, and who should you hire?</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/11/rounded-corners-340-mythical-team-month/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/11/rounded-corners-340-mythical-team-month/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 339 – Time to unwind]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/06/rounded-corners-339-time-to-unwind/" />
+    <id>http://labnotes.org/?p=1699</id>
+    <updated>2012-03-04T00:02:46Z</updated>
+    <published>2012-03-06T16:00:45Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[Unshort The Unwind Gem takes a URL and figures out what it actually points to. Just in time TimeKeeper is TimeCop for Node.js, helps you test time-dependent code. Automate Do is a thin framework for managing remote servers using SSH. Ported Porting a RESTful Web service from Java to Node.js. Performance numbers are eye opening. [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/06/rounded-corners-339-time-to-unwind/"><![CDATA[<p><strong>Unshort</strong> The <a href="http://www.scottw.com/unwind">Unwind Gem</a> takes a URL and figures out what it actually points to.</p>
+      <p><strong>Just in time</strong> <a href="https://github.com/vesln/timekeeper">TimeKeeper is TimeCop for Node.js</a>, helps you test time-dependent code.</p>
+      <p><strong>Automate</strong> <a href="https://github.com/DAddYE/do">Do is a thin framework</a> for managing remote servers using SSH.</p>
+      <p><strong>Ported</strong> <a href="http://www.ziggytech.net/technology/web-development/experiences-with-node-js-porting-a-restful-service-written-in-java/">Porting a RESTful Web service from Java to Node.js</a>. Performance numbers are eye opening.</p>
+      <p><strong>Power </strong>Orders of Magnitude: <a href="http://www.cindyalvarez.com/data-driven/orders-of-magnitude-power-users-vs-mainstream-users">Power Users vs. Mainstream Users</a>:</p>
+      <blockquote><p>For your product to succeed, it needs to solve a problem for a lot of different people who will use it in a lot of different ways. If this were easy, more people would be running billion-dollar companies.</p></blockquote>
+      <p><strong>Good news</strong> <a href="http://bhorowitz.com/2012/02/29/lies-that-losers-tell/">Lies that Losers Tell</a>: the tendency to only listen to leading indicators of good news.</p>
+      <p><strong>Less</strong> <a href="https://twitter.com/#!/deadprogram/status/175665017511874561">Another reminder</a>:</p>
+      <blockquote><p>&#8220;Delete unused code. Every line of code has a cost&#8221;-@srbaker #roa2012</p></blockquote>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/06/rounded-corners-339-time-to-unwind/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/06/rounded-corners-339-time-to-unwind/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 338 – HTML5 please]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/05/rounded-corners-338-html5-please/" />
+    <id>http://labnotes.org/?p=1698</id>
+    <updated>2012-03-03T23:59:45Z</updated>
+    <published>2012-03-05T16:00:23Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[Interested in Zombie.js? NodeConf 2012 reverse CFP is up, if you want me to talk about Zombie, queue it up! Please upgrade HTML5 Please API: identifies supported browsers with feature detection and tells you when to upgrade. Connected APIConnect is a slick JavaScript library for plugging to HTTP APIs. Related NoSQL data modeling techniques. More cat [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/05/rounded-corners-338-html5-please/"><![CDATA[<p><strong>Interested in Zombie.js?</strong> <a href="http://www.nodeconf.com/">NodeConf 2012 reverse CFP is up</a>, if you want me to talk about Zombie, queue it up!</p>
+      <p><strong>Please upgrade</strong> <a href="http://api.html5please.com/">HTML5 Please API</a>: identifies supported browsers with feature detection and tells you when to upgrade.</p>
+      <p><strong>Connected</strong> <a href="http://andrewplummer.github.com/APIConnect/">APIConnect</a> is a slick JavaScript library for plugging to HTTP APIs.</p>
+      <p><strong>Related</strong> <a href="http://highlyscalable.wordpress.com/2012/03/01/nosql-data-modeling-techniques/">NoSQL data modeling techniques</a>.</p>
+      <p><strong>More cat</strong> <a href="https://github.com/seamusabshere/unix_utils/blob/master/lib/unix_utils.rb">UnixUtils</a> is similar in spirit to FileUtils but for running commands like zip, unzip, tar, untar, sed, du, shasum, cut, head, tail, wc, iconv, curl.</p>
+      <p><strong>Lazy</strong> <a href="http://unprotocols.org/blog:22">The Lazy Prefectionist and other patterns</a>.</p>
+      <p><strong>QotD</strong> <a href="https://twitter.com/#!/izs/status/174907469456355328">isaacs</a>:</p>
+      <blockquote><p>Erlang&#8217;s stack traces are someone who didn&#8217;t know what to bring to the party, so stopped at Safeway on the way over, and bought everything.</p></blockquote>
+      <p>&nbsp;</p>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/05/rounded-corners-338-html5-please/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/05/rounded-corners-338-html5-please/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 337 – Fair to the truth]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/04/rounded-corners-337/" />
+    <id>http://labnotes.org/?p=1697</id>
+    <updated>2012-03-03T23:57:19Z</updated>
+    <published>2012-03-04T16:00:11Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[Kick ass What&#8217;s coming up in Firefox developer tools. Hate So true (not just for Ruby): from page 35 of the English:Ruby phrase book: &#8220;I hate you with a seething passion&#8221; translates roughly as &#8220;rescue nil&#8221; Must read Designing Dashboards &#38; Data Visualisations in Web Apps. Must read II Ruby Patterns from GitHub&#8217;s Codebase. tmux PragProg&#8217;s [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/04/rounded-corners-337/"><![CDATA[<p><a href="http://imgur.com/37Hv4"><img class="alignnone" src="http://i.imgur.com/37Hv4.jpg" alt="" width="295" height="346" /></a></p>
+      <p><strong>Kick ass</strong> What&#8217;s coming up in <a href="http://www.andismith.com/blog/2012/02/firefox-developer-tools/">Firefox developer tools</a>.</p>
+      <p><strong>Hate</strong> <a href="https://twitter.com/#!/cowboyd/status/174945091641815040">So true</a> (not just for Ruby):</p>
+      <blockquote><p>from page 35 of the English:Ruby phrase book: &#8220;I hate you with a seething passion&#8221; translates roughly as &#8220;rescue nil&#8221;</p></blockquote>
+      <p><strong>Must read</strong> <a href="http://speakerdeck.com/u/destraynor/p/designing-dashboards-data-visualisations-in-web-apps">Designing Dashboards &amp; Data Visualisations in Web Apps</a>.</p>
+      <p><strong>Must read II</strong> <a href="http://zachholman.com/talk/ruby-patterns">Ruby Patterns from GitHub&#8217;s Codebase</a>.</p>
+      <p><strong>tmux</strong> <a href="http://pragprog.com/book/bhtmux/tmux">PragProg&#8217;s new book on tmux</a>. Short one, looks good, just got a copy.</p>
+      <p><strong>More of this</strong> NPR on being &#8220;<a href="http://ethics.npr.org/category/b-fairness/#1-fairness-in-storytelling">fair to the truth</a>&#8220;.</p>
+      <p><strong>QotD</strong> <a href="https://twitter.com/#!/amcafee/status/174551978721034240">Andrew McAfee</a>:</p>
+      <blockquote><p>Most common analytic approach is still MCU: Make Crap Up.</p></blockquote>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/04/rounded-corners-337/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/04/rounded-corners-337/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 336 – It&#8217;s a win-win situation]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/03/03/rounded-corners-336-its-a-win-win-situation/" />
+    <id>http://labnotes.org/?p=1696</id>
+    <updated>2012-03-03T23:53:56Z</updated>
+    <published>2012-03-03T23:53:56Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[Redis What&#8217;s coming up in Redis 2.6: virtual memory is out,  persistence improvements and LUA is in, plus better code base (not a feature, but an enabler). Man it up Write more man pages: It happens that Unix, in its age-old sage ways, has been storing its docs out-of-line with the relevant code for years. [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/03/03/rounded-corners-336-its-a-win-win-situation/"><![CDATA[<p><a href="http://wtfqrcodes.com/post/18551054478/look-in-the-sky-its-a-bird-its-a-plane-its-the"><img class="alignnone" src="http://tomkingaerial.files.wordpress.com/2011/05/airplane-towing-qr-code.jpg" alt="" width="444" height="281" /></a></p>
+      <p><strong>Redis</strong> What&#8217;s <a href="http://antirez.com/post/redis-2.6-is-near.html">coming up in Redis 2.6</a>: virtual memory is out,  persistence improvements and LUA is in, plus better code base (not a feature, but an enabler).</p>
+      <p><strong>Man it up</strong> <a href="http://weblog.therealadam.com/2012/02/26/write-more-manpages/">Write more man pages</a>:</p>
+      <blockquote><p>It happens that Unix, in its age-old sage ways, has been storing its docs out-of-line with the relevant code for years. They’re called manpages, and they mostly don’t suck. Every C API on a modern Unix has a corresponding manpage that describes the relevant functions and structures, how to use it, and any bugs that may exist. They’re actually a pretty good source of info.</p></blockquote>
+      <p><strong>Handy cat</strong> Speaking of learning your Unix technologies, here are <a href="http://www.in-ulm.de/~mascheck/various/uuoc/">useful uses of cat(1)</a>.</p>
+      <p><strong>Vimrc me</strong> <a href="http://vimbits.com/">Vimbits</a> is a well executed source of virmc tips &amp; tricks.</p>
+      <p><strong>Shrinkwrapped</strong>  <a href="http://blog.nodejs.org/2012/02/27/managing-node-js-dependencies-with-shrinkwrap/">Managing Node dependencies with Shrinkwrap</a>. No vendoring yet (alas), but already proved useful working around a dependency incorrectly specifying Connect version number</p>
+      <p><strong>West meets East</strong> Fascinating HN comment about <a href="http://news.ycombinator.com/item?id=3645911">West/East cultural barriers in open source</a> world.</p>
+      <p><strong>Sense</strong> Dear recruiters, <a href="http://cl.ly/122s0q1J0W1R151e3t0M/o">please study the red flags on this email</a>.</p>
+      <p><strong>QotD</strong> <a href="https://twitter.com/#!/finalfashion/status/174446359078899712">Danielle Meder</a>:</p>
+      <blockquote><p>&#8220;It&#8217;s a win-win situation.&#8221; Translation: no money up front.</p></blockquote>
+      <p>&nbsp;</p>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/03/03/rounded-corners-336-its-a-win-win-situation/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/03/03/rounded-corners-336-its-a-win-win-situation/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>Assaf</name>
+      <uri>http://labnotes.org</uri>
+    </author>
+    <title type="html"><![CDATA[Rounded Corners 335 – Pulled pork]]></title>
+    <link rel="alternate" type="text/html" href="http://labnotes.org/2012/02/27/rounded-corners-335-pulled-pork/" />
+    <id>http://labnotes.org/?p=1693</id>
+    <updated>2012-02-25T20:20:47Z</updated>
+    <published>2012-02-27T16:00:53Z</published>
+    <category scheme="http://labnotes.org" term="general" />		<summary type="html"><![CDATA[Brush up Foodcritic &#8230; wonderful name and great idea: Chef recipe lint tool. Loaded Engulf is a HTTP load testing tool with a simple visualization built in. ?_? Fun with Unicode and JavaScript variable names. I see a lot of prank opportunities. Faster The DevOps Transformation. A history of operations, quality and production lines. Delicious Turns out you can [...]]]></summary>
+    <content type="html" xml:base="http://labnotes.org/2012/02/27/rounded-corners-335-pulled-pork/"><![CDATA[<p style="text-align: center;"><a href="http://karanarora.posterous.com/insane-art-formed-by-carving-books-with-surgi"><img class="aligncenter" title="Just incredible" src="http://api.ning.com/files/xWSbymrXHnFYFRs7DDkqjjWZpDbU*gtx*HjJJaTPep4FhVh2ec9CsFX38UMm4IwzIfC1QMawlzLqROF8SlD4rXE1g0b*myrl/BrianDettmer1.jpg" alt="" width="433" height="289" /></a></p>
+      <p><strong>Brush up</strong> Foodcritic &#8230; wonderful name and great idea: <a href="http://acrmp.github.com/foodcritic/">Chef recipe lint tool</a>.</p>
+      <div><strong>Loaded</strong> <a href="https://github.com/andrewvc/engulf">Engulf is a HTTP load testing</a> tool with a simple visualization built in.</div>
+      <p><strong>?_?</strong> <a href="http://mathiasbynens.be/notes/javascript-identifiers">Fun with Unicode and JavaScript variable names</a>. I see a lot of prank opportunities.</p>
+      <p><strong>Faster</strong> <a href="http://www.youtube.com/watch?v=3KpPBnEtRj4">The DevOps Transformation</a>. A history of operations, quality and production lines.</p>
+      <p><strong>Delicious</strong> Turns out you can `brew install pulledpork` (<a title="http://code.google.com/p/pulledpork/" href="http://t.co/jH8LmmPD" rel="nofollow" target="_blank" data-expanded-url="http://code.google.com/p/pulledpork/" data-ultimate-url="http://code.google.com/p/pulledpork" data-spool_iconed="1" data-display-url="code.google.com/p/pulledpork/">http://code.google.com/p/pulledpork/</a>)</p>
+      <p><strong>QotD</strong> <a href="https://twitter.com/#!/brianleroux/status/172723511268347904">brianleroux</a>:</p>
+      <blockquote><p>always suspicious of a solution that doesn&#8217;t clearly state the problem</p></blockquote>
+      ]]></content>
+    <link rel="replies" type="text/html" href="http://labnotes.org/2012/02/27/rounded-corners-335-pulled-pork/#comments" thr:count="0"/>
+    <link rel="replies" type="application/atom+xml" href="http://labnotes.org/2012/02/27/rounded-corners-335-pulled-pork/feed/atom/" thr:count="0"/>
+    <thr:total>0</thr:total>
+  </entry>
+</feed>
+

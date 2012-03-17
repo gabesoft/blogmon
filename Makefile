@@ -1,6 +1,6 @@
 
 TESTS = test/*.js
-REPORTER = dot
+REPORTER = spec
 SRC = $(shell find lib/*.js)
 
 test: 

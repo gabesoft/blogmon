@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><atom:link rel="hub" href="http://tumblr.superfeedr.com/" xmlns:atom="http://www.w3.org/2005/Atom"/><description>Writing from Isaac Z. Schlueter</description><title>blog.izs.me</title><generator>Tumblr (3.0; @izs)</generator><link>http://blog.izs.me/</link><item><title>How I Would Do It</title><description>&lt;p&gt;One of the most common shorthands for evaluating the choices of others is to internally ask ourselves if we would make those same choices in the same situation.  If the choice is “Not how I would do it”, then it is deemed “Bad”, and reflects poorly on the chooser.&lt;/p&gt;
+
+        &lt;p&gt;Like most sources of error, this shorthand is insidious precisely because it is a valuable time-saver in so many situations.  A person doing foolish things is likely a fool, and by establishing this aversion early, we can save ourselves the trouble of evaluating their future actions and words in depth.  If there’s something that I know how to do — whether that’s writing a JavaScript program or making meatloaf or listening to music or dating — then approaches that look &lt;em&gt;off&lt;/em&gt; probably are.  Difference smells funny, and why look deeper?&lt;/p&gt;
+
+        &lt;p&gt;Not every change is an improvement, but every improvement is a change.  We must be ever vigilant to not turn our noses up at progress simply because it is new, or at help simply because it comes in a shape somewhat different from what our own hands would make, or at a friend simply because they like different things.&lt;/p&gt;</description><link>http://blog.izs.me/post/19258486115</link><guid>http://blog.izs.me/post/19258486115</guid><pubDate>Tue, 13 Mar 2012 16:15:00 -0700</pubDate></item><item><title>Coffee, sun, and hacking. &lt;3 (Taken with instagram)</title><description>&lt;img src="http://26.media.tumblr.com/tumblr_lztlw4USMU1qzjzo9o1_500.jpg"/&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;Coffee, sun, and hacking. &lt;3 (Taken with &lt;a href="http://instagr.am"&gt;instagram&lt;/a&gt;)&lt;/p&gt;</description><link>http://blog.izs.me/post/18100078521</link><guid>http://blog.izs.me/post/18100078521</guid><pubDate>Wed, 22 Feb 2012 16:40:51 -0800</pubDate></item><item><title>Giantass ship, as seen from my desk.  (Taken with instagram)</title><description>&lt;img src="http://30.media.tumblr.com/tumblr_lzikn3QI4q1qzjzo9o1_500.jpg"/&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;Giantass ship, as seen from my desk.  (Taken with &lt;a href="http://instagr.am"&gt;instagram&lt;/a&gt;)&lt;/p&gt;</description><link>http://blog.izs.me/post/17741913725</link><guid>http://blog.izs.me/post/17741913725</guid><pubDate>Thu, 16 Feb 2012 17:40:14 -0800</pubDate></item><item><title>Bikes on Bart (Taken with instagram)</title><description>&lt;img src="http://24.media.tumblr.com/tumblr_lzasujl8sF1qzjzo9o1_500.jpg"/&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;Bikes on Bart (Taken with &lt;a href="http://instagr.am"&gt;instagram&lt;/a&gt;)&lt;/p&gt;</description><link>http://blog.izs.me/post/17508339747</link><guid>http://blog.izs.me/post/17508339747</guid><pubDate>Sun, 12 Feb 2012 12:56:43 -0800</pubDate></item><item><title>Software Personality</title><description>&lt;a href="http://blog.fetchnotes.com/post/17155558880/what-happens-when-you-swear-at-your-users"&gt;Software Personality&lt;/a&gt;: &lt;p&gt;&lt;a href="http://blog.fetchnotes.com/post/17155558880/what-happens-when-you-swear-at-your-users" class="tumblr_blog"&gt;fetchnotes&lt;/a&gt;:&lt;/p&gt;
+
+        &lt;blockquote&gt;
+        &lt;p id="internal-source-marker_0.6089860387146473"&gt;Last semester, Chase and I took a business communication class in which we dissected the PR crisis that resulted from someone trashing an &lt;a href="http://www.airbnb.com"&gt;Airbnb&lt;/a&gt; user’s home. At the time, it seemed very abstract and unlikely — crises never happen to those who prepare! Well, one just happened to us.&lt;/p&gt;&lt;/blockquote&gt;
+
+        &lt;p&gt;There’s an important lesson here.  Don’t be too afraid to show a little personality in your products.  Let your team’s humanity show.  Keep the character in mind, and be true to it.&lt;/p&gt;
+
+        &lt;p&gt;Think, &lt;i&gt;“If this product were a person, what kind of person it be like?  How would it dress?  What would it feel?  What would it say to you when you’re having a bad day, or when you come to it with good news that you’re excited to tell?”&lt;/i&gt;&lt;/p&gt;
+
+        &lt;p&gt;In developing npm, this has always been chief in my thoughts.  Very early on, I started imagining npm as a friendly helper and developer cheering-section.  It just wants you to succeed so much.  It loves your program like a parent, and is proud of the day when it can get all its dependencies taken care of, and leave your warm embrace to go out into the harsh world of deployment.  It wants to know you’re prepared, that you’ve run all your tests.  It will help you find friends and allies, try to warn you which ones to steer clear of.  This can be a little smothering at times, but when your program is out there in the wild, maybe you’ll &lt;code&gt;require()&lt;/code&gt; a little something, and there it’ll be, because of how much npm cared for it, and it’ll think warmly of the place it grew up, back in the &lt;code&gt;$HOME&lt;/code&gt; directory on your laptop.&lt;/p&gt;
+
+        &lt;p&gt;This mental image is what inspired the “npm loves you” meme.  (It’s right in the faq.)&lt;/p&gt;
+
+        &lt;p&gt;On the other hand, Node.js has a slightly different personality.  It doesn’t shield you from harsh realities.  It’ll go with you out into the wild, and handle all the incoming requests with you.  It’ll be by your side through thick and thin, and follow your commands to the bitter end.  It won’t go out of its way to be a jerk, but if there’s ever a choice between being fast and being nice, you know what it’s going to pick.  If something needs to break between versions, well, then that’s what has to happen.  It knows you’re going to be able to deal with it.&lt;/p&gt;
+
+        &lt;p&gt;This, in my opinion, is the chief conceptual difference between a “platform” and a “tool”.  Of course, to some extent, every platform is a tool for interacting with the system, but you really want a different personality from your platform than you do from a tool.  A tool gets you there, and then is left behind; a platform is a part of the show from start to finish.&lt;/p&gt;
+
+        &lt;p&gt;Bryan Cantrill has mentioned to me that every software project carries the esthetic of its creator.  I think there’s a lot of truth to this.  But, just as children don’t necessarily grow up into copies of their parents, software’s personality doesn’t necessarily match the &lt;em&gt;personality&lt;/em&gt; of its creator.  In many ways, Ryan is much nicer than I am, but npm is certainly more friendly than Node.&lt;/p&gt;
+
+        &lt;p&gt;This phenomenon is uniquely challenging for companies that want to appear “grown up” and be taken seriously.  The line between “grown up” and “robotic” is so subtle.  Certainly, cursing at your users in a test message is a very risky way to breathe life into a product, but nevertheless, I find myself unsurprised by the reaction to the fetchnotes flub.&lt;/p&gt;</description><link>http://blog.izs.me/post/17171534031</link><guid>http://blog.izs.me/post/17171534031</guid><pubDate>Mon, 06 Feb 2012 14:02:22 -0800</pubDate></item><item><title>I really like the view from where I live.</title><description>&lt;img src="http://30.media.tumblr.com/tumblr_lywt0jhEoM1qzjzo9o1_500.png"/&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;I really like the view from where I live.&lt;/p&gt;</description><link>http://blog.izs.me/post/17081603824</link><guid>http://blog.izs.me/post/17081603824</guid><pubDate>Sat, 04 Feb 2012 23:33:55 -0800</pubDate></item><item><title>hamburglr:
+
+        First, go grab some headphones. The best ones you’ve...</title><description>&lt;embed type="application/x-shockwave-flash" src="http://assets.tumblr.com/swf/audio_player_black.swf?audio_file=http://www.tumblr.com/audio_file/15351581315/tumblr_lpoxuxF3Fl1qzusoy&amp;color=FFFFFF&amp;logo=soundcloud" height="27" width="207" quality="best" wmode="opaque"&gt;&lt;/embed&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;&lt;a href="http://hamburglr.tumblr.com/post/8717276078/first-go-grab-some-headphones-the-best-ones" class="tumblr_blog"&gt;hamburglr&lt;/a&gt;:&lt;/p&gt;
+
+        &lt;blockquote&gt;&lt;p&gt;First, go grab some headphones. The best ones you’ve got. If the best ones you’ve got are &lt;a href="http://store.apple.com/us/product/MB770G/B?fnode=MTY1NDA0Ng&amp;mco=MTA4NTA2ODU"&gt;these suckers&lt;/a&gt; (or something similar), you should really go buy new ones, but use the best you’ve got for right now.&lt;/p&gt;
+        &lt;p&gt;Take a break from whatever you’re doing for 2 minutes and listen, but just listen to the whole thing, even if you have to multi-task.&lt;/p&gt;
+        &lt;p&gt;Headphones on? Ok. Good.&lt;/p&gt;
+        &lt;p&gt;Now, press play.&lt;/p&gt;
+        &lt;br/&gt;
+        “Upular (3D Audio Version)” - Pogo&lt;/blockquote&gt;</description><link>http://blog.izs.me/post/15351581315</link><guid>http://blog.izs.me/post/15351581315</guid><pubDate>Thu, 05 Jan 2012 09:51:12 -0800</pubDate></item><item><title>aredridel:
+
+        Or, you know, we could go own our own...</title><description>&lt;img src="http://25.media.tumblr.com/tumblr_lx5brpApFT1qfb6qxo1_500.jpg"/&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;&lt;a href="http://aredridel.tumblr.com/post/15201371401/or-you-know-we-could-go-own-our-own" class="tumblr_blog"&gt;aredridel&lt;/a&gt;:&lt;/p&gt;
+
+        &lt;blockquote&gt;&lt;p&gt;Or, you know, we could go own our own infrastructure. Start your own blog, folks. Find a local company who hosts sites or get your own virtual server. Get help setting it up or learn how yourself. And then there are no limits save the actual resources you’re using.&lt;/p&gt;
+        &lt;p&gt;You’ll learn a lot. You’ll own your space, not just lease it for the price of your privacy to another company.&lt;/p&gt;
+        &lt;p&gt;&lt;a class="tumblr_blog" href="http://samueloser.tumblr.com/post/15152527217/remember-back-when-tumblr-didnt-have-all-these"&gt;samueloser&lt;/a&gt;:&lt;/p&gt;
+        &lt;blockquote&gt;
+        &lt;p&gt;Remember back when Tumblr didn’t have all these restrictions? It was great! Well since then, they’ve added new limits to the things we can do.&lt;/p&gt;
+        &lt;p&gt;Reblog this if you want the Ask Limit, the Post Limit, and all the other limits that Tumblr has been adding to be repealed. If this gets enough notes, hopefully we’ll be able to persuade them to repeal the limits, or at least lessen the restrictions!&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Reblog &lt;/strong&gt;and &lt;strong&gt;Reblog &lt;/strong&gt;and &lt;strong&gt;Reblog,&lt;/strong&gt; and get your friends to &lt;strong&gt;Reblog &lt;/strong&gt;as much as possible!&lt;/p&gt;
+        &lt;/blockquote&gt;&lt;/blockquote&gt;</description><link>http://blog.izs.me/post/15212505704</link><guid>http://blog.izs.me/post/15212505704</guid><pubDate>Mon, 02 Jan 2012 16:46:08 -0800</pubDate></item><item><title>Xmas Traditions</title><description>&lt;p&gt;As an american, especially one descended from european catholics, there
+        is no annual event as steeped in tradition and ritual as Christmas.  It
+        seems at times that failing to maintain our traditions would be an
+        affront to our ancestry, and a crime to our descendents.&lt;/p&gt;
+
+        &lt;p&gt;Tradition is a funny thing.  It’s a social fiction.  It’s something that
+        &lt;strong&gt;we as humans decide we’re going to do&lt;/strong&gt;.  On the one hand, traditions
+        can give comfort and stability in the midst of a shifting world.  On the
+        other hand, “because we’ve always done it this way” is hardly an optimal
+        heuristic for social behavior (or even good evidence for having in fact
+        always done it that way).&lt;/p&gt;
+
+        &lt;p&gt;Back when our software was being
+        written, when our world changed less quickly, and tribal unity was a
+        life or death issue, it probably made a lot of sense to value stability
+        over most other aspects of life.  However, in the modern world, the
+        absurdity of this pattern seems so painfully clear sometimes.&lt;/p&gt;
+
+        &lt;p&gt;Christmas just a few generations ago would have been &lt;em&gt;unrecognizable&lt;/em&gt; to us
+        today.  The “Santa Claus” character as we know him today, with the reindeer
+        and flying and chimneys and north pole, was invented
+        less than 200 years ago, and only became an overweight bearded red-clad man in
+        the 1920s.  Our “classic” christmas songs were almost all written
+        in the 1940s and 1950s.&lt;/p&gt;
+
+        &lt;p&gt;&lt;strong&gt;A lot of our “time-honored” christmas traditions were invented while
+        my parents were kids.&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;p&gt;The christmas traditions that I remember were waking up early, opening
+        presents, and then spending the day in pyjamas playing with new toys.
+        No travelling, no extended family, no huge dinner.  We didn’t have any
+        xmas eve celebration (probably because my parents did a lot of their
+        shopping and preparation the night before.)  The “christmas dinner” was
+        usually delivery chinese.  Normal Rockwell would’ve been scandalized.&lt;/p&gt;
+
+        &lt;p&gt;The extravagance of our christmas presents varied quite a lot.
+        My dad ran his own business, and along with that came a lot of
+        ups and downs.  When we didn’t have a lot of money, my parents put
+        a lot of creativity into it.&lt;/p&gt;
+
+        &lt;p&gt;One year, our gifts consisted mainly of coupons to be redeemed for
+        outings or favors at some later date.  We were young enough to be
+        excited about that.  Those coupons were made at home, printed
+        to look official and then decorated with magic marker (our printer at
+        the time was a black and white dot-matrix.)&lt;/p&gt;
+
+        &lt;p&gt;The most awesome part of our xmas tradition came out of a creative
+        solution to a last-minute problem.  It was a good year, and my parents
+        had bought me
+        and my sister new bicycles.  But, they didn’t see any way to bring them
+        into the living room and wrap them in such a way that we wouldn’t know
+        right away what they were.&lt;/p&gt;
+
+        &lt;p&gt;They had the innovative idea to put the bikes outside in the shed,
+        but rather than just tell us to go out and get them, my mom designed a
+        treasure hunt that my sister and I would have to work together
+        to solve.  The first clue was on a card buried in the middle of the
+        tree.  That led to another clue, which led to another, and so on.  Each
+        one was a little puzzle that had to be solved, and it was all allegedly
+        from “Santa”.  So, when we asked my mom for help, she just threw up her
+        hands, and said, “Hey, I didn’t help him make this thing.  Call up the
+        north pole if you can’t figure it out.”  (We were old enough at the time
+        to know she was putting us on, but she can be very stubborn.  Her
+        sense of humor is so dry, you never really know if she’s joking, or
+        has had some break with reality and believes what she’s saying.)&lt;/p&gt;
+
+        &lt;p&gt;Every year, whatever big present we got, it was at the end of a similar
+        treasure hunt.  It kept us out of our parents hair, that’s for sure.  A
+        chemistry set in the trunk of the car.  A Nintendo and a few games (that
+        year, my parents were eager for us to finish so that they could “help” play
+        with it.)  A “treasure box” filled with about $25 in quarters and dollar
+        bills and some plastic pirate toys (not one of the fat years, but still fun.)
+        One year in highschool we had to drive across town to pick up one of the
+        clues.  Once one of them was hidden in a file on a computer.  (And,
+        just to throw us off, another clue that year was in a piece of paper
+        literally &lt;em&gt;inside&lt;/em&gt; a different computer, so we had the thing mostly taken
+        apart to individual pieces before reading the clue more carefully.)&lt;/p&gt;
+
+        &lt;p&gt;Looking back, I attribute a lot of my relationship with my sister to the
+        fact that my mother put so much time and thought
+        into getting us to work together and experience joy and frustration
+        together.&lt;/p&gt;
+
+        &lt;p&gt;It wasn’t until recently that I learned that all this was a huge departure
+        from the traditions in the Schlueter family, which previously had
+        involved trekking back to my dad’s home town (in &lt;strong&gt;South Dakota&lt;/strong&gt; of all
+        bloody places!)  Christmas eve gift exchange, followed by midnight mass,
+        sleep, followed by &lt;em&gt;another&lt;/em&gt; church service Christmas morning, and then a
+        huge elaborate dinner.  More Jesus than Santa.&lt;/p&gt;
+
+        &lt;p&gt;We did that one year.  I remember it sucking, and wishing that we could
+        just do a “normal” christmas instead of all this work and church stuff,
+        and driving across the country.  The food was ok, but I didn’t see why I
+        had to put on dress pants and uncomfortable shoes to eat with my
+        cousins.&lt;/p&gt;
+
+        &lt;p&gt;When I heard about other kids doing other
+        things, visiting family and such,
+        I thought, “Oh, that’s kind of weird, I’m glad I don’t have to do that.”
+        I didn’t feel uncomfortably different
+        for our “easy” traditions; they were &lt;strong&gt;great&lt;/strong&gt;.  Low-stress,
+        low-expectation, high-fun.&lt;/p&gt;
+
+        &lt;p&gt;I remember sensing at the time that my mom didn’t
+        have as much fun with it as I did, and figured it was because she had to
+        do a bunch of work.  I didn’t realize at the time, it wasn’t just the
+        work, it was the &lt;em&gt;sense of obligation&lt;/em&gt; she felt that made the work seem
+        so awful sometimes.  She’d grown up disliking christmas,
+        and felt a tremendous pressure to make it magical for her kids.  She
+        succeeded—impressively—but probably went well beyond the realm of
+        diminishing returns.  She could have done a bit less, been just as
+        successful in making a great experience for her kids, and enjoyed the
+        process more.&lt;/p&gt;
+
+        &lt;p&gt;I’m not a father today, but I am an adult.  And I find myself
+        with a family that’s quite a lot bigger and more spread out than just the
+        4 of us.  It’s easier to appreciate what my parents were giving up by
+        staying home, and how hard that decision probably was.  I feel that
+        pressure, to do this and that, to be here and go there, and get this for
+        these, and that for those, to drive around from town to town visiting
+        everyone and being at every party.&lt;/p&gt;
+
+        &lt;p&gt;It’s fun, sometimes.  There are
+        people that I love, and don’t see often enough, and this is a great
+        excuse to make that happen.  There’s also a lot of stress and
+        headaches involved, and that can make everyone grumpy and annoyed.  We
+        feel an obligation to this thing called “Tradition” that feels so real
+        and solid, and sometimes end up spending our time
+        doing things no one likes for reasons no one understands, often for the
+        alleged benefit of “passing on” traditions to children who will accept it for
+        whatever it is, no matter what we end up doing.&lt;/p&gt;
+
+        &lt;p&gt;The moral of the story is this:
+        you don’t owe the past shit.  If you want
+        your kids to enjoy christmas, and have happy memories, then do what makes you
+        happy, and focus on having fun with them today, in the here and now.
+        The universe will forgive you if
+        you give people presents in January or November, or if your bonding
+        event is movies and chinese takeout in pj’s rather than church and ham in
+        slacks.&lt;/p&gt;
+
+        &lt;p&gt;Tradition is a story you can rewrite at any time, so write one you can
+        enjoy.&lt;/p&gt;</description><link>http://blog.izs.me/post/15003058533</link><guid>http://blog.izs.me/post/15003058533</guid><pubDate>Thu, 29 Dec 2011 18:45:00 -0800</pubDate></item><item><title>Browser : Operating System</title><description>&lt;p&gt;Fairly early in my career as a programmer, I switched from the C and C++ path over to front-end web development. It was fun, in-demand, and provided a way to scratch my artistic and programming itches at the same time.&lt;/p&gt;
+
+        &lt;p&gt;I spent a lot of that time wrestling with web browsers.&lt;/p&gt;
+
+        &lt;p&gt;These days, I write most of my JavaScript for node, and run my programs on servers. I’ve found that wrestling with operating system differences is very similar to web browsers.&lt;/p&gt;
+
+        &lt;p&gt;&lt;i&gt;(Disclaimer: this is a joke. Please don’t email me.)&lt;/i&gt;&lt;/p&gt;
+
+        &lt;h2&gt;IE : Windows&lt;/h2&gt;
+
+        &lt;p&gt;Full of Microsoftisms. Most things mostly work, except that sometimes they don’t, and when they do, it’s usually in a completely foreign and strange way. So different that many people either don’t support it, or don’t support anything else.&lt;/p&gt;
+
+        &lt;h2&gt;Firefox : Linux&lt;/h2&gt;
+
+        &lt;p&gt;Mostly works, but always awkward. A perpetually broken mish-mash of components that often weren’t really intended to be used together. No two are alike, and nothing ever looks exactly right.&lt;/p&gt;
+
+        &lt;p&gt;Shrouded in a religious belief that it is fixing the worlds problems. Any criticism is viewed as heresy (unless it comes with a patch).&lt;/p&gt;
+
+        &lt;h2&gt;WebKit/Safari/Chrome : Darwin/BSD&lt;/h2&gt;
+
+        &lt;p&gt;Very nice, very polished. Would probably die if not for the fact that a huge corporation decided to back it (since we already have a public option with Linux/Firefox). Mostly open source, but if you have to actually do things, you’ll inevitably be forced into the “blessed” APIs, which are not standard.&lt;/p&gt;
+
+        &lt;h2&gt;Opera : SunOS&lt;/h2&gt;
+
+        &lt;p&gt;All 12 of its users loudly agree it is superior in every way, and they have graphs to prove it.&lt;/p&gt;</description><link>http://blog.izs.me/post/13505112016</link><guid>http://blog.izs.me/post/13505112016</guid><pubDate>Tue, 29 Nov 2011 09:46:00 -0800</pubDate></item><item><title>badlipreading:
+
+        “HERMAN CAIN” — A BLR Soundbite
+
+        Only slightly...</title><description>&lt;iframe width="400" height="225" src="http://www.youtube.com/embed/uE5xZKszXMQ?wmode=transparent&amp;autohide=1&amp;egm=0&amp;hd=1&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;showsearch=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;&lt;a href="http://badlipreading.tumblr.com/post/12047299166" class="tumblr_blog"&gt;badlipreading&lt;/a&gt;:&lt;/p&gt;
+
+        &lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;“HERMAN CAIN” — A BLR Soundbite&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+        &lt;p&gt;Only slightly more crazy than the actual Herman Cain.&lt;/p&gt;</description><link>http://blog.izs.me/post/12961214402</link><guid>http://blog.izs.me/post/12961214402</guid><pubDate>Thu, 17 Nov 2011 23:29:38 -0800</pubDate></item><item><title>Experts, Idiots, and Taste</title><description>&lt;p&gt;My nerd rage on the topic of Fibers, co-routines, and compiled-to-js languages in node.js comes from seeing a non-problem solved in a way that makes it worse.&lt;/p&gt;
+
+        &lt;p&gt;There are two really dangerous rationalizations in software design:&lt;/p&gt;
+
+        &lt;ol&gt;&lt;li&gt;“We need to make it easier for newcomers.”&lt;/li&gt;
+        &lt;li&gt;“Only experts will use this, anyway.”&lt;/li&gt;
+        &lt;/ol&gt;&lt;h2&gt;Tower of Babel of Cards&lt;/h2&gt;
+
+        &lt;p&gt;They’re dangerous because each seems to imply that the other can be disregarded.  The worst approach is to vacillate between them: “We need to make (async IO, object cleanup, database queries, whatever) easier for new users, so we’ll add this magic that experts will use to make intuitive APIs.”&lt;/p&gt;
+
+        &lt;p&gt;It’s a vicious spiral.  You can justify adding complexity, because “this is for experts only”, and also exposing the functionality in an obscured way in the name of making it “intuitive” for newcomers.  The result is inevitably a towering house of cards.  On a somewhat visceral level, I get this gut reaction to a “handing down from the mountain” mentality that is only harmful in the long run for everyone.&lt;/p&gt;
+
+        &lt;p&gt;A better goal is to make an API such that when an expert uses it expertly, a newcomer can still understand it thoroughly.  It requires an API (and more importantly, a culture) that limits experts, and educates newcomers.  I don’t know the best way to approach problems to get there, but I’ve found pretty good results from thinking, “I’m probably going to mess this up the next time I touch it, so I’d better make it really obvious.”  I usually fail at it, and end up cursing myself later when I rewrite the damn thing yet again.&lt;/p&gt;
+
+        &lt;p&gt;Passing around a function that gets called later is &lt;em&gt;not that hard&lt;/em&gt;.  We’ve been doing that in JavaScript forever.  Yes, newcomers to the language, especially if they come from a language without closures and first-class functions, have a little bit of a learning curve to get used to this phenomenon.  In my opinion, you do them a disservice by trying to shield them from that.&lt;/p&gt;
+
+        &lt;p&gt;(Passing around function pointers in C is actually a little bit better in some ways, because you &lt;em&gt;can’t&lt;/em&gt; define your functions inline, and all the captured data must be passed around explicitly.  This is a bit like using named functions instead of nested closures, which is a common low-complexity approach to the alleged callback problem.)&lt;/p&gt;
+
+        &lt;p&gt;I’ve been writing JavaScript for a while now, and other languages for a few years before I got into JavaScript.  I’m not the most expert at it, but I certainly don’t consider myself a newcomer.  In that time, I’ve learned something:&lt;/p&gt;
+
+        &lt;h2&gt;We’re All Idiots&lt;/h2&gt;
+
+        &lt;p&gt;All of us, whether experts or newcomers.  Well-meaning idiots, perhaps, but idiots.  We all write bugs, all the time.  That is the normal state of software.  There is no abstraction so perfect that a human won’t fuck it up at the first opportunity.  But we can try to be better, simpler, to make it easier for our future idiotic selves to figure out what we were thinking in our cleverly idiotic brains, and chop the problems into smaller pieces so that our future selves can have some clues to find the maddeningly idiotic bugs we stuffed in there.&lt;/p&gt;
+
+        &lt;p&gt;If your code uses step or async or slide or Q, I can read it, and I see a function getting called and passed some arguments.  I can look at how you got that function from a require() statement, pull up that module, and look at its definition.  These are lightweight abstractions that are highly penetrable.  I’ve suggested in the past that everyone should write their own flow control lib, because it’s the best way to really understand how they work, and it’s not that hard.  Once you grasp the basic concepts, reading someone else’s flow control utility is pretty easy.&lt;/p&gt;
+
+        &lt;p&gt;If your code uses a compiled fibers library, or something that transforms the code, then it’s &lt;em&gt;much&lt;/em&gt; harder for me to figure out what the heck is going on.  The introspection is gone.  The languages change.  Stuff happens that isn’t present in the code I’m looking at.  &lt;strong&gt;This is fundamentally different from a library that just passes functions around.&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;p&gt;That means: I won’t use your library if there’s any alternative (including writing the exact same functionality myself).  It’s nothing personal.  I just would rather spend my time solving necessary problems rather than manufactured ones.  I simply don’t believe that you’ve put the same level of thinking into your coro util that TC-39 and the v8 team has put into JavaScript, or that Bert and Ryan and Ben and Igor have put into libuv.&lt;/p&gt;
+
+        &lt;p&gt;Not everyone is the same, and that’s great!!  If you find that Fibers solve a problem &lt;em&gt;for you&lt;/em&gt;, and they make the code that you write easier &lt;em&gt;for you&lt;/em&gt; to manage and design, then that’s awesome.  Use them.  Understand them.  Drop the illusory dichotomy of “experts” and “newcomers”, and realize that they are both idiots, and both you.&lt;/p&gt;
+
+        &lt;p&gt;Every choice that isn’t completely boring will alienate someone.  Pleasing everyone is a recipe for blandness.  That’s why we keep the node-core standard lib super small, and encourage variation and repetition and iteration in userland modules.&lt;/p&gt;
+
+        &lt;h2&gt;Absolutes&lt;/h2&gt;
+
+        &lt;p&gt;If your goal is to please &lt;em&gt;me&lt;/em&gt; (and other stodgy “javascript is fine, callbacks aren’t hard” types) with a compiled coroutine library that adds magic to the language, you should realize how horribly unlikely that is.  I do actually think that this approach is fundamentally flawed.  I’ve played with Marcel’s fibers lib a bit, and it’s about the nicest I’ve seen, but it still adds an unacceptable &lt;em&gt;(for me!)&lt;/em&gt; amount of magic to programs.&lt;/p&gt;
+
+        &lt;p&gt;Programmers tend to think in absolutes, perhaps because computers are such absolute things, or maybe just because absolutes are easier and we’re all idiots.  I’ve done it in this post, because I’m as lazy as anyone.  Maybe you’re the exception, and you actually are smart enough to use Fibers or Streamline wisely and still know what’s going on when you read the code a year later.  If the benefit is greater than the cost, then go for it.  It’s your house, you decide whether to wear pants or not.&lt;/p&gt;
+
+        &lt;p&gt;When we are discussing things like this, it’s important to realize that we’re artists discussing matters of taste.  If everyone agreed, then it would mean it wasn’t interesting.  Maybe we should be less interested in convincing people of stuff, and more interested in just writing programs that do interesting things.&lt;/p&gt;</description><link>http://blog.izs.me/post/12604303054</link><guid>http://blog.izs.me/post/12604303054</guid><pubDate>Thu, 10 Nov 2011 10:15:00 -0800</pubDate></item><item><title>Mud Rooms, Red Letters, and Real Priorities</title><description>&lt;a href="http://www.43folders.com/2009/04/28/priorities"&gt;Mud Rooms, Red Letters, and Real Priorities&lt;/a&gt;: &lt;blockquote&gt;
+        &lt;p&gt;You can’t “prioritize” a list of 20 tasks any more than you can “uniqueify” 20 objects by “uniqueness,” or “pregnantitze” 20 women by “pregnantness.” Each of those words &lt;em&gt;means something&lt;/em&gt;.&lt;/p&gt;
+        &lt;/blockquote&gt;
+
+        &lt;p&gt;Merlin Mann is my hero.  Read this post every time you say the word “prioritize”.&lt;/p&gt;</description><link>http://blog.izs.me/post/12287340478</link><guid>http://blog.izs.me/post/12287340478</guid><pubDate>Thu, 03 Nov 2011 09:46:28 -0700</pubDate></item><item><title>Photo</title><description>&lt;img src="http://29.media.tumblr.com/tumblr_ltoou2tdaN1qatctmo1_500.jpg"/&gt;&lt;br/&gt;&lt;br/&gt;</description><link>http://blog.izs.me/post/11954460008</link><guid>http://blog.izs.me/post/11954460008</guid><pubDate>Wed, 26 Oct 2011 10:37:00 -0700</pubDate></item><item><title>Gone, but not forgotten.</title><description>&lt;p&gt;&lt;p class="sadmac"&gt;&lt;a href="http://www.apple.com/stevejobs"&gt;&lt;img src="https://img.skitch.com/20111006-mbk6iyfctquk9r87jkm1mwfw78.png" alt="sad mac"/&gt;&lt;/a&gt;&lt;style type="text/css"&gt;body, html, #wrapper { color:#fff; background:#000!important; } .sadmac { text-align:center }&lt;/style&gt;&lt;/p&gt;&lt;/p&gt;</description><link>http://blog.izs.me/post/11080164747</link><guid>http://blog.izs.me/post/11080164747</guid><pubDate>Wed, 05 Oct 2011 17:16:00 -0700</pubDate></item><item><title>JavaScript is Not Web Assembly  </title><description>&lt;p&gt;It’s fairly common these days to think of JavaScript as a sort of
+        “assembly language for the web”.  After all, it’s the language that
+        is natively supported by web browsers, making it the most widely
+        deployed runtime in history.  With Node, we have a very relevant
+        general purpose non-browser stack for doing system programming using
+        this language, so it’s even more important as a language.&lt;/p&gt;
+
+        &lt;p&gt;Programmers like to improve things and solve problems.  This is a
+        healthy instinct, but like so many healthy instincts, it can be subject
+        to runaway feedback loops and lead to pathological behavior.&lt;/p&gt;
+
+        &lt;p&gt;If you are designing a language, compiling it to JavaScript is a pretty
+        attractive option, for much the same reason that compiling C to machine
+        code is an attractive option: running it in more places.&lt;/p&gt;
+
+        &lt;p&gt;However, so far, most of the times that I’ve seen someone trot out the
+        “JS = new assembly” horse, it’s not an apt comparison.  The reason we
+        write C instead of assembly is that:&lt;/p&gt;
+
+        &lt;ol&gt;&lt;li&gt;Assembly varies wildly between architectures.  C is not as variable.
+        So, the compiler can abstract away a lot of that peculiarity, and you
+        only need to worry about it if you’re distributing precompiled binaries.&lt;/li&gt;
+        &lt;li&gt;C offers an order of magnitude more expressiveness.&lt;/li&gt;
+        &lt;/ol&gt;&lt;p&gt;I’m going to pick on CoffeeScript, because it’s clearly the most popular
+        to-JS language.  Jeremy Ashkenas is a great guy, and has shown himself
+        on repeated occasions to be remarkably sane with
+        respect to this issue.  Either he hasn’t caught the language-wank
+        crazy, or he hides it &lt;em&gt;really&lt;/em&gt; well.&lt;/p&gt;
+
+        &lt;p&gt;However, either or both of these points
+        apply to every other to-JS language, including but not limited to GWT,
+        paren-js, sibilant, streamline, kaffiene, narrative, et al.  That’s not
+        to say that any of these systems are &lt;em&gt;bad&lt;/em&gt;, just that the “blah is to JS
+        as C is to Assembly” analogy is wildly wrongheaded.&lt;/p&gt;
+
+        &lt;ol&gt;&lt;li&gt;CoffeeScript programs don’t vary any less across architectures than
+        the JavaScript programs it creates.  That is, you don’t compile it to target a given platform.
+        (This is not true of GWT, which can compile different JS files for
+        different browsers, but that’s not the norm in the to-JS world.)&lt;/li&gt;
+        &lt;li&gt;CoffeeScript does not offer an order of magnitude difference in
+        expressiveness.  I’m not using “expressiveness” as some fuzzy term to
+        mean “how happy you are expressing yourself in X language”, but the
+        more mathy technical meaning of “how many relevant program tokens are
+        required to do X task.”  CoffeeScript may require fewer tokens, sure,
+        but not 10 to 1 fewer.&lt;/li&gt;
+        &lt;/ol&gt;&lt;p&gt;JavaScript is not the Assembly of the Web.  It’s the C of the web.  The
+        to-JS languages are lining up to become the C++ of the web.&lt;/p&gt;
+
+        &lt;ol&gt;&lt;li&gt;They offer language features that make some sorts of programs a
+        little bit easier to write, but don’t make an order of
+        magnitude difference in expressive power.&lt;/li&gt;
+        &lt;li&gt;They’re mostly backwards compatible with JavaScript.&lt;/li&gt;
+        &lt;li&gt;You still need to grok the DOM, or
+        node, or whatever other platform your program is interacting with,
+        and that’s probably documented in JavaScript.&lt;/li&gt;
+        &lt;li&gt;They break almost all of the tooling that exists for JavaScript
+        debugging.&lt;/li&gt;
+        &lt;/ol&gt;&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Clarification&lt;/strong&gt;: CoffeeScript &lt;em&gt;does&lt;/em&gt; try very hard to compile to JS
+        that runs on all JS platforms.  However, it does not optimize &lt;em&gt;for&lt;/em&gt; a given
+        platform, or have a specified target when it compiles.  The resulting
+        JS is still a high-level general-purpose program, and the pitch, at least,
+        is that it is a better one than you would have written as easily by hand.&lt;/p&gt;</description><link>http://blog.izs.me/post/10213512387</link><guid>http://blog.izs.me/post/10213512387</guid><pubDate>Wed, 14 Sep 2011 14:21:00 -0700</pubDate></item><item><title>"In the universe where everything works the way it common-sensically ought to, everything about the..."</title><description>“In the universe where everything works the way it common-sensically ought to, everything about the study of Artificial General Intelligence is driven by the one overwhelming fact of the indescribably huge effects: initial conditions and unfolding patterns whose consequences will resound for as long as causal chains continue out of Earth, until all the stars and galaxies in the night sky have burned down to cold iron, and maybe long afterward, or forever into infinity if the true laws of physics should happen to permit that.  To deliberately thrust your mortal brain onto that stage, as it plays out on ancient Earth the first root of life, is an act so far beyond “audacity” as to set the word on fire, an act which can only be excused by the terrifying knowledge that the empty skies offer no higher authority.”&lt;br/&gt;&lt;br/&gt; - &lt;em&gt;Eliezer Yudkowsky, &lt;a href="http://lesswrong.com/lw/uc/aboveaverage_ai_scientists/"&gt;Above-Average AI Scientists&lt;/a&gt;&lt;/em&gt;</description><link>http://blog.izs.me/post/9839460782</link><guid>http://blog.izs.me/post/9839460782</guid><pubDate>Mon, 05 Sep 2011 10:22:32 -0700</pubDate></item><item><title>New Recruiter Response</title><description>&lt;p&gt;I have a new strategy for recruiters.  First, a curt one-liner “not
+        interested”.  If they press (usually with an “I’ll ping you in 3 months”
+        or something), then they get the longer explanation.&lt;/p&gt;
+
+        &lt;p&gt;I just search and replace “XYZCorp” with whatever company they’re
+        calling from, and maybe change a line or two based on their response.&lt;/p&gt;
+
+        &lt;hr&gt;&lt;p&gt;Your optimism is delightful.  It pains me to step on it, but I
+        wouldn’t feel right doing otherwise.&lt;/p&gt;
+
+        &lt;p&gt;In 3 months, I’ll have the same answer.  The future is never
+        absolutely certain, but this is as certain as any prediction I can
+        make.  It’s a Safe Bet.&lt;/p&gt;
+
+        &lt;p&gt;I am working on Node.js and npm.  This is the technology that has
+        already displaced Python and Ruby as the hot new high-level language
+        platform of choice; within 5 or 10 years it’ll join the likes of .NET,
+        Perl, PHP, Java as the go-to platform for enterprise development (ie,
+        “serious business”) and new college grads.  But there is &lt;em&gt;so&lt;/em&gt; much
+        more work to be done!&lt;/p&gt;
+
+        &lt;p&gt;XYZCorp has a lot of very interesting technical challenges, I’m sure.
+        But this is the one that I’m most passionate about, and Joyent is the
+        place that has it.  npm started out as my personal side project.  Node
+        was a dream of mine that is coming true.  I’ve invested a lot of time
+        and a lot of love in this technology and in this community.&lt;/p&gt;
+
+        &lt;p&gt;Going to work there in 3 months, or in 3 years, would be a huge step
+        down in terms of the effectiveness of my effort and the results that
+        I’ll have on the technology world in general.  It would be a bit like
+        someone asking you if you’ll be done with your son or daughter in 3
+        months, and interested in trying out another kid.&lt;/p&gt;
+
+        &lt;p&gt;When and if I leave Joyent, it will be to do some other work focused
+        on npm and Node.js, probably as part of my own company.  The only way
+        that XYZCorp could ever recruit me is if they recruited me to do that.&lt;/p&gt;
+
+        &lt;p&gt;If I come across any developers that rival or exceed my skills, I’ll
+        almost certainly try to recruit them myself, or get them to work
+        somewhere else on Node so that they can add to this community.  As
+        long as I’m not a XYZCorp employee, and “working at XYZCorp” doesn’t
+        imply “working on Node”, it really does not serve my interests to send
+        talent to XYZCorp.  There is no referral bonus that XYZCorp could
+        provide me which would change that.&lt;/p&gt;
+
+        &lt;p&gt;Altruistically, I want what’s best for the Node community, because I
+        feel connected to it.  Selfishly, I want to be one of the names that
+        is remembered as part of a major revolution in software development.
+        If you can show that these two goals are better served at XYZCorp than
+        at Joyent, then let’s talk.&lt;/p&gt;</description><link>http://blog.izs.me/post/9634944126</link><guid>http://blog.izs.me/post/9634944126</guid><pubDate>Wed, 31 Aug 2011 12:23:31 -0700</pubDate></item><item><title>"The proper response to the current impracticality of decentralized computing is not to sigh and..."</title><description>“The proper response to the current impracticality of decentralized computing is not to sigh and build centralized systems. The proper response is to build the systems to &lt;em&gt;make decentralized computing practical again&lt;/em&gt;.”&lt;br/&gt;&lt;br/&gt; - &lt;em&gt;&lt;a href="http://lists.canonical.org/pipermail/kragen-tol/2011-August/000938.html"&gt;Kragen Sitaker&lt;/a&gt; (via &lt;a href="http://blog.felter.org/" class="tumblr_blog"&gt;hack-the-planet&lt;/a&gt;)&lt;/em&gt;</description><link>http://blog.izs.me/post/9552484379</link><guid>http://blog.izs.me/post/9552484379</guid><pubDate>Mon, 29 Aug 2011 11:34:34 -0700</pubDate></item><item><title>youranonnews:
+
+        Use this image in and around BART stations to let...</title><description>&lt;img src="http://25.media.tumblr.com/tumblr_lpvwgcUpE91qjkzz8o1_500.jpg"/&gt;&lt;br/&gt;&lt;br/&gt;&lt;p&gt;&lt;a href="http://youranonnews.tumblr.com/post/8877530155" class="tumblr_blog"&gt;youranonnews&lt;/a&gt;:&lt;/p&gt;
+
+        &lt;blockquote&gt;&lt;p&gt;Use this image in and around BART stations to let people know about the protest.&lt;/p&gt;&lt;/blockquote&gt;
+
+        &lt;p&gt;It &lt;em&gt;is&lt;/em&gt; quite nice to live in a place where even the slightest infraction against free speech is met with absurd overreaction.&lt;/p&gt;</description><link>http://blog.izs.me/post/9271369089</link><guid>http://blog.izs.me/post/9271369089</guid><pubDate>Mon, 22 Aug 2011 17:10:00 -0700</pubDate></item></channel></rss>
+

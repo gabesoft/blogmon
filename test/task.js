@@ -1,5 +1,3 @@
-/* global describe, it */
-
 var Task = require('../lib/task.js');
 
 describe('task.delay()', function() {
@@ -13,9 +11,8 @@ describe('task.delay()', function() {
             count = 0;
         task.repeat(1, function() {
             count = count + 1;
-            console.log(count);
             if (count > 2) {
-              task.stop();
+              task.cancel();
               done();
             }
         });

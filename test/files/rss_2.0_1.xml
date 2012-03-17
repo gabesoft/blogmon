@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>SoftArea51 - latest XML & CSS Utilities software for Windows</title>
+    <link>
+      http://www.softarea51.com/windows/Web_Development
+      /XML_CSS_Utilities/LatestReleases-1.html
+    </link>
+    <description>Try and buy latest XML & CSS Utilities software for Windows</description>
+    <language>en-us</language>
+    <image>
+      <title>SoftArea51 - latest XML & CSS Utilities software for Windows</title>
+      <url>http://www.softarea51.com/images/logo.gif</url>
+      <link>http://www.softarea51.com/</link>
+      <description>
+        Try and buy latest XML & CSS Utilities software for Windows
+      </description>
+    </image>
+    <item>
+      <title>Feed Mix</title>
+      <link>
+        http://www.softarea51.com/windows/Web_Development/
+        XML_CSS_Utilities/Review-Feed_Mix.html
+      </link>
+      <description>
+        Feed Mix is a feature-rich RSS editor with the unique
+        ability to create a new RSS feed from several others 
+        that already exist...
+      </description>
+    </item>
+    <item>
+      <title>RSS Submit</title>
+      <link>
+        http://www.softarea51.com/windows/Web_Development/
+        XML_CSS_Utilities/Review-RSS_Submit.html
+      </link>
+      <description>
+        RSS Submit is the most powerful RSS feed 
+        promotion tool available...
+      </description>
+    </item> 
+  </channel>
+</rss>
+
