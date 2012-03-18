@@ -4,6 +4,7 @@ var fs          = require('fs'),
     path        = require('path'),
     trav        = require('traverse'),
     FeedParser  = require('feedparser'),
+    util        = require('../../lib/util.js');
     dir         = __dirname + '/../files';
 
 eyes.defaults.maxLength = 8192;
@@ -54,6 +55,7 @@ var urls = [
   //, "http://blog.izs.me/rss"
   //, "http://blog.nodejitsu.com/feed.xml"
   //, "http://www.it-wars.com/feed.php?atom"
+  //, "http://decafbad.com/blog/rss.xml"
 ];
 
 urls.forEach(function(url) {
@@ -78,8 +80,15 @@ urls.forEach(function(url) {
         if (body) {
           var parser = new FeedParser();
           parser.parseString(body, function(err, meta, posts) {
+              var slims = trav(posts).map(function(x) {
+                  if (this.parents.length === 1 && !util.check.nil(x)) {
+                    this.update({ date: x.date, title: x.title });
+                  }
+              });
+              eyes.inspect(slims);
+              eyes.inspect(posts.length, 'length');
               eyes.inspect(meta);
-              eyes.inspect(posts);
+              //eyes.inspect(posts);
           });
         }
     });
