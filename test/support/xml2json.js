@@ -5,7 +5,7 @@ var fs          = require('fs'),
     trav        = require('traverse'),
     FeedParser  = require('feedparser'),
     util        = require('../../lib/util.js');
-    dir         = __dirname + '/../files';
+dir         = __dirname + '/../files';
 
 eyes.defaults.maxLength = 8192;
 
@@ -51,11 +51,11 @@ fs.readdir(dir, function(err, files) {
 var request = require('request');
 var urls = [
   "http://www.sauria.com/blog/feed/"
-  //, "http://www.mikealrogers.com/site.rss"
-  //, "http://blog.izs.me/rss"
-  //, "http://blog.nodejitsu.com/feed.xml"
-  //, "http://www.it-wars.com/feed.php?atom"
-  //, "http://decafbad.com/blog/rss.xml"
+, "http://www.mikealrogers.com/site.rss"
+, "http://blog.izs.me/rss"
+, "http://blog.nodejitsu.com/feed.xml"
+, "http://www.it-wars.com/feed.php?atom"
+, "http://decafbad.com/blog/rss.xml"
 ];
 
 urls.forEach(function(url) {
@@ -69,26 +69,41 @@ urls.forEach(function(url) {
       }
     };
     request(robj, function(err, res, body) {
-        eyes.inspect(url, 'url', { styles: { all: 'magenta' } });
-
-        eyes.inspect(res.headers['last-modified'], 'last-modified');
-        eyes.inspect(res.headers.etag, 'etag');
-
-        eyes.inspect(res.headers);
-        //eyes.inspect(body);
+        //eyes.inspect(url, 'url', { styles: { all: 'magenta' } });
+        //eyes.inspect(res.headers);
 
         if (body) {
           var parser = new FeedParser();
           parser.parseString(body, function(err, meta, posts) {
-              var slims = trav(posts).map(function(x) {
-                  if (this.parents.length === 1 && !util.check.nil(x)) {
-                    this.update({ date: x.date, title: x.title });
-                  }
-              });
-              eyes.inspect(slims);
-              eyes.inspect(posts.length, 'length');
-              eyes.inspect(meta);
+              // posts
+              //var slims = trav(posts).map(function(x) {
+              //if (this.parents.length === 1 && !util.check.nil(x)) {
+              //this.update({ date: x.date, title: x.title });
+              //}
+              //});
+              //eyes.inspect(slims);
+              //eyes.inspect(posts.length, 'length');
               //eyes.inspect(posts);
+
+              // meta
+
+              var feed = {
+                //id: robj.uri.replace(/[:\/.\-?]/g, ''),
+                uri: robj.uri,
+                lastModified: res.headers['last-modified'],
+                etag: res.headers.etag,
+                meta: {
+                  title: meta.title,
+                  description: meta.description,
+                  link: meta.link,
+                  author: meta.author,
+                  language: meta.language,
+                  image: meta.image,
+                  date: meta.date
+                }
+              };
+              eyes.inspect(feed);
+              //eyes.inspect(meta);
           });
         }
     });
