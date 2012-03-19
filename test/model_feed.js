@@ -4,6 +4,9 @@ var TEST_DB = 10,
     eyes = require('eyes'),
     redis = require('redis').createClient(),
     trav = require('traverse'),
+    feedData = require('./support/data_feed.js'),
+    etags = feedData.etags,
+    feeds = feedData.feeds,
     feed = new Feed(redis);
 
 redis.select(TEST_DB);
@@ -11,36 +14,6 @@ redis.debug_mode = true;
 redis.on('error', function(err) {
     console.log(err);
 });
-
-var etags = [ {
-    lastModified: 'Fri, 16 Mar 2012 16:09:32 GMT',
-    etag: '"e7216fef0ab0beef233b2a22704c87c2"'
-  }, {
-    lastModified: undefined,
-    etag: undefined
-  }, {
-    lastModified: undefined,
-    etag: '"rearden metal"'
-} ];
-
-var feeds = [ {
-    uri: 'http://www.mikealrogers.com/site.rss',
-    language: 'en-us',
-    description: 'all things mikeal rogers.',
-    author: 'mikeal.rogers@gmail.com',
-    link: 'http://www.mikealrogers.com/',
-    title: 'mikeal'
-  }, {
-    uri: 'http://blog.izs.me/rss',
-    description: 'Writing from Isaac Z. Schlueter',
-    link: 'http://blog.izs.me/',
-    title: 'blog.izs.me'
-  }, {
-    uri: 'http://www.it-wars.com/feed.php?atom',
-    description: "Les guerres d'un Responsable Informatique",
-    link: 'http://www.it-wars.com/',
-    title: 'IT Wars'
-} ];
 
 describe('feed', function() {
     beforeEach(function(done) {
@@ -106,6 +79,7 @@ describe('feed', function() {
             results[2].title = 'abc';
             feed.update(results[2], function(err) {
                 feed.getall(function(err, updated) {
+                    updated.length.should.equal(feeds.length);
                     updated[2].title.should.equal(results[2].title);
                     done();
                 });

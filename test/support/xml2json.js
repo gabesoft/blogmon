@@ -76,11 +76,23 @@ urls.forEach(function(url) {
           var parser = new FeedParser();
           parser.parseString(body, function(err, meta, posts) {
               // posts
-              //var slims = trav(posts).map(function(x) {
-              //if (this.parents.length === 1 && !util.check.nil(x)) {
-              //this.update({ date: x.date, title: x.title });
-              //}
-              //});
+              var slims = trav(posts).map(function(x) {
+                  if (this.parents.length === 1 && !util.check.nil(x)) {
+                    var post = {
+                      feedUri: robj.uri,
+                      title: x.title || (x.description || '').substring(0, 100),
+                      link: x.link,
+                      date: '' + x.date,
+                      pubdate: '' + x.pubdate,
+                      author: x.author,
+                      guid: x.guid,
+                      image: x.image
+                    };
+                    this.update(post);
+                    //this.update({ date: x.date, title: x.title });
+                  }
+              });
+              console.dir(slims);
               //eyes.inspect(slims);
               //eyes.inspect(posts.length, 'length');
               //eyes.inspect(posts);
@@ -102,7 +114,7 @@ urls.forEach(function(url) {
                   date: meta.date
                 }
               };
-              eyes.inspect(feed);
+              //eyes.inspect(feed);
               //eyes.inspect(meta);
           });
         }
