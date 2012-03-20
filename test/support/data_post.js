@@ -1,4 +1,4 @@
-module.exports.posts = [ 
+var posts = [ 
   { feedUri: 'http://www.mikealrogers.com/site.rss',
     title: 'The Way of Node',
     link: 'http://www.mikealrogers.com/posts/the-way-of-node.html',
@@ -1096,3 +1096,10 @@ module.exports.posts = [
     guid: 'http://decafbad.com/blog/2010/12/18/less-del-icio-us-than-ever-before',
     image: {} } 
 ];
+
+module.exports.posts = posts.map(function(post) {
+  post.date = new Date(post.date);
+  post.pubdate = new Date(post.pubdate);
+  post.pubDate = new Date(post.pubDate);
+  return post;
+});
