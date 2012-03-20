@@ -5,6 +5,7 @@ var TEST_DB = 10,
     redis = require('redis').createClient(),
     trav = require('traverse'),
     posts = require('./support/data_post.js').posts,
+    large = require('./support/data_post_large.js').posts,
     post = new Post(redis);
 
 redis.select(TEST_DB);
@@ -104,6 +105,19 @@ describe('post', function() {
                     res.length.should.equal(5);
                     done();
                 });
+            });
+        });
+    });
+
+    it('should get posts fast', function(done) {
+        post.add(large, function(err, res) {
+            console.log('added', res);
+            console.log('large', large.length);
+            post.get([], 0, -1, function(err, res) {
+                // TODO: remove a few feeds from get
+                //       optimize get to stop iterating when there's only one list left
+                res.length.should.equal(large.length);
+                done();
             });
         });
     });
