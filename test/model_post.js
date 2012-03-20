@@ -28,6 +28,17 @@ describe('post', function() {
         });
     });
 
+    it('should get posts for one feed', function(done) {
+        post.add(posts, function(err, added) {
+            post.get('http://blog.izs.me/rss', 0, -1, function(err, res) {
+                res.length.should.equal(20);
+                res[0].guid.should.equal('http://blog.izs.me/post/19521376222');
+                res[19].guid.should.equal('http://blog.izs.me/post/9552484379');
+                done();
+            });
+        });
+    });
+
     it('should add multiple posts', function(done) {
         post.add(posts.slice(0, 2), function(err) {
             post.get([], 0, -1, function(err, res) {
