@@ -111,12 +111,16 @@ describe('post', function() {
 
     it('should get posts fast', function(done) {
         post.add(large, function(err, res) {
-            console.log('added', res);
-            console.log('large', large.length);
-            post.get([], 0, -1, function(err, res) {
-                // TODO: remove a few feeds from get
-                //       optimize get to stop iterating when there's only one list left
-                res.length.should.equal(large.length);
+            var excluded = {
+              'http://www.mikealrogers.com/site.rss': true,
+              'http://www.curlybracecast.com/itunes.rss': true
+            };
+            var urls = large
+               .map(function(post) { return post.feedUri; })
+               .filter(function(uri) { return !excluded[uri]; });
+
+            post.get(urls, 0, -1, function(err, res) {
+                res.length.should.equal(large.length - 7);
                 done();
             });
         });

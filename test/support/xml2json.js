@@ -79,9 +79,10 @@ var allurls = [
   'http://blog.wraithan.net/feeds/posts/default/-/nodejs',
   'http://hypermegatop.calepin.co/feeds/all.atom.xml',
   'http://www.nodejs-news.com/feed/',
-  'http://dev.estisia.com/tag/nodejs/feed/' 
+  'http://dev.estisia.com/tag/nodejs/feed/',
+  'http://www.joelonsoftware.com/rss.xml'
 ];
-  
+
 // request feed
 var request = require('request');
 var urls = [
@@ -93,7 +94,7 @@ var urls = [
 , "http://decafbad.com/blog/rss.xml"
 ];
 
-urls.forEach(function(url) {
+allurls.forEach(function(url) {
     var date = "Mon, 05 Mar 2012 21:38:09 GMT";
     var etag = '"bac173a4f3e06c85192038aaabd86f69"';
     var robj = {
