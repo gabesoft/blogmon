@@ -38,9 +38,9 @@ describe('feed', function() {
 
     it('should increment subscribers when subscribing to existing feeds', function(done) {
         feed.subscribe(feeds.slice(1), function(err, subscribers) {
-          subscribers.length.should.equal(feeds.length - 1);
-          subscribers.toString().should.equal('2,2');
-          done();
+            subscribers.length.should.equal(feeds.length - 1);
+            subscribers.toString().should.equal('2,2');
+            done();
         });
     });
 

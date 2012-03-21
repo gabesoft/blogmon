@@ -115,6 +115,7 @@ describe('post', function() {
               'http://www.mikealrogers.com/site.rss': true,
               'http://www.curlybracecast.com/itunes.rss': true
             };
+
             var urls = large
                .map(function(post) { return post.feedUri; })
                .filter(function(uri) { return !excluded[uri]; });
