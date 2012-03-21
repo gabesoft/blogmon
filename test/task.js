@@ -8,14 +8,13 @@ describe('task', function() {
 
     xit('should run a task at interval', function(done) {
         var count = 0;
-        var fn = function() {
-          count = count + 1;
-          if (count > 2) {
-            task.cancel();
-            done();
-          }
-        };
-        var task  = new Task(fn);
+        var task = new Task(function() {
+            count = count + 1;
+            if (count > 2) {
+              task.cancel();
+              done();
+            }
+        });
         task.repeat(1);
     });
 });

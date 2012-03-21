@@ -7,6 +7,7 @@ var TEST_DB = 10,
     feedData = require('./support/data_feed.js'),
     etags = feedData.etags,
     feeds = feedData.feeds,
+    single = feedData.single,
     feed = new Feed(redis);
 
 redis.select(TEST_DB);
@@ -33,6 +34,37 @@ describe('feed', function() {
                 should.exist(x.uri);
             });
             done();
+        });
+    });
+
+    it('should add one feed but not subscribe to it', function(done) {
+        feed.add(single, function(err, subscribers) {
+            subscribers.should.equal(0);
+            feed.getall(function(err, results) {
+                results
+                   .filter(function(r) { return r.uri === single.uri; })
+                   .length
+                   .should
+                   .equal(1);
+                done();
+            });
+        });
+    });
+
+    it('should add a feed only once even if called multiple times', function(done) {
+        feed.add(single, function(err) {
+            feed.add(single, function(err) {
+                feed.add(single, function(err) {
+                    feed.getall(function(err, results) {
+                        results
+                           .filter(function(r) { return r.uri === single.uri; })
+                           .length
+                           .should
+                           .equal(1);
+                        done();
+                    });
+                });
+            });
         });
     });
 
@@ -77,7 +109,8 @@ describe('feed', function() {
     it('should update a feed', function(done) {
         feed.getall(function(err, results) {
             results[2].title = 'abc';
-            feed.update(results[2], function(err) {
+            feed.update(results[2], function(err, subscribers) {
+                subscribers.should.equal(1);
                 feed.getall(function(err, updated) {
                     updated.length.should.equal(feeds.length);
                     updated[2].title.should.equal(results[2].title);
