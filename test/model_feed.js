@@ -121,8 +121,8 @@ describe('feed', function() {
     });
 
     it('should set/get additional data for a feed', function(done) {
-        feed.setData(feeds[0], etags[0], function(err) {
-            feed.getData(feeds[0], function(err, d) {
+        feed.setData(feeds[0].uri, etags[0], function(err) {
+            feed.getData(feeds[0].uri, function(err, d) {
                 Object.keys(d).length.should.equal(2);
                 d.lastModified.should.equal(etags[0].lastModified);
                 d.etag.should.equal(etags[0].etag);

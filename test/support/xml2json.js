@@ -80,7 +80,8 @@ var allurls = [
   'http://hypermegatop.calepin.co/feeds/all.atom.xml',
   'http://www.nodejs-news.com/feed/',
   'http://dev.estisia.com/tag/nodejs/feed/',
-  'http://www.joelonsoftware.com/rss.xml'
+  'http://www.joelonsoftware.com/rss.xml',
+  'http://blog.paracode.com/atom.xml'
 ];
 
 // request feed

@@ -19,14 +19,18 @@ redis.on('error', function(err) {
     console.log(err);
 });
 
-// TODO: the aggregator should also get feed information
+//agg.once('feed-updated', function(errors, feed, count) {
+    //console.log();
+    //console.log('UPDATED', feed, count);
+//});
+//agg.once('feed-unchanged', function(errors, feed) {
+    //console.log();
+    //console.log('UNCHANGED', feed);
+//});
 
 describe('aggregator', function() {
     beforeEach(function() {
         redis.flushdb();
-        //feed.subscribe(feeds, function(err, subscribers) {
-            //done();
-        //});
     });
 
     it('should save feed data', function(done) {
@@ -37,7 +41,10 @@ describe('aggregator', function() {
                 return feed.uri === uri;
               });
               found.length.should.equal(1);
-              done();
+              post.get(uri, 0, -1, function(err, posts) {
+                posts.length.should.be.greaterThan(0);
+                done();
+              });
             });
         });
     });
