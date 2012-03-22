@@ -62,8 +62,8 @@ describe('post', function() {
 
     it('should get posts selectively', function(done) {
         var urls = [
-          'http://www.mikealrogers.com/site.rss',     // 3
-          'http://decafbad.com/blog/rss.xml'          // 15
+            'http://www.mikealrogers.com/site.rss',     // 3
+            'http://decafbad.com/blog/rss.xml'          // 15
         ];
         post.add(posts, function() {
             post.get(urls, 0, -1, function(err, res) {
@@ -88,7 +88,7 @@ describe('post', function() {
                     var i = 0;
 
                     for (i = 0; i < 14; i += 1) {
-                      res[i].guid.should.equal(sorted[10 + i].guid);
+                        res[i].guid.should.equal(sorted[10 + i].guid);
                     }
 
                     res.length.should.equal(14);
@@ -112,8 +112,8 @@ describe('post', function() {
     it('should get posts fast', function(done) {
         post.add(large, function(err, res) {
             var excluded = {
-              'http://www.mikealrogers.com/site.rss': true,
-              'http://www.curlybracecast.com/itunes.rss': true
+                'http://www.mikealrogers.com/site.rss': true,
+                'http://www.curlybracecast.com/itunes.rss': true
             };
 
             var urls = large

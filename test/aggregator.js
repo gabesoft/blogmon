@@ -19,15 +19,6 @@ redis.on('error', function(err) {
     console.log(err);
 });
 
-//agg.once('feed-updated', function(errors, feed, count) {
-    //console.log();
-    //console.log('UPDATED', feed, count);
-//});
-//agg.once('feed-unchanged', function(errors, feed) {
-    //console.log();
-    //console.log('UNCHANGED', feed);
-//});
-
 describe('aggregator', function() {
     beforeEach(function() {
         redis.flushdb();
@@ -37,14 +28,14 @@ describe('aggregator', function() {
         var uri = 'http://robkuz-blog.blogspot.com/feeds/posts/default';
         agg.runNow(uri, function(errors, saved) {
             feed.getall(function(err, feeds) {
-              var found = feeds.filter(function(feed) {
-                return feed.uri === uri;
-              });
-              found.length.should.equal(1);
-              post.get(uri, 0, -1, function(err, posts) {
-                posts.length.should.be.greaterThan(0);
-                done();
-              });
+                var found = feeds.filter(function(feed) {
+                    return feed.uri === uri;
+                });
+                found.length.should.equal(1);
+                post.get(uri, 0, -1, function(err, posts) {
+                    posts.length.should.be.greaterThan(0);
+                    done();
+                });
             });
         });
     });

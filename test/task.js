@@ -11,8 +11,8 @@ describe('task', function() {
         var task = new Task(function() {
             count = count + 1;
             if (count > 2) {
-              task.cancel();
-              done();
+                task.cancel();
+                done();
             }
         });
         task.repeat(1);
