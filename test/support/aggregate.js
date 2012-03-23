@@ -1,12 +1,13 @@
 var Aggregator = require('../../lib/aggregator.js'),
     redis      = require('redis').createClient(),
+    fn         = require('../../lib/fn.js'),
     Feed       = require('../../lib/model/feed.js'),
     Post       = require('../../lib/model/post.js'),
     feed       = new Feed(redis),
     post       = new Post(redis),
     index      = 0,
     urls       = [],
-    agg        = new Aggregator(feed, post, 600), // 10 minutes interval
+    agg        = new Aggregator(feed, post, 60), // 10 minutes interval
     run        = null;
 
 redis.select(5);
@@ -58,17 +59,5 @@ urls = [
     'http://blog.paracode.com/atom.xml'
 ];
 
-urls.forEach(function(url) {
-    agg.runNow(url);
-});
-
-run = function() {
-    if (index === urls.length) {
-        agg.run();
-    } else {
-        agg.runNow(urls[index], function(err, uri) {
-            index = index + 1;
-            run();
-        });
-    }
-};
+agg.run();
+urls.forEach(fn.bind(agg.runNow, agg));

@@ -41,12 +41,25 @@ describe('post', function() {
     });
 
     it('should add multiple posts', function(done) {
-        post.add(posts.slice(0, 2), function(err) {
+        post.add(posts.slice(0, 2), function(err, count) {
             post.get([], 0, -1, function(err, res) {
                 res.length.should.equal(2);
                 res[0].guid.should.equal(posts[0].guid);
                 res[1].guid.should.equal(posts[1].guid);
                 done();
+            });
+        });
+    });
+
+    it('should return the proper count when adding posts', function(done) {
+        post.add(posts.slice(0, 3), function(err, count) {
+            count.should.equal(3);
+            post.add(posts.slice(0, 4), function(err, count2) {
+                count2.should.equal(1);
+                post.add(posts.slice(0, 2), function(err, count3) {
+                    count3.should.equal(0);
+                    done();
+                });
             });
         });
     });

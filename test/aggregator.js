@@ -3,12 +3,7 @@ var TEST_DB = 10,
     Feed = require('../lib/model/feed.js'),
     Post = require('../lib/model/post.js'),
     Aggregator = require('../lib/aggregator.js'),
-    eyes = require('eyes'),
     redis = require('redis').createClient(),
-    trav = require('traverse'),
-    feedData = require('./support/data_feed.js'),
-    etags = feedData.etags,
-    feeds = feedData.feeds,
     feed = new Feed(redis),
     post = new Post(redis),
     agg  = new Aggregator(feed, post, 1);
@@ -19,9 +14,16 @@ redis.on('error', function(err) {
     console.log(err);
 });
 
+agg.once('feed-updated', function(errors, feed, count) {
+    console.log('updated', feed, count);
+});
+agg.once('feed-unchanged', function(errors, feed) {
+    console.log('unchanged', feed);
+});
+
 describe('aggregator', function() {
-    beforeEach(function() {
-        redis.flushdb();
+    beforeEach(function(done) {
+        redis.flushdb(done);
     });
 
     it('should save feed data', function(done) {

@@ -17,13 +17,13 @@
   , "socket.io"     : ">= 0.9.0"
   , "feedparser"    : ">= 0.9.5"
   , "request"       : ">= 2.9.153"
+  , "eyes"          : "*"
   }
 
 , "devDependencies" : {
     "xml2js"        : ">= 0.1.13"
   , "should"        : "*"
   , "mocha"         : "*"
-  , "eyes"          : "*"
   }
 
 , "engines" : {
