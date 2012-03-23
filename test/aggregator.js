@@ -26,7 +26,7 @@ describe('aggregator', function() {
         redis.flushdb(done);
     });
 
-    it('should save feed data', function(done) {
+    xit('should save feed data', function(done) {
         var uri = 'http://robkuz-blog.blogspot.com/feeds/posts/default';
         agg.runNow(uri, function(errors, saved) {
             feed.getall(function(err, feeds) {

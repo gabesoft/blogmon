@@ -12,9 +12,7 @@ var TEST_DB = 10,
 
 redis.select(TEST_DB);
 redis.debug_mode = true;
-redis.on('error', function(err) {
-    console.log(err);
-});
+redis.on('error', function(err) { console.log(err); });
 
 describe('feed', function() {
     beforeEach(function(done) {
