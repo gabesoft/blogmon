@@ -52,7 +52,22 @@ urls = [
     'http://www.nodejs-news.com/feed/',
     'http://dev.estisia.com/tag/nodejs/feed/',
     'http://www.joelonsoftware.com/rss.xml',
-    'http://blog.paracode.com/atom.xml'
+    'http://blog.paracode.com/atom.xml',
+
+    'http://news.yahoo.com/rss/',
+    'http://www.reuters.com/newsrss.jhtml',
+    'http://news.com.com/2009-1090-980549.html?tag=rss',
+    'http://www.washingtonpost.com/wp-adv/rss/front.htm',
+    'http://dwlt.net/tapestry/',
+    'http://news.bbc.co.uk/rss/newsonline_uk_edition/front_page/rss091.xml',
+    'http://www.kiplinger.com/about/rss/kiplinger.rss',
+    'http://www.smartmoney.com/rss/smheadlines.cfm?feed=1&format=RSS091',
+    'http://sports.espn.go.com/espn/rss/news',
+    'http://partners.userland.com/nytRss/opinion.xml',
+    'http://rssnewsapps.ziffdavis.com/pcmag.xml',
+    'http://www.computerworld.com/news/xml/0,5000,54,00.xml',
+    'http://slashdot.org/index.rss',
+    'http://feeds.feedburner.com/TechCrunch/'
 ];
 
 agg.run();
