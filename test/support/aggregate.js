@@ -7,7 +7,7 @@ var Aggregator = require('../../lib/aggregator.js'),
     post       = new Post(redis),
     index      = 0,
     urls       = [],
-    agg        = new Aggregator(feed, post, 60), // 10 minutes interval
+    agg        = new Aggregator(feed, post, 600), // 10 minutes interval
     run        = null;
 
 redis.select(5);
@@ -27,12 +27,10 @@ urls = [
     'http://blog.izs.me/rss',
     'http://io.kodfabrik.com/atom.xml',
     'http://blog.nodejitsu.com/feed.xml',
-    'http://blog.nodeknockout.com/rss',
     'http://blog.nodejs.org/feed/',
     'http://feeds.feedburner.com/3rd-eden',
     'http://marcorogers.com/blog/rss',
     'http://www.sauria.com/blog/feed/',
-    'http://weblog.bocoup.com/feed',
     'http://nodejs.ir/blog/feed.xml',
     'https://tootallnate.net/feed.xml',
     'http://digitaltumbleweed.com/rss.xml',
@@ -44,8 +42,6 @@ urls = [
     'http://www.it-wars.com/feed.php?atom',
     'http://www.curlybracecast.com/itunes.rss',
     'http://feeds.feedburner.com/NodeUp',
-    'http://feeds.feedburner.com/nunojob',
-    'http://davestevens.us/feed',
     'http://feeds.shapeshed.com/shapeshed',
     'http://siriux.net/tag/node/feed/',
     'http://www.catonmat.net/feed/',

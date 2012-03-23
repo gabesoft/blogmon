@@ -87,15 +87,16 @@ var allurls = [
 // request feed
 var request = require('request');
 var urls = [
-    "http://www.sauria.com/blog/feed/"
-  , "http://www.mikealrogers.com/site.rss"
-  , "http://blog.izs.me/rss"
-  , "http://blog.nodejitsu.com/feed.xml"
-  , "http://www.it-wars.com/feed.php?atom"
-  , "http://decafbad.com/blog/rss.xml"
+    'http://www.joelonsoftware.com/rss.xml'
+  //, "http://www.sauria.com/blog/feed/"
+  //, "http://www.mikealrogers.com/site.rss"
+  //, "http://blog.izs.me/rss"
+  //, "http://blog.nodejitsu.com/feed.xml"
+  //, "http://www.it-wars.com/feed.php?atom"
+  //, "http://decafbad.com/blog/rss.xml"
 ];
 
-allurls.forEach(function(url) {
+urls.forEach(function(url) {
     var date = "Mon, 05 Mar 2012 21:38:09 GMT";
     var etag = '"bac173a4f3e06c85192038aaabd86f69"';
     var robj = {
