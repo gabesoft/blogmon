@@ -100,22 +100,11 @@ describe('token', function() {
         });
     });
 
-    it('should create multiple tokens for the same user', function(done) {
+    it('should create tokens for the same user with different series', function(done) {
         token.create(user, function(err1, token1) {
-            token1.name.should.equal(user);
             token.create(user, function(err2, token2) {
-                token2.name.should.equal(user);
                 token2.series.should.not.equal(token1.series);
-                token.create(user, function(err3, token3) {
-                    token3.name.should.equal(user);
-                    token3.series.should.not.equal(token2.series);
-                    token.update(token1, function(err, token4) {
-                        token4.name.should.equal(user);
-                        token4.series.should.equal(token1.series);
-                        token4.id.should.not.equal(token1.id);
-                        done();
-                    });
-                });
+                done();
             });
         });
     });
@@ -137,8 +126,8 @@ describe('token', function() {
             token.create(user, function(err2, token2) {
                 token.create(user, function(err3, token3) {
                     token.count(user, function(err4, count) {
-                      count.should.equal(3);
-                      done();
+                        count.should.equal(3);
+                        done();
                     });
                 });
             });
