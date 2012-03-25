@@ -1,0 +1,15 @@
+div.container
+  div.title.sixteen.columns
+    span.main= title
+    span.info= titleInfo
+  div.sixteen.columns.login
+    form(method='post', action='/session')
+      fieldset
+        div.message
+          span.info= flash.info
+          span.warn= flash.warn
+
+        input(type='text', name='user[name]', placeholder='username')
+        input(type='password', name='user[pass]', placeholder='password')
+        input(type='submit', value='login')
+        a.signup(href='/users/new') Create an account
