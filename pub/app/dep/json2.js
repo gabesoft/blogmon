@@ -159,12 +159,9 @@
 // Create a JSON object only if one does not already exist. We create the
 // methods in a closure to avoid creating global variables.
 
-var JSON;
-if (!JSON) {
-    JSON = {};
-}
+var JSON = (typeof module !== "undefined" && module.exports) || {};
 
-(function () {
+(function (exports) {
     'use strict';
 
     function f(n) {
@@ -356,8 +353,8 @@ if (!JSON) {
 
 // If the JSON object does not yet have a stringify method, give it one.
 
-    if (typeof JSON.stringify !== 'function') {
-        JSON.stringify = function (value, replacer, space) {
+    if (typeof exports.stringify !== 'function') {
+        exports.stringify = function (value, replacer, space) {
 
 // The stringify method takes a value and an optional replacer, and an optional
 // space parameter, and returns a JSON text. The replacer can be a function
@@ -403,8 +400,8 @@ if (!JSON) {
 
 // If the JSON object does not yet have a parse method, give it one.
 
-    if (typeof JSON.parse !== 'function') {
-        JSON.parse = function (text, reviver) {
+    if (typeof exports.parse !== 'function') {
+        exports.parse = function (text, reviver) {
 
 // The parse method takes a text and an optional reviver function, and returns
 // a JavaScript value if the text is a valid JSON text.
@@ -484,5 +481,5 @@ if (!JSON) {
             throw new SyntaxError('JSON.parse');
         };
     }
-}());
+}(JSON));
 

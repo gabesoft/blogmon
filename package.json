@@ -18,7 +18,6 @@
   , "feedparser"    : ">= 0.9.5"
   , "request"       : ">= 2.9.153"
   , "br-jquery"     : "*"
-  , "backbone-browserify" : "*"
   , "eyes"          : "*"
   }
 

@@ -18,9 +18,6 @@
         entry: __dirname + '/pub/app/app.js',
         debug: false,
         mount: '/all.js',
-        require: { 
-            jquery: 'br-jquery'
-          //, backbone: 'backbone-browserify'
-        }
+        require: { jquery: 'br-jquery' }
     }));
 }).call(this);

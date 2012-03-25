@@ -996,5 +996,7 @@
     return this._wrapped;
   };
 
+  module.exports = _;
+
 }).call(this);
 
