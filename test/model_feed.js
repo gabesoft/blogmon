@@ -11,7 +11,10 @@ var should = require('should'),
 
 describe('feed', function() {
     beforeEach(function(done) {
-        redis.flushdb();
+        redis.flushdb(done);
+    });
+
+    it('should return the count of subscribers when subscribing', function(done) {
         feed.subscribe(feeds, function(err, subscribers) {
             var counts = feeds.map(function (x) { return 1; });
             subscribers.length.should.equal(counts.length);
@@ -21,12 +24,14 @@ describe('feed', function() {
     });
 
     it('should subscribe to feeds', function(done) {
-        feed.getall(function(err, results) {
-            results.length.should.equal(feeds.length);
-            results.forEach(function(x) {
-                should.exist(x.uri);
+        feed.subscribe(feeds, function(err, subscribers) {
+            feed.getall(function(err, results) {
+                results.length.should.equal(feeds.length);
+                results.forEach(function(x) {
+                    should.exist(x.uri);
+                });
+                done();
             });
-            done();
         });
     });
 
@@ -62,52 +67,62 @@ describe('feed', function() {
     });
 
     it('should increment subscribers when subscribing to existing feeds', function(done) {
-        feed.subscribe(feeds.slice(1), function(err, subscribers) {
-            subscribers.length.should.equal(feeds.length - 1);
-            subscribers.toString().should.equal('2,2');
-            done();
+        feed.subscribe(feeds, function(err1, subscribers1) {
+            feed.subscribe(feeds.slice(1), function(err, subscribers) {
+                subscribers.length.should.equal(feeds.length - 1);
+                subscribers.toString().should.equal('2,2');
+                done();
+            });
         });
     });
 
     it('should subscribe to feed by url', function(done) {
-        feed.subscribe(feeds[0].uri, function(err, subscribers) {
-            subscribers.should.equal(2);
-            feed.getall(function(err, results) {
-                results.length.should.equal(feeds.length);
-                done();
+        feed.subscribe(feeds, function(err1, subscribers1) {
+            feed.subscribe(feeds[0].uri, function(err, subscribers) {
+                subscribers.should.equal(2);
+                feed.getall(function(err, results) {
+                    results.length.should.equal(feeds.length);
+                    done();
+                });
             });
         });
     });
 
     it('should subscribe to feed by feed', function(done) {
-        feed.subscribe(feeds[1], function(err, subscribers) {
-            subscribers.should.equal(2);
-            feed.getall(function(err, results) {
-                results.length.should.equal(feeds.length);
-                done();
+        feed.subscribe(feeds, function(err1, subscribers1) {
+            feed.subscribe(feeds[1], function(err, subscribers) {
+                subscribers.should.equal(2);
+                feed.getall(function(err, results) {
+                    results.length.should.equal(feeds.length);
+                    done();
+                });
             });
         });
     });
 
     it('should unsubscribe feed', function(done) {
-        feed.unsubscribe(feeds[0].uri, function(err, subscribers) {
-            subscribers.should.equal(0);
-            feed.getall(function(err, results) {
-                results.length.should.equal(feeds.length - 1);
-                done();
+        feed.subscribe(feeds, function(err1, subscribers1) {
+            feed.unsubscribe(feeds[0].uri, function(err, subscribers) {
+                subscribers.should.equal(0);
+                feed.getall(function(err, results) {
+                    results.length.should.equal(feeds.length - 1);
+                    done();
+                });
             });
         });
     });
 
     it('should update a feed', function(done) {
-        feed.getall(function(err, results) {
-            results[2].title = 'abc';
-            feed.update(results[2], function(err, subscribers) {
-                subscribers.should.equal(1);
-                feed.getall(function(err, updated) {
-                    updated.length.should.equal(feeds.length);
-                    updated[2].title.should.equal(results[2].title);
-                    done();
+        feed.subscribe(feeds, function(err1, subscribers1) {
+            feed.getall(function(err, results) {
+                results[2].title = 'abc';
+                feed.update(results[2], function(err, subscribers) {
+                    subscribers.should.equal(1);
+                    feed.getall(function(err, updated) {
+                        updated.length.should.equal(feeds.length);
+                        updated[2].title.should.equal(results[2].title);
+                        done();
+                    });
                 });
             });
         });

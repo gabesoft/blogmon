@@ -1,6 +1,5 @@
 var Aggregator = require('../../lib/aggregator.js'),
     redis      = require('redis').createClient(),
-    fn         = require('../../lib/fn.js'),
     Feed       = require('../../lib/model/feed.js'),
     Post       = require('../../lib/model/post.js'),
     feed       = new Feed(redis),
@@ -71,4 +70,4 @@ urls = [
 ];
 
 agg.run();
-urls.forEach(fn.bind(agg.runNow, agg));
+urls.forEach(util.bind(agg.runNow, agg));

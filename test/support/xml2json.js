@@ -4,7 +4,7 @@ var fs          = require('fs'),
     path        = require('path'),
     trav        = require('traverse'),
     FeedParser  = require('feedparser'),
-    util        = require('../../lib/util.js');
+    util        = require('underscore');
 dir         = __dirname + '/../files';
 
 eyes.defaults.maxLength = 8192;
@@ -115,7 +115,7 @@ urls.forEach(function(url) {
             parser.parseString(body, function(err, meta, posts) {
                 // posts
                 var slims = trav(posts).map(function(x) {
-                    if (this.parents.length === 1 && !util.check.nil(x)) {
+                    if (this.parents.length === 1 && !util.isNull(x)) {
                         var post = {
                             feedUri: robj.uri,
                             title: x.title || (x.description || '').substring(0, 100),
