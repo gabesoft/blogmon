@@ -1,15 +1,10 @@
-var TEST_DB = 10,
-    should  = require('should'),
+var should  = require('should'),
     trav    = require('traverse'),
     eyes    = require('eyes'),
-    redis   = require('redis').createClient(),
+    redis   = require('./redis_helper.js').client(),
     Token   = require('../lib/model/token.js'),
     token   = new Token(redis),
     user    = 'user1';
-
-redis.select(TEST_DB);
-redis.debug_mode = true;
-redis.on('error', function(err) { console.log(err); });
 
 describe('token', function() {
     beforeEach(function(done) {

@@ -1,18 +1,13 @@
-var TEST_DB = 10,
-    should = require('should'),
+var should = require('should'),
     Feed = require('../lib/model/feed.js'),
     eyes = require('eyes'),
-    redis = require('redis').createClient(),
+    redis = require('./redis_helper.js').client(),
     trav = require('traverse'),
     feedData = require('./support/data_feed.js'),
     etags = feedData.etags,
     feeds = feedData.feeds,
     single = feedData.single,
     feed = new Feed(redis);
-
-redis.select(TEST_DB);
-redis.debug_mode = true;
-redis.on('error', function(err) { console.log(err); });
 
 describe('feed', function() {
     beforeEach(function(done) {

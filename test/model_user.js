@@ -1,7 +1,6 @@
-var TEST_DB = 10,
-    should = require('should'),
+var should = require('should'),
     eyes = require('eyes'),
-    redis = require('redis').createClient(),
+    redis = require('./redis_helper.js').client(),
     User = require('../lib/model/user.js'),
     user = new User(redis);
 
@@ -9,10 +8,6 @@ var data = [
     { name: 'u1', pass: 'p1' },
     { name: 'u2', pass: 'p2' }
 ];
-
-redis.select(TEST_DB);
-redis.debug_mode = true;
-redis.on('error', function(err) { console.log(err); });
 
 describe('user', function() {
     beforeEach(function(done) {
@@ -60,6 +55,14 @@ describe('user', function() {
     it('should not authenticate a non-existent user', function(done) {
         user.authenticate('non-user', 'invalid', function(err, record) {
             should.not.exist(record);
+            done();
+        });
+    });
+
+    it('should get a user by name', function(done) {
+        user.get(data[1].name, function(err, record) {
+            should.exist(record);
+            record.name.should.equal(data[1].name);
             done();
         });
     });

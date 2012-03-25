@@ -1,18 +1,11 @@
-var TEST_DB = 10,
-    should = require('should'),
+var should = require('should'),
     Post = require('../lib/model/post.js'),
     eyes = require('eyes'),
-    redis = require('redis').createClient(),
+    redis = require('./redis_helper.js').client(),
     trav = require('traverse'),
     posts = require('./support/data_post.js').posts,
     large = require('./support/data_post_large.js').posts,
     post = new Post(redis);
-
-redis.select(TEST_DB);
-redis.debug_mode = true;
-redis.on('error', function(err) {
-    console.log(err);
-});
 
 describe('post', function() {
     beforeEach(function() {

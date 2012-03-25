@@ -1,18 +1,11 @@
-var TEST_DB = 10,
-    should = require('should'),
+var should = require('should'),
     Feed = require('../lib/model/feed.js'),
     Post = require('../lib/model/post.js'),
     Aggregator = require('../lib/aggregator.js'),
-    redis = require('redis').createClient(),
+    redis = require('./redis_helper.js').client(),
     feed = new Feed(redis),
     post = new Post(redis),
     agg  = new Aggregator(feed, post, 1);
-
-redis.select(TEST_DB);
-redis.debug_mode = true;
-redis.on('error', function(err) {
-    console.log(err);
-});
 
 agg.once('feed-updated', function(errors, feed, count) {
     console.log('updated', feed, count);
