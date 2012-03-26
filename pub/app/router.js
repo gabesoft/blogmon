@@ -1,4 +1,5 @@
-var Backbone = require('./dep/backbone.js');
+var $ = require('jquery'),
+    Backbone = require('./dep/backbone.js');
 
 var Router = Backbone.Router.extend({
     routes: {

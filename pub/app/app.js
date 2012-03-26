@@ -3,10 +3,10 @@
     //var tmpl = require('./dep/mustache.js');
     //var JSON = require('./dep/json2.js');
 
-    var $ = require('jquery');
-    var _ = require('./dep/underscore.js');
-    var Backbone = require('./dep/backbone.js');
-    var Router = require('./router.js');
+    var $ = require('jquery'),
+        _ = require('./dep/underscore.js'),
+        Backbone = require('./dep/backbone.js'),
+        Router = require('./router.js');
 
     $(document).ready(function() {
         var router = new Router();

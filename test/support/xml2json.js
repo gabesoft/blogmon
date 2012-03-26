@@ -4,8 +4,8 @@ var fs          = require('fs'),
     path        = require('path'),
     trav        = require('traverse'),
     FeedParser  = require('feedparser'),
-    util        = require('underscore');
-dir         = __dirname + '/../files';
+    util        = require('underscore'),
+    dir         = __dirname + '/../files';
 
 eyes.defaults.maxLength = 8192;
 
@@ -84,16 +84,18 @@ var allurls = [
     'http://blog.paracode.com/atom.xml'
 ];
 
+
+
 // request feed
 var request = require('request');
 var urls = [
     'http://www.joelonsoftware.com/rss.xml'
-  //, "http://www.sauria.com/blog/feed/"
-  //, "http://www.mikealrogers.com/site.rss"
-  //, "http://blog.izs.me/rss"
-  //, "http://blog.nodejitsu.com/feed.xml"
-  //, "http://www.it-wars.com/feed.php?atom"
-  //, "http://decafbad.com/blog/rss.xml"
+    //, "http://www.sauria.com/blog/feed/"
+    //, "http://www.mikealrogers.com/site.rss"
+    //, "http://blog.izs.me/rss"
+    //, "http://blog.nodejitsu.com/feed.xml"
+    //, "http://www.it-wars.com/feed.php?atom"
+    //, "http://decafbad.com/blog/rss.xml"
 ];
 
 urls.forEach(function(url) {
@@ -158,3 +160,5 @@ urls.forEach(function(url) {
         }
     });
 });
+
+
