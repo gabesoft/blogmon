@@ -41,6 +41,9 @@
   // For Backbone's purposes, jQuery, Zepto, or Ender owns the `$` variable.
   var $ = root.jQuery || root.Zepto || root.ender;
 
+  // MODIF: added require for jquery
+  $ = $ || require('jquery');
+
   // Set the JavaScript library that will be used for DOM manipulation and
   // Ajax calls (a.k.a. the `$` variable). By default Backbone will use: jQuery,
   // Zepto, or Ender; but the `setDomLibrary()` method lets you inject an
