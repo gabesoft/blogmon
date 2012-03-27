@@ -1,6 +1,8 @@
 var should = require('should'),
     eyes = require('eyes'),
     redis = require('./redis_helper.js').client(),
+    feedData = require('./support/data_feed.js'),
+    feeds = feedData.feeds,
     User = require('../lib/model/user.js'),
     user = new User(redis);
 
@@ -64,6 +66,47 @@ describe('user', function() {
             should.exist(record);
             record.name.should.equal(data[1].name);
             done();
+        });
+    });
+
+    it('should subscribe to feed', function(done) {
+        user.subscribe(data[1].name, feeds[0].uri, function(err1, feeds1) {
+            feeds1.length.should.equal(1);
+            feeds1[0].should.equal(feeds[0].uri);
+            done();
+        });
+    });
+
+    it('should allow multiple subscriptions to the same feed', function(done) {
+        user.subscribe(data[1].name, feeds[0].uri, function(err1, feeds1) {
+            user.subscribe(data[1].name, feeds[0].uri, function(err2, feeds2) {
+                feeds2.length.should.equal(1);
+                done();
+            });
+        });
+    });
+
+    it('should unsubscribe from feed', function(done) {
+        user.subscribe(data[1].name, feeds[0].uri, function(err1, feeds1) {
+            user.subscribe(data[1].name, feeds[1].uri, function(err2, feeds2) {
+                user.unsubscribe(data[1].name, feeds[0].uri, function(err3, feeds3) {
+                    feeds3.length.should.equal(1);
+                    feeds3[0].should.equal(feeds[1].uri);
+                    done();
+                });
+            });
+        });
+    });
+
+    it('should populate subscribed feeds when getting by name', function(done) {
+        user.subscribe(data[1].name, feeds[0].uri, function(err1, feeds1) {
+            user.subscribe(data[1].name, feeds[1].uri, function(err2, feeds2) {
+                user.get(data[1].name, function(err, record) {
+                    should.exist(record.feeds);
+                    record.feeds.length.should.equal(2);
+                    done();
+                });
+            });
         });
     });
 });

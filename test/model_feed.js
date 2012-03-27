@@ -25,7 +25,7 @@ describe('feed', function() {
 
     it('should subscribe to feeds', function(done) {
         feed.subscribe(feeds, function(err, subscribers) {
-            feed.getall(function(err, results) {
+            feed.getAll(function(err, results) {
                 results.length.should.equal(feeds.length);
                 results.forEach(function(x) {
                     should.exist(x.uri);
@@ -38,7 +38,7 @@ describe('feed', function() {
     it('should add one feed but not subscribe to it', function(done) {
         feed.add(single, function(err, subscribers) {
             subscribers.should.equal(0);
-            feed.getall(function(err, results) {
+            feed.getAll(function(err, results) {
                 results
                    .filter(function(r) { return r.uri === single.uri; })
                    .length
@@ -53,7 +53,7 @@ describe('feed', function() {
         feed.add(single, function(err) {
             feed.add(single, function(err) {
                 feed.add(single, function(err) {
-                    feed.getall(function(err, results) {
+                    feed.getAll(function(err, results) {
                         results
                            .filter(function(r) { return r.uri === single.uri; })
                            .length
@@ -80,7 +80,7 @@ describe('feed', function() {
         feed.subscribe(feeds, function(err1, subscribers1) {
             feed.subscribe(feeds[0].uri, function(err, subscribers) {
                 subscribers.should.equal(2);
-                feed.getall(function(err, results) {
+                feed.getAll(function(err, results) {
                     results.length.should.equal(feeds.length);
                     done();
                 });
@@ -92,7 +92,7 @@ describe('feed', function() {
         feed.subscribe(feeds, function(err1, subscribers1) {
             feed.subscribe(feeds[1], function(err, subscribers) {
                 subscribers.should.equal(2);
-                feed.getall(function(err, results) {
+                feed.getAll(function(err, results) {
                     results.length.should.equal(feeds.length);
                     done();
                 });
@@ -104,7 +104,7 @@ describe('feed', function() {
         feed.subscribe(feeds, function(err1, subscribers1) {
             feed.unsubscribe(feeds[0].uri, function(err, subscribers) {
                 subscribers.should.equal(0);
-                feed.getall(function(err, results) {
+                feed.getAll(function(err, results) {
                     results.length.should.equal(feeds.length - 1);
                     done();
                 });
@@ -114,11 +114,11 @@ describe('feed', function() {
 
     it('should update a feed', function(done) {
         feed.subscribe(feeds, function(err1, subscribers1) {
-            feed.getall(function(err, results) {
+            feed.getAll(function(err, results) {
                 results[2].title = 'abc';
                 feed.update(results[2], function(err, subscribers) {
                     subscribers.should.equal(1);
-                    feed.getall(function(err, updated) {
+                    feed.getAll(function(err, updated) {
                         updated.length.should.equal(feeds.length);
                         updated[2].title.should.equal(results[2].title);
                         done();

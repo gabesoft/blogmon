@@ -21,14 +21,15 @@ describe('aggregator', function() {
 
     xit('should save feed data', function(done) {
         var uri = 'http://robkuz-blog.blogspot.com/feeds/posts/default';
-        agg.runNow(uri, function(errors, saved) {
-            feed.getall(function(err, feeds) {
+        agg.runNow(uri, function(errors, record, saved) {
+            record.uri.should.equal(uri);
+            feed.getAll(function(err, feeds) {
                 var found = feeds.filter(function(feed) {
                     return feed.uri === uri;
                 });
                 found.length.should.equal(1);
                 post.get(uri, 0, -1, function(err, posts) {
-                    posts.length.should.be.greaterThan(0);
+                    posts.length.should.equal(saved);
                     done();
                 });
             });

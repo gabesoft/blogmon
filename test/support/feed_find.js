@@ -61,14 +61,14 @@ util.each(hostnames, function(host) {
     var apiurl = 'http://www.google.com/reader/api/0/feed-finder?output=json&q=' + host;
     request(apiurl, function(err, res, body) {
         var data = JSON.parse(body);
-        //eyes.inspect(data);
-        if (data.items && data.items.length > 0) {
-            console.log(host, '\t', '\t', data.items[0].feed[0].href);
-        } else if (data.feed && data.feed.length > 0) {
-            console.log(host, '\t', '\t', data.feed[0].href);
-        } else {
-            console.log(host, '\t', '\t', 'URL NOT FOUND');
-            eyes.inspect(data);
-        }
+        eyes.inspect(data);
+        //if (data.items && data.items.length > 0) {
+            //console.log(host, '\t', '\t', data.items[0].feed[0].href);
+        //} else if (data.feed && data.feed.length > 0) {
+            //console.log(host, '\t', '\t', data.feed[0].href);
+        //} else {
+            //console.log(host, '\t', '\t', 'URL NOT FOUND');
+            //eyes.inspect(data);
+        //}
     });
 });
