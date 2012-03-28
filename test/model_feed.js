@@ -16,7 +16,6 @@ describe('feed', function() {
 
     it('should return the count of subscribers when subscribing', function(done) {
         feed.subscribe(feeds, function(subscribers) {
-            console.log(subscribers);
             var counts = feeds.map(function (x) { return 1; });
             subscribers.length.should.equal(counts.length);
             subscribers.toString().should.equal(counts.toString());

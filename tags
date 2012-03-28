@@ -115,6 +115,9 @@ GUID_SET	./bin/../lib/model/post.js	/^var GUID_SET = 'post:guids', $/;"	v	lineno
 NAMES	./bin/../lib/model/user.js	/^var NAMES  = 'user:name',$/;"	v	lineno:1	type:string
 NAMES	lib/model/user.js	/^var NAMES  = 'user:name',$/;"	v
 Post	./bin/../lib/model/post.js	/^function Post (redis) {$/;"	f	lineno:8	type:any function(any)
+REPORTER	Makefile	/^REPORTER = spec$/;"	m
+SRC	Makefile	/^SRC = $(shell find lib\/*.js)$/;"	m
+TESTS	Makefile	/^TESTS = test\/*.js$/;"	m
 Token	./bin/../lib/model/token.js	/^function Token (redis) {$/;"	f	lineno:6	type:any function(any)
 UNSUBSCRIBED_SET	./bin/../lib/model/feed.js	/^    UNSUBSCRIBED_SET = 'feed:unsubscribed',$/;"	v	lineno:3	type:string
 URL	./bin/../lib/app/redis_helper.js	/^    URL   = process.env.REDISTOGO_URL,$/;"	v	lineno:2	type:any
@@ -193,7 +196,7 @@ length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {
 login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
 logout	./bin/../lib/app/auth.js	/^        logout: function(req, res, next) {$/;"	f	lineno:70	type:void function(any, any, any)
 module.exports	lib/app/auth.js	/^module.exports = function(redis) {$/;"	f
-module.exports	lib/app/routes_main.js	/^module.exports = function(app, redis) {$/;"	f
+module.exports	lib/app/routes_main.js	/^module.exports = function(app, redis, agg) {$/;"	f
 module.exports.auth	lib/app/auth.js	/^    var auth = function(req, res, token, succ, fail) {$/;"	f
 module.exports.authenticate	lib/app/routes_main.js	/^    var authenticate = function(req, res, next) {$/;"	f
 module.exports.authenticate.succ	lib/app/routes_main.js	/^        var succ = function() { next(); };$/;"	f

@@ -14,6 +14,7 @@ var urls = [
   , { link: 'http://blog.wraithan.net', valid: true }
   , { link: 'http://dev.estisia.com', valid: true }
   , { link: 'http://www.joelonsoftware.com', valid: true }
+  , { link: 'http://www.paulgraham.com', valid: true }
   , { link: 'http://blog.paracode.com', valid: true }
   , { link: 'http://blog.grouptalent.com', valid: true }
   , { link: 'http://grouptalent.com', valid: false }
