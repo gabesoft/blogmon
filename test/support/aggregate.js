@@ -15,10 +15,10 @@ redis.debug_mode = true;
 redis.on('error', function(err) {
     console.log(err);
 });
-agg.on('feed-updated', function(errors, feed, count) {
+agg.on('feed-updated', function(feed, count) {
     console.log('updated', feed, count);
 });
-agg.on('feed-unchanged', function(errors, feed) {
+agg.on('feed-unchanged', function(feed) {
     console.log('unchanged', feed);
 });
 

@@ -23,8 +23,8 @@ var urls = [
 var valid = urls.filter(function(u) { return u.valid; });
 var invalid = urls.filter(function(u) { return !u.valid; });
 
-describe('feed finder', function() {
-    xit('should return the url of a valid feed', function(done) {
+describe('SLOW - feed_finder', function() {
+    it('should return the url of a valid feed', function(done) {
         util.cont(valid, done, function(item, cont) {
             finder.find(item.link,  function(feed) {
                 should.exist(feed);
@@ -33,7 +33,7 @@ describe('feed finder', function() {
         });
     });
 
-    xit('should return null if a feed is not found', function(done) {
+    it('should return null if a feed is not found', function(done) {
         util.cont(invalid, done, function(item, cont) {
             finder.find(item.link, function(feed) {
                 should.not.exist(feed);

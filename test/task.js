@@ -1,12 +1,12 @@
 var Task = require('../lib/task.js');
 
-describe('task', function() {
-    xit('should run a task delayed', function(done) {
+describe('SLOW - task', function() {
+    it('should run a task delayed', function(done) {
         var task = new Task(done);
         task.delay(1);
     });
 
-    xit('should run a task at interval', function(done) {
+    it('should run a task at interval', function(done) {
         var count = 0;
         var task = new Task(function(x, y, z) {
             count = count + 1;

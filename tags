@@ -1,0 +1,260 @@
+!_TAG_FILE_FORMAT	2	/extended format/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Patrick Walton	/pwalton@mozilla.com/
+!_TAG_PROGRAM_NAME	jsctags	//
+!_TAG_PROGRAM_URL	http://github.com/pcwalton/jsctags	/GitHub repository/
+!_TAG_PROGRAM_VERSION	0.1	//
+%anonymous_function	./bin/../lib/app/auth.js	/^                        tokens.update(token, function(err, updated) {$/;"	f	lineno:29	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/auth.js	/^                    tokens.create(user.name, function(err, token) {$/;"	f	lineno:60	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/auth.js	/^                    tokens.remove(tokens.parse(cookie.get(req)), function(err) {$/;"	f	lineno:73	type:void function(any)
+%anonymous_function	./bin/../lib/app/auth.js	/^                users.get(token.name, function(err, user) {$/;"	f	lineno:27	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/auth.js	/^            req.session.destroy(function() {$/;"	f	lineno:71	type:void function()
+%anonymous_function	./bin/../lib/app/auth.js	/^            tokens.create(user.name, function(err, token) {$/;"	f	lineno:84	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/auth.js	/^            users.authenticate(cred.name, cred.pass, function(err, user) {$/;"	f	lineno:58	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/auth.js	/^        tokens.verify(token, function(err, verified) {$/;"	f	lineno:25	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/config.js	/^    app.configure('development', function() {$/;"	f	lineno:30	type:void function()
+%anonymous_function	./bin/../lib/app/config.js	/^    app.configure('production', function() {$/;"	f	lineno:36	type:void function()
+%anonymous_function	./bin/../lib/app/config.js	/^    app.configure('test', function() {$/;"	f	lineno:24	type:void function()
+%anonymous_function	./bin/../lib/app/config.js	/^    app.configure(function() {$/;"	f	lineno:7	type:void function()
+%anonymous_function	./bin/../lib/app/redis_helper.js	/^        client.on('error', function(err) {$/;"	f	lineno:35	type:void function(any)
+%anonymous_function	./bin/../lib/app/redis_helper.js	/^        client.select(db, function(err, res) {$/;"	f	lineno:32	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_auth.js	/^                    auth.init(req, res, user, function() {$/;"	f	lineno:69	type:void function()
+%anonymous_function	./bin/../lib/app/routes_auth.js	/^            users.create(cred.name, cred.pass, function(err, user) {$/;"	f	lineno:64	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_auth.js	/^        auth.logout(req, res, function() {$/;"	f	lineno:44	type:void function()
+%anonymous_function	./bin/../lib/app/routes_auth.js	/^    app.del('\/session', function(req, res) {$/;"	f	lineno:43	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_auth.js	/^    app.get('\/session\/new', function(req, res) {$/;"	f	lineno:9	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_auth.js	/^    app.get('\/users\/new', function(req, res) {$/;"	f	lineno:20	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_auth.js	/^    app.post('\/session', function(req, res) {$/;"	f	lineno:31	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_auth.js	/^    app.post('\/users', function(req, res) {$/;"	f	lineno:52	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^                        users.subscribe(user.name, feed.uri, function(err3, feeds) {$/;"	f	lineno:54	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^                    feeds.subscribe(feed, function(err2) {$/;"	f	lineno:53	type:void function(any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^                agg.runNow(feedUr, function(err1, feed) {$/;"	f	lineno:52	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^            users.unsubscribe(user.name, uri, function(err2, feeds) {$/;"	f	lineno:71	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^            var subscribed = all.filter(function(feed) { $/;"	f	lineno:35	type:any function(any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^        feeds.getAll(function(err, all) {$/;"	f	lineno:34	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^        feeds.unsubscribe(uri, function(err1) {$/;"	f	lineno:70	type:void function(any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^        finder.find(query, function(feedUrl) {$/;"	f	lineno:48	type:void function(any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^    app.del('\/feeds\/:id', authenticate, function(req, res) {$/;"	f	lineno:67	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^    app.get('\/', authenticate, function(req, res) {$/;"	f	lineno:18	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^    app.get('\/feeds', authenticate, function(req, res) {$/;"	f	lineno:30	type:void function(any, any)
+%anonymous_function	./bin/../lib/app/routes_main.js	/^    app.post('\/feeds', authenticate, function(req, res) {$/;"	f	lineno:45	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^                    redis.sadd(UNSUBSCRIBED_SET, key, function(err, len) {$/;"	f	lineno:119	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^                redis.get(subsKey(key), function(err, subscribers) {$/;"	f	lineno:101	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^            me.subscribe(feed.slice(1), function(err, rest) {$/;"	f	lineno:48	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^            redis.decr(subsKey(key), function(err, count) {$/;"	f	lineno:117	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^            redis.get(subsKey(key), function(err, subscribers) {$/;"	f	lineno:81	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^            redis.incr(subsKey(key), function(err, subscribers) {$/;"	f	lineno:59	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^            redis.rpush(ALL_LIST, feeds.map(JSON.stringify), function(err, count) {$/;"	f	lineno:100	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^        me.subscribe(feed[0], function(err, count) {$/;"	f	lineno:46	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^        multi.exec(function(err, res) {$/;"	f	lineno:80	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^        redis.del(ALL_LIST, function(err, res) {$/;"	f	lineno:99	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^        redis.incr(subsKey(key), function(err, count) {$/;"	f	lineno:41	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^        subscribed = feeds.filter(function(feed) {$/;"	f	lineno:157	type:boolean function(any)
+%anonymous_function	./bin/../lib/model/feed.js	/^        this.add(feed, function(err, res) {$/;"	f	lineno:58	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^        trav(feeds).forEach(function(node) {$/;"	f	lineno:94	type:void function(any)
+%anonymous_function	./bin/../lib/model/feed.js	/^    multi.exec(function(err, res) {$/;"	f	lineno:152	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^    redis.get(dataKey(key), function(err, data) {$/;"	f	lineno:141	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^    redis.lrange(ALL_LIST, 0, -1, function(err, all) {$/;"	f	lineno:92	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^    redis.sismember(ALL_SET, key, function(err, mem) {$/;"	f	lineno:70	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/feed.js	/^    redis.sismember(UNSUBSCRIBED_SET, key, function(err, mem) {$/;"	f	lineno:113	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/post.js	/^                   .forEach(function(c) { count += c; });$/;"	f	lineno:113	type:void function(any)
+%anonymous_function	./bin/../lib/model/post.js	/^            Object.keys(ready).forEach(function(uri) {$/;"	f	lineno:105	type:void function(any)
+%anonymous_function	./bin/../lib/model/post.js	/^            lists = lists.map(function(list) { return list.map(JSON.parse); });$/;"	f	lineno:151	type:any function(any)
+%anonymous_function	./bin/../lib/model/post.js	/^            multi.exec(function(err, res) {$/;"	f	lineno:109	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/post.js	/^        Object.keys(feeds).forEach(function(feed) {$/;"	f	lineno:146	type:void function(any)
+%anonymous_function	./bin/../lib/model/post.js	/^        allFeeds.forEach(function(feed) {$/;"	f	lineno:140	type:void function(any)
+%anonymous_function	./bin/../lib/model/post.js	/^        multi.exec(function(err, lists) {$/;"	f	lineno:150	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/post.js	/^        posts = posts.forEach(function(post) {$/;"	f	lineno:91	type:void function(any)
+%anonymous_function	./bin/../lib/model/post.js	/^        saved.forEach(function(guid) { exists[guid] = true; });$/;"	f	lineno:89	type:void function(any)
+%anonymous_function	./bin/../lib/model/post.js	/^    feedUris.forEach(function(feed) { add[feed] = true; });$/;"	f	lineno:134	type:void function(any)
+%anonymous_function	./bin/../lib/model/post.js	/^    redis.smembers(FEED_SET, function(err, allFeeds) {$/;"	f	lineno:136	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/post.js	/^    redis.smembers(GUID_SET, function(err, saved) {$/;"	f	lineno:82	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/token.js	/^        keys.forEach(function(key) {$/;"	f	lineno:96	type:void function(any)
+%anonymous_function	./bin/../lib/model/token.js	/^        multi.exec(function(err2, deleted) {$/;"	f	lineno:99	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/token.js	/^    redis.del(key, function(err, count) {$/;"	f	lineno:66	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/token.js	/^    redis.get(key, function(err, data) {$/;"	f	lineno:74	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/token.js	/^    redis.keys(keypat, function(err, keys) {$/;"	f	lineno:108	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/token.js	/^    redis.keys(keypat, function(err1, keys) {$/;"	f	lineno:95	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/token.js	/^    redis.set(key, tostr(copy), function(err) {$/;"	f	lineno:58	type:void function(any)
+%anonymous_function	./bin/../lib/model/token.js	/^    redis.set(key, tostr(token), function(err) {$/;"	f	lineno:48	type:void function(any)
+%anonymous_function	./bin/../lib/model/token.js	/^    return JSON.parse(str, function(k, v) {$/;"	f	lineno:29	type:Date function(any, any)
+%anonymous_function	./bin/../lib/model/user.js	/^            me.feeds(name,  function(err2, feeds) {$/;"	f	lineno:101	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/user.js	/^            redis.set(key, JSON.stringify(user), function(serr, res) {$/;"	f	lineno:59	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/user.js	/^    redis.get(key, function(err1, data) {$/;"	f	lineno:97	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/user.js	/^    redis.sadd(NAMES, name, function(nerr, added) {$/;"	f	lineno:50	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/user.js	/^    redis.sadd(key, feed, function(err, added) {$/;"	f	lineno:70	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/user.js	/^    redis.smembers(key, function(err, feeds) {$/;"	f	lineno:87	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/user.js	/^    redis.srem(key, feed, function(err, added) {$/;"	f	lineno:79	type:void function(any, any)
+%anonymous_function	./bin/../lib/model/user.js	/^    this.get(name, function(err, user) {$/;"	f	lineno:32	type:void function(any, any)
+%anonymous_function	./bin/../pub/app/model/feeds.js	/^(function() {$/;"	f	lineno:1	type:void function()
+%anonymous_function	./bin/../pub/app/model/posts.js	/^(function() {$/;"	f	lineno:1	type:void function()
+%anonymous_function	./bin/../pub/app/view/feeds.js	/^(function() {$/;"	f	lineno:1	type:void function()
+ALL_LIST	./bin/../lib/model/feed.js	/^var ALL_LIST = 'feeds',$/;"	v	lineno:1	type:string
+ALL_LIST	lib/model/feed.js	/^var ALL_LIST = 'feeds',$/;"	v
+ALL_SET	./bin/../lib/model/feed.js	/^    ALL_SET = 'feed:all',$/;"	v	lineno:2	type:string
+Aggregator	lib/aggregator.js	/^function Aggregator (feed, post, interval) {$/;"	c
+Aggregator.run	lib/aggregator.js	/^Aggregator.prototype.run = function() {$/;"	m
+Aggregator.runNow	lib/aggregator.js	/^Aggregator.prototype.runNow = function(feedUri, callback) {$/;"	m
+Aggregator.stop	lib/aggregator.js	/^Aggregator.prototype.stop = function() {$/;"	m
+Aggregator.var.run	lib/aggregator.js	/^    var run = function(agg) {$/;"	f
+FEED_SET	./bin/../lib/model/post.js	/^    FEED_SET = 'post:feeds',$/;"	v	lineno:2	type:string
+Feed	./bin/../lib/model/feed.js	/^function Feed (redis) {$/;"	f	lineno:8	type:any function(any)
+Feed	lib/model/feed.js	/^function Feed (redis) {$/;"	c
+Feed.add	lib/model/feed.js	/^Feed.prototype.add = function(feed, callback) {$/;"	m
+Feed.getAll	lib/model/feed.js	/^Feed.prototype.getAll = function(callback) {$/;"	m
+Feed.getData	lib/model/feed.js	/^Feed.prototype.getData = function(uri, callback) {$/;"	m
+Feed.length	lib/model/feed.js	/^Feed.prototype.length = function(callback) {$/;"	m
+Feed.setData	lib/model/feed.js	/^Feed.prototype.setData = function(uri, data, callback) {$/;"	m
+Feed.subscribe	lib/model/feed.js	/^Feed.prototype.subscribe = function(feed, callback) {$/;"	m
+Feed.unsubscribe	lib/model/feed.js	/^Feed.prototype.unsubscribe = function(uri, callback) {$/;"	m
+Feed.update	lib/model/feed.js	/^Feed.prototype.update = function(feed, callback) {$/;"	m
+Finder	lib/feed_finder.js	/^Finder.prototype.find = function(link, callback) {$/;"	c
+Finder	lib/feed_finder.js	/^function Finder () {$/;"	f
+Finder.find	lib/feed_finder.js	/^Finder.prototype.find = function(link, callback) {$/;"	m
+GUID_SET	./bin/../lib/model/post.js	/^var GUID_SET = 'post:guids', $/;"	v	lineno:1	type:string
+NAMES	./bin/../lib/model/user.js	/^var NAMES  = 'user:name',$/;"	v	lineno:1	type:string
+NAMES	lib/model/user.js	/^var NAMES  = 'user:name',$/;"	v
+Post	./bin/../lib/model/post.js	/^function Post (redis) {$/;"	f	lineno:8	type:any function(any)
+Token	./bin/../lib/model/token.js	/^function Token (redis) {$/;"	f	lineno:6	type:any function(any)
+UNSUBSCRIBED_SET	./bin/../lib/model/feed.js	/^    UNSUBSCRIBED_SET = 'feed:unsubscribed',$/;"	v	lineno:3	type:string
+URL	./bin/../lib/app/redis_helper.js	/^    URL   = process.env.REDISTOGO_URL,$/;"	v	lineno:2	type:any
+User	./bin/../lib/model/user.js	/^function User (redis) {$/;"	f	lineno:5	type:any function(any)
+User	lib/model/user.js	/^function User (redis) {$/;"	c
+User.authenticate	lib/model/user.js	/^User.prototype.authenticate = function(name, pass, callback) {$/;"	m
+User.create	lib/model/user.js	/^User.prototype.create = function(name, pass, callback) {$/;"	m
+User.feeds	lib/model/user.js	/^User.prototype.feeds = function(name, callback) {$/;"	m
+User.get	lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"	m
+User.subscribe	lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	m
+User.unsubscribe	lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	m
+add	./bin/../lib/model/feed.js	/^Feed.prototype.add = function(feed, callback) {$/;"	f	lineno:66	type:void function(any, any)
+add	./bin/../lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	f	lineno:76	type:void function(any, any)
+auth	./bin/../lib/app/auth.js	/^    var auth = function(req, res, token, succ, fail) {$/;"	f	lineno:24	type:void function(any, any, any, any, any)
+authenticate	./bin/../lib/app/auth.js	/^        authenticate: function(req, res, succ, fail) {$/;"	f	lineno:44	type:void function(any, any, any, any)
+authenticate	./bin/../lib/app/routes_main.js	/^    var authenticate = function(req, res, next) {$/;"	f	lineno:9	type:void function(any, any, any)
+authenticate	./bin/../lib/model/user.js	/^User.prototype.authenticate = function(name, pass, callback) {$/;"	f	lineno:31	type:void function(any, any, any)
+authenticate.fail	lib/app/routes_main.js	/^        var fail = function() { res.redirect('\/session\/new'); };$/;"	f
+buildFeed	lib/aggregator.js	/^var buildFeed = function(uri, meta) {$/;"	f
+buildPost	lib/aggregator.js	/^var buildPost = function(feedUri, post) {$/;"	f
+client	./bin/../lib/app/redis_helper.js	/^    client: function(db) {$/;"	f	lineno:22	type:any function(any)
+config	./bin/../lib/app/redis_helper.js	/^var config = parseRedisUrl();$/;"	v	lineno:19	type:<null | Object>
+cookie.del	lib/app/auth.js	/^        del: function(res) { res.clearCookie(COOKIE); },$/;"	m
+cookie.get	lib/app/auth.js	/^        get: function(req) { return req.cookies[COOKIE]; },$/;"	m
+cookie.put	lib/app/auth.js	/^        put: function(res, data) {$/;"	m
+count	./bin/../lib/model/token.js	/^Token.prototype.count = function(name, callback) {$/;"	f	lineno:105	type:void function(any, any)
+create	./bin/../lib/model/token.js	/^Token.prototype.create = function(name, callback) {$/;"	f	lineno:38	type:void function(any, any)
+create	./bin/../lib/model/user.js	/^User.prototype.create = function(name, pass, callback) {$/;"	f	lineno:44	type:void function(any, any, any)
+crypto	./bin/../lib/model/token.js	/^    crypto = require('crypto');$/;"	v	lineno:4	type:any
+crypto	./bin/../lib/model/user.js	/^    crypto = require('crypto');$/;"	v	lineno:3	type:any
+dataKey	./bin/../lib/model/feed.js	/^var dataKey = function(key) {$/;"	f	lineno:23	type:string function(string)
+dataKey	./bin/../lib/model/feed.js	/^var dataKey = function(key) {$/;"	v	lineno:23	type:string function(string)
+dataKey	lib/model/feed.js	/^var dataKey = function(key) {$/;"	f
+del	./bin/../lib/app/auth.js	/^        del: function(res) { res.clearCookie(COOKIE); },$/;"	f	lineno:10	type:void function(any)
+encrypt	./bin/../lib/model/user.js	/^var encrypt = function(text, salt) {$/;"	f	lineno:24	type:any function(any, string)
+encrypt	./bin/../lib/model/user.js	/^var encrypt = function(text, salt) {$/;"	v	lineno:24	type:any function(any, string)
+encrypt	lib/model/user.js	/^var encrypt = function(text, salt) {$/;"	f
+exports	./bin/../lib/app/auth.js	/^module.exports = function(redis) {$/;"	f	lineno:1	type:Object function(any)
+exports	./bin/../lib/app/config.js	/^module.exports = function(app, express) {$/;"	f	lineno:1	type:void function(any, any)
+exports	./bin/../lib/app/routes.js	/^module.exports = function(app) {$/;"	f	lineno:1	type:void function(any)
+exports	./bin/../lib/app/routes_auth.js	/^module.exports = function(app, redis) {$/;"	f	lineno:1	type:void function(any, any)
+exports	./bin/../lib/app/routes_main.js	/^module.exports = function(app, redis) {$/;"	f	lineno:1	type:void function(any, any)
+eyes	./bin/../lib/model/post.js	/^    eyes = require('eyes'),$/;"	v	lineno:5	type:any
+eyes	./bin/../lib/model/token.js	/^    eyes   = require('eyes'),$/;"	v	lineno:3	type:any
+fail	./bin/../lib/app/routes_auth.js	/^        var fail = function() {$/;"	f	lineno:33	type:void function()
+fail	./bin/../lib/app/routes_main.js	/^        var fail = function() { res.redirect('\/session\/new'); };$/;"	f	lineno:11	type:void function()
+feeds	./bin/../lib/model/user.js	/^User.prototype.feeds = function(name, callback) {$/;"	f	lineno:84	type:void function(any, any)
+findBest	./bin/../lib/model/post.js	/^    var findBest = function(list, index) {$/;"	f	lineno:29	type:void function(any, any)
+flash	./bin/../lib/app/config.js	/^        flash: function(req, res) {$/;"	f	lineno:46	type:any function(any, any)
+get	./bin/../lib/app/auth.js	/^        get: function(req) { return req.cookies[COOKIE]; },$/;"	f	lineno:9	type:any function(any)
+get	./bin/../lib/model/post.js	/^Post.prototype.get = function(feedUris, start, limit, callback) {$/;"	f	lineno:122	type:void function(any, any, any, any)
+get	./bin/../lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"	f	lineno:92	type:void function(any, any)
+getAll	./bin/../lib/model/feed.js	/^Feed.prototype.getAll = function(callback) {$/;"	f	lineno:146	type:void function(any)
+getData	./bin/../lib/model/feed.js	/^Feed.prototype.getData = function(uri, callback) {$/;"	f	lineno:137	type:void function(any, any)
+getFeedsKey	./bin/../lib/model/user.js	/^var getFeedsKey = function(name) {$/;"	f	lineno:16	type:string function(any)
+getFeedsKey	./bin/../lib/model/user.js	/^var getFeedsKey = function(name) {$/;"	v	lineno:16	type:string function(any)
+getFeedsKey	lib/model/user.js	/^var getFeedsKey = function(name) {$/;"	f
+getKey	./bin/../lib/model/feed.js	/^var getKey = function(uri) {$/;"	f	lineno:15	type:any function(any)
+getKey	./bin/../lib/model/feed.js	/^var getKey = function(uri) {$/;"	v	lineno:15	type:any
+getKey	./bin/../lib/model/post.js	/^var getKey = function(feedUri) {$/;"	f	lineno:15	type:string function(any)
+getKey	./bin/../lib/model/post.js	/^var getKey = function(feedUri) {$/;"	v	lineno:15	type:any
+getKey	./bin/../lib/model/user.js	/^var getKey = function(name) { $/;"	f	lineno:12	type:string function(any)
+getKey	./bin/../lib/model/user.js	/^var getKey = function(name) { $/;"	v	lineno:12	type:<any function(any) | string function(any)>
+getKey	lib/model/feed.js	/^var getKey = function(uri) {$/;"	f
+getKey	lib/model/user.js	/^var getKey = function(name) { $/;"	f
+getUrl	lib/feed_finder.js	/^var getUrl = function(link) {$/;"	f
+getdate	./bin/../lib/model/post.js	/^        getdate   = function(post) { return post.date || post.pubdate; },$/;"	f	lineno:26	type:any function(any)
+getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	f	lineno:20	type:string function()
+getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	v	lineno:20	type:string function()
+getsalt	lib/model/user.js	/^var getsalt = function() {$/;"	f
+has	./bin/../lib/app/auth.js	/^        has: function(req) { return util.exists(this.get(req)); },$/;"	f	lineno:8	type:any function(any)
+init	./bin/../lib/app/auth.js	/^        init: function(req, res, user, next) {$/;"	f	lineno:83	type:void function(any, any, any, any)
+init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f	lineno:19	type:void function(any, any, any, any)
+invalid	test/feed_finder.js	/^var invalid = urls.filter(function(u) { return !u.valid; });$/;"	v
+length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {$/;"	f	lineno:166	type:void function(any)
+login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
+logout	./bin/../lib/app/auth.js	/^        logout: function(req, res, next) {$/;"	f	lineno:70	type:void function(any, any, any)
+module.exports	lib/app/auth.js	/^module.exports = function(redis) {$/;"	f
+module.exports	lib/app/routes_main.js	/^module.exports = function(app, redis) {$/;"	f
+module.exports.auth	lib/app/auth.js	/^    var auth = function(req, res, token, succ, fail) {$/;"	f
+module.exports.authenticate	lib/app/routes_main.js	/^    var authenticate = function(req, res, next) {$/;"	f
+module.exports.authenticate.succ	lib/app/routes_main.js	/^        var succ = function() { next(); };$/;"	f
+module.exports.cookie.has	lib/app/auth.js	/^        has: function(req) { return util.exists(this.get(req)); },$/;"	m
+module.exports.init	lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f
+parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	f	lineno:28	type:any function(any)
+parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	v	lineno:28	type:any function(any)
+parseRedisUrl	./bin/../lib/app/redis_helper.js	/^var parseRedisUrl = function() {$/;"	f	lineno:6	type:<null | Object> function()
+parseRedisUrl	./bin/../lib/app/redis_helper.js	/^var parseRedisUrl = function() {$/;"	v	lineno:6	type:<null | Object> function()
+prepare	./bin/../lib/model/post.js	/^var prepare = function(lists, start, limit) {$/;"	f	lineno:19	type:Array[null] function(any, number, number)
+prepare	./bin/../lib/model/post.js	/^var prepare = function(lists, start, limit) {$/;"	v	lineno:19	type:Array[null] function(any, number, number)
+put	./bin/../lib/app/auth.js	/^        put: function(res, data) {$/;"	f	lineno:11	type:void function(any, any)
+redis	./bin/../lib/app/redis_helper.js	/^    redis = require('redis');$/;"	v	lineno:4	type:any
+remove	./bin/../lib/model/token.js	/^Token.prototype.remove = function(token, callback) {$/;"	f	lineno:63	type:void function(any, any)
+removeAll	./bin/../lib/model/token.js	/^Token.prototype.removeAll = function(name, callback) {$/;"	f	lineno:90	type:void function(any, any)
+removeAt	./bin/../lib/model/post.js	/^        removeAt  = function(index) { lists.splice(index, 1); };$/;"	f	lineno:27	type:void function(any)
+render	./bin/../pub/app/view/feeds.js	/^        render: function() {$/;"	f	lineno:7	type:void function()
+runFeed	lib/aggregator.js	/^var runFeed = function(agg, feedUri, data, callback) {$/;"	f
+runFeed.req.headers	lib/aggregator.js	/^        headers: {$/;"	p
+runFeed.req.uri	lib/aggregator.js	/^        uri: feedUri,$/;"	p
+runOne	lib/aggregator.js	/^var runOne = function(agg, feedUri, callback) {$/;"	f
+session	./bin/../lib/app/config.js	/^        session: function(req, res) {$/;"	f	lineno:43	type:any function(any, any)
+setData	./bin/../lib/model/feed.js	/^Feed.prototype.setData = function(uri, data, callback) {$/;"	f	lineno:130	type:void function(any, any, any)
+should	test/aggregator.js	/^var should = require('should'),$/;"	v
+should	test/feed_finder.js	/^var should = require('should'),$/;"	v
+should	test/model_feed.js	/^var should = require('should'),$/;"	v
+should	test/model_post.js	/^var should = require('should'),$/;"	v
+should	test/model_token.js	/^var should  = require('should'),$/;"	v
+should	test/model_user.js	/^var should = require('should'),$/;"	v
+store	./bin/../lib/app/redis_helper.js	/^    store: function(express) {$/;"	f	lineno:42	type:any function(any)
+subsKey	./bin/../lib/model/feed.js	/^var subsKey = function(key) {$/;"	f	lineno:19	type:string function(string)
+subsKey	./bin/../lib/model/feed.js	/^var subsKey = function(key) {$/;"	v	lineno:19	type:string function(string)
+subsKey	lib/model/feed.js	/^var subsKey = function(key) {$/;"	f
+subscribe	./bin/../lib/model/feed.js	/^Feed.prototype.subscribe = function(feed, callback) {$/;"	f	lineno:28	type:void function(any, any)
+subscribe	./bin/../lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	f	lineno:66	type:void function(any, any, any)
+succ	./bin/../lib/app/routes_auth.js	/^        var succ = function() { res.redirect('\/'); }; $/;"	f	lineno:32	type:void function()
+succ	./bin/../lib/app/routes_main.js	/^        var succ = function() { next(); };$/;"	f	lineno:10	type:void function()
+tohex	./bin/../lib/model/token.js	/^var tohex = function(text) {$/;"	f	lineno:21	type:any function(string)
+tohex	./bin/../lib/model/token.js	/^var tohex = function(text) {$/;"	v	lineno:21	type:any function(string)
+tokenKey	./bin/../lib/model/token.js	/^var tokenKey = function(name, series) {$/;"	f	lineno:13	type:string function(any, string)
+tokenKey	./bin/../lib/model/token.js	/^var tokenKey = function(name, series) {$/;"	v	lineno:13	type:string function(any, string)
+tostr	./bin/../lib/model/token.js	/^var tostr = function(token) {$/;"	f	lineno:34	type:any function(Object)
+tostr	./bin/../lib/model/token.js	/^var tostr = function(token) {$/;"	v	lineno:34	type:any function(Object)
+trav	./bin/../lib/model/feed.js	/^    trav = require('traverse'),$/;"	v	lineno:5	type:any
+trav	./bin/../lib/model/post.js	/^    trav = require('traverse'),$/;"	v	lineno:4	type:any
+trav	./bin/../lib/model/token.js	/^    trav   = require('traverse'),$/;"	v	lineno:2	type:any
+unique	./bin/../lib/model/token.js	/^var unique = function() {$/;"	f	lineno:17	type:string function()
+unique	./bin/../lib/model/token.js	/^var unique = function() {$/;"	v	lineno:17	type:string function()
+unsubscribe	./bin/../lib/model/feed.js	/^Feed.prototype.unsubscribe = function(uri, callback) {$/;"	f	lineno:109	type:void function(any, any)
+unsubscribe	./bin/../lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	f	lineno:75	type:void function(any, any, any)
+update	./bin/../lib/model/feed.js	/^Feed.prototype.update = function(feed, callback) {$/;"	f	lineno:88	type:void function(any, any)
+update	./bin/../lib/model/token.js	/^Token.prototype.update = function(token, callback) {$/;"	f	lineno:53	type:void function(any, any)
+url	./bin/../lib/app/redis_helper.js	/^var url   = require('url'),$/;"	v	lineno:1	type:any
+url	./bin/../lib/model/feed.js	/^    url = require('url');$/;"	v	lineno:6	type:any
+url	./bin/../lib/model/post.js	/^    url = require('url');$/;"	v	lineno:6	type:any
+util	./bin/../lib/app/redis_helper.js	/^    util  = require('..\/util.js'),$/;"	v	lineno:3	type:any
+util	./bin/../lib/model/feed.js	/^    util = require('..\/util.js'),$/;"	v	lineno:4	type:any
+util	./bin/../lib/model/post.js	/^    util = require('..\/util.js'),$/;"	v	lineno:3	type:any
+util	./bin/../lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v	lineno:1	type:any
+util	./bin/../lib/model/user.js	/^    util   = require('..\/util.js'),$/;"	v	lineno:2	type:any
+util	lib/aggregator.js	/^var util        = require('.\/util.js'),$/;"	v
+util	lib/feed_finder.js	/^var util    = require('.\/util.js'),$/;"	v
+valid	test/feed_finder.js	/^var valid = urls.filter(function(u) { return u.valid; });$/;"	v
+verify	./bin/../lib/model/token.js	/^Token.prototype.verify = function(token, callback) {$/;"	f	lineno:71	type:void function(any, any)

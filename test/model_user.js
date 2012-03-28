@@ -40,7 +40,7 @@ describe('user', function() {
     });
 
     it('should authenticate a user with valid password', function(done) {
-        user.authenticate(data[1].name, data[1].pass, function(err, record) {
+        user.authenticate(data[1].name, data[1].pass, function(record) {
             should.exist(record);
             record.name.should.equal(data[1].name);
             done();
@@ -48,21 +48,21 @@ describe('user', function() {
     });
 
     it('should not authenticate a user with invalid password', function(done) {
-        user.authenticate(data[1].name, 'invalid', function(err, record) {
+        user.authenticate(data[1].name, 'invalid', function(record) {
             should.not.exist(record);
             done();
         });
     });
 
     it('should not authenticate a non-existent user', function(done) {
-        user.authenticate('non-user', 'invalid', function(err, record) {
+        user.authenticate('non-user', 'invalid', function(record) {
             should.not.exist(record);
             done();
         });
     });
 
     it('should get a user by name', function(done) {
-        user.get(data[1].name, function(err, record) {
+        user.get(data[1].name, function(record) {
             should.exist(record);
             record.name.should.equal(data[1].name);
             done();
@@ -70,7 +70,7 @@ describe('user', function() {
     });
 
     it('should subscribe to feed', function(done) {
-        user.subscribe(data[1].name, feeds[0].uri, function(err1, feeds1) {
+        user.subscribe(data[1].name, feeds[0].uri, function(feeds1) {
             feeds1.length.should.equal(1);
             feeds1[0].should.equal(feeds[0].uri);
             done();
@@ -78,8 +78,8 @@ describe('user', function() {
     });
 
     it('should allow multiple subscriptions to the same feed', function(done) {
-        user.subscribe(data[1].name, feeds[0].uri, function(err1, feeds1) {
-            user.subscribe(data[1].name, feeds[0].uri, function(err2, feeds2) {
+        user.subscribe(data[1].name, feeds[0].uri, function(feeds1) {
+            user.subscribe(data[1].name, feeds[0].uri, function(feeds2) {
                 feeds2.length.should.equal(1);
                 done();
             });
@@ -87,9 +87,9 @@ describe('user', function() {
     });
 
     it('should unsubscribe from feed', function(done) {
-        user.subscribe(data[1].name, feeds[0].uri, function(err1, feeds1) {
-            user.subscribe(data[1].name, feeds[1].uri, function(err2, feeds2) {
-                user.unsubscribe(data[1].name, feeds[0].uri, function(err3, feeds3) {
+        user.subscribe(data[1].name, feeds[0].uri, function(feeds1) {
+            user.subscribe(data[1].name, feeds[1].uri, function(feeds2) {
+                user.unsubscribe(data[1].name, feeds[0].uri, function(feeds3) {
                     feeds3.length.should.equal(1);
                     feeds3[0].should.equal(feeds[1].uri);
                     done();
@@ -99,9 +99,9 @@ describe('user', function() {
     });
 
     it('should populate subscribed feeds when getting by name', function(done) {
-        user.subscribe(data[1].name, feeds[0].uri, function(err1, feeds1) {
-            user.subscribe(data[1].name, feeds[1].uri, function(err2, feeds2) {
-                user.get(data[1].name, function(err, record) {
+        user.subscribe(data[1].name, feeds[0].uri, function(feeds1) {
+            user.subscribe(data[1].name, feeds[1].uri, function(feeds2) {
+                user.get(data[1].name, function(record) {
                     should.exist(record.feeds);
                     record.feeds.length.should.equal(2);
                     done();
