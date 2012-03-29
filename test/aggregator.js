@@ -5,7 +5,7 @@ var should = require('should'),
     redis = require('./redis_helper.js').client(),
     feed = new Feed(redis),
     post = new Post(redis),
-    agg  = new Aggregator(feed, post, 1);
+    agg  = new Aggregator(redis, 1);
 
 agg.once('feed-updated', function(feed, count) {
     console.log('updated', feed, count);
@@ -23,9 +23,9 @@ describe('SLOW - aggregator', function() {
         var uri = 'http://robkuz-blog.blogspot.com/feeds/posts/default';
         agg.runNow(uri, function(record, saved) {
             record.uri.should.equal(uri);
-            feed.getAll(function(feeds) {
-                var found = feeds.filter(function(feed) {
-                    return feed.uri === uri;
+            feed.get(function(feeds) {
+                var found = feeds.filter(function(record) {
+                    return record.uri === uri;
                 });
                 found.length.should.equal(1);
                 post.get(uri, 0, -1, function(posts) {
