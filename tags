@@ -121,9 +121,9 @@ Token.create	lib/model/token.js	/^Token.prototype.create = function(name, callba
 Token.parse	lib/model/token.js	/^Token.prototype.parse = parse;$/;"	m
 Token.remove	lib/model/token.js	/^Token.prototype.remove = function(token, callback) {$/;"	m
 Token.removeAll	lib/model/token.js	/^Token.prototype.removeAll = function(name, callback) {$/;"	m
-Token.tostr	lib/model/token.js	/^Token.prototype.tostr = tostr;$/;"	m
+Token.toStr	lib/model/token.js	/^Token.prototype.toStr = toStr;$/;"	m
 Token.update	lib/model/token.js	/^Token.prototype.update = function(token, callback) {$/;"	m
-Token.var.token.id	lib/model/token.js	/^        id    : tohex(util.unique()),$/;"	p
+Token.var.token.id	lib/model/token.js	/^        id    : tohex(util.uniqStr()),$/;"	p
 Token.verify	lib/model/token.js	/^Token.prototype.verify = function(token, callback) {$/;"	m
 UNSUBSCRIBED_SET	./bin/../lib/model/feed.js	/^    UNSUBSCRIBED_SET = 'feed:unsubscribed',$/;"	v	lineno:3	type:string
 URL	./bin/../lib/app/redis_helper.js	/^    URL   = process.env.REDISTOGO_URL,$/;"	v	lineno:2	type:any
@@ -138,7 +138,6 @@ User.unsubscribe	lib/model/user.js	/^User.prototype.unsubscribe = function(name,
 add	./bin/../lib/model/feed.js	/^Feed.prototype.add = function(feed, callback) {$/;"	f	lineno:66	type:void function(any, any)
 add	./bin/../lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	f	lineno:76	type:void function(any, any)
 addMany	lib/model/feed.js	/^var addMany = function(repo, feeds, callback) {$/;"	f
-addMany.done	lib/model/feed.js	/^    var done   = function() {$/;"	f
 addOne	lib/model/feed.js	/^var addOne = function(repo, feed, callback) {$/;"	f
 auth	./bin/../lib/app/auth.js	/^    var auth = function(req, res, token, succ, fail) {$/;"	f	lineno:24	type:void function(any, any, any, any, any)
 authenticate	./bin/../lib/app/auth.js	/^        authenticate: function(req, res, succ, fail) {$/;"	f	lineno:44	type:void function(any, any, any, any)
@@ -208,6 +207,8 @@ init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {
 init	lib/app/initializer.js	/^var init = function(app) {$/;"	f
 initSession	test/app_auth.js	/^var initSession = function(callback) {$/;"	f
 invalid	test/feed_finder.js	/^var invalid = urls.filter(function(u) { return !u.valid; });$/;"	v
+isId	lib/model/feed.js	/^var isId = function(obj) {$/;"	f
+isNotId	lib/model/feed.js	/^var isNotId = function(obj) { return !isId(obj); };$/;"	f
 length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {$/;"	f	lineno:166	type:void function(any)
 login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
 logout	./bin/../lib/app/auth.js	/^        logout: function(req, res, next) {$/;"	f	lineno:70	type:void function(any, any, any)
@@ -262,6 +263,8 @@ subscribe	./bin/../lib/model/feed.js	/^Feed.prototype.subscribe = function(feed,
 subscribe	./bin/../lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	f	lineno:66	type:void function(any, any, any)
 succ	./bin/../lib/app/routes_auth.js	/^        var succ = function() { res.redirect('\/'); }; $/;"	f	lineno:32	type:void function()
 succ	./bin/../lib/app/routes_main.js	/^        var succ = function() { next(); };$/;"	f	lineno:10	type:void function()
+toStr	lib/model/feed.js	/^var toStr = function(token) {$/;"	f
+toStr	lib/model/token.js	/^var toStr = function(token) {$/;"	f
 tohex	./bin/../lib/model/token.js	/^var tohex = function(text) {$/;"	f	lineno:21	type:any function(string)
 tohex	./bin/../lib/model/token.js	/^var tohex = function(text) {$/;"	v	lineno:21	type:any function(string)
 tohex	lib/model/token.js	/^var tohex = function(text) {$/;"	f
@@ -270,8 +273,6 @@ tokenKey	./bin/../lib/model/token.js	/^var tokenKey = function(name, series) {$/
 tokenKey	lib/model/token.js	/^var tokenKey = function(name, series) {$/;"	f
 tostr	./bin/../lib/model/token.js	/^var tostr = function(token) {$/;"	f	lineno:34	type:any function(Object)
 tostr	./bin/../lib/model/token.js	/^var tostr = function(token) {$/;"	v	lineno:34	type:any function(Object)
-tostr	lib/model/feed.js	/^var tostr = function(token) {$/;"	f
-tostr	lib/model/token.js	/^var tostr = function(token) {$/;"	f
 trav	./bin/../lib/model/feed.js	/^    trav = require('traverse'),$/;"	v	lineno:5	type:any
 trav	./bin/../lib/model/post.js	/^    trav = require('traverse'),$/;"	v	lineno:4	type:any
 trav	./bin/../lib/model/token.js	/^    trav   = require('traverse'),$/;"	v	lineno:2	type:any

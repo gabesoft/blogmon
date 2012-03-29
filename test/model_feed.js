@@ -46,6 +46,17 @@ describe('feed', function() {
         });
     });
 
+    it('should get a feed by id in string format', function(done) {
+        repo.add(feeds, function() {
+            var feed = feeds[1];
+            repo.get(feed.id + '', function(copy) {
+              copy.uri.should.equal(feed.uri);
+              copy.id.should.equal(feed.id);
+              done();
+            });
+        });
+    });
+
     it('should get multiple feeds by uri', function(done) {
         repo.add(feeds, function() {
             var uris = feeds.map(function(r) { return r.uri; });
