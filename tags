@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	jsctags	//
 !_TAG_PROGRAM_URL	http://github.com/pcwalton/jsctags	/GitHub repository/
 !_TAG_PROGRAM_VERSION	0.1	//
+$blah	test/support/js_indent.js	/^function $blah() {      \/\/ 0$/;"	f
 %anonymous_function	./bin/../lib/app/auth.js	/^                        tokens.update(token, function(err, updated) {$/;"	f	lineno:29	type:void function(any, any)
 %anonymous_function	./bin/../lib/app/auth.js	/^                    tokens.create(user.name, function(err, token) {$/;"	f	lineno:60	type:void function(any, any)
 %anonymous_function	./bin/../lib/app/auth.js	/^                    tokens.remove(tokens.parse(cookie.get(req)), function(err) {$/;"	f	lineno:73	type:void function(any)
@@ -97,6 +98,9 @@ Aggregator.run	lib/aggregator.js	/^Aggregator.prototype.run = function() {$/;"	m
 Aggregator.runNow	lib/aggregator.js	/^Aggregator.prototype.runNow = function(feedUri, callback) {$/;"	m
 Aggregator.stop	lib/aggregator.js	/^Aggregator.prototype.stop = function() {$/;"	m
 Aggregator.var.run	lib/aggregator.js	/^    var run = function(agg) {$/;"	f
+Backbone	pub/app/model/feed.js	/^var Backbone = require('..\/dep\/backbone.js');$/;"	v
+Backbone	pub/app/model/feeds.js	/^var Backbone = require('..\/dep\/backbone.js'),$/;"	v
+Backbone	pub/app/view/feedstab.js	/^var Backbone = require('..\/dep\/backbone.js')$/;"	v
 FEED_SET	./bin/../lib/model/post.js	/^    FEED_SET = 'post:feeds',$/;"	v	lineno:2	type:string
 Feed	./bin/../lib/model/feed.js	/^function Feed (redis) {$/;"	f	lineno:8	type:any function(any)
 Feed	lib/model/feed.js	/^function Feed (redis) {$/;"	c
@@ -139,6 +143,7 @@ add	./bin/../lib/model/feed.js	/^Feed.prototype.add = function(feed, callback) {
 add	./bin/../lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	f	lineno:76	type:void function(any, any)
 addMany	lib/model/feed.js	/^var addMany = function(repo, feeds, callback) {$/;"	f
 addOne	lib/model/feed.js	/^var addOne = function(repo, feed, callback) {$/;"	f
+arr	test/support/js_indent.js	/^var arr = [];$/;"	v
 auth	./bin/../lib/app/auth.js	/^    var auth = function(req, res, token, succ, fail) {$/;"	f	lineno:24	type:void function(any, any, any, any, any)
 authenticate	./bin/../lib/app/auth.js	/^        authenticate: function(req, res, succ, fail) {$/;"	f	lineno:44	type:void function(any, any, any, any)
 authenticate	./bin/../lib/app/routes_main.js	/^    var authenticate = function(req, res, next) {$/;"	f	lineno:9	type:void function(any, any, any)
@@ -146,6 +151,7 @@ authenticate	./bin/../lib/model/user.js	/^User.prototype.authenticate = function
 authenticate.fail	lib/app/routes_main.js	/^        var fail = function() { res.redirect('\/session\/new'); };$/;"	f
 buildFeed	lib/aggregator.js	/^var buildFeed = function(uri, meta, data) {$/;"	f
 buildPost	lib/aggregator.js	/^var buildPost = function(feedUri, post) {$/;"	f
+bundle	server.js	/^var bundle = bundle({$/;"	v
 checkContextEmpty	test/app_auth.js	/^var checkContextEmpty = function() {$/;"	f
 checkContextHasUser	test/app_auth.js	/^var checkContextHasUser = function() {$/;"	f
 client	./bin/../lib/app/redis_helper.js	/^    client: function(db) {$/;"	f	lineno:22	type:any function(any)
@@ -162,6 +168,7 @@ crypto	./bin/../lib/model/user.js	/^    crypto = require('crypto');$/;"	v	lineno
 dataKey	./bin/../lib/model/feed.js	/^var dataKey = function(key) {$/;"	f	lineno:23	type:string function(string)
 dataKey	./bin/../lib/model/feed.js	/^var dataKey = function(key) {$/;"	v	lineno:23	type:string function(string)
 del	./bin/../lib/app/auth.js	/^        del: function(res) { res.clearCookie(COOKIE); },$/;"	f	lineno:10	type:void function(any)
+e	test/support/js_indent.js	/^var e = function(z) { $/;"	f
 encrypt	./bin/../lib/model/user.js	/^var encrypt = function(text, salt) {$/;"	f	lineno:24	type:any function(any, string)
 encrypt	./bin/../lib/model/user.js	/^var encrypt = function(text, salt) {$/;"	v	lineno:24	type:any function(any, string)
 encrypt	lib/model/user.js	/^var encrypt = function(text, salt) {$/;"	f
@@ -170,14 +177,17 @@ exports	./bin/../lib/app/config.js	/^module.exports = function(app, express) {$/
 exports	./bin/../lib/app/routes.js	/^module.exports = function(app) {$/;"	f	lineno:1	type:void function(any)
 exports	./bin/../lib/app/routes_auth.js	/^module.exports = function(app, redis) {$/;"	f	lineno:1	type:void function(any, any)
 exports	./bin/../lib/app/routes_main.js	/^module.exports = function(app, redis) {$/;"	f	lineno:1	type:void function(any, any)
+express	server.js	/^var express = require('express'),$/;"	v
 eyes	./bin/../lib/model/post.js	/^    eyes = require('eyes'),$/;"	v	lineno:5	type:any
 eyes	./bin/../lib/model/token.js	/^    eyes   = require('eyes'),$/;"	v	lineno:3	type:any
 eyes	lib/app/initializer.js	/^var eyes = require('eyes');$/;"	v
+f1	test/support/js_indent.js	/^var f1 = function(x, y, z) {$/;"	f
 fail	./bin/../lib/app/routes_auth.js	/^        var fail = function() {$/;"	f	lineno:33	type:void function()
 fail	./bin/../lib/app/routes_main.js	/^        var fail = function() { res.redirect('\/session\/new'); };$/;"	f	lineno:11	type:void function()
 feeds	./bin/../lib/model/user.js	/^User.prototype.feeds = function(name, callback) {$/;"	f	lineno:84	type:void function(any, any)
 findBest	./bin/../lib/model/post.js	/^    var findBest = function(list, index) {$/;"	f	lineno:29	type:void function(any, any)
 flash	./bin/../lib/app/config.js	/^        flash: function(req, res) {$/;"	f	lineno:46	type:any function(any, any)
+fun	test/support/js_indent.js	/^var fun = function(x, y) {$/;"	f
 get	./bin/../lib/app/auth.js	/^        get: function(req) { return req.cookies[COOKIE]; },$/;"	f	lineno:9	type:any function(any)
 get	./bin/../lib/model/post.js	/^Post.prototype.get = function(feedUris, start, limit, callback) {$/;"	f	lineno:122	type:void function(any, any, any, any)
 get	./bin/../lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"	f	lineno:92	type:void function(any, any)
@@ -201,7 +211,12 @@ getdate	./bin/../lib/model/post.js	/^        getdate   = function(post) { return
 getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	f	lineno:20	type:string function()
 getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	v	lineno:20	type:string function()
 getsalt	lib/model/user.js	/^var getsalt = function() {$/;"	f
+h	test/support/js_indent.js	/^h = function(y, z) {$/;"	f
 has	./bin/../lib/app/auth.js	/^        has: function(req) { return util.exists(this.get(req)); },$/;"	f	lineno:8	type:any function(any)
+hello	test/support/js_indent.js	/^function hello (arg) {$/;"	f
+hello.foo	test/support/js_indent.js	/^    var foo = function(arg2) {$/;"	f
+hello.foo.bar	test/support/js_indent.js	/^        var bar = function(arg3) {$/;"	f
+hola	test/support/js_indent.js	/^function hola (arg) {$/;"	f
 init	./bin/../lib/app/auth.js	/^        init: function(req, res, user, next) {$/;"	f	lineno:83	type:void function(any, any, any, any)
 init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f	lineno:19	type:void function(any, any, any, any)
 init	lib/app/initializer.js	/^var init = function(app) {$/;"	f
@@ -209,6 +224,7 @@ initSession	test/app_auth.js	/^var initSession = function(callback) {$/;"	f
 invalid	test/feed_finder.js	/^var invalid = urls.filter(function(u) { return !u.valid; });$/;"	v
 isId	lib/model/feed.js	/^var isId = function(obj) {$/;"	f
 isNotId	lib/model/feed.js	/^var isNotId = function(obj) { return !isId(obj); };$/;"	f
+l	test/support/js_indent.js	/^var l = list$/;"	v
 length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {$/;"	f	lineno:166	type:void function(any)
 login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
 logout	./bin/../lib/app/auth.js	/^        logout: function(req, res, next) {$/;"	f	lineno:70	type:void function(any, any, any)
@@ -229,6 +245,7 @@ module.exports.take	lib/util.js	/^module.exports.take = function(obj, count) {$/
 module.exports.toHash	lib/util.js	/^module.exports.toHash = function(arr, toStr, toVal) {$/;"	f
 module.exports.uniqInt	lib/util.js	/^module.exports.uniqInt = function() {$/;"	f
 module.exports.uniqStr	lib/util.js	/^module.exports.uniqStr = function() {$/;"	f
+obj.initialize	test/support/js_indent.js	/^    initialize: function() {$/;"	m
 parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	f	lineno:28	type:any function(any)
 parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	v	lineno:28	type:any function(any)
 parse	lib/model/feed.js	/^var parse = function(str) {$/;"	f
@@ -298,3 +315,11 @@ util	lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v
 util	lib/util.js	/^var util = require('util'),$/;"	v
 valid	test/feed_finder.js	/^var valid = urls.filter(function(u) { return u.valid; });$/;"	v
 verify	./bin/../lib/model/token.js	/^Token.prototype.verify = function(token, callback) {$/;"	f	lineno:71	type:void function(any, any)
+x	test/support/js_indent.js	/^var x = 1 +     \/\/ 0$/;"	v
+x	test/support/js_indent.js	/^var x = 1 + 1;  \/\/ 0$/;"	v
+x.$blah	test/support/js_indent.js	/^    $blah: function() {     \/\/ 1$/;"	m
+x.y	test/support/js_indent.js	/^    y : y,  \/\/ 1$/;"	p
+x.y	test/support/js_indent.js	/^    y : {           \/\/ 1$/;"	p
+x.y	test/support/js_indent.js	/^var x = { y : y, z : z },        \/\/ 0$/;"	p
+x.z	test/support/js_indent.js	/^    z : z           \/\/ 1$/;"	p
+x.z	test/support/js_indent.js	/^var x = { y : y, z : z },        \/\/ 0$/;"	p

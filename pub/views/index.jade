@@ -10,9 +10,10 @@ div.container
         li#posts-tab Posts
     div#feeds-content.tab-content
       div#feeds-edit
-        form(method='post', action='/feeds')
-          input(name='feed', type='text')
-          input(value='add', type='submit')
-      div#feeds-list
+        input(name='feed-input', type='text', placeholder='Enter a feed name or url')
+        input(value='subscribe', type='button')
+      ul#feeds-list
+        span FEEDS VIEW
     div#posts-content.tab-content
-      span POSTS VIEW
+      div#posts-list
+        span POSTS VIEW

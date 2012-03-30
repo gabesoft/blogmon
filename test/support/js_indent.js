@@ -52,11 +52,26 @@ arr
     return x + 1;
 }));
 
+// TODO: FIX THIS CASE
+var obj = {
+    initialize: function() {
+        _.bindAll(this
+          , 'subscribeOnEnter'
+          , 'subscribe'
+          , 'render'
+          , 'append');
+}
+};
+
+// TODO: FIX THIS CASE
 var a = 1,
     b = 'test',
     c = 'hello',
     d = new Date(),
     f = function(x) { console.log(x); };
+h = function(y, z) {
+    console.log(y, z);
+};
 
 var e = function(z) { 
     var y = z;

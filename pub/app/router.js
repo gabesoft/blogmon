@@ -1,5 +1,6 @@
 var $ = require('jquery'),
-    Backbone = require('./dep/backbone.js');
+    Backbone = require('./dep/backbone.js'),
+    FeedsTab = require('./view/feedstab.js');
 
 var Router = Backbone.Router.extend({
     routes: {
@@ -8,16 +9,21 @@ var Router = Backbone.Router.extend({
       , "feeds" : "showFeeds"
     },
 
+    initialize: function(opts) {
+        this.tabElems = $('.tab-content');
+        this.feedsTab = new FeedsTab({
+            el: $('#feeds-content')
+        });
+    },
+
     showPosts: function() {
-        console.log('posts', arguments);
         $('.tab-content').hide();
         $('#posts-content').show();
     },
 
     showFeeds: function() {
-        console.log('feeds', arguments);
-        $('.tab-content').hide();
-        $('#feeds-content').show();
+        this.tabElems.hide();
+        this.feedsTab.render();
     }
 });
 
