@@ -11,11 +11,12 @@ module.exports = Backbone.View.extend({
     },
 
     initialize: function() {
-        _.bindAll(this,
-            'subscribeOnEnter',
-            'subscribe',
-            'render',
-            'append');
+        _.bindAll(this
+          , 'subscribeOnEnter'
+          , 'subscribe'
+          , 'render'
+          , 'append'
+        );
 
         this.input = $("#feeds-edit > input[type='text']");
         this.model = new Feeds();
