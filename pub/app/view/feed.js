@@ -1,6 +1,7 @@
 var Backbone = require('../dep/backbone.js')
   , $        = require('jquery')
-  , _        = require('../dep/underscore.js');
+  , _        = require('../dep/underscore.js')
+  , mustache = require('../dep/mustache.js');
 
 module.exports = Backbone.View.extend({
     tagName: 'li',
@@ -10,9 +11,12 @@ module.exports = Backbone.View.extend({
     },
 
     render: function() {
-        var data = this.model.toJSON();
-        var feed = data.feed || data;
-        this.$el.html(feed.title + ' - ' + feed.uri);
+        var tmpl = $('#feed-template')
+          , data = this.model.toJSON()
+          , feed = data.feed || data
+          , html = mustache.to_html(tmpl.html(), data);
+
+          this.$el.html(html);
         return this;
     }
 });

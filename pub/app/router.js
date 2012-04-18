@@ -2,9 +2,9 @@ var $ = require('jquery'),
     Backbone = require('./dep/backbone.js'),
     FeedsTab = require('./view/feedstab.js');
 
-var Router = Backbone.Router.extend({
+module.exports = Backbone.Router.extend({
     routes: {
-        ""     : "showPosts"
+        ""      : "showPosts"
       , "posts" : "showPosts"
       , "feeds" : "showFeeds"
     },
@@ -26,5 +26,3 @@ var Router = Backbone.Router.extend({
         this.feedsTab.render();
     }
 });
-
-module.exports = Router;

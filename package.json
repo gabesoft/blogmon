@@ -1,42 +1,42 @@
 {
-  "name"            : "blogmon"
-, "description"     : "blog reader"
-, "author"          : "gabriel <gabesoft@gmail.com>"
-, "version"         : "0.0.1"
-, "private"         : true
+    "name"            : "blogmon"
+  , "description"     : "blog reader"
+  , "author"          : "gabriel <gabesoft@gmail.com>"
+  , "version"         : "0.0.1"
+  , "private"         : true
 
-, "dependencies"    : {
-    "express"       : ">= 2.5.8"
-  , "express-expose": ">= 0.2.2"
-  , "connect-redis" : ">= 0.0.1"
-  , "jade"          : ">= 0.0.1"
-  , "redis"         : ">= 0.0.1"
-  , "stylus"        : ">= 0.24.0"
-  , "browserify"    : ">= 1.9.4"
-  , "traverse"      : ">= 0.6.0"
-  , "socket.io"     : ">= 0.9.0"
-  , "feedparser"    : ">= 0.9.5"
-  , "request"       : ">= 2.9.153"
-  , "underscore"    : "*"
-  , "br-jquery"     : "*"
-  , "eyes"          : "*"
-  }
+  , "dependencies"    : {
+        "express"       : ">= 2.5.8"
+      , "express-expose": ">= 0.2.2"
+      , "connect-redis" : ">= 0.0.1"
+      , "jade"          : ">= 0.0.1"
+      , "redis"         : ">= 0.0.1"
+      , "stylus"        : ">= 0.24.0"
+      , "browserify"    : ">= 1.9.4"
+      , "traverse"      : ">= 0.6.0"
+      , "socket.io"     : ">= 0.9.0"
+      , "feedparser"    : ">= 0.9.5"
+      , "request"       : ">= 2.9.153"
+      , "underscore"    : "*"
+      , "br-jquery"     : "*"
+      , "eyes"          : "*"
+    }
 
-, "devDependencies" : {
-    "xml2js"        : ">= 0.1.13"
-  , "should"        : "*"
-  , "mocha"         : "*"
-  }
+  , "devDependencies" : {
+        "xml2js"        : ">= 0.1.13"
+      , "should"        : "*"
+      , "mocha"         : "*"
+    }
 
-, "engines" : {
-    "node"  : "0.6.11"
-  , "npm"   : "1.1.4"
-  }
+  , "engines" : {
+        "node"  : "0.6.11"
+      , "npm"   : "1.1.4"
+    }
 
-, "main"    : "server.js"
+  , "main"    : "server.js"
 
-, "scripts" : {
-    "start" : "node app.js"
-  }
+  , "scripts" : {
+        "start" : "node app.js"
+    }
 }
 

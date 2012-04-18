@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	jsctags	//
 !_TAG_PROGRAM_URL	http://github.com/pcwalton/jsctags	/GitHub repository/
 !_TAG_PROGRAM_VERSION	0.1	//
+$	pub/app/router.js	/^var $ = require('jquery'),$/;"	v
 $blah	test/support/js_indent.js	/^function $blah() {                                                          \/\/ 0$/;"	f
 %anonymous_function	./bin/../lib/app/auth.js	/^                        tokens.update(token, function(err, updated) {$/;"	f	lineno:29	type:void function(any, any)
 %anonymous_function	./bin/../lib/app/auth.js	/^                    tokens.create(user.name, function(err, token) {$/;"	f	lineno:60	type:void function(any, any)
@@ -100,6 +101,7 @@ Aggregator.stop	lib/aggregator.js	/^Aggregator.prototype.stop = function() {$/;"
 Aggregator.var.run	lib/aggregator.js	/^    var run = function(agg) {$/;"	f
 Backbone	pub/app/model/feed.js	/^var Backbone = require('..\/dep\/backbone.js');$/;"	v
 Backbone	pub/app/model/feeds.js	/^var Backbone = require('..\/dep\/backbone.js'),$/;"	v
+Backbone	pub/app/view/feed.js	/^var Backbone = require('..\/dep\/backbone.js')$/;"	v
 Backbone	pub/app/view/feedstab.js	/^var Backbone = require('..\/dep\/backbone.js')$/;"	v
 DELAY	lib/task.js	/^var DELAY = 'delay',$/;"	v
 FEED_SET	./bin/../lib/model/post.js	/^    FEED_SET = 'post:feeds',$/;"	v	lineno:2	type:string
@@ -157,7 +159,6 @@ auth	./bin/../lib/app/auth.js	/^    var auth = function(req, res, token, succ, f
 authenticate	./bin/../lib/app/auth.js	/^        authenticate: function(req, res, succ, fail) {$/;"	f	lineno:44	type:void function(any, any, any, any)
 authenticate	./bin/../lib/app/routes_main.js	/^    var authenticate = function(req, res, next) {$/;"	f	lineno:9	type:void function(any, any, any)
 authenticate	./bin/../lib/model/user.js	/^User.prototype.authenticate = function(name, pass, callback) {$/;"	f	lineno:31	type:void function(any, any, any)
-authenticate.fail	lib/app/routes_main.js	/^        var fail = function() { res.redirect('\/session\/new'); };$/;"	f
 b	test/support/js_indent.js	/^        var b = 9,                                                          \/\/$/;"	v
 buildFeed	lib/aggregator.js	/^var buildFeed = function(uri, meta, data) {$/;"	f
 buildPost	lib/aggregator.js	/^var buildPost = function(feedUri, post) {$/;"	f
@@ -242,10 +243,10 @@ length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {
 login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
 logout	./bin/../lib/app/auth.js	/^        logout: function(req, res, next) {$/;"	f	lineno:70	type:void function(any, any, any)
 module.exports	lib/app/auth.js	/^module.exports = function(redis) {$/;"	f
+module.exports	lib/app/routes_auth.js	/^module.exports = function(app) {$/;"	f
 module.exports	lib/app/routes_main.js	/^module.exports = function(app) {$/;"	f
+module.exports.	lib/app/routes_main.js	/^            var succ = function() { next(); },$/;"	f
 module.exports.auth	lib/app/auth.js	/^    var auth = function(req, res, token, succ, fail) {$/;"	f
-module.exports.authenticate	lib/app/routes_main.js	/^    var authenticate = function(req, res, next) {$/;"	f
-module.exports.authenticate.succ	lib/app/routes_main.js	/^        var succ = function() { next(); };$/;"	f
 module.exports.cont	lib/util.js	/^module.exports.cont = function(arr, end, fn) {$/;"	f
 module.exports.cookie.has	lib/app/auth.js	/^        has: function(req) { return util.exists(this.get(req)); },$/;"	m
 module.exports.curry	lib/util.js	/^module.exports.curry = function(obj, args) {$/;"	f
@@ -258,6 +259,7 @@ module.exports.take	lib/util.js	/^module.exports.take = function(obj, count) {$/
 module.exports.toHash	lib/util.js	/^module.exports.toHash = function(arr, toStr, toVal) {$/;"	f
 module.exports.uniqInt	lib/util.js	/^module.exports.uniqInt = function() {$/;"	f
 module.exports.uniqStr	lib/util.js	/^module.exports.uniqStr = function() {$/;"	f
+module.exports.var.succ	lib/app/routes_main.js	/^            var succ = function() { next(); },$/;"	f
 obj.notquite	test/support/js_indent.js	/^    notquite: function() {                                                  \/\/$/;"	m
 obj.works	test/support/js_indent.js	/^    works: function() {                                                     \/\/$/;"	m
 parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	f	lineno:28	type:any function(any)

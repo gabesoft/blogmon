@@ -43,7 +43,7 @@ module.exports = Backbone.View.extend({
     },
 
     subscribeOnEnter: function(e, keyCode) {
-        var key   = keyCode || e.keyCode,
+        var key = keyCode || e.keyCode,
             ENTER = 13;
         if (key === ENTER) {
             this.subscribe(e);
