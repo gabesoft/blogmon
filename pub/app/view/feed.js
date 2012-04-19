@@ -1,9 +1,9 @@
-var Backbone = require('../dep/backbone.js')
+var backbone = require('../dep/backbone.js')
   , $        = require('jquery')
   , _        = require('../dep/underscore.js')
   , mustache = require('../dep/mustache.js');
 
-module.exports = Backbone.View.extend({
+module.exports = backbone.View.extend({
     tagName: 'li',
 
     events: {
