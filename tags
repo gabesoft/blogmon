@@ -99,7 +99,6 @@ Aggregator.run	lib/aggregator.js	/^Aggregator.prototype.run = function() {$/;"	m
 Aggregator.runNow	lib/aggregator.js	/^Aggregator.prototype.runNow = function(feedUri, callback) {$/;"	m
 Aggregator.stop	lib/aggregator.js	/^Aggregator.prototype.stop = function() {$/;"	m
 Aggregator.var.run	lib/aggregator.js	/^    var run = function(agg) {$/;"	f
-Backbone	pub/app/model/feed.js	/^var Backbone = require('..\/dep\/backbone.js');$/;"	v
 Backbone	pub/app/model/feeds.js	/^var Backbone = require('..\/dep\/backbone.js'),$/;"	v
 Backbone	pub/app/view/feed.js	/^var Backbone = require('..\/dep\/backbone.js')$/;"	v
 Backbone	pub/app/view/feedstab.js	/^var Backbone = require('..\/dep\/backbone.js')$/;"	v
@@ -160,6 +159,7 @@ authenticate	./bin/../lib/app/auth.js	/^        authenticate: function(req, res,
 authenticate	./bin/../lib/app/routes_main.js	/^    var authenticate = function(req, res, next) {$/;"	f	lineno:9	type:void function(any, any, any)
 authenticate	./bin/../lib/model/user.js	/^User.prototype.authenticate = function(name, pass, callback) {$/;"	f	lineno:31	type:void function(any, any, any)
 b	test/support/js_indent.js	/^        var b = 9,                                                          \/\/$/;"	v
+backbone	pub/app/model/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 buildFeed	lib/aggregator.js	/^var buildFeed = function(uri, meta, data) {$/;"	f
 buildPost	lib/aggregator.js	/^var buildPost = function(feedUri, post) {$/;"	f
 bundle	server.js	/^var bundle = bundle({$/;"	v
@@ -169,9 +169,6 @@ clear	lib/task.js	/^var clear = function(task) {$/;"	f
 client	./bin/../lib/app/redis_helper.js	/^    client: function(db) {$/;"	f	lineno:22	type:any function(any)
 config	./bin/../lib/app/redis_helper.js	/^var config = parseRedisUrl();$/;"	v	lineno:19	type:<null | Object>
 cont	lib/util.js	/^var cont = function(arr, index, end, fn) {$/;"	f
-cookie.del	lib/app/auth.js	/^        del: function(res) { res.clearCookie(COOKIE); },$/;"	m
-cookie.get	lib/app/auth.js	/^        get: function(req) { return req.cookies[COOKIE]; },$/;"	m
-cookie.put	lib/app/auth.js	/^        put: function(res, data) {$/;"	m
 count	./bin/../lib/model/token.js	/^Token.prototype.count = function(name, callback) {$/;"	f	lineno:105	type:void function(any, any)
 create	./bin/../lib/model/token.js	/^Token.prototype.create = function(name, callback) {$/;"	f	lineno:38	type:void function(any, any)
 create	./bin/../lib/model/user.js	/^User.prototype.create = function(name, pass, callback) {$/;"	f	lineno:44	type:void function(any, any, any)
@@ -246,13 +243,10 @@ module.exports	lib/app/auth.js	/^module.exports = function(redis) {$/;"	f
 module.exports	lib/app/routes_auth.js	/^module.exports = function(app) {$/;"	f
 module.exports	lib/app/routes_main.js	/^module.exports = function(app) {$/;"	f
 module.exports.	lib/app/routes_main.js	/^            var succ = function() { next(); },$/;"	f
-module.exports.auth	lib/app/auth.js	/^    var auth = function(req, res, token, succ, fail) {$/;"	f
 module.exports.cont	lib/util.js	/^module.exports.cont = function(arr, end, fn) {$/;"	f
-module.exports.cookie.has	lib/app/auth.js	/^        has: function(req) { return util.exists(this.get(req)); },$/;"	m
 module.exports.curry	lib/util.js	/^module.exports.curry = function(obj, args) {$/;"	f
 module.exports.etags	test/support/data_feed.js	/^    etags: [ {$/;"	p
 module.exports.exists	lib/util.js	/^module.exports.exists = function(obj) {$/;"	f
-module.exports.init	lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f
 module.exports.nil	lib/util.js	/^module.exports.nil = function(obj) {$/;"	f
 module.exports.skip	lib/util.js	/^module.exports.skip = function(obj, count) {$/;"	f
 module.exports.take	lib/util.js	/^module.exports.take = function(obj, count) {$/;"	f
@@ -323,7 +317,7 @@ util	./bin/../lib/model/feed.js	/^    util = require('..\/util.js'),$/;"	v	linen
 util	./bin/../lib/model/post.js	/^    util = require('..\/util.js'),$/;"	v	lineno:3	type:any
 util	./bin/../lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v	lineno:1	type:any
 util	./bin/../lib/model/user.js	/^    util   = require('..\/util.js'),$/;"	v	lineno:2	type:any
-util	lib/aggregator.js	/^var util        = require('.\/util.js'),$/;"	v
+util	lib/aggregator.js	/^var util       = require('.\/util.js'),$/;"	v
 util	lib/feed_finder.js	/^var util    = require('.\/util.js'),$/;"	v
 util	lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v
 util	lib/util.js	/^var util = require('util'),$/;"	v

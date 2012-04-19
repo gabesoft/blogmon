@@ -6,17 +6,38 @@ var Backbone = require('../dep/backbone.js')
 module.exports = Backbone.View.extend({
     tagName: 'li',
 
+    events: {
+        'click .delete' : 'remove',
+        'click .view'   : 'visibilityChange'
+    },
+
     initialize: function(config) {
-        //console.log('init');
+        this.template = mustache.compile($('#feed-template').html());
+        _.bindAll(this
+          , 'remove'
+          , 'visibilityChange'
+        );
     },
 
     render: function() {
-        var tmpl = $('#feed-template')
-          , data = this.model.toJSON()
-          , feed = data.feed || data
-          , html = mustache.to_html(tmpl.html(), data);
+        var feed = this.model.toJSON()
+          , html = this.template(feed);
 
-          this.$el.html(html);
+        this.$el.html(html);
         return this;
+    },
+
+    visibilityChange: function(e) {
+        var visible = $(e.target).is(':checked');
+        console.log('vchange', visible, this.model.get('link'));
+    },
+
+    remove: function(e) {
+        var me = this;
+
+        me.model.destroy({ wait: true });
+        me.$el.fadeOut(function() {
+            me.$el.remove();
+        });
     }
 });

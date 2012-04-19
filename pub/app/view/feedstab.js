@@ -51,7 +51,6 @@ module.exports = Backbone.View.extend({
     }, 
 
     subscribe: function(e) {
-        console.log('subscribe', this.input.val());
         this.model.create({ uri: this.input.val() }, { wait: true });
         this.input.val('');
     }
