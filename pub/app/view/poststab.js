@@ -28,7 +28,7 @@ module.exports = backbone.View.extend({
     append: function(item) {
         var feed = new PostView({ model: item })
           , list = $('#posts-list');
-        list.prepend(feed.render().el);
+        list.append(feed.render().el);
     }
 });
 
