@@ -1,7 +1,7 @@
-var Backbone = require('../dep/backbone.js')
-  , Feed     = require('./feed.js');
+var backbone = require('../dep/backbone.js')
+  , feed     = require('./feed.js');
 
-module.exports = Backbone.Collection.extend({
-    model: Feed
-  , url: '/feeds'
+module.exports = backbone.Collection.extend({
+    model: feed,
+    url: '/feeds'
 });

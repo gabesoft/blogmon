@@ -1,8 +1,7 @@
-(function() {
-    var Backbone = require('../dep/backbone.js');
-    var Posts = Backbone.Collection.extend({
-        url: '/posts'
-    });
-    model.exports = Posts;
-}).call(this);
+var backbone = require('../dep/backbone.js')
+  , post     = require('./post.js');
 
+module.exports = backbone.Collection.extend({
+    model: post,
+    url: '/posts'
+});

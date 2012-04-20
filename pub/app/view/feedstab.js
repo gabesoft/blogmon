@@ -11,6 +11,8 @@ module.exports = backbone.View.extend({
     },
 
     initialize: function() {
+        var me = this;
+
         _.bindAll(this
           , 'subscribeOnEnter'
           , 'subscribe'
@@ -21,8 +23,6 @@ module.exports = backbone.View.extend({
         this.input = $("#feeds-edit > input[type='text']");
         this.model = new Feeds();
         this.model.bind('add', this.append);
-
-        var me = this;
         this.model.fetch({
             success: function() { 
                 me.model.each(me.append);

@@ -1,13 +1,13 @@
-var should = require('should'),
-    Feed = require('../lib/model/feed.js'),
-    eyes = require('eyes'),
-    redis = require('./redis_helper.js').client(),
-    trav = require('traverse'),
-    feedData = require('./support/data_feed.js'),
-    etags = feedData.etags,
-    feeds = feedData.feeds,
-    single = feedData.single,
-    repo = new Feed(redis);
+var should = require('should')
+  , Feed = require('../lib/model/feed.js')
+  , eyes = require('eyes')
+  , redis = require('./redis_helper.js').client()
+  , trav = require('traverse')
+  , feedData = require('./support/data_feed.js')
+  , etags = feedData.etags
+  , feeds = feedData.feeds
+  , single = feedData.single
+  , repo = new Feed(redis);
 
 describe('feed', function() {
     beforeEach(function(done) {
@@ -50,9 +50,9 @@ describe('feed', function() {
         repo.add(feeds, function() {
             var feed = feeds[1];
             repo.get(feed.id + '', function(copy) {
-              copy.uri.should.equal(feed.uri);
-              copy.id.should.equal(feed.id);
-              done();
+                copy.uri.should.equal(feed.uri);
+                copy.id.should.equal(feed.id);
+                done();
             });
         });
     });
