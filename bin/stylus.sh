@@ -1,5 +1,12 @@
 #!/bin/bash
 dir=`dirname $0`
 
-$dir/../node_modules/stylus/bin/stylus -u nib --out $dir/../pub/css --watch $dir/../pub/stylesheets
+# TODO: use the --compress option for production
+
+$dir/../node_modules/stylus/bin/stylus \
+  --use nib \
+  --out $dir/../pub/css \
+  --watch $dir/../pub/stylesheets \
+  --firebug \
+  --line-numbers
 
