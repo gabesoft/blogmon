@@ -3,4 +3,4 @@ NERD_tree_*
 .DS_Store
 npm-debug.log
 dump.rdb
-tmp/*
+tmp

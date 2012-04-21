@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	jsctags	//
 !_TAG_PROGRAM_URL	http://github.com/pcwalton/jsctags	/GitHub repository/
 !_TAG_PROGRAM_VERSION	0.1	//
+$	pub/app/app.js	/^var $ = require('jquery'),$/;"	v
 $	pub/app/router.js	/^var $ = require('jquery')$/;"	v
 $blah	test/support/js_indent.js	/^function $blah() {                                                          \/\/ 0$/;"	f
 %anonymous_function	./bin/../lib/app/auth.js	/^                        tokens.update(token, function(err, updated) {$/;"	f	lineno:29	type:void function(any, any)
