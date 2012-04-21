@@ -240,6 +240,7 @@ length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {
 login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
 logout	./bin/../lib/app/auth.js	/^        logout: function(req, res, next) {$/;"	f	lineno:70	type:void function(any, any, any)
 module.exports	lib/app/auth.js	/^module.exports = function(redis) {$/;"	f
+module.exports	lib/app/config.js	/^module.exports = function(app, express) {$/;"	f
 module.exports	lib/app/routes_auth.js	/^module.exports = function(app) {$/;"	f
 module.exports	lib/app/routes_main.js	/^module.exports = function(app) {$/;"	f
 module.exports.	lib/app/routes_main.js	/^            var succ = function() { next(); }$/;"	f

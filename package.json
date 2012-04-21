@@ -20,6 +20,7 @@
       , "underscore"    : "*"
       , "br-jquery"     : "*"
       , "eyes"          : "*"
+      , "nib"           : ">= 0.4.1"
     }
 
   , "devDependencies" : {
