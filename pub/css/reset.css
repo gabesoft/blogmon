@@ -1,19 +1,11 @@
 
 /* line 419 : /apps/blogmon/node_modules/nib/lib/nib/vendor.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/vendor\.styl}line{font-family:\00003419}}
-
 /* line 419 : /apps/blogmon/node_modules/nib/lib/nib/config.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/config\.styl}line{font-family:\00003419}}
 
 /* line 3 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
 
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\000033}}
-
 /* line 4 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\000034}}
 html,
 body,
 div,
@@ -83,8 +75,6 @@ td {
 }
 
 /* line 14 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000314}}
 body {
   line-height: 1;
   color: #000;
@@ -92,16 +82,12 @@ body {
 }
 
 /* line 16 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000316}}
 ol,
 ul {
   list-style: none;
 }
 
 /* line 18 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000318}}
 table {
   border-collapse: separate;
   border-spacing: 0;
@@ -109,8 +95,6 @@ table {
 }
 
 /* line 20 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000320}}
 caption,
 th,
 td {
@@ -120,15 +104,11 @@ td {
 }
 
 /* line 22 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000322}}
 a img {
   border: none;
 }
 
 /* line 26 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000326}}
 div,
 span,
 object,
@@ -177,8 +157,6 @@ tr {
 }
 
 /* line 32 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000332}}
 table {
   border-collapse: separate;
   border-spacing: 0;
@@ -186,8 +164,6 @@ table {
 }
 
 /* line 34 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000334}}
 caption,
 th,
 td {
@@ -197,105 +173,65 @@ td {
 }
 
 /* line 36 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000336}}
 a img {
   border: none;
 }
 
 /* line 46 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000346}}
 font-weight: inherit;
 
 /* line 47 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000347}}
 font-style: inherit;
 
 /* line 48 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000348}}
 font-family: inherit;
 
 /* line 49 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000349}}
 font-size: 100%;
 
 /* line 51 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000351}}
 vertical-align: baseline;
 
 /* line 40 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000340}}
 margin: 0;
 
 /* line 41 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000341}}
 padding: 0;
 
 /* line 42 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000342}}
 border: 0;
 
 /* line 44 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000344}}
 outline: 0;
 
 /* line 53 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000353}}
 line-height: 1;
 
 /* line 54 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000354}}
 color: #000;
 
 /* line 56 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000356}}
 background: #fff;
 
 /* line 58 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000358}}
 border-collapse: separate;
 
 /* line 59 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000359}}
 border-spacing: 0;
 
 /* line 61 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000361}}
 vertical-align: middle;
 
 /* line 63 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000363}}
 text-align: left;
 
 /* line 64 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000364}}
 font-weight: normal;
 
 /* line 66 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000366}}
 vertical-align: middle;
 
 /* line 68 : /apps/blogmon/node_modules/nib/lib/nib/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/node_modules\/nib\/lib\/nib\/reset\.styl}line{font-family:\0000368}}
 article,
 aside,
 canvas,
@@ -314,12 +250,4 @@ summary {
   border: 0;
   outline: 0;
   display: block;
-}
-
-/* line 14 : /apps/blogmon/pub/stylesheets/reset.styl */
-
-@media -stylus-debug-info{filename{font-family:file\:\/\/\/apps\/blogmon\/pub\/stylesheets\/reset\.styl}line{font-family:\0000314}}
-input {
-  color: #000ffe;
-  border: 1px solid;
 }
