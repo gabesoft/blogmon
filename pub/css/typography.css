@@ -17,10 +17,11 @@ h4,
 h5,
 h6 {
   color: #fff;
-  font-weight: normal;
+  font-family: 'MuseoSans500', serif;
+  font-weight: italic;
 }
 
-/* line 13 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 14 : /apps/blogmon/pub/stylesheets/typography.styl */
 h1 a,
 h2 a,
 h3 a,
@@ -30,85 +31,85 @@ h6 a {
   font-weight: inherit;
 }
 
-/* line 16 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 17 : /apps/blogmon/pub/stylesheets/typography.styl */
 h1 {
   font-size: 46px;
   line-height: 50px;
   margin-bottom: 14px;
 }
 
-/* line 21 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 22 : /apps/blogmon/pub/stylesheets/typography.styl */
 h2 {
   font-size: 35px;
   line-height: 40px;
   margin-bottom: 10px;
 }
 
-/* line 26 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 27 : /apps/blogmon/pub/stylesheets/typography.styl */
 h3 {
   font-size: 28px;
   line-height: 34px;
   margin-bottom: 8px;
 }
 
-/* line 31 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 32 : /apps/blogmon/pub/stylesheets/typography.styl */
 h4 {
   font-size: 21px;
   line-height: 30px;
   margin-bottom: 4px;
 }
 
-/* line 36 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 37 : /apps/blogmon/pub/stylesheets/typography.styl */
 h5 {
   font-size: 17px;
   line-height: 24px;
 }
 
-/* line 40 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 41 : /apps/blogmon/pub/stylesheets/typography.styl */
 h6 {
   font-size: 14px;
   line-height: 21px;
 }
 
-/* line 44 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 45 : /apps/blogmon/pub/stylesheets/typography.styl */
 .subheader {
   color: #777;
 }
 
-/* line 47 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 48 : /apps/blogmon/pub/stylesheets/typography.styl */
 p {
   margin: 0 0 20px 0;
 }
 
-/* line 50 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 51 : /apps/blogmon/pub/stylesheets/typography.styl */
 p img {
   margin: 0;
 }
 
-/* line 53 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 54 : /apps/blogmon/pub/stylesheets/typography.styl */
 p.lead {
   font-size: 21px;
   line-height: 27px;
   color: #777;
 }
 
-/* line 58 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 59 : /apps/blogmon/pub/stylesheets/typography.styl */
 em {
   font-style: italic;
 }
 
-/* line 61 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 62 : /apps/blogmon/pub/stylesheets/typography.styl */
 strong {
   font-weight: bold;
   color: #fff;
 }
 
-/* line 65 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 66 : /apps/blogmon/pub/stylesheets/typography.styl */
 small {
   font-size: 80%;
 }
 
-/* line 68 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 69 : /apps/blogmon/pub/stylesheets/typography.styl */
 blockquote,
 blockquote p {
   font-size: 17px;
@@ -117,33 +118,33 @@ blockquote p {
   font-style: italic;
 }
 
-/* line 74 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 75 : /apps/blogmon/pub/stylesheets/typography.styl */
 blockquote {
   margin: 0 0 20px;
   padding: 9px 20px 0 19px;
   border-left: 1px solid #ddd;
 }
 
-/* line 79 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 80 : /apps/blogmon/pub/stylesheets/typography.styl */
 blockquote cite {
   display: block;
   font-size: 12px;
   color: #555;
 }
 
-/* line 84 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 85 : /apps/blogmon/pub/stylesheets/typography.styl */
 blockquote cite:before {
   content: "\2014 \0020";
 }
 
-/* line 87 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 88 : /apps/blogmon/pub/stylesheets/typography.styl */
 blockquote cite a,
 blockquote cite a:visited,
 blockquote cite a:visited {
   color: #555;
 }
 
-/* line 90 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 91 : /apps/blogmon/pub/stylesheets/typography.styl */
 hr {
   border: solid #ddd;
   border-width: 1px 0 0;
@@ -152,7 +153,7 @@ hr {
   height: 0;
 }
 
-/* line 97 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 98 : /apps/blogmon/pub/stylesheets/typography.styl */
 a,
 a:visited {
   color: #84bcde;
@@ -160,13 +161,13 @@ a:visited {
   outline: 0;
 }
 
-/* line 102 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 103 : /apps/blogmon/pub/stylesheets/typography.styl */
 a:hover,
 a:focus {
   color: #6495ed;
 }
 
-/* line 105 : /apps/blogmon/pub/stylesheets/typography.styl */
+/* line 106 : /apps/blogmon/pub/stylesheets/typography.styl */
 p a,
 p a:visited {
   line-height: inherit;
