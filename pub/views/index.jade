@@ -1,13 +1,15 @@
 div.container
-  header.banner(role='banner')
-    h2.main= title
-    h2.info.user(title='click to sign out')
+  header#banner(role='banner')
+    h3.main= title
+    h3.info.user(title='click to sign out')
       a.title.logout(href='#')= titleInfo
-  div#content.content
-    div#center.sixteen
+  div#content
+    div#nav
       ul.tabs
-        li#feeds-tab Feeds
-        li#posts-tab Posts
+        li
+          a#feeds-tab Feeds
+        li
+          a#posts-tab.active Posts
     div#feeds-content.tab-content
       div#feeds-edit
         input(name='feed-input', type='text', placeholder='Enter a feed name or url')

@@ -3,6 +3,8 @@
 
 /* line 419 : /apps/blogmon/node_modules/nib/lib/nib/config.styl */
 
+/* line 1 : /apps/blogmon/pub/stylesheets/variables.styl */
+
 /* line 12 : /apps/blogmon/pub/stylesheets/reset.styl */
 
 /* line 419 : /apps/blogmon/node_modules/nib/lib/nib/config.styl */
@@ -556,7 +558,7 @@ a:visited {
 /* line 103 : /apps/blogmon/pub/stylesheets/typography.styl */
 a:hover,
 a:focus {
-  color: #6495ed;
+  color: #f0f8ff;
 }
 
 /* line 106 : /apps/blogmon/pub/stylesheets/typography.styl */
@@ -985,12 +987,152 @@ a.iconic:hover {
   content: "Z";
 }
 
+/* line 9 : /apps/blogmon/pub/stylesheets/tabs.styl */
+
+/* line 1 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs {
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 0;
+  border-bottom: solid 1px #ddd;
+}
+
+/* line 7 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs li {
+  display: block;
+  width: auto;
+  height: 30px;
+  padding: 0;
+  float: left;
+  margin-bottom: 0;
+}
+
+/* line 15 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs li a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  height: 29px;
+  padding: 0px 20px;
+  line-height: 30px;
+  border: solid 1px #ddd;
+  border-width: 1px 1px 0 0;
+  margin: 0;
+  background: #f5f5f5;
+  font-size: 13px;
+}
+
+/* line 28 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs li a.active {
+  background: #fff;
+  height: 30px;
+  position: relative;
+  top: -4px;
+  padding-top: 4px;
+  border-left-width: 1px;
+  margin: 0 0 0 -1px;
+  color: #111;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* line 44 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs li:first-child a.active {
+  margin-left: 0;
+}
+
+/* line 47 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs li:first-child a {
+  border-width: 1px 1px 0 1px;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+/* line 53 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs li:last-child a {
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* line 58 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs-content {
+  margin: 0;
+  display: block;
+}
+
+/* line 62 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs-content > li {
+  display: none;
+}
+
+/* line 65 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs-content > li.active {
+  display: block;
+}
+
+/* line 68 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs:before,
+ul.tabs:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* line 77 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs:after {
+  clear: both;
+}
+
+/* line 80 : /apps/blogmon/pub/stylesheets/tabs.styl */
+ul.tabs {
+  zoom: 1;
+}
+
 /* line 2 : /apps/blogmon/pub/stylesheets/util.styl */
 
-/* line 8 : /apps/blogmon/pub/stylesheets/site.styl */
-.banner {
-  border-bottom: 4px solid #121212;
+/* line 10 : /apps/blogmon/pub/stylesheets/site.styl */
+#banner {
+  border-bottom: 3px solid #121212;
   -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
   -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
   box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/site.styl */
+#banner h3.main {
+  display: inline-block;
+  color: #ff8247;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/site.styl */
+#banner h3.info {
+  float: right;
+  display: inline-block;
+}
+
+/* line 24 : /apps/blogmon/pub/stylesheets/site.styl */
+#banner a {
+  color: #ff8247;
+}
+
+/* line 27 : /apps/blogmon/pub/stylesheets/site.styl */
+#nav {
+  width: 100%;
+}
+
+/* line 30 : /apps/blogmon/pub/stylesheets/site.styl */
+#nav a {
+  display: inline-block;
+  padding: 10px;
 }

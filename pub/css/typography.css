@@ -1,9 +1,9 @@
 
 /* line 1 : /apps/blogmon/pub/stylesheets/typography.styl */
 body {
-  background: none repeat scroll 0 0 #2f2f2f;
-  font-family: 'Lucinda Grande', Arial, sans-serif;
-  color: #c6c6c6;
+  background: none repeat scroll 0 0 color-background;
+  font-family: font-main;
+  color: color-font;
   line-height: 1.45em;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -16,8 +16,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
-  font-family: 'MuseoSans500', serif;
+  color: color-heading;
+  font-family: font-heading;
   font-weight: italic;
 }
 
@@ -73,7 +73,7 @@ h6 {
 
 /* line 45 : /apps/blogmon/pub/stylesheets/typography.styl */
 .subheader {
-  color: #777;
+  color: color-subheader;
 }
 
 /* line 48 : /apps/blogmon/pub/stylesheets/typography.styl */
@@ -90,7 +90,7 @@ p img {
 p.lead {
   font-size: 21px;
   line-height: 27px;
-  color: #777;
+  color: color-subheader;
 }
 
 /* line 59 : /apps/blogmon/pub/stylesheets/typography.styl */
@@ -101,7 +101,7 @@ em {
 /* line 62 : /apps/blogmon/pub/stylesheets/typography.styl */
 strong {
   font-weight: bold;
-  color: #fff;
+  color: color-white;
 }
 
 /* line 66 : /apps/blogmon/pub/stylesheets/typography.styl */
@@ -114,7 +114,7 @@ blockquote,
 blockquote p {
   font-size: 17px;
   line-height: 24px;
-  color: #777;
+  color: color-subheader;
   font-style: italic;
 }
 
@@ -156,7 +156,7 @@ hr {
 /* line 98 : /apps/blogmon/pub/stylesheets/typography.styl */
 a,
 a:visited {
-  color: #84bcde;
+  color: color-link;
   text-decoration: underline;
   outline: 0;
 }
@@ -164,7 +164,7 @@ a:visited {
 /* line 103 : /apps/blogmon/pub/stylesheets/typography.styl */
 a:hover,
 a:focus {
-  color: #6495ed;
+  color: color-link-hover;
 }
 
 /* line 106 : /apps/blogmon/pub/stylesheets/typography.styl */
