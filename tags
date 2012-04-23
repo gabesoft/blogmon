@@ -165,6 +165,7 @@ authenticate	./bin/../lib/model/user.js	/^User.prototype.authenticate = function
 b	test/support/js_indent.js	/^        var b = 9,                                                          \/\/$/;"	v
 backbone	pub/app/model/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/model/posts.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/view/post.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 buildFeed	lib/aggregator.js	/^var buildFeed = function(uri, meta, data) {$/;"	f
 buildPost	lib/aggregator.js	/^var buildPost = function(feed, post) {$/;"	f
 bundle	server.js	/^var bundle = bundle({$/;"	v

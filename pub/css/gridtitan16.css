@@ -1,0 +1,1588 @@
+
+/* line 1 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+body {
+  width: 100%;
+}
+
+/* line 4 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16 {
+  display: inline;
+  float: left;
+}
+
+/* line 13 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.alpha {
+  margin-left: 0;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.omega {
+  margin-right: 0;
+}
+
+/* line 19 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 {
+  width: 960px;
+}
+
+/* line 22 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_1 {
+  width: 40px;
+}
+
+/* line 25 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_2 {
+  width: 100px;
+}
+
+/* line 28 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_3 {
+  width: 160px;
+}
+
+/* line 31 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_4 {
+  width: 220px;
+}
+
+/* line 34 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_5 {
+  width: 280px;
+}
+
+/* line 37 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_6 {
+  width: 340px;
+}
+
+/* line 40 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_7 {
+  width: 400px;
+}
+
+/* line 43 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_8 {
+  width: 460px;
+}
+
+/* line 46 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_9 {
+  width: 520px;
+}
+
+/* line 49 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_10 {
+  width: 580px;
+}
+
+/* line 52 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_11 {
+  width: 640px;
+}
+
+/* line 55 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_12 {
+  width: 700px;
+}
+
+/* line 58 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_13 {
+  width: 760px;
+}
+
+/* line 61 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_14 {
+  width: 820px;
+}
+
+/* line 64 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_15 {
+  width: 880px;
+}
+
+/* line 67 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .grid_16 {
+  width: 940px;
+}
+
+/* line 70 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_1 {
+  padding-left: 60px;
+}
+
+/* line 73 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_2 {
+  padding-left: 120px;
+}
+
+/* line 76 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_3 {
+  padding-left: 180px;
+}
+
+/* line 79 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_4 {
+  padding-left: 240px;
+}
+
+/* line 82 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_5 {
+  padding-left: 300px;
+}
+
+/* line 85 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_6 {
+  padding-left: 360px;
+}
+
+/* line 88 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_7 {
+  padding-left: 420px;
+}
+
+/* line 91 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_8 {
+  padding-left: 480px;
+}
+
+/* line 94 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_9 {
+  padding-left: 540px;
+}
+
+/* line 97 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_10 {
+  padding-left: 600px;
+}
+
+/* line 100 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_11 {
+  padding-left: 660px;
+}
+
+/* line 103 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_12 {
+  padding-left: 720px;
+}
+
+/* line 106 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_13 {
+  padding-left: 780px;
+}
+
+/* line 109 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_14 {
+  padding-left: 840px;
+}
+
+/* line 112 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.container_16 .offset_14 {
+  padding-left: 900px;
+}
+
+/* line 115 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 1248px) and (max-width: 1327px) {
+
+/* line 116 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 1248px;
+  }
+
+/* line 119 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1 {
+    width: 58px;
+  }
+
+/* line 122 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_2 {
+    width: 136px;
+  }
+
+/* line 125 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_3 {
+    width: 214px;
+  }
+
+/* line 128 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_4 {
+    width: 292px;
+  }
+
+/* line 131 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_5 {
+    width: 370px;
+  }
+
+/* line 134 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_6 {
+    width: 448px;
+  }
+
+/* line 137 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_7 {
+    width: 526px;
+  }
+
+/* line 140 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_8 {
+    width: 604px;
+  }
+
+/* line 143 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_9 {
+    width: 682px;
+  }
+
+/* line 146 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_10 {
+    width: 760px;
+  }
+
+/* line 149 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_11 {
+    width: 838px;
+  }
+
+/* line 152 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_12 {
+    width: 916px;
+  }
+
+/* line 155 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_13 {
+    width: 994px;
+  }
+
+/* line 158 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_14 {
+    width: 1072px;
+  }
+
+/* line 161 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_15 {
+    width: 1150px;
+  }
+
+/* line 164 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_16 {
+    width: 1228px;
+  }
+
+/* line 167 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1 {
+    padding-left: 78px;
+  }
+
+/* line 170 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_2 {
+    padding-left: 156px;
+  }
+
+/* line 173 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_3 {
+    padding-left: 234px;
+  }
+
+/* line 176 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_4 {
+    padding-left: 312px;
+  }
+
+/* line 179 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_5 {
+    padding-left: 390px;
+  }
+
+/* line 182 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_6 {
+    padding-left: 468px;
+  }
+
+/* line 185 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_7 {
+    padding-left: 546px;
+  }
+
+/* line 188 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_8 {
+    padding-left: 634px;
+  }
+
+/* line 191 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_9 {
+    padding-left: 702px;
+  }
+
+/* line 194 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_10 {
+    padding-left: 780px;
+  }
+
+/* line 197 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_11 {
+    padding-left: 858px;
+  }
+
+/* line 200 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_12 {
+    padding-left: 936px;
+  }
+
+/* line 203 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_13 {
+    padding-left: 1014px;
+  }
+
+/* line 206 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_14 {
+    padding-left: 1092px;
+  }
+
+/* line 209 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_15 {
+    padding-left: 1170px;
+  }
+}
+
+/* line 212 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 1328px) and (max-width: 1407px) {
+
+/* line 213 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 1328px;
+  }
+
+/* line 216 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1 {
+    width: 63px;
+  }
+
+/* line 219 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_2 {
+    width: 146px;
+  }
+
+/* line 222 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_3 {
+    width: 229px;
+  }
+
+/* line 225 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_4 {
+    width: 312px;
+  }
+
+/* line 228 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_5 {
+    width: 395px;
+  }
+
+/* line 231 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_6 {
+    width: 478px;
+  }
+
+/* line 234 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_7 {
+    width: 561px;
+  }
+
+/* line 237 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_8 {
+    width: 644px;
+  }
+
+/* line 240 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_9 {
+    width: 727px;
+  }
+
+/* line 243 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_10 {
+    width: 810px;
+  }
+
+/* line 246 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_11 {
+    width: 893px;
+  }
+
+/* line 249 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_12 {
+    width: 976px;
+  }
+
+/* line 252 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_13 {
+    width: 1059px;
+  }
+
+/* line 255 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_14 {
+    width: 1142px;
+  }
+
+/* line 258 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_15 {
+    width: 1225px;
+  }
+
+/* line 261 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_16 {
+    width: 1308px;
+  }
+
+/* line 264 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1 {
+    padding-left: 83px;
+  }
+
+/* line 267 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_2 {
+    padding-left: 166px;
+  }
+
+/* line 270 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_3 {
+    padding-left: 249px;
+  }
+
+/* line 273 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_4 {
+    padding-left: 332px;
+  }
+
+/* line 276 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_5 {
+    padding-left: 415px;
+  }
+
+/* line 279 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_6 {
+    padding-left: 498px;
+  }
+
+/* line 282 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_7 {
+    padding-left: 581px;
+  }
+
+/* line 285 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_8 {
+    padding-left: 664px;
+  }
+
+/* line 288 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_9 {
+    padding-left: 747px;
+  }
+
+/* line 291 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_10 {
+    padding-left: 830px;
+  }
+
+/* line 294 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_11 {
+    padding-left: 913px;
+  }
+
+/* line 297 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_12 {
+    padding-left: 996px;
+  }
+
+/* line 300 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_13 {
+    padding-left: 1079px;
+  }
+
+/* line 303 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_14 {
+    padding-left: 1162px;
+  }
+
+/* line 306 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_15 {
+    padding-left: 1245px;
+  }
+}
+
+/* line 309 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 1408px) and (max-width: 1567px) {
+
+/* line 310 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 1408px;
+  }
+
+/* line 313 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1 {
+    width: 58px;
+  }
+
+/* line 316 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_2 {
+    width: 146px;
+  }
+
+/* line 319 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_3 {
+    width: 234px;
+  }
+
+/* line 322 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_4 {
+    width: 322px;
+  }
+
+/* line 325 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_5 {
+    width: 410px;
+  }
+
+/* line 328 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_6 {
+    width: 498px;
+  }
+
+/* line 331 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_7 {
+    width: 586px;
+  }
+
+/* line 334 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_8 {
+    width: 674px;
+  }
+
+/* line 337 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_9 {
+    width: 762px;
+  }
+
+/* line 340 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_10 {
+    width: 850px;
+  }
+
+/* line 343 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_11 {
+    width: 938px;
+  }
+
+/* line 346 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_12 {
+    width: 1026px;
+  }
+
+/* line 349 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_13 {
+    width: 1114px;
+  }
+
+/* line 352 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_14 {
+    width: 1202px;
+  }
+
+/* line 355 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_15 {
+    width: 1290px;
+  }
+
+/* line 358 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_16 {
+    width: 1378px;
+  }
+
+/* line 361 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1 {
+    padding-left: 88px;
+  }
+
+/* line 364 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_2 {
+    padding-left: 176px;
+  }
+
+/* line 367 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_3 {
+    padding-left: 264px;
+  }
+
+/* line 370 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_4 {
+    padding-left: 352px;
+  }
+
+/* line 373 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_5 {
+    padding-left: 440px;
+  }
+
+/* line 376 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_6 {
+    padding-left: 528px;
+  }
+
+/* line 379 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_7 {
+    padding-left: 616px;
+  }
+
+/* line 382 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_8 {
+    padding-left: 704px;
+  }
+
+/* line 385 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_9 {
+    padding-left: 792px;
+  }
+
+/* line 388 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_10 {
+    padding-left: 880px;
+  }
+
+/* line 391 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_11 {
+    padding-left: 968px;
+  }
+
+/* line 394 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_12 {
+    padding-left: 1056px;
+  }
+
+/* line 397 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_13 {
+    padding-left: 1144px;
+  }
+
+/* line 400 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_14 {
+    padding-left: 1232px;
+  }
+
+/* line 403 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_15 {
+    padding-left: 1320px;
+  }
+}
+
+/* line 406 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 1568px) and (max-width: 1647px) {
+
+/* line 407 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 1568px;
+  }
+
+/* line 410 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1 {
+    width: 68px;
+  }
+
+/* line 413 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_2 {
+    width: 166px;
+  }
+
+/* line 416 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_3 {
+    width: 264px;
+  }
+
+/* line 419 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_4 {
+    width: 362px;
+  }
+
+/* line 422 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_5 {
+    width: 460px;
+  }
+
+/* line 425 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_6 {
+    width: 558px;
+  }
+
+/* line 428 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_7 {
+    width: 656px;
+  }
+
+/* line 431 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_8 {
+    width: 754px;
+  }
+
+/* line 434 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_9 {
+    width: 852px;
+  }
+
+/* line 437 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_10 {
+    width: 950px;
+  }
+
+/* line 440 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_11 {
+    width: 1048px;
+  }
+
+/* line 443 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_12 {
+    width: 1146px;
+  }
+
+/* line 446 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_13 {
+    width: 1244px;
+  }
+
+/* line 449 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_14 {
+    width: 1342px;
+  }
+
+/* line 452 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_15 {
+    width: 1440px;
+  }
+
+/* line 455 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_16 {
+    width: 1538px;
+  }
+
+/* line 458 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1 {
+    padding-left: 98px;
+  }
+
+/* line 461 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_2 {
+    padding-left: 196px;
+  }
+
+/* line 464 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_3 {
+    padding-left: 294px;
+  }
+
+/* line 467 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_4 {
+    padding-left: 392px;
+  }
+
+/* line 470 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_5 {
+    padding-left: 490px;
+  }
+
+/* line 473 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_6 {
+    padding-left: 588px;
+  }
+
+/* line 476 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_7 {
+    padding-left: 686px;
+  }
+
+/* line 479 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_8 {
+    padding-left: 784px;
+  }
+
+/* line 482 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_9 {
+    padding-left: 882px;
+  }
+
+/* line 485 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_10 {
+    padding-left: 980px;
+  }
+
+/* line 488 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_11 {
+    padding-left: 1078px;
+  }
+
+/* line 491 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_12 {
+    padding-left: 1176px;
+  }
+
+/* line 494 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_13 {
+    padding-left: 1274px;
+  }
+
+/* line 497 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_14 {
+    padding-left: 1372px;
+  }
+
+/* line 500 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_15 {
+    padding-left: 1470px;
+  }
+}
+
+/* line 503 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 1648px) and (max-width: 1887px) {
+
+/* line 504 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 1648px;
+  }
+
+/* line 507 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1 {
+    width: 73px;
+  }
+
+/* line 510 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_2 {
+    width: 176px;
+  }
+
+/* line 513 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_3 {
+    width: 279px;
+  }
+
+/* line 516 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_4 {
+    width: 382px;
+  }
+
+/* line 519 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_5 {
+    width: 485px;
+  }
+
+/* line 522 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_6 {
+    width: 588px;
+  }
+
+/* line 525 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_7 {
+    width: 691px;
+  }
+
+/* line 528 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_8 {
+    width: 794px;
+  }
+
+/* line 531 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_9 {
+    width: 897px;
+  }
+
+/* line 534 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_10 {
+    width: 1000px;
+  }
+
+/* line 537 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_11 {
+    width: 1103px;
+  }
+
+/* line 540 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_12 {
+    width: 1206px;
+  }
+
+/* line 543 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_13 {
+    width: 1309px;
+  }
+
+/* line 546 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_14 {
+    width: 1412px;
+  }
+
+/* line 549 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_15 {
+    width: 1515px;
+  }
+
+/* line 552 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_16 {
+    width: 1618px;
+  }
+
+/* line 555 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1 {
+    padding-left: 103px;
+  }
+
+/* line 558 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_2 {
+    padding-left: 206px;
+  }
+
+/* line 561 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_3 {
+    padding-left: 309px;
+  }
+
+/* line 564 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_4 {
+    padding-left: 412px;
+  }
+
+/* line 567 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_5 {
+    padding-left: 515px;
+  }
+
+/* line 570 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_6 {
+    padding-left: 618px;
+  }
+
+/* line 573 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_7 {
+    padding-left: 721px;
+  }
+
+/* line 576 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_8 {
+    padding-left: 824px;
+  }
+
+/* line 579 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_9 {
+    padding-left: 927px;
+  }
+
+/* line 582 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_10 {
+    padding-left: 1030px;
+  }
+
+/* line 585 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_11 {
+    padding-left: 1133px;
+  }
+
+/* line 588 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_12 {
+    padding-left: 1236px;
+  }
+
+/* line 591 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_13 {
+    padding-left: 1339px;
+  }
+
+/* line 594 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_14 {
+    padding-left: 1442px;
+  }
+
+/* line 597 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_15 {
+    padding-left: 1545px;
+  }
+}
+
+/* line 600 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 1888px) {
+
+/* line 601 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 1888px;
+  }
+
+/* line 604 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1 {
+    width: 78px;
+  }
+
+/* line 607 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_2 {
+    width: 196px;
+  }
+
+/* line 610 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_3 {
+    width: 314px;
+  }
+
+/* line 613 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_4 {
+    width: 432px;
+  }
+
+/* line 616 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_5 {
+    width: 550px;
+  }
+
+/* line 619 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_6 {
+    width: 668px;
+  }
+
+/* line 622 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_7 {
+    width: 786px;
+  }
+
+/* line 625 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_8 {
+    width: 904px;
+  }
+
+/* line 628 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_9 {
+    width: 1022px;
+  }
+
+/* line 631 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_10 {
+    width: 1140px;
+  }
+
+/* line 634 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_11 {
+    width: 1258px;
+  }
+
+/* line 637 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_12 {
+    width: 1376px;
+  }
+
+/* line 640 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_13 {
+    width: 1494px;
+  }
+
+/* line 643 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_14 {
+    width: 1612px;
+  }
+
+/* line 646 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_15 {
+    width: 1730px;
+  }
+
+/* line 649 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_16 {
+    width: 1848px;
+  }
+
+/* line 652 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1 {
+    padding-left: 118px;
+  }
+
+/* line 655 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_2 {
+    padding-left: 236px;
+  }
+
+/* line 658 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_3 {
+    padding-left: 354px;
+  }
+
+/* line 661 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_4 {
+    padding-left: 472px;
+  }
+
+/* line 664 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_5 {
+    padding-left: 590px;
+  }
+
+/* line 667 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_6 {
+    padding-left: 708px;
+  }
+
+/* line 670 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_7 {
+    padding-left: 826px;
+  }
+
+/* line 673 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_8 {
+    padding-left: 944px;
+  }
+
+/* line 676 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_9 {
+    padding-left: 1062px;
+  }
+
+/* line 679 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_10 {
+    padding-left: 1180px;
+  }
+
+/* line 682 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_11 {
+    padding-left: 1298px;
+  }
+
+/* line 685 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_12 {
+    padding-left: 1416px;
+  }
+
+/* line 688 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_13 {
+    padding-left: 1534px;
+  }
+
+/* line 691 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_14 {
+    padding-left: 1652px;
+  }
+
+/* line 694 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_15 {
+    padding-left: 1740px;
+  }
+}
+
+/* line 697 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+/* line 698 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 768px;
+  }
+
+/* line 701 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1 {
+    width: 28px;
+  }
+
+/* line 704 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_2 {
+    width: 76px;
+  }
+
+/* line 707 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_3 {
+    width: 124px;
+  }
+
+/* line 710 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_4 {
+    width: 172px;
+  }
+
+/* line 713 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_5 {
+    width: 220px;
+  }
+
+/* line 716 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_6 {
+    width: 268px;
+  }
+
+/* line 719 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_7 {
+    width: 316px;
+  }
+
+/* line 722 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_8 {
+    width: 364px;
+  }
+
+/* line 725 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_9 {
+    width: 412px;
+  }
+
+/* line 728 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_10 {
+    width: 460px;
+  }
+
+/* line 731 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_11 {
+    width: 508px;
+  }
+
+/* line 734 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_12 {
+    width: 556px;
+  }
+
+/* line 737 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_13 {
+    width: 604px;
+  }
+
+/* line 740 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_14 {
+    width: 652px;
+  }
+
+/* line 743 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_15 {
+    width: 700px;
+  }
+
+/* line 746 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_16 {
+    width: 748px;
+  }
+
+/* line 749 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1 {
+    padding-left: 48px;
+  }
+
+/* line 752 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_2 {
+    padding-left: 96px;
+  }
+
+/* line 755 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_3 {
+    padding-left: 144px;
+  }
+
+/* line 758 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_4 {
+    padding-left: 192px;
+  }
+
+/* line 761 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_5 {
+    padding-left: 240px;
+  }
+
+/* line 764 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_6 {
+    padding-left: 288px;
+  }
+
+/* line 767 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_7 {
+    padding-left: 336px;
+  }
+
+/* line 770 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_8 {
+    padding-left: 384px;
+  }
+
+/* line 773 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_9 {
+    padding-left: 432px;
+  }
+
+/* line 776 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_10 {
+    padding-left: 480px;
+  }
+
+/* line 779 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_11 {
+    padding-left: 528px;
+  }
+
+/* line 782 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_12 {
+    padding-left: 576px;
+  }
+
+/* line 785 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_13 {
+    padding-left: 624px;
+  }
+
+/* line 788 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_14 {
+    padding-left: 672px;
+  }
+
+/* line 791 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_15 {
+    padding-left: 720px;
+  }
+}
+
+/* line 794 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (max-width: 767px) {
+
+/* line 795 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 300px;
+  }
+
+/* line 798 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1,
+  .container_16 .grid_2,
+  .container_16 .grid_3,
+  .container_16 .grid_4,
+  .container_16 .grid_5,
+  .container_16 .grid_6,
+  .container_16 .grid_7,
+  .container_16 .grid_8,
+  .container_16 .grid_9,
+  .container_16 .grid_10,
+  .container_16 .grid_11,
+  .container_16 .grid_12,
+  .container_16 .grid_13,
+  .container_16 .grid_14,
+  .container_16 .grid_15,
+  .container_16 .grid_16 {
+    width: 300px;
+  }
+
+/* line 804 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1,
+  .container_16 .offset_2,
+  .container_16 .offset_3,
+  .container_16 .offset_4,
+  .container_16 .offset_5,
+  .container_16 .offset_6,
+  .container_16 .offset_7,
+  .container_16 .offset_8,
+  .container_16 .offset_9,
+  .container_16 .offset_10,
+  .container_16 .offset_11,
+  .container_16 .offset_12,
+  .container_16 .offset_13,
+  .container_16 .offset_14,
+  .container_16 .offset_15 {
+    padding-left: 0;
+  }
+}
+
+/* line 821 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/* line 822 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 420px;
+  }
+
+/* line 825 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .grid_1,
+  .container_16 .grid_2,
+  .container_16 .grid_3,
+  .container_16 .grid_4,
+  .container_16 .grid_5,
+  .container_16 .grid_6,
+  .container_16 .grid_7,
+  .container_16 .grid_8,
+  .container_16 .grid_9,
+  .container_16 .grid_10,
+  .container_16 .grid_11,
+  .container_16 .grid_12,
+  .container_16 .grid_13,
+  .container_16 .grid_14,
+  .container_16 .grid_15,
+  .container_16 .grid_16 {
+    width: 420px;
+  }
+
+/* line 831 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 .offset_1,
+  .container_16 .offset_2,
+  .container_16 .offset_3,
+  .container_16 .offset_4,
+  .container_16 .offset_5,
+  .container_16 .offset_6,
+  .container_16 .offset_7,
+  .container_16 .offset_8,
+  .container_16 .offset_9,
+  .container_16 .offset_10,
+  .container_16 .offset_11,
+  .container_16 .offset_12,
+  .container_16 .offset_13,
+  .container_16 .offset_14,
+  .container_16 .offset_15 {
+    padding-left: 0;
+  }
+}
+
+/* line 848 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (max-width: 767px) {
+
+/* line 849 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .container_16 {
+    width: 300px;
+  }
+
+/* line 852 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12,
+  .grid_13,
+  .grid_14,
+  .grid_15,
+  .grid_16 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+/* line 857 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 768px) and (max-width: 1407px) {
+
+/* line 858 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12,
+  .grid_13,
+  .grid_14,
+  .grid_15,
+  .grid_16 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* line 863 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 1408px) and (max-width: 1887px) {
+
+/* line 864 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12,
+  .grid_13,
+  .grid_14,
+  .grid_15,
+  .grid_16 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* line 869 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+@media only screen and (min-width: 1888px) {
+
+/* line 870 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12,
+  .grid_13,
+  .grid_14,
+  .grid_15,
+  .grid_16 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* line 875 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* line 883 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.clearfix:before,
+.clearfix:after,
+.container_16:before,
+.container_16:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 896 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.clearfix:after,
+.container_16:after {
+  clear: both;
+}
+
+/* line 900 : /apps/blogmon/pub/stylesheets/gridtitan16.styl */
+.clearfix,
+.container_16 {
+  zoom: 1;
+}

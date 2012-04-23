@@ -1,8 +1,9 @@
 script(id='post-template', type='text/html')
-  div
-    a.feed(href='{{feedLink}}') {{feedTitle}}
-    a.post(href='{{link}}') {{title}}
-    span {{date}}
-    a.iconic(href='{{link}}') 1
-    div {{{description}}}
+  div.post-content
+    div.header
+      a.feed(href='{{feedLink}}') {{feedTitle}}
+      a.post(href='{{link}}') {{title}}
+      span {{date}}
+      a.iconic(href='{{link}}') 1
+    div.description.collapsed {{{description}}}
 
