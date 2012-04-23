@@ -1,5 +1,8 @@
 @import 'nib/iconic'
 
+font-face('MuseoSans500', 'MuseoSans_500-webfont', '../fonts/')
+font-face('MuseoSans500Italic', 'MuseoSans_500_Italic-webfont', '../fonts/')
+
 iconic-stroke('../fonts')
 
 .iconic
@@ -7,9 +10,11 @@ iconic-stroke('../fonts')
   font-size 1.0em
 
 a.iconic
-a.iconic:hover
-  color #c6c6c6
+  color color-khaki
   text-decoration none
+
+a.iconic:hover
+  color color-yellow
   cursor pointer
 
 .iconic.home:before { content: '!'; }

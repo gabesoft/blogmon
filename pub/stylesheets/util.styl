@@ -3,3 +3,10 @@ line(orientation, width, style)
   border-{orientation}: width style #121212
   box-shadow(0, 1px, 0, rgba(255, 255, 255, 0.07))
 
+font-face(family, font, path)
+  @font-face
+    font-family: family
+    src: url(path + font + '.eot')
+    src: url(path + font + '.eot?#iefix') format('embedded-opentype'), url(path + font + '.woff') format('woff'), url(path + font + '.ttf') format('truetype'), url(path + font + '.svg#' + family) format('svg')
+    font-weight: normal
+    font-style: normal
