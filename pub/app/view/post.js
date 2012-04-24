@@ -24,14 +24,17 @@ module.exports = backbone.View.extend({
     },
 
     toggleDescription: function() {
-        var desc      = this.$el.find('.description')
-          , cls       = 'collapsed'
-          , collapsed = desc.hasClass(cls);
+        var content   = this.$el.find('.post-content')
+          , ccls      = 'collapsed'
+          , ecls      = 'expanded'
+          , collapsed = content.hasClass(ccls);
 
         if (collapsed) {
-            desc.removeClass(cls);
+            content.removeClass(ccls);
+            content.addClass(ecls);
         } else {
-            desc.addClass(cls);
+            content.removeClass(ecls);
+            content.addClass(ccls);
         }
     }
 });

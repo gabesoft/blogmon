@@ -1415,7 +1415,7 @@ ul.tabs {
 /* line 26 : /apps/blogmon/pub/stylesheets/site.styl */
 #tabs-nav {
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
@@ -1437,19 +1437,57 @@ ul.tabs {
 }
 
 /* line 41 : /apps/blogmon/pub/stylesheets/site.styl */
-#posts-content .collapsed {
+
+/* line 42 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .collapsed .header {
+  border: 1px solid #ff8247;
+  padding: 10px 10px 10px 10px;
+}
+
+/* line 45 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .collapsed .header:hover {
+  border: 1px solid #f0e68c;
+}
+
+/* line 47 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .collapsed .header-inner {
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: ;
+  -moz-box-shadow: ;
+  box-shadow: ;
+}
+
+/* line 50 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .collapsed .description {
   display: none;
 }
 
-/* line 44 : /apps/blogmon/pub/stylesheets/site.styl */
-#posts-content .header {
-  border: 1px solid #ff8247;
-  padding: 5px;
+/* line 53 : /apps/blogmon/pub/stylesheets/site.styl */
+
+/* line 54 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .expanded .header {
+  padding: 10px 10px 5px 10px;
 }
 
-/* line 48 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 56 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .expanded .header-inner {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #121212;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+}
+
+/* line 60 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .header {
+  border: 1px solid #ff8247;
+  border-bottom: 0;
+}
+
+/* line 64 : /apps/blogmon/pub/stylesheets/site.styl */
 #posts-content .description {
-  margin-top: 2px;
-  border: 1px solid #f0e68c;
-  padding: 5px;
+  border: 1px solid #ff8247;
+  border-top: 0;
+  padding: 10px;
 }
