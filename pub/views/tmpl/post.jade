@@ -2,9 +2,10 @@ script(id='post-template', type='text/html')
   div.post-content.collapsed
     div.header
       div.header-inner
-        a.feed(href='{{feedLink}}') {{feedTitle}}
-        a.post(href='{{link}}') {{title}}
-        span {{date}}
-        a.iconic(href='{{link}}') 1
+        h5.left {{feedTitle}}
+        span.right
+          h5.date {{dateStr}}
+          a.iconic(href='{{link}}', target='_blank', title='open blog in new window') 1
+        h4 {{title}}
     div.description {{{description}}}
 

@@ -1276,24 +1276,12 @@ a:focus {
 }
 
 /* line 106 : /apps/blogmon/pub/stylesheets/typography.styl */
-a.iconic {
-  color: #f0e68c;
-  text-decoration: none;
-}
-
-/* line 110 : /apps/blogmon/pub/stylesheets/typography.styl */
-a.iconic:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
-/* line 114 : /apps/blogmon/pub/stylesheets/typography.styl */
 p a,
 p a:visited {
   line-height: inherit;
 }
 
-/* line 118 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 110 : /apps/blogmon/pub/stylesheets/tabs.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs {
@@ -1483,11 +1471,48 @@ ul.tabs {
 #posts-content .header {
   border: 1px solid #ff8247;
   border-bottom: 0;
+  cursor: pointer;
 }
 
-/* line 64 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 65 : /apps/blogmon/pub/stylesheets/site.styl */
 #posts-content .description {
   border: 1px solid #ff8247;
   border-top: 0;
   padding: 10px;
+}
+
+/* line 70 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .left {
+  display: inline-block;
+}
+
+/* line 73 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content h5 {
+  color: #f0e68c;
+}
+
+/* line 76 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .right {
+  float: right;
+  display: inline-block;
+}
+
+/* line 80 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .right .date {
+  display: inline-block;
+  margin-right: 10px;
+  color: #f0e68c;
+}
+
+/* line 85 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .right .iconic {
+  color: #ff8247;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* line 90 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content .right .iconic:hover {
+  color: #f0e68c;
+  cursor: pointer;
 }
