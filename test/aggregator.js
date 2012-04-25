@@ -1,11 +1,12 @@
-var should = require('should'),
-    Feed = require('../lib/model/feed.js'),
-    Post = require('../lib/model/post.js'),
-    Aggregator = require('../lib/aggregator.js'),
-    redis = require('./redis_helper.js').client(),
-    feed = new Feed(redis),
-    post = new Post(redis),
-    agg  = new Aggregator(redis, 1);
+var should     = require('should')
+  , eyes       = require('eyes')
+  , Feed       = require('../lib/model/feed.js')
+  , Post       = require('../lib/model/post.js')
+  , Aggregator = require('../lib/aggregator.js')
+  , redis      = require('./redis_helper.js').client()
+  , feed       = new Feed(redis)
+  , post       = new Post(redis)
+  , agg        = new Aggregator(redis, 1);
 
 agg.once('feed-updated', function(feed, count) {
     console.log('updated', feed, count);
@@ -25,8 +26,8 @@ describe('SLOW - aggregator', function() {
             record.uri.should.equal(uri);
             feed.get(function(feeds) {
                 var found = feeds.filter(function(record) {
-                    return record.uri === uri;
-                });
+                        return record.uri === uri;
+                    });
                 found.length.should.equal(1);
                 post.get(uri, 0, -1, function(posts) {
                     posts.length.should.equal(saved);

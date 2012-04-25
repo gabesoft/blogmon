@@ -114,7 +114,6 @@ Finder	lib/feed_finder.js	/^Finder.prototype.find = function(link, callback) {$/
 Finder	lib/feed_finder.js	/^function Finder () {$/;"	f
 Finder.find	lib/feed_finder.js	/^Finder.prototype.find = function(link, callback) {$/;"	m
 GUID_SET	./bin/../lib/model/post.js	/^var GUID_SET = 'post:guids', $/;"	v	lineno:1	type:string
-LKP_KEY	lib/model/feed.js	/^var LKP_KEY = 'feed:lookup:uri',$/;"	v
 NAMES	./bin/../lib/model/user.js	/^var NAMES  = 'user:name',$/;"	v	lineno:1	type:string
 Post	./bin/../lib/model/post.js	/^function Post (redis) {$/;"	f	lineno:8	type:any function(any)
 Post	lib/model/post.js	/^function Post (redis) {$/;"	c
@@ -155,8 +154,6 @@ a	test/support/js_indent.js	/^var a = 1                                         
 a	test/support/js_indent.js	/^var a = 1,                                                                  \/\/$/;"	v
 add	./bin/../lib/model/feed.js	/^Feed.prototype.add = function(feed, callback) {$/;"	f	lineno:66	type:void function(any, any)
 add	./bin/../lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	f	lineno:76	type:void function(any, any)
-addMany	lib/model/feed.js	/^var addMany = function(repo, feeds, callback) {$/;"	f
-addOne	lib/model/feed.js	/^var addOne = function(repo, feed, callback) {$/;"	f
 arr	test/support/js_indent.js	/^var arr = [];$/;"	v
 auth	./bin/../lib/app/auth.js	/^    var auth = function(req, res, token, succ, fail) {$/;"	f	lineno:24	type:void function(any, any, any, any, any)
 authenticate	./bin/../lib/app/auth.js	/^        authenticate: function(req, res, succ, fail) {$/;"	f	lineno:44	type:void function(any, any, any, any)
@@ -166,8 +163,6 @@ b	test/support/js_indent.js	/^        var b = 9,                                
 backbone	pub/app/model/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/model/posts.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/post.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
-buildFeed	lib/aggregator.js	/^var buildFeed = function(uri, meta, data) {$/;"	f
-buildPost	lib/aggregator.js	/^var buildPost = function(feed, post) {$/;"	f
 bundle	server.js	/^var bundle = bundle({$/;"	v
 checkContextEmpty	test/app_auth.js	/^var checkContextEmpty = function() {$/;"	f
 checkContextHasUser	test/app_auth.js	/^var checkContextHasUser = function() {$/;"	f
@@ -208,9 +203,7 @@ fun	test/support/js_indent.js	/^var fun = function(x, y) {                      
 get	./bin/../lib/app/auth.js	/^        get: function(req) { return req.cookies[COOKIE]; },$/;"	f	lineno:9	type:any function(any)
 get	./bin/../lib/model/post.js	/^Post.prototype.get = function(feedUris, start, limit, callback) {$/;"	f	lineno:122	type:void function(any, any, any, any)
 get	./bin/../lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"	f	lineno:92	type:void function(any, any)
-get	lib/model/feed.js	/^var get = function(redis, objs, callback) {$/;"	f
 getAll	./bin/../lib/model/feed.js	/^Feed.prototype.getAll = function(callback) {$/;"	f	lineno:146	type:void function(any)
-getByKeys	lib/model/feed.js	/^var getByKeys = function(redis, keys, callback) {$/;"	f
 getData	./bin/../lib/model/feed.js	/^Feed.prototype.getData = function(uri, callback) {$/;"	f	lineno:137	type:void function(any, any)
 getFeedsKey	./bin/../lib/model/user.js	/^var getFeedsKey = function(name) {$/;"	f	lineno:16	type:string function(any)
 getFeedsKey	./bin/../lib/model/user.js	/^var getFeedsKey = function(name) {$/;"	v	lineno:16	type:string function(any)
@@ -220,7 +213,6 @@ getKey	./bin/../lib/model/post.js	/^var getKey = function(feedUri) {$/;"	f	linen
 getKey	./bin/../lib/model/post.js	/^var getKey = function(feedUri) {$/;"	v	lineno:15	type:any
 getKey	./bin/../lib/model/user.js	/^var getKey = function(name) { $/;"	f	lineno:12	type:string function(any)
 getKey	./bin/../lib/model/user.js	/^var getKey = function(name) { $/;"	v	lineno:12	type:<any function(any) | string function(any)>
-getKey	lib/model/feed.js	/^var getKey = function(id) {$/;"	f
 getUrl	lib/feed_finder.js	/^var getUrl = function(link) {$/;"	f
 getdate	./bin/../lib/model/post.js	/^        getdate   = function(post) { return post.date || post.pubdate; },$/;"	f	lineno:26	type:any function(any)
 getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	f	lineno:20	type:string function()
@@ -235,8 +227,6 @@ init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {
 init	lib/app/initializer.js	/^var init = function(app) {$/;"	f
 initSession	test/app_auth.js	/^var initSession = function(callback) {$/;"	f
 invalid	test/feed_finder.js	/^var invalid = urls.filter(function(u) { return !u.valid; });$/;"	v
-isId	lib/model/feed.js	/^var isId = function(obj) {$/;"	f
-isNotId	lib/model/feed.js	/^var isNotId = function(obj) { return !isId(obj); };$/;"	f
 l	test/support/js_indent.js	/^var l = list                                                                \/\/$/;"	v
 length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {$/;"	f	lineno:166	type:void function(any)
 login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
@@ -251,6 +241,7 @@ module.exports.curry	lib/util.js	/^module.exports.curry = function(obj, args) {$
 module.exports.etags	test/support/data_feed.js	/^    etags: [ {$/;"	p
 module.exports.exists	lib/util.js	/^module.exports.exists = function(obj) {$/;"	f
 module.exports.nil	lib/util.js	/^module.exports.nil = function(obj) {$/;"	f
+module.exports.pluck2	lib/util.js	/^module.exports.pluck2 = function(\/* obj, keys *\/) {$/;"	f
 module.exports.skip	lib/util.js	/^module.exports.skip = function(obj, count) {$/;"	f
 module.exports.take	lib/util.js	/^module.exports.take = function(obj, count) {$/;"	f
 module.exports.toHash	lib/util.js	/^module.exports.toHash = function(arr, toStr, toVal) {$/;"	f
@@ -261,7 +252,6 @@ obj.notquite	test/support/js_indent.js	/^    notquite: function() {             
 obj.works	test/support/js_indent.js	/^    works: function() {                                                     \/\/$/;"	m
 parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	f	lineno:28	type:any function(any)
 parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	v	lineno:28	type:any function(any)
-parse	lib/model/feed.js	/^var parse = function(str) {$/;"	f
 parse	lib/model/token.js	/^var parse = function(str) {$/;"	f
 parseRedisUrl	./bin/../lib/app/redis_helper.js	/^var parseRedisUrl = function() {$/;"	f	lineno:6	type:<null | Object> function()
 parseRedisUrl	./bin/../lib/app/redis_helper.js	/^var parseRedisUrl = function() {$/;"	v	lineno:6	type:<null | Object> function()
@@ -274,14 +264,12 @@ removeAll	./bin/../lib/model/token.js	/^Token.prototype.removeAll = function(nam
 removeAt	./bin/../lib/model/post.js	/^        removeAt  = function(index) { lists.splice(index, 1); };$/;"	f	lineno:27	type:void function(any)
 render	./bin/../pub/app/view/feeds.js	/^        render: function() {$/;"	f	lineno:7	type:void function()
 req.session.destroy	test/app_auth.js	/^        destroy: initSession$/;"	p
-runFeed	lib/aggregator.js	/^var runFeed = function(agg, obj, callback) {$/;"	f
-runOne	lib/aggregator.js	/^var runOne = function(agg, obj, callback) {$/;"	f
 session	./bin/../lib/app/config.js	/^        session: function(req, res) {$/;"	f	lineno:43	type:any function(any, any)
 setData	./bin/../lib/model/feed.js	/^Feed.prototype.setData = function(uri, data, callback) {$/;"	f	lineno:130	type:void function(any, any, any)
-should	test/aggregator.js	/^var should = require('should'),$/;"	v
+should	test/aggregator.js	/^var should = require('should')$/;"	v
 should	test/feed_finder.js	/^var should = require('should'),$/;"	v
 should	test/model_feed.js	/^var should = require('should')$/;"	v
-should	test/model_post.js	/^var should = require('should'),$/;"	v
+should	test/model_post.js	/^var should = require('should')$/;"	v
 should	test/model_token.js	/^var should  = require('should'),$/;"	v
 should	test/model_user.js	/^var should = require('should'),$/;"	v
 store	./bin/../lib/app/redis_helper.js	/^    store: function(express) {$/;"	f	lineno:42	type:any function(any)
@@ -291,7 +279,6 @@ subscribe	./bin/../lib/model/feed.js	/^Feed.prototype.subscribe = function(feed,
 subscribe	./bin/../lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	f	lineno:66	type:void function(any, any, any)
 succ	./bin/../lib/app/routes_auth.js	/^        var succ = function() { res.redirect('\/'); }; $/;"	f	lineno:32	type:void function()
 succ	./bin/../lib/app/routes_main.js	/^        var succ = function() { next(); };$/;"	f	lineno:10	type:void function()
-toStr	lib/model/feed.js	/^var toStr = function(token) {$/;"	f
 toStr	lib/model/token.js	/^var toStr = function(token) {$/;"	f
 tohex	./bin/../lib/model/token.js	/^var tohex = function(text) {$/;"	f	lineno:21	type:any function(string)
 tohex	./bin/../lib/model/token.js	/^var tohex = function(text) {$/;"	v	lineno:21	type:any function(string)
@@ -320,7 +307,6 @@ util	./bin/../lib/model/feed.js	/^    util = require('..\/util.js'),$/;"	v	linen
 util	./bin/../lib/model/post.js	/^    util = require('..\/util.js'),$/;"	v	lineno:3	type:any
 util	./bin/../lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v	lineno:1	type:any
 util	./bin/../lib/model/user.js	/^    util   = require('..\/util.js'),$/;"	v	lineno:2	type:any
-util	lib/aggregator.js	/^var util       = require('.\/util.js'),$/;"	v
 util	lib/feed_finder.js	/^var util    = require('.\/util.js'),$/;"	v
 util	lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v
 util	lib/util.js	/^var util = require('util'),$/;"	v
