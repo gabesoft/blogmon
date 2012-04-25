@@ -243,6 +243,7 @@ module.exports.exists	lib/util.js	/^module.exports.exists = function(obj) {$/;"	
 module.exports.nil	lib/util.js	/^module.exports.nil = function(obj) {$/;"	f
 module.exports.pluck2	lib/util.js	/^module.exports.pluck2 = function(\/* obj, keys *\/) {$/;"	f
 module.exports.skip	lib/util.js	/^module.exports.skip = function(obj, count) {$/;"	f
+module.exports.sortBy	lib/util.js	/^module.exports.sortBy = function(obj, val, context) {$/;"	f
 module.exports.take	lib/util.js	/^module.exports.take = function(obj, count) {$/;"	f
 module.exports.toHash	lib/util.js	/^module.exports.toHash = function(arr, toStr, toVal) {$/;"	f
 module.exports.uniqInt	lib/util.js	/^module.exports.uniqInt = function() {$/;"	f
