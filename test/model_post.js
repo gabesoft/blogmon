@@ -24,11 +24,23 @@ describe('post', function() {
     });
 
     it('should get posts for one feed', function(done) {
+        var uri      = 'http://blog.izs.me/rss'
+          , filtered = util.filter(posts, function(post) {
+                return post.feedUri === uri;
+            })
+          , len = filtered.length
+          , max = util.max(filtered, function(post) {
+                return post.date;
+            })
+          , min = util.min(filtered, function(post) {
+                return post.date;
+            });
+
         repo.add(posts, function(added) {
-            repo.get('http://blog.izs.me/rss', 0, -1, function(res) {
-                res.length.should.equal(20);
-                res[0].guid.should.equal('http://blog.izs.me/post/19521376222');
-                res[19].guid.should.equal('http://blog.izs.me/post/9552484379');
+            repo.get(uri, 0, -1, function(res) {
+                res.length.should.equal(len);
+                res[0].guid.should.equal(max.guid);
+                res[len - 1].guid.should.equal(min.guid);
                 done();
             });
         });
@@ -86,7 +98,7 @@ describe('post', function() {
 
     it('should get posts sorted by date desc and paged', function(done) {
         var length   = 20
-          , selected = posts.slice(0, 20)
+          , selected = posts.slice(0, length)
           , sorted   = trav(selected).clone()
           , l1, l2, l3;
 
@@ -94,11 +106,10 @@ describe('post', function() {
             return x.date > y.date ? -1 : 1;
         });
 
-        l1 = sorted.slice(0, 5);
-        l2 = sorted.slice(4, 10);
-        l3 = sorted.slice(8, length);
+        l1 = selected.slice(0, 5);
+        l2 = selected.slice(4, 10);
+        l3 = selected.slice(8, length);
 
-        // this assumes that the posts to be added are already sorted by date
         repo.add(l3, function() {
             repo.add(l2, function() {
                 repo.add(l1, function() {
@@ -129,18 +140,21 @@ describe('post', function() {
     });
 
     it('should get posts fast', function(done) {
-        repo.add(large, function(res) {
+        repo.add(large, function(count) {
             var excluded = {
-                    'http://www.mikealrogers.com/site.rss': true,
+                    'http://www.mikealrogers.com/site.rss'    : true,
                     'http://www.curlybracecast.com/itunes.rss': true
-                };
-
-            var urls = large
-                   .map(function(post) { return post.feedUri; })
-                   .filter(function(uri) { return !excluded[uri]; });
+                }
+              , filtered = large.filter(function(post) {
+                    return !excluded[post.feedUri];
+                })
+              , hash = util.toHash(filtered, function(post) {
+                    return post.feedUri;
+                })
+              , urls = Object.keys(hash);
 
             repo.get(urls, 0, -1, function(res) {
-                res.length.should.equal(large.length - 7);
+                res.length.should.equal(filtered.length);
                 done();
             });
         });
