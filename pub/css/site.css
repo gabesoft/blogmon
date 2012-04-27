@@ -1292,21 +1292,20 @@ ul.tabs {
 /* line 5 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs li {
   display: block;
-  width: auto;
   float: left;
-  border: 1px solid #000;
 }
 
-/* line 11 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 9 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs li a {
   display: block;
   text-decoration: none;
   width: auto;
+  border: 1px solid #000;
   color: #c6c6c6;
   padding: 5px 20px;
 }
 
-/* line 18 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 17 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs li a.active {
   position: relative;
   color: #dbdbdb;
@@ -1316,12 +1315,12 @@ ul.tabs li a.active {
   box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
 }
 
-/* line 24 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 23 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs:after {
   clear: both;
 }
 
-/* line 26 : /apps/blogmon/pub/stylesheets/banner.styl */
+/* line 25 : /apps/blogmon/pub/stylesheets/banner.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/banner.styl */
 #banner {
