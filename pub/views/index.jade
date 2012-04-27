@@ -5,12 +5,9 @@ div.container_16
       a.title.logout(href='#posts')= titleInfo
   div#content.grid_16
     div#tabs-nav-container
-      nav#tabs-nav(role='navigation')
-        ul.tabs
-          li
-            a#feeds-tab.tab(href='#feeds') Feeds
-          li
-            a#posts-tab.tab.active(href='#') Posts
+      nav#tabs-nav.tabs(role='navigation')
+        a#feeds-tab.tab(href='#feeds') Feeds
+        a#posts-tab.tab.active(href='#') Posts
     div#feeds-content.tab-content
       div#feeds-edit
         input(name='feed-input', type='text', placeholder='Enter a feed name or url')

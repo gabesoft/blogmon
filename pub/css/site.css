@@ -1281,44 +1281,7 @@ p a:visited {
   line-height: inherit;
 }
 
-/* line 110 : /apps/blogmon/pub/stylesheets/tabs.styl */
-
-/* line 1 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs {
-  display: block;
-  padding: 0;
-}
-
-/* line 5 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs li {
-  display: block;
-}
-
-/* line 8 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs li a {
-  display: block;
-  text-decoration: none;
-  width: auto;
-  border: 1px solid #000;
-  color: #c6c6c6;
-  padding: 5px 20px;
-}
-
-/* line 16 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs li a.active {
-  color: #dbdbdb;
-  background: none repeat scroll 0 0 rgba(0,0,0,0.30);
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
-  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
-  box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
-}
-
-/* line 21 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs:after {
-  clear: both;
-}
-
-/* line 23 : /apps/blogmon/pub/stylesheets/banner.styl */
+/* line 110 : /apps/blogmon/pub/stylesheets/banner.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/banner.styl */
 #banner {
@@ -1349,20 +1312,47 @@ ul.tabs:after {
 /* line 18 : /apps/blogmon/pub/stylesheets/nav.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/nav.styl */
+.tabs {
+  padding: 0;
+  display: inline-block;
+  float: left;
+}
+
+/* line 6 : /apps/blogmon/pub/stylesheets/nav.styl */
+.tabs a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #000;
+  color: #c6c6c6;
+  padding: 5px 20px;
+}
+
+/* line 13 : /apps/blogmon/pub/stylesheets/nav.styl */
+.tabs a.active {
+  color: #dbdbdb;
+  padding: 6px 20px;
+  background: none repeat scroll 0 0 rgba(0,0,0,0.30);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
+}
+
+/* line 19 : /apps/blogmon/pub/stylesheets/nav.styl */
 #tabs-nav-container {
+  clear: both;
+  display: table;
   text-align: center;
 }
 
-/* line 4 : /apps/blogmon/pub/stylesheets/nav.styl */
+/* line 24 : /apps/blogmon/pub/stylesheets/nav.styl */
 #tabs-nav {
   width: 169px;
   padding: 20px 0 20px 0;
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
 }
 
-/* line 11 : /apps/blogmon/pub/stylesheets/posts.styl */
+/* line 29 : /apps/blogmon/pub/stylesheets/posts.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/posts.styl */
 

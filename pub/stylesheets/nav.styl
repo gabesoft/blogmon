@@ -1,4 +1,24 @@
+.tabs 
+  padding: 0
+  display: inline-block
+  float: left
+
+.tabs a
+  display: inline-block
+  text-decoration: none
+  border: 1px solid color-black
+  color: color-font
+  padding: 5px 20px
+
+.tabs a.active
+  color: color-tab-active
+  padding 6px 20px
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+  box-shadow(tab-active-shadow)
+
 #tabs-nav-container
+  clear both
+  display table
   text-align center
 
 #tabs-nav
@@ -6,5 +26,3 @@
   padding 20px 0 20px 0
   margin-left auto
   margin-right auto
-  display inline-block
-
