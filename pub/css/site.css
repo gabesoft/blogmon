@@ -1294,7 +1294,7 @@ ul.tabs li {
   display: block;
   width: auto;
   float: left;
-  margin-bottom: 0;
+  border: 1px solid #000;
 }
 
 /* line 11 : /apps/blogmon/pub/stylesheets/tabs.styl */
@@ -1303,11 +1303,10 @@ ul.tabs li a {
   text-decoration: none;
   width: auto;
   color: #c6c6c6;
-  margin: 0;
   padding: 5px 20px;
 }
 
-/* line 19 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 18 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs li a.active {
   position: relative;
   color: #dbdbdb;
@@ -1317,43 +1316,35 @@ ul.tabs li a.active {
   box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
 }
 
-/* line 25 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 24 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs li:first-child a.active {
   margin-left: 0;
 }
 
-/* line 28 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 27 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs li:first-child a {
   border-width: 1px 1px 0 1px;
-  -moz-border-radius-topleft: 2px;
-  -webkit-border-top-left-radius: 2px;
-  border-top-left-radius: 2px;
 }
+
+/* line 31 : /apps/blogmon/pub/stylesheets/tabs.styl */
 
 /* line 34 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs li:last-child a {
-  -moz-border-radius-topright: 2px;
-  -webkit-border-top-right-radius: 2px;
-  border-top-right-radius: 2px;
-}
-
-/* line 39 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs-content {
   margin: 0;
   display: block;
 }
 
-/* line 43 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 38 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs-content > li {
   display: none;
 }
 
-/* line 46 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 41 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs-content > li.active {
   display: block;
 }
 
-/* line 49 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 44 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs:before,
 ul.tabs:after {
   content: '\0020';
@@ -1364,17 +1355,19 @@ ul.tabs:after {
   height: 0;
 }
 
-/* line 58 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 53 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs:after {
   clear: both;
 }
 
-/* line 61 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 56 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs {
   zoom: 1;
 }
 
-/* line 10 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 60 : /apps/blogmon/pub/stylesheets/banner.styl */
+
+/* line 1 : /apps/blogmon/pub/stylesheets/banner.styl */
 #banner {
   border-bottom: 3px solid #121212;
   -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
@@ -1383,61 +1376,63 @@ ul.tabs {
   padding-top: 10px;
 }
 
-/* line 15 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 6 : /apps/blogmon/pub/stylesheets/banner.styl */
 #banner h3.main {
   display: inline-block;
   color: #ff8247;
 }
 
-/* line 19 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 10 : /apps/blogmon/pub/stylesheets/banner.styl */
 #banner h3.info {
   float: right;
   display: inline-block;
 }
 
-/* line 23 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 14 : /apps/blogmon/pub/stylesheets/banner.styl */
 #banner a {
   color: #f0e68c;
 }
 
-/* line 26 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 18 : /apps/blogmon/pub/stylesheets/nav.styl */
+
+/* line 1 : /apps/blogmon/pub/stylesheets/nav.styl */
+#tabs-nav-container {
+  text-align: center;
+}
+
+/* line 4 : /apps/blogmon/pub/stylesheets/nav.styl */
 #tabs-nav {
-  width: 100%;
+  width: 169px;
   padding: 20px 0 20px 0;
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
-  border-bottom: 1px solid #121212;
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
-  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.07);
 }
 
-/* line 34 : /apps/blogmon/pub/stylesheets/site.styl */
-#posts-content {
-  margin-top: 30px;
-}
+/* line 11 : /apps/blogmon/pub/stylesheets/posts.styl */
 
-/* line 37 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 1 : /apps/blogmon/pub/stylesheets/posts.styl */
+
+/* line 2 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .post-content {
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
-/* line 41 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 6 : /apps/blogmon/pub/stylesheets/posts.styl */
 
-/* line 42 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 7 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .collapsed .header {
   border: 1px solid #ff8247;
   padding: 10px 10px 10px 10px;
 }
 
-/* line 45 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 10 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .collapsed .header:hover {
   border: 1px solid #f0e68c;
 }
 
-/* line 47 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 12 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .collapsed .header-inner {
   padding: 0;
   border: 0;
@@ -1446,19 +1441,19 @@ ul.tabs {
   box-shadow: ;
 }
 
-/* line 50 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 15 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .collapsed .description {
   display: none;
 }
 
-/* line 53 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 18 : /apps/blogmon/pub/stylesheets/posts.styl */
 
-/* line 54 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 19 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .expanded .header {
   padding: 10px 10px 5px 10px;
 }
 
-/* line 56 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 21 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .expanded .header-inner {
   padding-bottom: 10px;
   border-bottom: 1px solid #121212;
@@ -1467,28 +1462,28 @@ ul.tabs {
   box-shadow: 0 1px 0 rgba(255,255,255,0.07);
 }
 
-/* line 60 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 25 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .header {
   border: 1px solid #ff8247;
   border-bottom: 0;
   cursor: pointer;
 }
 
-/* line 65 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 30 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .description {
   border: 1px solid #ff8247;
   border-top: 0;
   padding: 10px;
 }
 
-/* line 70 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 35 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .left {
   display: inline-block;
 }
 
-/* line 73 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 38 : /apps/blogmon/pub/stylesheets/posts.styl */
 
-/* line 74 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 39 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content h4 a {
   text-decoration: none;
   cursor: normal;
@@ -1496,32 +1491,32 @@ ul.tabs {
   pointer-events: none;
 }
 
-/* line 80 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 45 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content h5 {
   color: #f0e68c;
 }
 
-/* line 83 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 48 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .right {
   float: right;
   display: inline-block;
 }
 
-/* line 87 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 52 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .right .date {
   display: inline-block;
   margin-right: 10px;
   color: #f0e68c;
 }
 
-/* line 92 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 57 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .right .iconic {
   color: #ff8247;
   font-size: 1.5em;
   text-decoration: none;
 }
 
-/* line 97 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 62 : /apps/blogmon/pub/stylesheets/posts.styl */
 #posts-content .right .iconic:hover {
   color: #f0e68c;
   cursor: pointer;

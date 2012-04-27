@@ -1,0 +1,22 @@
+
+/* line 1 : /apps/blogmon/pub/stylesheets/banner.styl */
+#banner {
+  padding-top: 10px;
+}
+
+/* line 6 : /apps/blogmon/pub/stylesheets/banner.styl */
+#banner h3.main {
+  display: inline-block;
+  color: color-sienna;
+}
+
+/* line 10 : /apps/blogmon/pub/stylesheets/banner.styl */
+#banner h3.info {
+  float: right;
+  display: inline-block;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/banner.styl */
+#banner a {
+  color: color-khaki;
+}

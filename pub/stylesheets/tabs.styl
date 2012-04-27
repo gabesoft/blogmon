@@ -6,14 +6,13 @@ ul.tabs li
   display: block
   width: auto
   float: left
-  margin-bottom: 0
+  border 1px solid color-black
 
 ul.tabs li a
   display: block
   text-decoration: none
   width: auto
   color: color-font
-  margin: 0
   padding: 5px 20px
 
 ul.tabs li a.active
@@ -27,14 +26,10 @@ ul.tabs li:first-child a.active
 
 ul.tabs li:first-child a
   border-width: 1px 1px 0 1px
-  -moz-border-radius-topleft: 2px
-  -webkit-border-top-left-radius: 2px
-  border-top-left-radius: 2px
+  border-radius: top-left 2px
 
 ul.tabs li:last-child a
-  -moz-border-radius-topright: 2px
-  -webkit-border-top-right-radius: 2px
-  border-top-right-radius: 2px
+  border-radius: top-right 2px
 
 ul.tabs-content
   margin: 0

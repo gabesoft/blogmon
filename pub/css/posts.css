@@ -1,0 +1,106 @@
+
+/* line 1 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content {
+  margin-top: 30px;
+}
+
+/* line 4 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .post-content {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/posts.styl */
+
+/* line 9 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .collapsed .header {
+  border: 1px solid color-sienna;
+  padding: 10px 10px 10px 10px;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .collapsed .header:hover {
+  border: 1px solid color-khaki;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .collapsed .header-inner {
+  padding: 0;
+}
+
+/* line 17 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .collapsed .description {
+  display: none;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/posts.styl */
+
+/* line 21 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .expanded .header {
+  padding: 10px 10px 5px 10px;
+}
+
+/* line 23 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .expanded .header-inner {
+  padding-bottom: 10px;
+}
+
+/* line 27 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .header {
+  border: 1px solid color-sienna;
+  border-bottom: 0;
+  cursor: pointer;
+}
+
+/* line 32 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .description {
+  border: 1px solid color-sienna;
+  border-top: 0;
+  padding: 10px;
+}
+
+/* line 37 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .left {
+  display: inline-block;
+}
+
+/* line 40 : /apps/blogmon/pub/stylesheets/posts.styl */
+
+/* line 41 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content h4 a {
+  text-decoration: none;
+  cursor: normal;
+  color: color-heading;
+  pointer-events: none;
+}
+
+/* line 47 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content h5 {
+  color: color-khaki;
+}
+
+/* line 50 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .right {
+  float: right;
+  display: inline-block;
+}
+
+/* line 54 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .right .date {
+  display: inline-block;
+  margin-right: 10px;
+  color: color-khaki;
+}
+
+/* line 59 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .right .iconic {
+  color: color-sienna;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* line 64 : /apps/blogmon/pub/stylesheets/posts.styl */
+#posts-content .right .iconic:hover {
+  color: color-khaki;
+  cursor: pointer;
+}

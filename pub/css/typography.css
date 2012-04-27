@@ -168,18 +168,6 @@ a:focus {
 }
 
 /* line 106 : /apps/blogmon/pub/stylesheets/typography.styl */
-a.iconic {
-  color: color-khaki;
-  text-decoration: none;
-}
-
-/* line 110 : /apps/blogmon/pub/stylesheets/typography.styl */
-a.iconic:hover {
-  color: color-white;
-  cursor: pointer;
-}
-
-/* line 114 : /apps/blogmon/pub/stylesheets/typography.styl */
 p a,
 p a:visited {
   line-height: inherit;

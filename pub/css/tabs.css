@@ -19,7 +19,7 @@ ul.tabs li a {
   text-decoration: none;
   width: auto;
   color: color-font;
-  margin: 0;
+  margin: 1px solid color-font;
   padding: 5px 20px;
 }
 
@@ -38,35 +38,31 @@ ul.tabs li:first-child a.active {
 /* line 28 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs li:first-child a {
   border-width: 1px 1px 0 1px;
-  -moz-border-radius-topleft: 2px;
-  -webkit-border-top-left-radius: 2px;
-  border-top-left-radius: 2px;
+  border-radius: top-left 2px;
 }
 
-/* line 34 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 32 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs li:last-child a {
-  -moz-border-radius-topright: 2px;
-  -webkit-border-top-right-radius: 2px;
-  border-top-right-radius: 2px;
+  border-radius: top-right 2px;
 }
 
-/* line 39 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 35 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs-content {
   margin: 0;
   display: block;
 }
 
-/* line 43 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 39 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs-content > li {
   display: none;
 }
 
-/* line 46 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 42 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs-content > li.active {
   display: block;
 }
 
-/* line 49 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 45 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs:before,
 ul.tabs:after {
   content: '\0020';
@@ -77,12 +73,12 @@ ul.tabs:after {
   height: 0;
 }
 
-/* line 58 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 54 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs:after {
   clear: both;
 }
 
-/* line 61 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 57 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs {
   zoom: 1;
 }
