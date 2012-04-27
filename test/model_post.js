@@ -139,6 +139,13 @@ describe('post', function() {
         });
     });
 
+    it('should add posts fast', function(done) {
+        repo.add(large, function(count) {
+            count.should.equal(large.length);
+            done();
+        });
+    });
+
     it('should get posts fast', function(done) {
         repo.add(large, function(count) {
             var excluded = {

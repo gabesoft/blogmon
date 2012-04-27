@@ -1487,31 +1487,41 @@ ul.tabs {
 }
 
 /* line 73 : /apps/blogmon/pub/stylesheets/site.styl */
+
+/* line 74 : /apps/blogmon/pub/stylesheets/site.styl */
+#posts-content h4 a {
+  text-decoration: none;
+  cursor: normal;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* line 80 : /apps/blogmon/pub/stylesheets/site.styl */
 #posts-content h5 {
   color: #f0e68c;
 }
 
-/* line 76 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 83 : /apps/blogmon/pub/stylesheets/site.styl */
 #posts-content .right {
   float: right;
   display: inline-block;
 }
 
-/* line 80 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 87 : /apps/blogmon/pub/stylesheets/site.styl */
 #posts-content .right .date {
   display: inline-block;
   margin-right: 10px;
   color: #f0e68c;
 }
 
-/* line 85 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 92 : /apps/blogmon/pub/stylesheets/site.styl */
 #posts-content .right .iconic {
   color: #ff8247;
   font-size: 1.5em;
   text-decoration: none;
 }
 
-/* line 90 : /apps/blogmon/pub/stylesheets/site.styl */
+/* line 97 : /apps/blogmon/pub/stylesheets/site.styl */
 #posts-content .right .iconic:hover {
   color: #f0e68c;
   cursor: pointer;

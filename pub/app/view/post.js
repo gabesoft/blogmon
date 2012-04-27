@@ -20,15 +20,16 @@ module.exports = backbone.View.extend({
         var post = this.model.toJSON()
           , html = null;
 
-        post.dateStr = new Date(post.date).format('ddd, mm/dd/yyyy');
+        post.dateStr = new Date(post.date).format('mm/dd/yyyy');
         html         = this.template(post);
 
         this.$el.html(html);
+
         return this;
     },
 
     toggleDescription: function(e) {
-        if (e.target.nodeName === 'A') { return; }
+        if (e.target.nodeName === 'A' && e.target.hasClass('iconic')) { return; }
 
         var content   = this.$el.find('.post-content')
           , ccls      = 'collapsed'
