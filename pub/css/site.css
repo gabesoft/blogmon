@@ -1317,27 +1317,11 @@ ul.tabs li a.active {
 }
 
 /* line 24 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs li:first-child a.active {
-  margin-left: 0;
-}
-
-/* line 27 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs-content {
-  margin: 0;
-  display: block;
-}
-
-/* line 31 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs:after {
   clear: both;
 }
 
-/* line 34 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs {
-  zoom: 1;
-}
-
-/* line 38 : /apps/blogmon/pub/stylesheets/banner.styl */
+/* line 26 : /apps/blogmon/pub/stylesheets/banner.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/banner.styl */
 #banner {
