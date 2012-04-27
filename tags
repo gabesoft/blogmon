@@ -174,8 +174,8 @@ create	./bin/../lib/model/token.js	/^Token.prototype.create = function(name, cal
 create	./bin/../lib/model/user.js	/^User.prototype.create = function(name, pass, callback) {$/;"	f	lineno:44	type:void function(any, any, any)
 crypto	./bin/../lib/model/token.js	/^    crypto = require('crypto');$/;"	v	lineno:4	type:any
 crypto	./bin/../lib/model/user.js	/^    crypto = require('crypto');$/;"	v	lineno:3	type:any
-data.headers	lib/aggregator.js	/^                headers: {$/;"	p
-data.uri	lib/aggregator.js	/^                uri: uri,$/;"	p
+data.headers	lib/aggregator.js	/^              , headers: {$/;"	p
+data.uri	lib/aggregator.js	/^                uri: uri$/;"	p
 dataKey	./bin/../lib/model/feed.js	/^var dataKey = function(key) {$/;"	f	lineno:23	type:string function(string)
 dataKey	./bin/../lib/model/feed.js	/^var dataKey = function(key) {$/;"	v	lineno:23	type:string function(string)
 date	test/support/data_post_large.js	/^var date = function(str) {$/;"	f

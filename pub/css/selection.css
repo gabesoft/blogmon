@@ -1,0 +1,234 @@
+
+/* line 6 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="text"]::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="password"]::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 10 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="email"]::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/selection.styl */
+textarea::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/selection.styl */
+span::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/selection.styl */
+div::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 18 : /apps/blogmon/pub/stylesheets/selection.styl */
+p::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/selection.styl */
+a::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 22 : /apps/blogmon/pub/stylesheets/selection.styl */
+h1::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 24 : /apps/blogmon/pub/stylesheets/selection.styl */
+h2::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 26 : /apps/blogmon/pub/stylesheets/selection.styl */
+h3::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 28 : /apps/blogmon/pub/stylesheets/selection.styl */
+h4::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 30 : /apps/blogmon/pub/stylesheets/selection.styl */
+h5::selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 6 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="text"]::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="password"]::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 10 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="email"]::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/selection.styl */
+textarea::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/selection.styl */
+span::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/selection.styl */
+div::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 18 : /apps/blogmon/pub/stylesheets/selection.styl */
+p::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/selection.styl */
+a::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 22 : /apps/blogmon/pub/stylesheets/selection.styl */
+h1::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 24 : /apps/blogmon/pub/stylesheets/selection.styl */
+h2::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 26 : /apps/blogmon/pub/stylesheets/selection.styl */
+h3::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 28 : /apps/blogmon/pub/stylesheets/selection.styl */
+h4::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 30 : /apps/blogmon/pub/stylesheets/selection.styl */
+h5::-moz-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 6 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="text"]::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="password"]::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 10 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="email"]::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/selection.styl */
+textarea::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/selection.styl */
+span::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/selection.styl */
+div::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 18 : /apps/blogmon/pub/stylesheets/selection.styl */
+p::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/selection.styl */
+a::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 22 : /apps/blogmon/pub/stylesheets/selection.styl */
+h1::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 24 : /apps/blogmon/pub/stylesheets/selection.styl */
+h2::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 26 : /apps/blogmon/pub/stylesheets/selection.styl */
+h3::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 28 : /apps/blogmon/pub/stylesheets/selection.styl */
+h4::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}
+
+/* line 30 : /apps/blogmon/pub/stylesheets/selection.styl */
+h5::-webkit-selection {
+  color: color-black;
+  background: color-font;
+}

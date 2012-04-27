@@ -1,0 +1,37 @@
+selection-style()
+  color color-black
+  background color-font
+
+input-selection-style(sel)
+  input{'[type="text"]'}::{sel}
+    selection-style()
+  input{'[type="password"]'}::{sel}
+    selection-style()
+  input{'[type="email"]'}::{sel}
+    selection-style()
+  textarea::{sel}
+    selection-style()
+  span::{sel}
+    selection-style()
+  div::{sel}
+    selection-style()
+  p::{sel}
+    selection-style()
+  a::{sel}
+    selection-style()
+    text-decoration none
+  h1::{sel}
+    selection-style()
+  h2::{sel}
+    selection-style()
+  h3::{sel}
+    selection-style()
+  h4::{sel}
+    selection-style()
+  h5::{sel}
+    selection-style()
+
+input-selection-style(selection)
+input-selection-style(-moz-selection)
+input-selection-style(-webkit-selection)
+

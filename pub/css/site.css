@@ -1309,7 +1309,308 @@ p a:visited {
   color: #f0e68c;
 }
 
-/* line 18 : /apps/blogmon/pub/stylesheets/nav.styl */
+/* line 18 : /apps/blogmon/pub/stylesheets/forms.styl */
+
+/* line 1 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+  color: #6e6e6e;
+  border: 0;
+  background: none repeat scroll 0 0 rgba(0,0,0,0.30);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+textarea:focus {
+  color: #dbdbdb;
+  background: none repeat scroll 0 0 rgba(0,0,0,0.30);
+}
+
+/* line 19 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  cursor: pointer;
+  display: inline-block;
+  background: none repeat scroll 0 0 rgba(255,255,255,0.06);
+  border: 1px solid rgba(0,0,0,0.50);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 4px 15px 4px 15px;
+  color: rgba(0,0,0,0.80);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* line 31 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover {
+  color: #eee;
+  text-shadow: 0 1px 0 #000;
+  border: 1px solid #6e6e6e;
+}
+
+/* line 38 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='submit']:active,
+input[type='reset']:active,
+input[type='button']:active {
+  border: 1px solid rgba(0,0,0,0.50);
+}
+
+/* line 1 : /apps/blogmon/pub/stylesheets/selection.styl */
+
+/* line 6 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="text"]::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="password"]::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 10 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="email"]::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/selection.styl */
+textarea::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/selection.styl */
+span::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/selection.styl */
+div::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 18 : /apps/blogmon/pub/stylesheets/selection.styl */
+p::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/selection.styl */
+a::selection {
+  color: #000;
+  background: #c6c6c6;
+  text-decoration: none;
+}
+
+/* line 23 : /apps/blogmon/pub/stylesheets/selection.styl */
+h1::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 25 : /apps/blogmon/pub/stylesheets/selection.styl */
+h2::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 27 : /apps/blogmon/pub/stylesheets/selection.styl */
+h3::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 29 : /apps/blogmon/pub/stylesheets/selection.styl */
+h4::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 31 : /apps/blogmon/pub/stylesheets/selection.styl */
+h5::selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 6 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="text"]::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="password"]::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 10 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="email"]::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/selection.styl */
+textarea::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/selection.styl */
+span::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/selection.styl */
+div::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 18 : /apps/blogmon/pub/stylesheets/selection.styl */
+p::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/selection.styl */
+a::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+  text-decoration: none;
+}
+
+/* line 23 : /apps/blogmon/pub/stylesheets/selection.styl */
+h1::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 25 : /apps/blogmon/pub/stylesheets/selection.styl */
+h2::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 27 : /apps/blogmon/pub/stylesheets/selection.styl */
+h3::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 29 : /apps/blogmon/pub/stylesheets/selection.styl */
+h4::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 31 : /apps/blogmon/pub/stylesheets/selection.styl */
+h5::-moz-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 6 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="text"]::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="password"]::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 10 : /apps/blogmon/pub/stylesheets/selection.styl */
+input[type="email"]::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/selection.styl */
+textarea::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/selection.styl */
+span::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/selection.styl */
+div::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 18 : /apps/blogmon/pub/stylesheets/selection.styl */
+p::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/selection.styl */
+a::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+  text-decoration: none;
+}
+
+/* line 23 : /apps/blogmon/pub/stylesheets/selection.styl */
+h1::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 25 : /apps/blogmon/pub/stylesheets/selection.styl */
+h2::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 27 : /apps/blogmon/pub/stylesheets/selection.styl */
+h3::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 29 : /apps/blogmon/pub/stylesheets/selection.styl */
+h4::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 31 : /apps/blogmon/pub/stylesheets/selection.styl */
+h5::-webkit-selection {
+  color: #000;
+  background: #c6c6c6;
+}
+
+/* line 38 : /apps/blogmon/pub/stylesheets/nav.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/nav.styl */
 .tabs {
@@ -1462,4 +1763,37 @@ p a:visited {
 #posts-content .right .iconic:hover {
   color: #f0e68c;
   cursor: pointer;
+}
+
+/* line 66 : /apps/blogmon/pub/stylesheets/feeds.styl */
+
+/* line 1 : /apps/blogmon/pub/stylesheets/feeds.styl */
+
+/* line 2 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-edit input.search {
+  padding: 5px 10px 5px 10px;
+  width: 300px;
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-edit input.subscribe {
+  font-size: 16px;
+}
+
+/* line 11 : /apps/blogmon/pub/stylesheets/feeds.styl */
+
+/* line 12 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list li {
+  margin: 5px 0 5px 0;
+}
+
+/* line 14 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list input.delete {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 4px 4px 0px 6px;
+  font-size: 18px;
 }

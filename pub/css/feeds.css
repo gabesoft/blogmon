@@ -1,0 +1,15 @@
+
+/* line 1 : /apps/blogmon/pub/stylesheets/feeds.styl */
+
+/* line 2 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-edit input.search {
+  padding: 5px 10px 5px 10px;
+  width: 300px;
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+}
+
+/* line 8 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-edit input.subscribe {
+  font-size: 16px;
+}

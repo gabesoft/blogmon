@@ -1,0 +1,51 @@
+
+/* line 1 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+  color: color-input;
+  border: 0;
+  background: none repeat scroll 0 0 rgba(0,0,0,0.30);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+textarea:focus {
+  color: color-active;
+  background: none repeat scroll 0 0 rgba(0,0,0,0.30);
+}
+
+/* line 19 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  cursor: pointer;
+  display: inline-block;
+  background: none repeat scroll 0 0 rgba(255,255,255,0.06);
+  border: 1px solid rgba(0,0,0,0.50);
+  border-radius: 3px;
+  padding: 5px 15px 4px 15px;
+  color: rgba(0,0,0,0.80);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* line 31 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover {
+  color: #eee;
+  text-shadow: 0 1px 0 #000;
+  border: 1px solid color-input;
+}
+
+/* line 38 : /apps/blogmon/pub/stylesheets/forms.styl */
+input[type='submit']:active,
+input[type='reset']:active,
+input[type='button']:active {
+  border: 1px solid rgba(0,0,0,0.50);
+}

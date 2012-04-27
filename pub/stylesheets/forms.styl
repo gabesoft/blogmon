@@ -1,0 +1,41 @@
+input[type='text']
+input[type='password']
+input[type='email']
+textarea
+  color color-input
+  border 0
+  background none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+  box-shadow(input-shadow)
+  box-sizing border-box
+  border-radius 3px
+
+input[type='text']:focus
+input[type='password']:focus
+input[type='email']:focus
+textarea:focus
+  color color-active
+  background none repeat scroll 0 0 rgba(0, 0, 0, 0.3)
+
+input[type='submit']
+input[type='reset']
+input[type='button']
+  cursor pointer
+  display inline-block
+  background none repeat scroll 0 0 rgba(255, 255, 255, 0.06)
+  border 1px solid rgba(0, 0, 0, 0.5)
+  border-radius 3px
+  padding 4px 15px 4px 15px
+  color rgba(0, 0, 0, 0.8)
+  text-shadow 0 1px 0 rgba(255, 255, 255, 0.08)
+
+input[type='submit']:hover
+input[type='reset']:hover
+input[type='button']:hover
+  color #EEEEEE
+  text-shadow 0 1px 0 #000000
+  border 1px solid color-input
+
+input[type='submit']:active
+input[type='reset']:active
+input[type='button']:active
+  border 1px solid rgba(0, 0, 0, 0.5)
