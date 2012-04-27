@@ -1320,14 +1320,13 @@ p a:visited {
 
 /* line 6 : /apps/blogmon/pub/stylesheets/nav.styl */
 .tabs a {
-  display: inline-block;
   text-decoration: none;
   border: 1px solid #000;
   color: #c6c6c6;
   padding: 5px 20px;
 }
 
-/* line 13 : /apps/blogmon/pub/stylesheets/nav.styl */
+/* line 12 : /apps/blogmon/pub/stylesheets/nav.styl */
 .tabs a.active {
   color: #dbdbdb;
   background: none repeat scroll 0 0 rgba(0,0,0,0.30);
@@ -1336,22 +1335,21 @@ p a:visited {
   box-shadow: 0 1px 0 rgba(255,255,255,0.10), 0 1px 7px 0 rgba(0,0,0,0.80) inset;
 }
 
-/* line 18 : /apps/blogmon/pub/stylesheets/nav.styl */
+/* line 17 : /apps/blogmon/pub/stylesheets/nav.styl */
 #tabs-nav-container {
   clear: both;
   display: table;
   text-align: center;
 }
 
-/* line 23 : /apps/blogmon/pub/stylesheets/nav.styl */
+/* line 22 : /apps/blogmon/pub/stylesheets/nav.styl */
 #tabs-nav {
-  width: 169px;
   padding: 20px 0 20px 0;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 28 : /apps/blogmon/pub/stylesheets/posts.styl */
+/* line 26 : /apps/blogmon/pub/stylesheets/posts.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/posts.styl */
 
