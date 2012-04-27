@@ -1322,50 +1322,22 @@ ul.tabs li:first-child a.active {
 }
 
 /* line 27 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs li:first-child a {
-  border-width: 1px 1px 0 1px;
-}
-
-/* line 31 : /apps/blogmon/pub/stylesheets/tabs.styl */
-
-/* line 34 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs-content {
   margin: 0;
   display: block;
 }
 
-/* line 38 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs-content > li {
-  display: none;
-}
-
-/* line 41 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs-content > li.active {
-  display: block;
-}
-
-/* line 44 : /apps/blogmon/pub/stylesheets/tabs.styl */
-ul.tabs:before,
-ul.tabs:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-/* line 53 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 31 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs:after {
   clear: both;
 }
 
-/* line 56 : /apps/blogmon/pub/stylesheets/tabs.styl */
+/* line 34 : /apps/blogmon/pub/stylesheets/tabs.styl */
 ul.tabs {
   zoom: 1;
 }
 
-/* line 60 : /apps/blogmon/pub/stylesheets/banner.styl */
+/* line 38 : /apps/blogmon/pub/stylesheets/banner.styl */
 
 /* line 1 : /apps/blogmon/pub/stylesheets/banner.styl */
 #banner {
