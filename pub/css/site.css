@@ -1340,6 +1340,7 @@ textarea:focus {
 }
 
 /* line 19 : /apps/blogmon/pub/stylesheets/forms.styl */
+.button,
 input[type='submit'],
 input[type='reset'],
 input[type='button'] {
@@ -1355,7 +1356,8 @@ input[type='button'] {
   text-shadow: 0 1px 0 rgba(255,255,255,0.08);
 }
 
-/* line 31 : /apps/blogmon/pub/stylesheets/forms.styl */
+/* line 32 : /apps/blogmon/pub/stylesheets/forms.styl */
+.button:hover,
 input[type='submit']:hover,
 input[type='reset']:hover,
 input[type='button']:hover {
@@ -1363,7 +1365,8 @@ input[type='button']:hover {
   text-shadow: 0 1px 0 #000;
 }
 
-/* line 37 : /apps/blogmon/pub/stylesheets/forms.styl */
+/* line 39 : /apps/blogmon/pub/stylesheets/forms.styl */
+.button:active,
 input[type='submit']:active,
 input[type='reset']:active,
 input[type='button']:active {
@@ -1792,12 +1795,12 @@ h5::-webkit-selection {
 }
 
 /* line 17 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list input.delete {
+#feeds-list div.delete {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   padding: 4px 4px 0px 6px;
-  font-size: 18px;
+  font-size: 20px;
   display: inline;
 }
 
