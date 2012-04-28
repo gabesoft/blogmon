@@ -160,9 +160,12 @@ b	test/support/js_indent.js	/^        var b = 9,                                
 backbone	pub/app/model/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/model/feeds.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/model/posts.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/model/searchitems.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
-backbone	pub/app/view/feedstab.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/view/feedstab.js	/^var backbone   = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/post.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/view/searchitem.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/view/searchresults.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 bundle	server.js	/^var bundle = bundle({$/;"	v
 checkContextEmpty	test/app_auth.js	/^var checkContextEmpty = function() {$/;"	f
 checkContextHasUser	test/app_auth.js	/^var checkContextHasUser = function() {$/;"	f
@@ -226,7 +229,6 @@ init	./bin/../lib/app/auth.js	/^        init: function(req, res, user, next) {$/
 init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f	lineno:19	type:void function(any, any, any, any)
 init	lib/app/initializer.js	/^var init = function(app) {$/;"	f
 initSession	test/app_auth.js	/^var initSession = function(callback) {$/;"	f
-invalid	test/feed_finder.js	/^var invalid = urls.filter(function(u) { return !u.valid; });$/;"	v
 l	test/support/js_indent.js	/^var l = list                                                                \/\/$/;"	v
 length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {$/;"	f	lineno:166	type:void function(any)
 login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
@@ -268,7 +270,6 @@ req.session.destroy	test/app_auth.js	/^        destroy: initSession$/;"	p
 session	./bin/../lib/app/config.js	/^        session: function(req, res) {$/;"	f	lineno:43	type:any function(any, any)
 setData	./bin/../lib/model/feed.js	/^Feed.prototype.setData = function(uri, data, callback) {$/;"	f	lineno:130	type:void function(any, any, any)
 should	test/aggregator.js	/^var should = require('should')$/;"	v
-should	test/feed_finder.js	/^var should = require('should'),$/;"	v
 should	test/model_feed.js	/^var should = require('should')$/;"	v
 should	test/model_post.js	/^var should = require('should')$/;"	v
 should	test/model_token.js	/^var should  = require('should'),$/;"	v
@@ -308,10 +309,9 @@ util	./bin/../lib/model/feed.js	/^    util = require('..\/util.js'),$/;"	v	linen
 util	./bin/../lib/model/post.js	/^    util = require('..\/util.js'),$/;"	v	lineno:3	type:any
 util	./bin/../lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v	lineno:1	type:any
 util	./bin/../lib/model/user.js	/^    util   = require('..\/util.js'),$/;"	v	lineno:2	type:any
-util	lib/feed_finder.js	/^var util    = require('.\/util.js'),$/;"	v
+util	lib/feed_finder.js	/^var util    = require('.\/util.js')$/;"	v
 util	lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v
 util	test/support/data_post_large.js	/^var util = require('..\/..\/lib\/util.js');$/;"	v
-valid	test/feed_finder.js	/^var valid = urls.filter(function(u) { return u.valid; });$/;"	v
 verify	./bin/../lib/model/token.js	/^Token.prototype.verify = function(token, callback) {$/;"	f	lineno:71	type:void function(any, any)
 x	test/support/js_indent.js	/^var x = 1 +                                                                 \/\/ 0$/;"	v
 x	test/support/js_indent.js	/^var x = 1 + 1;                                                              \/\/ 0$/;"	v

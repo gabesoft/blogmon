@@ -1826,18 +1826,24 @@ h5::-webkit-selection {
 }
 
 /* line 36 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list div.delete:hover {
+  color: #f00;
+  border: 1px solid #f00;
+}
+
+/* line 40 : /apps/blogmon/pub/stylesheets/feeds.styl */
 #feeds-list h4.title {
   display: inline;
 }
 
-/* line 39 : /apps/blogmon/pub/stylesheets/feeds.styl */
+/* line 43 : /apps/blogmon/pub/stylesheets/feeds.styl */
 #feeds-list h4.author {
   padding-right: 10px;
   display: inline;
   color: #dadbb1;
 }
 
-/* line 44 : /apps/blogmon/pub/stylesheets/feeds.styl */
+/* line 48 : /apps/blogmon/pub/stylesheets/feeds.styl */
 #feeds-list h5.description {
   display: inline-block;
   color: #c6c6c6;
