@@ -7,7 +7,7 @@ var backbone = require('../dep/backbone.js')
 module.exports = backbone.View.extend({
     events: {
         "keypress #feeds-edit > input[type='text']": 'subscribeOnEnter'
-      , "click #feeds-edit > input[type='button']" : 'subscribe'
+      , "click #feeds-edit > .button" : 'subscribe'
     },
 
     initialize: function() {
