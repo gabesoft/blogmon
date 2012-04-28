@@ -1357,6 +1357,12 @@ input[type='button'] {
 }
 
 /* line 32 : /apps/blogmon/pub/stylesheets/forms.styl */
+a.button {
+  color: rgba(0,0,0,0.80);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* line 36 : /apps/blogmon/pub/stylesheets/forms.styl */
 .button:hover,
 input[type='submit']:hover,
 input[type='reset']:hover,
@@ -1365,7 +1371,7 @@ input[type='button']:hover {
   text-shadow: 0 1px 0 #000;
 }
 
-/* line 39 : /apps/blogmon/pub/stylesheets/forms.styl */
+/* line 43 : /apps/blogmon/pub/stylesheets/forms.styl */
 .button:active,
 input[type='submit']:active,
 input[type='reset']:active,
@@ -1847,4 +1853,50 @@ h5::-webkit-selection {
 #feeds-list h5.description {
   display: inline-block;
   color: #c6c6c6;
+}
+
+/* line 51 : /apps/blogmon/pub/stylesheets/search.styl */
+
+/* line 1 : /apps/blogmon/pub/stylesheets/search.styl */
+#search {
+  border: 1px solid #f0e68c;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+/* line 6 : /apps/blogmon/pub/stylesheets/search.styl */
+#search div.header {
+  margin: 20px 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #121212;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+}
+
+/* line 11 : /apps/blogmon/pub/stylesheets/search.styl */
+#search a.close {
+  float: right;
+  text-decoration: none;
+  color: color-input;
+}
+
+/* line 16 : /apps/blogmon/pub/stylesheets/search.styl */
+#search li {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #121212;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.07);
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/search.styl */
+#search li div.subscribe {
+  margin-top: 5px;
+}
+
+/* line 23 : /apps/blogmon/pub/stylesheets/search.styl */
+#search li div.subscribe:hover {
+  color: #0f0;
+  border: 1px solid #0f0;
 }

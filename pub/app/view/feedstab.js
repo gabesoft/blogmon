@@ -7,8 +7,9 @@ var backbone   = require('../dep/backbone.js')
 
 module.exports = backbone.View.extend({
     events: {
-        "keypress #feeds-edit > input[type='text']": 'searchOnEnter'
-      , "click #feeds-edit > .button" : 'search'
+        "keypress #feeds-edit > input[type='text']" : 'searchOnEnter'
+      , "click #feeds-edit .button.subscribe"       : 'search'
+      , "click #search .button.close"               : 'closeSearch'
     },
 
     initialize: function() {
@@ -18,6 +19,7 @@ module.exports = backbone.View.extend({
           , 'searchOnEnter'
           , 'subscribe'
           , 'search'
+          , 'closeSearch'
           , 'render'
           , 'append'
           , 'prepend'
@@ -51,7 +53,11 @@ module.exports = backbone.View.extend({
     },
 
     getSearchEl: function() {
-        return this.$el.find('#search-list');
+        return this.$el.find('#search');
+    },
+
+    getSubscribeEl: function() {
+        return this.$el.find('.button.subscribe');
     },
 
     prepend: function(item) {
@@ -94,14 +100,24 @@ module.exports = backbone.View.extend({
 
     showSearchResults: function(data) {
         var feedsEl    = this.getFeedsEl()
+          , searchBtn  = this.getSubscribeEl()
           , searchEl   = this.getSearchEl()
           , searchView = new SearchView({ 
-                el: searchEl
+                el: searchEl.find('#search-list')
               , list: data 
             });
 
         feedsEl.hide();
+        searchEl.show();
         searchView.render();
+        searchBtn.text('Search');
+    },
+
+    closeSearch: function() {
+        console.log('close');
+        this.getSearchEl().hide();
+        this.getFeedsEl().show();
+        this.getSubscribeEl().text('Subscribe');
     },
 
     subscribe: function(uri) {

@@ -13,3 +13,64 @@
 #feeds-edit input.subscribe {
   font-size: 16px;
 }
+
+/* line 11 : /apps/blogmon/pub/stylesheets/feeds.styl */
+
+/* line 12 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list li {
+  margin: 10px 0 5px 0;
+  padding: 5px 5px 5px 0;
+}
+
+/* line 17 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list input.view {
+  display: none;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list a.title {
+  font-family: font-heading;
+}
+
+/* line 23 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list div.header {
+  display: block;
+}
+
+/* line 26 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list div.text {
+  display: inline;
+}
+
+/* line 29 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list div.delete {
+  border-radius: 20px;
+  padding: 4px 4px 0px 6px;
+  font-size: 20px;
+  display: inline-block;
+  float: right;
+}
+
+/* line 36 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list div.delete:hover {
+  color: color-red;
+  border: 1px solid color-red;
+}
+
+/* line 40 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list h4.title {
+  display: inline;
+}
+
+/* line 43 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list h4.author {
+  padding-right: 10px;
+  display: inline;
+  color: color-wheat;
+}
+
+/* line 48 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list h5.description {
+  display: inline-block;
+  color: color-font;
+}

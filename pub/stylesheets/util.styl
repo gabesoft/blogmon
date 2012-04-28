@@ -1,15 +1,15 @@
 
-line(orientation, width, style)
+line(orientation, width)
   if not orientation
     border 0
     box-shadow()
   else
-    border-{orientation}: width style #121212
+    border-{orientation}: width solid #121212
 
     if orientation == 'bottom' || orientation == 'top'
       box-shadow(0, 1px, 0, rgba(255, 255, 255, 0.07))
     else 
-      border-left: width style #121212
+      border-left: width solid #121212
       box-shadow(1px, 0, 0, rgba(255, 255, 255, 0.07))
 
 font-face(family, font, path)

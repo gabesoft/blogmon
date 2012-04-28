@@ -1,0 +1,21 @@
+
+/* line 1 : /apps/blogmon/pub/stylesheets/search.styl */
+#search {
+  border: 1px solid color-khaki;
+  padding: 10px;
+}
+
+/* line 5 : /apps/blogmon/pub/stylesheets/search.styl */
+#search div.header {
+  margin: 20px 0 10px 0;
+}
+
+/* line 9 : /apps/blogmon/pub/stylesheets/search.styl */
+#search div.close {
+  float: right;
+}
+
+/* line 12 : /apps/blogmon/pub/stylesheets/search.styl */
+#search li {
+  padding: 10px 0 10px 0;
+}

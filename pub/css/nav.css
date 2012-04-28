@@ -12,15 +12,16 @@
   border: 1px solid color-black;
   color: color-font;
   padding: 5px 20px;
+  margin: 3px;
 }
 
-/* line 12 : /apps/blogmon/pub/stylesheets/nav.styl */
+/* line 13 : /apps/blogmon/pub/stylesheets/nav.styl */
 .tabs a.active {
   color: color-active;
   background: none repeat scroll 0 0 rgba(0,0,0,0.30);
 }
 
-/* line 17 : /apps/blogmon/pub/stylesheets/nav.styl */
+/* line 18 : /apps/blogmon/pub/stylesheets/nav.styl */
 #tabs-nav-container {
   clear: both;
   display: table;
@@ -28,7 +29,7 @@
   width: 100%;
 }
 
-/* line 23 : /apps/blogmon/pub/stylesheets/nav.styl */
+/* line 24 : /apps/blogmon/pub/stylesheets/nav.styl */
 #tabs-nav {
   padding: 20px 0 20px 0;
   margin: 0 auto;

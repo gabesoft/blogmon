@@ -4,7 +4,7 @@ var backbone = require('../dep/backbone.js')
   , mustache = require('../dep/mustache.js');
 
 module.exports = backbone.View.extend({
-    tagname: 'li',
+    tagName: 'li',
 
     initialize: function(config) {
         this.template = mustache.compile($('#search-template').html());
