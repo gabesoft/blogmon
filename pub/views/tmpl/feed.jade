@@ -1,10 +1,10 @@
 script(id='feed-template', type='text/html')
   input.view(type='checkbox', checked)
   div.header
-    h4.title
-      a.title(href='{{link}}') {{title}}
-    h4.author {{authorText}}
-    div.author
-      div.button.delete.iconic(title='unsubscribe') x
+    div.button.delete.iconic(title='unsubscribe') x
+    div.text
+      h4.title
+        a.title(href='{{link}}') {{title}}
+      h4.author {{authorText}}
   h5.description {{description}}
 

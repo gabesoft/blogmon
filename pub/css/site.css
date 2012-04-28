@@ -1795,44 +1795,49 @@ h5::-webkit-selection {
 }
 
 /* line 17 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list input.view {
+  display: none;
+}
+
+/* line 20 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list a.title {
+  font-family: 'MuseoSans500', serif;
+}
+
+/* line 23 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list div.header {
+  display: block;
+}
+
+/* line 26 : /apps/blogmon/pub/stylesheets/feeds.styl */
+#feeds-list div.text {
+  display: inline;
+}
+
+/* line 29 : /apps/blogmon/pub/stylesheets/feeds.styl */
 #feeds-list div.delete {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   padding: 4px 4px 0px 6px;
   font-size: 20px;
-  display: inline;
-}
-
-/* line 23 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list input.view {
-  display: none;
-}
-
-/* line 26 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list a.title {
-  font-family: 'MuseoSans500', serif;
-}
-
-/* line 29 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list div.author {
   display: inline-block;
   float: right;
 }
 
-/* line 33 : /apps/blogmon/pub/stylesheets/feeds.styl */
+/* line 36 : /apps/blogmon/pub/stylesheets/feeds.styl */
 #feeds-list h4.title {
   display: inline;
 }
 
-/* line 36 : /apps/blogmon/pub/stylesheets/feeds.styl */
+/* line 39 : /apps/blogmon/pub/stylesheets/feeds.styl */
 #feeds-list h4.author {
   padding-right: 10px;
   display: inline;
   color: #dadbb1;
 }
 
-/* line 41 : /apps/blogmon/pub/stylesheets/feeds.styl */
+/* line 44 : /apps/blogmon/pub/stylesheets/feeds.styl */
 #feeds-list h5.description {
   display: inline-block;
   color: #c6c6c6;
