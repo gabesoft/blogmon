@@ -18,6 +18,7 @@ module.exports = backbone.View.extend({
         _.bindAll(me
           , 'searchOnEnter'
           , 'subscribe'
+          , 'subscribeFromSearch'
           , 'search'
           , 'closeSearch'
           , 'render'
@@ -35,9 +36,14 @@ module.exports = backbone.View.extend({
         });
 
         me.model.each(me.append);
+        me.searchView = new SearchView({ 
+            el: this.getSearchEl().find('#search-list') 
+        });
+        me.searchView.bind('item-subscribe', this.subscribeFromSearch);
     },
 
     render: function() {
+        this.getSearchEl().hide();
         this.$el.show();
         return this;
     },
@@ -102,22 +108,22 @@ module.exports = backbone.View.extend({
         var feedsEl    = this.getFeedsEl()
           , searchBtn  = this.getSubscribeEl()
           , searchEl   = this.getSearchEl()
-          , searchView = new SearchView({ 
-                el: searchEl.find('#search-list')
-              , list: data 
-            });
+          , searchView = this.searchView;
 
+        searchView.render(data);
         feedsEl.hide();
         searchEl.show();
-        searchView.render();
         searchBtn.text('Search');
     },
 
     closeSearch: function() {
-        console.log('close');
         this.getSearchEl().hide();
         this.getFeedsEl().show();
         this.getSubscribeEl().text('Subscribe');
+    },
+
+    subscribeFromSearch: function(item) {
+        this.subscribe(item.uri);
     },
 
     subscribe: function(uri) {

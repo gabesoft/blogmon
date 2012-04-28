@@ -1,3 +1,7 @@
+accepted-style()
+  color color-light-green
+  border 1px solid color-light-green
+
 #search
   border 1px solid color-khaki
   margin-top 5px
@@ -20,6 +24,21 @@
     div.subscribe
       margin-top 5px
 
+    div.subscribe.accepted
+      accepted-style()
+      cursor default
+
+    div.subscribe.accepted:hover
+      accepted-style()
+
     div.subscribe:hover
       color color-green
       border 1px solid color-green
+
+    span.iconic
+      display none
+
+    span.iconic.accepted
+      display inline
+      padding-left 5px
+      color color-light-green
