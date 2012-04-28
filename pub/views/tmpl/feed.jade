@@ -1,6 +1,10 @@
 script(id='feed-template', type='text/html')
-  input.delete.iconic(type='button', value='x')
   input.view(type='checkbox', checked)
-  span.title {{title}}
-  span.uri {{uri}}
+  div.header
+    h4.title
+      a.title(href='{{link}}') {{title}}
+    h4.author {{authorText}}
+    div.author
+      input.delete.iconic(type='button', value='x', title='unsubscribe')
+  h5.description {{description}}
 

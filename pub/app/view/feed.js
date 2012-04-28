@@ -21,7 +21,10 @@ module.exports = backbone.View.extend({
 
     render: function() {
         var feed = this.model.toJSON()
-          , html = this.template(feed);
+          , html = null;
+
+        feed.authorText = feed.author ? '(' + feed.author + ')' : '';
+        html            = this.template(feed);
 
         this.$el.html(html);
         return this;

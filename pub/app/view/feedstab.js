@@ -18,11 +18,12 @@ module.exports = backbone.View.extend({
           , 'subscribe'
           , 'render'
           , 'append'
+          , 'prepend'
         );
 
         this.input = $("#feeds-edit > input[type='text']");
         this.model = new Feeds();
-        this.model.bind('add', this.append);
+        this.model.bind('add', me.prepend);
         this.model.fetch({
             success: function() { 
                 me.model.each(me.append);
@@ -36,10 +37,18 @@ module.exports = backbone.View.extend({
         return this;
     },
 
-    append: function(item) {
+    addItem: function(item, addfn) {
         var feed = new FeedView({ model: item })
           , list = $('#feeds-list');
-        list.prepend(feed.render().el);
+        list[addfn](feed.render().el);
+    },
+
+    prepend: function(item) {
+        this.addItem(item, 'prepend');
+    },
+
+    append: function(item) {
+        this.addItem(item, 'append');
     },
 
     subscribeOnEnter: function(e, keyCode) {
