@@ -163,6 +163,7 @@ backbone	pub/app/model/posts.js	/^var backbone = require('..\/dep\/backbone.js')
 backbone	pub/app/model/searchitems.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/feedstab.js	/^var backbone   = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/view/message.js	/^var backbone   = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/post.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/searchitem.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/searchresults.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v

@@ -20,14 +20,25 @@ module.exports = backbone.View.extend({
     },
 
     render: function() {
-        var feed = this.model.toJSON()
-          , html = null;
+        var feed     = this.model.toJSON()
+          , hasError = !!feed.error
+          , html     = null;
 
-        feed.authorText = feed.author ? '(' + feed.author + ')' : '';
-        html            = this.template(feed);
+        feed.authorText  = feed.author ? '(' + feed.author + ')' : '';
+        feed.description = hasError ? feed.error.message : feed.description;
+        html             = this.template(feed);
 
         this.$el.html(html);
+
+        if (hasError) {
+            this.getDescriptionEl().addClass('error');
+        }
+
         return this;
+    },
+
+    getDescriptionEl: function() {
+        return this.$el.find('.description');
     },
 
     visibilityChange: function(e) {

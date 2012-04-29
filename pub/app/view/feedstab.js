@@ -3,13 +3,14 @@ var backbone   = require('../dep/backbone.js')
   , _          = require('../dep/underscore.js')
   , Feeds      = require('../model/feeds.js')
   , FeedView   = require('./feed.js')
-  , SearchView = require('./searchresults.js');
+  , SearchView = require('./searchresults.js')
+  , Message    = require('./message.js');
 
 module.exports = backbone.View.extend({
     events: {
         "keypress #feeds-edit > input[type='text']" : 'searchOnEnter'
       , "click #feeds-edit .button.subscribe"       : 'search'
-      , "click #search .button.close"               : 'closeSearch'
+      , "click #search .button.close"               : 'hideSearch'
     },
 
     initialize: function() {
@@ -20,7 +21,7 @@ module.exports = backbone.View.extend({
           , 'subscribe'
           , 'subscribeFromSearch'
           , 'search'
-          , 'closeSearch'
+          , 'hideSearch'
           , 'render'
           , 'append'
           , 'prepend'
@@ -40,6 +41,7 @@ module.exports = backbone.View.extend({
             el: this.getSearchEl().find('#search-list') 
         });
         me.searchView.bind('item-subscribe', this.subscribeFromSearch);
+        me.message = new Message({ el: $('#message-banner') });
     },
 
     render: function() {
@@ -85,6 +87,7 @@ module.exports = backbone.View.extend({
     search: function(e) {
         var me = this;
 
+        me.disableSearch();
         $.ajax({
             url: '/feeds/search'
           , data: {
@@ -93,18 +96,35 @@ module.exports = backbone.View.extend({
           , method: 'GET'
         }).done(function(data, success, res) {
             if (data.length === 0) {
-                // no results
+                me.message.render('Could not find a blog matching your input', 'warn');
             } else if (data.length === 1) {
-                me.subscribe(data[0].uri);
+                me.message.hide();
+                me.hideSearch();
+                me.subscribe(data[0]);
             } else {
-                me.showSearchResults(data);
+                me.message.hide();
+                me.showSearch(data);
             }
         }).fail(function() {
             console.log('search fail', arguments);
+        }).always(function() {
+            me.enableSearch();
         });
     },
 
-    showSearchResults: function(data) {
+    disableSearch: function() {
+        this.getSubscribeEl()
+           .addClass('processing')
+           .text('Searching');
+    },
+
+    enableSearch: function() {
+        this.getSubscribeEl()
+           .removeClass('processing')
+           .text('Subscribe');
+    },
+
+    showSearch: function(data) {
         var feedsEl    = this.getFeedsEl()
           , searchBtn  = this.getSubscribeEl()
           , searchEl   = this.getSearchEl()
@@ -113,25 +133,24 @@ module.exports = backbone.View.extend({
         searchView.render(data);
         feedsEl.hide();
         searchEl.show();
-        searchBtn.text('Search');
     },
 
-    closeSearch: function() {
+    hideSearch: function() {
         this.getSearchEl().hide();
         this.getFeedsEl().show();
-        this.getSubscribeEl().text('Subscribe');
     },
 
     subscribeFromSearch: function(item) {
-        this.subscribe(item.uri);
+        this.subscribe(item);
     },
 
-    subscribe: function(uri) {
+    subscribe: function(data) {
         this.model.create({ 
-            uri: uri
+            uri: data.uri
+          , data: data
         }, { 
-            wait: true,
-            error: function(model, response, options) {
+            wait: true
+          , error: function(model, response, options) {
                 console.log(response.responseText);
             }
         });
