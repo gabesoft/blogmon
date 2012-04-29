@@ -1,21 +1,10 @@
-
-/* line 1 : /apps/blogmon/pub/stylesheets/search.styl */
-#search {
-  border: 1px solid color-khaki;
-  padding: 10px;
-}
-
-/* line 5 : /apps/blogmon/pub/stylesheets/search.styl */
-#search div.header {
-  margin: 20px 0 10px 0;
-}
-
-/* line 9 : /apps/blogmon/pub/stylesheets/search.styl */
-#search div.close {
-  float: right;
-}
-
-/* line 12 : /apps/blogmon/pub/stylesheets/search.styl */
-#search li {
-  padding: 10px 0 10px 0;
-}
+#search{border:1px solid color-khaki;margin-top:5px;padding:10px;}
+#search div.header{margin:20px 0 10px 0;padding-bottom:10px;}
+#search a.close{float:right;text-decoration:none;color:color-input}
+#search li{padding:10px 0 10px 0;}
+#search li div.subscribe{margin-top:5px}
+#search li div.subscribe.accepted{color:color-light-green;border:1px solid color-light-green;cursor:default}
+#search li div.subscribe.accepted:hover{color:color-light-green;border:1px solid color-light-green}
+#search li div.subscribe:hover{color:color-green;border:1px solid color-green}
+#search li span.iconic{display:none}
+#search li span.iconic.accepted{display:inline;padding-left:5px;color:color-light-green}

@@ -46,6 +46,7 @@ module.exports = backbone.View.extend({
 
     render: function() {
         this.getSearchEl().hide();
+        this.getFeedsEl().show();
         this.$el.show();
         return this;
     },
@@ -87,7 +88,7 @@ module.exports = backbone.View.extend({
     search: function(e) {
         var me = this;
 
-        me.disableSearch();
+        me.showSearching();
         $.ajax({
             url: '/feeds/search'
           , data: {
@@ -108,17 +109,17 @@ module.exports = backbone.View.extend({
         }).fail(function() {
             console.log('search fail', arguments);
         }).always(function() {
-            me.enableSearch();
+            me.hideSearching();
         });
     },
 
-    disableSearch: function() {
+    showSearching: function() {
         this.getSubscribeEl()
            .addClass('processing')
            .text('Searching');
     },
 
-    enableSearch: function() {
+    hideSearching: function() {
         this.getSubscribeEl()
            .removeClass('processing')
            .text('Subscribe');

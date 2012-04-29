@@ -1,174 +1,25 @@
-
-/* line 1 : /apps/blogmon/pub/stylesheets/typography.styl */
-body {
-  background: none repeat scroll 0 0 color-background;
-  font-family: font-main;
-  color: color-font;
-  line-height: 1.2em;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-}
-
-/* line 9 : /apps/blogmon/pub/stylesheets/typography.styl */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: color-heading;
-  font-family: font-heading;
-  font-weight: italic;
-}
-
-/* line 14 : /apps/blogmon/pub/stylesheets/typography.styl */
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  font-weight: inherit;
-}
-
-/* line 17 : /apps/blogmon/pub/stylesheets/typography.styl */
-h1 {
-  font-size: 46px;
-  line-height: 50px;
-  margin-bottom: 14px;
-}
-
-/* line 22 : /apps/blogmon/pub/stylesheets/typography.styl */
-h2 {
-  font-size: 35px;
-  line-height: 40px;
-  margin-bottom: 10px;
-}
-
-/* line 27 : /apps/blogmon/pub/stylesheets/typography.styl */
-h3 {
-  font-size: 28px;
-  line-height: 34px;
-  margin-bottom: 8px;
-}
-
-/* line 32 : /apps/blogmon/pub/stylesheets/typography.styl */
-h4 {
-  font-size: 21px;
-  line-height: 30px;
-  margin-bottom: 4px;
-}
-
-/* line 37 : /apps/blogmon/pub/stylesheets/typography.styl */
-h5 {
-  font-size: 17px;
-  line-height: 24px;
-}
-
-/* line 41 : /apps/blogmon/pub/stylesheets/typography.styl */
-h6 {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-/* line 45 : /apps/blogmon/pub/stylesheets/typography.styl */
-.subheader {
-  color: color-subheader;
-}
-
-/* line 48 : /apps/blogmon/pub/stylesheets/typography.styl */
-p {
-  margin: 0 0 20px 0;
-}
-
-/* line 51 : /apps/blogmon/pub/stylesheets/typography.styl */
-p img {
-  margin: 0;
-}
-
-/* line 54 : /apps/blogmon/pub/stylesheets/typography.styl */
-p.lead {
-  font-size: 21px;
-  line-height: 27px;
-  color: color-subheader;
-}
-
-/* line 59 : /apps/blogmon/pub/stylesheets/typography.styl */
-em {
-  font-style: italic;
-}
-
-/* line 62 : /apps/blogmon/pub/stylesheets/typography.styl */
-strong {
-  font-weight: bold;
-  color: color-white;
-}
-
-/* line 66 : /apps/blogmon/pub/stylesheets/typography.styl */
-small {
-  font-size: 80%;
-}
-
-/* line 69 : /apps/blogmon/pub/stylesheets/typography.styl */
-blockquote,
-blockquote p {
-  font-size: 17px;
-  line-height: 24px;
-  color: color-subheader;
-  font-style: italic;
-}
-
-/* line 75 : /apps/blogmon/pub/stylesheets/typography.styl */
-blockquote {
-  margin: 0 0 20px;
-  padding: 9px 20px 0 19px;
-  border-left: 1px solid #ddd;
-}
-
-/* line 80 : /apps/blogmon/pub/stylesheets/typography.styl */
-blockquote cite {
-  display: block;
-  font-size: 12px;
-  color: #555;
-}
-
-/* line 85 : /apps/blogmon/pub/stylesheets/typography.styl */
-blockquote cite:before {
-  content: "\2014 \0020";
-}
-
-/* line 88 : /apps/blogmon/pub/stylesheets/typography.styl */
-blockquote cite a,
-blockquote cite a:visited,
-blockquote cite a:visited {
-  color: #555;
-}
-
-/* line 91 : /apps/blogmon/pub/stylesheets/typography.styl */
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0;
-}
-
-/* line 98 : /apps/blogmon/pub/stylesheets/typography.styl */
-a,
-a:visited {
-  color: color-link;
-  text-decoration: underline;
-  outline: 0;
-}
-
-/* line 103 : /apps/blogmon/pub/stylesheets/typography.styl */
-a:hover,
-a:focus {
-  color: color-link-hover;
-}
-
-/* line 106 : /apps/blogmon/pub/stylesheets/typography.styl */
-p a,
-p a:visited {
-  line-height: inherit;
-}
+body{background:none repeat scroll 0 0 color-background;font-family:font-main;color:color-font;line-height:1.2em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+h1,h2,h3,h4,h5,h6{color:color-heading;font-family:font-heading;font-weight:italic}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+h1{font-size:46px;line-height:50px;margin-bottom:14px}
+h2{font-size:35px;line-height:40px;margin-bottom:10px}
+h3{font-size:28px;line-height:34px;margin-bottom:8px}
+h4{font-size:21px;line-height:30px;margin-bottom:4px}
+h5{font-size:17px;line-height:24px}
+h6{font-size:14px;line-height:21px}
+.subheader{color:color-subheader}
+p{margin:0 0 20px 0}
+p img{margin:0}
+p.lead{font-size:21px;line-height:27px;color:color-subheader}
+em{font-style:italic}
+strong{font-weight:bold;color:color-white}
+small{font-size:80%}
+blockquote,blockquote p{font-size:17px;line-height:24px;color:color-subheader;font-style:italic}
+blockquote{margin:0 0 20px;padding:9px 20px 0 19px;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:12px;color:#555}
+blockquote cite:before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited,blockquote cite a:visited{color:#555}
+hr{border:solid #ddd;border-width:1px 0 0;clear:both;margin:10px 0 30px;height:0}
+a,a:visited{color:color-link;text-decoration:underline;outline:0}
+a:hover,a:focus{color:color-link-hover}
+p a,p a:visited{line-height:inherit}

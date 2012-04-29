@@ -8,4 +8,6 @@ $dir/../node_modules/stylus/bin/stylus \
   --use nib \
   --out $dir/../pub/css \
   --watch $dir/../pub/stylesheets \
-  --line-numbers
+  --compress
+
+  #--line-numbers

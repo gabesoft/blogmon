@@ -1,76 +1,13 @@
-
-/* line 1 : /apps/blogmon/pub/stylesheets/feeds.styl */
-
-/* line 2 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-edit input.search {
-  padding: 5px 10px 5px 10px;
-  width: 300px;
-  margin: 10px 0 10px 0;
-  font-size: 16px;
-}
-
-/* line 8 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-edit input.subscribe {
-  font-size: 16px;
-}
-
-/* line 11 : /apps/blogmon/pub/stylesheets/feeds.styl */
-
-/* line 12 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list li {
-  margin: 10px 0 5px 0;
-  padding: 5px 5px 5px 0;
-}
-
-/* line 17 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list input.view {
-  display: none;
-}
-
-/* line 20 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list a.title {
-  font-family: font-heading;
-}
-
-/* line 23 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list div.header {
-  display: block;
-}
-
-/* line 26 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list div.text {
-  display: inline;
-}
-
-/* line 29 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list div.delete {
-  border-radius: 20px;
-  padding: 4px 4px 0px 6px;
-  font-size: 20px;
-  display: inline-block;
-  float: right;
-}
-
-/* line 36 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list div.delete:hover {
-  color: color-red;
-  border: 1px solid color-red;
-}
-
-/* line 40 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list h4.title {
-  display: inline;
-}
-
-/* line 43 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list h4.author {
-  padding-right: 10px;
-  display: inline;
-  color: color-wheat;
-}
-
-/* line 48 : /apps/blogmon/pub/stylesheets/feeds.styl */
-#feeds-list h5.description {
-  display: inline-block;
-  color: color-font;
-}
+#feeds-edit input.search{padding:5px 10px 5px 10px;width:300px;margin:10px 0 10px 0;font-size:16px}
+#feeds-edit div.subscribe.processing{border:1px solid color-sienna;color:color-sienna}
+#feeds-list li{margin:10px 0 5px 0;padding:5px 5px 5px 0;}
+#feeds-list input.view{display:none}
+#feeds-list a.title{font-family:font-heading}
+#feeds-list div.header{display:block}
+#feeds-list div.text{display:inline}
+#feeds-list div.delete{border-radius:20px;padding:4px 4px 0 6px;font-size:20px;display:inline-block;float:right}
+#feeds-list div.delete:hover{color:color-red;border:1px solid color-red}
+#feeds-list h4.title{display:inline}
+#feeds-list h4.author{padding-right:10px;display:inline;color:color-wheat}
+#feeds-list h5.description{display:inline-block;color:color-font}
+#feeds-list h5.description.error{color:color-red}

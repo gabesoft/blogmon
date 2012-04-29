@@ -1,8 +1,10 @@
+box-shadow-clear()
+  box-shadow(0, 0, 0, 0)
 
 line(orientation, width)
   if not orientation
     border 0
-    box-shadow()
+    box-shadow-clear()
   else
     border-{orientation}: width solid #121212
 
@@ -11,6 +13,9 @@ line(orientation, width)
     else 
       border-left: width solid #121212
       box-shadow(1px, 0, 0, rgba(255, 255, 255, 0.07))
+
+line-clear()
+  line('', 0)
 
 font-face(family, font, path)
   @font-face

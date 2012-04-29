@@ -1,103 +1,16 @@
-
-/* line 1 : /apps/blogmon/pub/stylesheets/posts.styl */
-
-/* line 2 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .post-content {
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-/* line 6 : /apps/blogmon/pub/stylesheets/posts.styl */
-
-/* line 7 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .collapsed .header {
-  border: 1px solid color-sienna;
-  padding: 10px 10px 10px 10px;
-}
-
-/* line 10 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .collapsed .header:hover {
-  border: 1px solid color-khaki;
-}
-
-/* line 12 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .collapsed .header-inner {
-  padding: 0;
-}
-
-/* line 15 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .collapsed .description {
-  display: none;
-}
-
-/* line 18 : /apps/blogmon/pub/stylesheets/posts.styl */
-
-/* line 19 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .expanded .header {
-  padding: 10px 10px 5px 10px;
-}
-
-/* line 21 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .expanded .header-inner {
-  padding-bottom: 10px;
-}
-
-/* line 25 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .header {
-  border: 1px solid color-sienna;
-  border-bottom: 0;
-  cursor: pointer;
-}
-
-/* line 30 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .description {
-  border: 1px solid color-sienna;
-  border-top: 0;
-  padding: 10px;
-}
-
-/* line 35 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .left {
-  display: inline-block;
-}
-
-/* line 38 : /apps/blogmon/pub/stylesheets/posts.styl */
-
-/* line 39 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content h4 a {
-  text-decoration: none;
-  cursor: normal;
-  color: color-heading;
-  pointer-events: none;
-}
-
-/* line 45 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content h5 {
-  color: color-khaki;
-}
-
-/* line 48 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .right {
-  float: right;
-  display: inline-block;
-}
-
-/* line 52 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .right .date {
-  display: inline-block;
-  margin-right: 10px;
-  color: color-khaki;
-}
-
-/* line 57 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .right .iconic {
-  color: color-sienna;
-  font-size: 1.5em;
-  text-decoration: none;
-}
-
-/* line 62 : /apps/blogmon/pub/stylesheets/posts.styl */
-#posts-content .right .iconic:hover {
-  color: color-khaki;
-  cursor: pointer;
-}
+#posts-content .post-content{margin-top:5px;margin-bottom:10px}
+#posts-content .collapsed .header{border:1px solid color-sienna;padding:10px 10px 10px 10px}
+#posts-content .collapsed .header:hover{border:1px solid color-khaki}
+#posts-content .collapsed .header-inner{padding:0;}
+#posts-content .collapsed .description{display:none}
+#posts-content .expanded .header{padding:10px 10px 5px 10px}
+#posts-content .expanded .header-inner{padding-bottom:10px;}
+#posts-content .header{border:1px solid color-sienna;border-bottom:0;cursor:pointer}
+#posts-content .description{border:1px solid color-sienna;border-top:0;padding:10px}
+#posts-content .left{display:inline-block}
+#posts-content h4 a{text-decoration:none;cursor:normal;color:color-heading;pointer-events:none}
+#posts-content h5{color:color-khaki}
+#posts-content .right{float:right;display:inline-block;}
+#posts-content .right .date{display:inline-block;margin-right:10px;color:color-khaki}
+#posts-content .right .iconic{color:color-sienna;font-size:1.5em;text-decoration:none}
+#posts-content .right .iconic:hover{color:color-khaki;cursor:pointer}
