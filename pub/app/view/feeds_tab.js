@@ -3,7 +3,7 @@ var backbone   = require('../dep/backbone.js')
   , _          = require('../dep/underscore.js')
   , Feeds      = require('../model/feeds.js')
   , FeedView   = require('./feed.js')
-  , SearchView = require('./searchresults.js')
+  , SearchView = require('./search_results.js')
   , Message    = require('./message.js');
 
 module.exports = backbone.View.extend({

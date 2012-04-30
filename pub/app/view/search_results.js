@@ -1,8 +1,8 @@
 var backbone = require('../dep/backbone.js')
   , $        = require('jquery')
   , _        = require('../dep/underscore.js')
-  , Items    = require('../model/searchitems.js')
-  , ItemView = require('./searchitem.js');
+  , Items    = require('../model/search_items.js')
+  , ItemView = require('./search_item.js');
 
 module.exports = backbone.View.extend({
     initialize: function(config) {
