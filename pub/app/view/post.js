@@ -29,7 +29,10 @@ module.exports = backbone.View.extend({
     },
 
     toggleDescription: function(e) {
-        if (e.target.nodeName === 'A' && e.target.hasClass('iconic')) { return; }
+        if (e.target.nodeName === 'A' && 
+            e.target.classList.contains('iconic')) { 
+            return;
+        }
 
         var content   = this.$el.find('.post-content')
           , ccls      = 'collapsed'

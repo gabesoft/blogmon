@@ -1,10 +1,10 @@
-var should = require('should'),
-    eyes = require('eyes'),
-    redis = require('./redis_helper.js').client(),
-    feedData = require('./support/data_feed.js'),
-    feeds = feedData.feeds,
-    User = require('../lib/model/user.js'),
-    user = new User(redis);
+var should   = require('should')
+  , eyes     = require('eyes')
+  , redis    = require('./redis_helper.js').client()
+  , feedData = require('./support/data_feed.js')
+  , feeds    = feedData.feeds
+  , User     = require('../lib/model/user.js')
+  , user     = new User(redis);
 
 var data = [ 
     { name: 'u1', pass: 'p1' },

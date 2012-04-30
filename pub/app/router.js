@@ -2,7 +2,7 @@ var $ = require('jquery')
   , Backbone = require('./dep/backbone.js')
   , PostsTab = require('./view/posts_tab.js')
   , FeedsTab = require('./view/feeds_tab.js');
-
+      
 module.exports = Backbone.Router.extend({
     routes: {
         ""      : "showPosts"

@@ -146,6 +146,10 @@ User.feeds	lib/model/user.js	/^User.prototype.feeds = function(name, callback) {
 User.get	lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"	m
 User.subscribe	lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	m
 User.unsubscribe	lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	m
+UserSettings	lib/model/user_settings.js	/^function UserSettings (redis, userId) {$/;"	c
+UserSettings.getAllPostSettings	lib/model/user_settings.js	/^UserSettings.prototype.getAllPostSettings = function(callback) {$/;"	m
+UserSettings.getPostSetting	lib/model/user_settings.js	/^UserSettings.prototype.getPostSetting = function(guid, callback) {$/;"	m
+UserSettings.setPostSettings	lib/model/user_settings.js	/^UserSettings.prototype.setPostSettings = function(guid, setting, callback) {$/;"	m
 a	test/support/js_indent.js	/^    function a() {                                                          \/\/$/;"	f
 a	test/support/js_indent.js	/^var a = 1                                                                   \/\/$/;"	v
 a	test/support/js_indent.js	/^var a = 1,                                                                  \/\/$/;"	v
@@ -201,6 +205,7 @@ fail	./bin/../lib/app/routes_auth.js	/^        var fail = function() {$/;"	f	lin
 fail	./bin/../lib/app/routes_main.js	/^        var fail = function() { res.redirect('\/session\/new'); };$/;"	f	lineno:11	type:void function()
 feeds	./bin/../lib/model/user.js	/^User.prototype.feeds = function(name, callback) {$/;"	f	lineno:84	type:void function(any, any)
 findBest	./bin/../lib/model/post.js	/^    var findBest = function(list, index) {$/;"	f	lineno:29	type:void function(any, any)
+flag	test/model_user_settings.js	/^      , flag   : 'blue'$/;"	p
 flash	./bin/../lib/app/config.js	/^        flash: function(req, res) {$/;"	f	lineno:46	type:any function(any, any)
 fn	test/support/js_indent.js	/^        var fn = function(w) {                                              \/\/$/;"	f
 fun	test/support/js_indent.js	/^var fun = function(x, y) {                                                  \/\/$/;"	f
@@ -221,6 +226,7 @@ getUrl	lib/feed_finder.js	/^var getUrl = function(link) {$/;"	f
 getdate	./bin/../lib/model/post.js	/^        getdate   = function(post) { return post.date || post.pubdate; },$/;"	f	lineno:26	type:any function(any)
 getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	f	lineno:20	type:string function()
 getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	v	lineno:20	type:string function()
+guid	test/model_user_settings.js	/^      , guid   : posts[1].guid$/;"	p
 has	./bin/../lib/app/auth.js	/^        has: function(req) { return util.exists(this.get(req)); },$/;"	f	lineno:8	type:any function(any)
 hello	test/support/js_indent.js	/^function hello (arg) {                                                      \/\/$/;"	f
 hello.foo	test/support/js_indent.js	/^    var foo = function(arg2) {                                              \/\/$/;"	f
@@ -247,6 +253,7 @@ module.exports.nil	lib/util.js	/^module.exports.nil = function(obj) {$/;"	f
 module.exports.pluck2	lib/util.js	/^module.exports.pluck2 = function(\/* obj, keys *\/) {$/;"	f
 module.exports.skip	lib/util.js	/^module.exports.skip = function(obj, count) {$/;"	f
 module.exports.sortBy	lib/util.js	/^module.exports.sortBy = function(obj, fieldOrIterator, context) {$/;"	f
+module.exports.str.isBlank	lib/util.js	/^    isBlank: _str.isBlank$/;"	p
 module.exports.take	lib/util.js	/^module.exports.take = function(obj, count) {$/;"	f
 module.exports.toHash	lib/util.js	/^module.exports.toHash = function(arr, toStrFn, toValFn, addFn) {$/;"	f
 module.exports.uniqInt	lib/util.js	/^module.exports.uniqInt = function() {$/;"	f
@@ -254,6 +261,7 @@ module.exports.uniqStr	lib/util.js	/^module.exports.uniqStr = function() {$/;"	f
 module.exports.var.succ	lib/app/routes_main.js	/^            var succ = function() { next(); }$/;"	f
 obj.notquite	test/support/js_indent.js	/^    notquite: function() {                                                  \/\/$/;"	m
 obj.works	test/support/js_indent.js	/^    works: function() {                                                     \/\/$/;"	m
+order	test/model_user_settings.js	/^      , order  : 1$/;"	p
 parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	f	lineno:28	type:any function(any)
 parse	./bin/../lib/model/token.js	/^var parse = function(str) {$/;"	v	lineno:28	type:any function(any)
 parse	lib/model/token.js	/^var parse = function(str) {$/;"	f
@@ -274,7 +282,8 @@ should	test/aggregator.js	/^var should = require('should')$/;"	v
 should	test/model_feed.js	/^var should = require('should')$/;"	v
 should	test/model_post.js	/^var should = require('should')$/;"	v
 should	test/model_token.js	/^var should  = require('should'),$/;"	v
-should	test/model_user.js	/^var should = require('should'),$/;"	v
+should	test/model_user.js	/^var should   = require('should')$/;"	v
+state	test/model_user_settings.js	/^      , state  : 'open'$/;"	p
 store	./bin/../lib/app/redis_helper.js	/^    store: function(express) {$/;"	f	lineno:42	type:any function(any)
 subsKey	./bin/../lib/model/feed.js	/^var subsKey = function(key) {$/;"	f	lineno:19	type:string function(string)
 subsKey	./bin/../lib/model/feed.js	/^var subsKey = function(key) {$/;"	v	lineno:19	type:string function(string)
@@ -312,8 +321,10 @@ util	./bin/../lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v	li
 util	./bin/../lib/model/user.js	/^    util   = require('..\/util.js'),$/;"	v	lineno:2	type:any
 util	lib/feed_finder.js	/^var util    = require('.\/util.js')$/;"	v
 util	lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v
+util	lib/model/user_settings.js	/^var util       = require('..\/util.js');$/;"	v
 util	test/support/data_post_large.js	/^var util = require('..\/..\/lib\/util.js');$/;"	v
 verify	./bin/../lib/model/token.js	/^Token.prototype.verify = function(token, callback) {$/;"	f	lineno:71	type:void function(any, any)
+visible	test/model_user_settings.js	/^        visible: true$/;"	p
 x	test/support/js_indent.js	/^var x = 1 +                                                                 \/\/ 0$/;"	v
 x	test/support/js_indent.js	/^var x = 1 + 1;                                                              \/\/ 0$/;"	v
 x.$blah	test/support/js_indent.js	/^    $blah: function() {                                                     \/\/ 1$/;"	m
