@@ -197,6 +197,7 @@ hr{border:solid #ddd;border-width:1px 0 0;clear:both;margin:10px 0 30px;height:0
 a,a:visited{color:#84bcde;text-decoration:underline;outline:0}
 a:hover,a:focus{color:#f0f8ff}
 p a,p a:visited{line-height:inherit}
+.unselectable{-moz-user-select:none;-webkit-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 #banner{border-bottom:3px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07);padding-top:10px;}
 #banner h3.main{display:inline-block;color:#ff8247}
 #banner h3.info{float:right;display:inline-block}
@@ -260,10 +261,14 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content .expanded .header-inner{padding-bottom:10px;border-bottom:1px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07)}
 #posts-content .header{border:1px solid #ff8247;border-bottom:0;cursor:pointer}
 #posts-content .description{border:1px solid #ff8247;border-top:0;padding:10px}
-#posts-content .left{display:inline-block}
+#posts-content div.left{display:block;}
+#posts-content div.left span.flag{display:inline-block;font-size:22px;color:#3e3e3e;padding-right:5px}
+#posts-content div.left span.flag.red{color:#ff4500}
+#posts-content div.left span.flag.blue{color:#b2dfee}
+#posts-content div.left h5{display:inline}
 #posts-content h4 a{text-decoration:none;cursor:normal;color:#fff;pointer-events:none}
 #posts-content h5{color:#f0e68c}
-#posts-content .right{float:right;display:inline-block;}
+#posts-content .right{float:right;display:block;}
 #posts-content .right .date{display:inline-block;margin-right:10px;color:#f0e68c}
 #posts-content .right .iconic{color:#ff8247;font-size:1.5em;text-decoration:none}
 #posts-content .right .iconic:hover{color:#f0e68c;cursor:pointer}

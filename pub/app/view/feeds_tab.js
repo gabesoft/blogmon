@@ -94,7 +94,7 @@ module.exports = backbone.View.extend({
           , data: {
                 searchText: this.input.val()
             }
-          , method: 'GET'
+          , type: 'GET'
         }).done(function(data, success, res) {
             if (data.length === 0) {
                 me.message.render('Could not find a blog matching your input', 'warn');
