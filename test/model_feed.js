@@ -1,13 +1,14 @@
-var should = require('should')
-  , Feed = require('../lib/model/feed.js')
-  , eyes = require('eyes')
-  , redis = require('./redis_helper.js').client()
-  , trav = require('traverse')
+var should   = require('should')
+  , Feed     = require('../lib/model/feed.js')
+  , eyes     = require('eyes')
+  , redis    = require('./redis_helper.js').client()
+  , trav     = require('traverse')
+  , util     = require('../lib/util.js')
   , feedData = require('./support/data_feed.js')
-  , etags = feedData.etags
-  , feeds = feedData.feeds
-  , single = feedData.single
-  , repo = new Feed(redis);
+  , etags    = feedData.etags
+  , feeds    = feedData.feeds
+  , single   = feedData.single
+  , repo     = new Feed(redis);
 
 describe('feed', function() {
     beforeEach(function(done) {
@@ -62,6 +63,29 @@ describe('feed', function() {
             var uris = feeds.map(function(r) { return r.uri; });
             repo.get(uris, function(records) {
                 uris.length.should.equal(records.length);
+                done();
+            });
+        });
+    });
+
+    it('should get null for non existing feeds', function(done) {
+        repo.add(feeds, function() {
+            var uris = util.pluck(feeds, 'uri');
+            uris.push('a');
+            uris.push('b');
+            repo.get(uris, function(records) {
+                var empty = records.filter(function(r) { return r === null; });
+                records.length.should.equal(uris.length);
+                empty.length.should.equal(2);
+                done();
+            });
+        });
+    });
+
+    it('should return null if the required feed does not exist', function(done) {
+        repo.add(feeds, function() {
+            repo.get('invalid', function(records) {
+                should.not.exist(records);
                 done();
             });
         });

@@ -281,10 +281,12 @@ removeAll	./bin/../lib/model/token.js	/^Token.prototype.removeAll = function(nam
 removeAt	./bin/../lib/model/post.js	/^        removeAt  = function(index) { lists.splice(index, 1); };$/;"	f	lineno:27	type:void function(any)
 render	./bin/../pub/app/view/feeds.js	/^        render: function() {$/;"	f	lineno:7	type:void function()
 req.session.destroy	test/app_auth.js	/^        destroy: initSession$/;"	p
+req.session.user.settings.populatePostSettings	lib/app/auth.js	/^                populatePostSettings: function(posts, callback) {$/;"	m
+req.session.user.settings.setPostSettings	lib/app/auth.js	/^                setPostSettings: function(guid, settings, callback) {$/;"	m
 session	./bin/../lib/app/config.js	/^        session: function(req, res) {$/;"	f	lineno:43	type:any function(any, any)
 setData	./bin/../lib/model/feed.js	/^Feed.prototype.setData = function(uri, data, callback) {$/;"	f	lineno:130	type:void function(any, any, any)
 should	test/aggregator.js	/^var should = require('should')$/;"	v
-should	test/model_feed.js	/^var should = require('should')$/;"	v
+should	test/model_feed.js	/^var should   = require('should')$/;"	v
 should	test/model_post.js	/^var should = require('should')$/;"	v
 should	test/model_token.js	/^var should  = require('should'),$/;"	v
 should	test/model_user.js	/^var should   = require('should')$/;"	v

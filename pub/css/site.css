@@ -262,7 +262,7 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content .header{border:1px solid #ff8247;border-bottom:0;cursor:pointer}
 #posts-content .description{border:1px solid #ff8247;border-top:0;padding:10px}
 #posts-content div.left{display:block;}
-#posts-content div.left span.flag{display:inline-block;font-size:22px;color:#3e3e3e;padding-right:5px}
+#posts-content div.left span.flag{display:inline-block;font-size:24px;color:#3e3e3e;padding-right:5px}
 #posts-content div.left span.flag.red{color:#ff4500}
 #posts-content div.left span.flag.blue{color:#b2dfee}
 #posts-content div.left h5{display:inline}
