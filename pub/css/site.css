@@ -198,6 +198,7 @@ a,a:visited{color:#84bcde;text-decoration:underline;outline:0}
 a:hover,a:focus{color:#f0f8ff}
 p a,p a:visited{line-height:inherit}
 .unselectable{-moz-user-select:none;-webkit-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+img{max-width:100%}
 #banner{border-bottom:3px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07);padding-top:10px;}
 #banner h3.main{display:inline-block;color:#ff8247}
 #banner h3.info{float:right;display:inline-block}
@@ -253,6 +254,7 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #tabs-nav-container{clear:both;display:table;text-align:center;width:100%}
 #tabs-nav{padding:20px 0 20px 0;margin:0 auto;display:inline;width:100%}
 #posts-content .post-content{margin-top:5px;margin-bottom:10px}
+#posts-content .description a,#posts-content .description img,#posts-content .description div,#posts-content .description embed,#posts-content .description object,#posts-content .description video{margin:0 !important;padding:0 !important;width:100% !important;height:auto !important;max-width:100% !important}
 #posts-content .collapsed .header{border:1px solid #ff8247;padding:10px 10px 10px 10px}
 #posts-content .collapsed .header:hover{border:1px solid #f0e68c}
 #posts-content .collapsed .header-inner{padding:0;border:0;-webkit-box-shadow:0 0 0 0;-moz-box-shadow:0 0 0 0;box-shadow:0 0 0 0}
@@ -262,7 +264,7 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content .header{border:1px solid #ff8247;border-bottom:0;cursor:pointer}
 #posts-content .description{border:1px solid #ff8247;border-top:0;padding:10px}
 #posts-content div.left{display:block;}
-#posts-content div.left span.flag{display:inline-block;font-size:24px;color:#3e3e3e;padding-right:5px}
+#posts-content div.left span.flag{display:inline-block;font-size:26px;color:#3e3e3e;padding-right:5px}
 #posts-content div.left span.flag.red{color:#ff4500}
 #posts-content div.left span.flag.blue{color:#b2dfee}
 #posts-content div.left h5{display:inline}
@@ -270,7 +272,7 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content h5{color:#f0e68c}
 #posts-content .right{float:right;display:block;}
 #posts-content .right .date{display:inline-block;margin-right:10px;color:#f0e68c}
-#posts-content .right .iconic{color:#ff8247;font-size:1.5em;text-decoration:none}
+#posts-content .right .iconic{color:#ff8247;font-size:26px;text-decoration:none}
 #posts-content .right .iconic:hover{color:#f0e68c;cursor:pointer}
 #feeds-edit input.search{padding:5px 10px 5px 10px;width:300px;margin:10px 0 10px 0;font-size:16px}
 #feeds-edit div.subscribe.processing{border:1px solid #ff8247;color:#ff8247}
@@ -279,7 +281,7 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #feeds-list a.title{font-family:'MuseoSans500',serif}
 #feeds-list div.header{display:block}
 #feeds-list div.text{display:inline}
-#feeds-list div.delete{-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;padding:4px 4px 0 6px;font-size:20px;display:inline-block;float:right}
+#feeds-list div.delete{-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;padding:6px 2px 2px 6px;font-size:26px;display:inline-block;float:right}
 #feeds-list div.delete:hover{color:#f00;border:1px solid #f00}
 #feeds-list h4.title{display:inline}
 #feeds-list h4.author{padding-right:10px;display:inline;color:#dadbb1}
