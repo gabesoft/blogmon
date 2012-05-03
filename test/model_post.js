@@ -128,6 +128,44 @@ describe('post', function() {
         });
     });
 
+    it('should return correct posts according to paging', function(done) {
+        repo.add(posts, function() {
+            repo.get([], posts.length - 5, 20, function(res) {
+                res.length.should.equal(5);
+                done();
+            });
+        });
+    });
+
+    it('should not skip records at page edge', function(done) {
+        repo.add(posts, function() {
+            repo.get([], 0, 60, function(list) {
+                repo.get([], 0, 20, function(l1) {
+                    repo.get([], 20, 20, function(l2) {
+                        repo.get([], 40, 20, function(l3) {
+                            var all = l1.concat(l2).concat(l3)
+                              , zip = util.zip(list, all);
+                            all.length.should.equal(list.length);
+                            zip.forEach(function(item) {
+                                item[0].should.eql(item[1]);
+                            });
+                            done();
+                        });
+                    });
+                });
+            });
+        });
+    });
+
+    it('should not return any posts if paging is out of range', function(done) {
+        repo.add(posts, function() {
+            repo.get([], 1000, 20, function(res) {
+                res.should.eql([]);
+                done();
+            });
+        });
+    });
+
     it('should not add posts already added', function(done) {
         repo.add(posts.slice(0, 3), function() {
             repo.add(posts.slice(0, 5), function() {
