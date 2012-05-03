@@ -33,14 +33,16 @@ module.exports = backbone.View.extend({
           , success: function(collection, response) { 
                 if (response.length > 0) {
                     me.model.each(me.append);
-                    me.start += me.limit; // TODO: ensure that we don't skip posts
+                    me.start += me.limit;
                 } else {
                     me.allLoaded = true;
                 }
                 me.loading = false;
+                me.getLoaderEl().hide();
             }
           , error: function() {
                 me.loading = false;
+                me.getLoaderEl().hide();
             }
         });
         me.model.each(me.append);
@@ -103,6 +105,7 @@ module.exports = backbone.View.extend({
                 }
               , error: function() {
                     me.loading = false;
+                    me.getLoaderEl().hide();
                 }
             }, { add: true });
         }
