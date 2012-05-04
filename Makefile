@@ -15,6 +15,7 @@ css:
 						--use nib \
 						--out pub/css/ \
 						--compress \
-						pub/stylesheets/
+						pub/stylesheets/site.styl \
+						pub/stylesheets/site.win.styl
 
 .PHONY: test

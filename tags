@@ -111,6 +111,8 @@ Finder	lib/feed_finder.js	/^Finder.prototype.find = function(link, callback) {$/
 Finder	lib/feed_finder.js	/^function Finder () {$/;"	f
 Finder.find	lib/feed_finder.js	/^Finder.prototype.find = function(link, callback) {$/;"	m
 GUID_SET	./bin/../lib/model/post.js	/^var GUID_SET = 'post:guids', $/;"	v	lineno:1	type:string
+Loader	pub/app/view/loader.js	/^function Loader (config) {$/;"	c
+Loader.load	pub/app/view/loader.js	/^Loader.prototype.load = function(reset) {$/;"	m
 NAMES	./bin/../lib/model/user.js	/^var NAMES  = 'user:name',$/;"	v	lineno:1	type:string
 Post	./bin/../lib/model/post.js	/^function Post (redis) {$/;"	f	lineno:8	type:any function(any)
 Post	lib/model/post.js	/^function Post (redis) {$/;"	c
@@ -119,6 +121,9 @@ Post.get	lib/model/post.js	/^Post.prototype.get = function(feedUris, start, limi
 Posts	pub/app/model/posts.js	/^    var Posts = Backbone.Collection.extend({$/;"	v
 REPORTER	Makefile	/^REPORTER = spec$/;"	m
 SRC	Makefile	/^SRC = $(shell find lib\/*.js)$/;"	m
+ScrollState	pub/app/view/scroll_state.js	/^function ScrollState (config) {$/;"	c
+ScrollState.direction	pub/app/view/scroll_state.js	/^ScrollState.prototype.direction = function() {$/;"	m
+ScrollState.onScroll	pub/app/view/scroll_state.js	/^ScrollState.prototype.onScroll = function() {$/;"	m
 TESTS	Makefile	/^TESTS = test\/*.js$/;"	m
 Task	lib/task.js	/^function Task(fn, scope) {$/;"	c
 Task.cancel	lib/task.js	/^Task.prototype.cancel = function() {$/;"	m
@@ -172,7 +177,7 @@ backbone	pub/app/view/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/
 backbone	pub/app/view/feedstab.js	/^var backbone   = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/message.js	/^var backbone   = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/post.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
-backbone	pub/app/view/posts_tab.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/view/posts_tab.js	/^var backbone    = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/searchitem.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/searchresults.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 bundle	server.js	/^var bundle = bundle({$/;"	v

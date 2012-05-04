@@ -10,6 +10,8 @@ module.exports = Backbone.Router.extend({
       , "feeds" : "showFeeds"
     },
 
+    // TODO: the tab views should have hide/show methods
+
     initialize: function(opts) {
         this.tabElems = $('.tab-content');
         this.tabs     = $('.tab');

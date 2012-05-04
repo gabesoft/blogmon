@@ -1,9 +1,6 @@
 #!/bin/bash
 dir=`dirname $0`
 
-# TODO: use the --compress option for production
-#       remove  --firebug & --line-numbers
-
 $dir/../node_modules/stylus/bin/stylus \
   --use nib \
   --out $dir/../pub/css \
@@ -11,5 +8,3 @@ $dir/../node_modules/stylus/bin/stylus \
   --compress \
   $dir/../pub/stylesheets/site.styl \
   $dir/../pub/stylesheets/site.win.styl
-
-  #--line-numbers
