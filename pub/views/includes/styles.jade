@@ -1,2 +1,7 @@
-link(rel='stylesheet', href='/css/site.css')
+script(language='javascript')
+  if (navigator.appVersion.indexOf('Win') != -1) {
+    document.write('<link rel="stylesheet" href="/css/site.win.css" type="text/css" />');
+  } else {
+    document.write('<link rel="stylesheet" href="/css/site.css" type="text/css" />');
+  }
 

@@ -23,3 +23,5 @@ hr{border:solid #ddd;border-width:1px 0 0;clear:both;margin:10px 0 30px;height:0
 a,a:visited{color:color-link;text-decoration:underline;outline:0}
 a:hover,a:focus{color:color-link-hover}
 p a,p a:visited{line-height:inherit}
+.unselectable{-moz-user-select:none;-webkit-user-select:none;-khtml-user-select:none;user-select:none}
+img{max-width:100%}

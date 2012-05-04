@@ -1,4 +1,7 @@
+#posts-content{margin-bottom:20px;}
 #posts-content .post-content{margin-top:5px;margin-bottom:10px}
+#posts-content #loader{display:none;line-height:0;z-index:10;font-size:80px;color:color-khaki;position:fixed;bottom:40px;right:40px;}
+#posts-content .description a,#posts-content .description img,#posts-content .description div,#posts-content .description object,#posts-content .description video{margin:0 !important;padding:0 !important;width:auto !important;height:auto !important;max-width:100% !important}
 #posts-content .collapsed .header{border:1px solid color-sienna;padding:10px 10px 10px 10px}
 #posts-content .collapsed .header:hover{border:1px solid color-khaki}
 #posts-content .collapsed .header-inner{padding:0;}
@@ -7,10 +10,25 @@
 #posts-content .expanded .header-inner{padding-bottom:10px;}
 #posts-content .header{border:1px solid color-sienna;border-bottom:0;cursor:pointer}
 #posts-content .description{border:1px solid color-sienna;border-top:0;padding:10px}
-#posts-content .left{display:inline-block}
+#posts-content div.left{display:block;}
+#posts-content div.left span.flag{display:inline-block;font-size:icon-size;color:color-star-inactive;padding-right:5px}
+#posts-content div.left span.flag.red{color:color-orange-red}
+#posts-content div.left span.flag.blue{color:color-light-blue2}
+#posts-content div.left h5{display:inline}
 #posts-content h4 a{text-decoration:none;cursor:normal;color:color-heading;pointer-events:none}
 #posts-content h5{color:color-khaki}
-#posts-content .right{float:right;display:inline-block;}
+#posts-content .right{float:right;display:block;}
 #posts-content .right .date{display:inline-block;margin-right:10px;color:color-khaki}
-#posts-content .right .iconic{color:color-sienna;font-size:1.5em;text-decoration:none}
+#posts-content .right .iconic{color:color-sienna;font-size:icon-size;text-decoration:none}
 #posts-content .right .iconic:hover{color:color-khaki;cursor:pointer}
+@-moz-keyframes rotate{0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}@-webkit-keyframes rotate{0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}@-o-keyframes rotate{0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}@-ms-keyframes rotate{0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}@keyframes rotate{0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}

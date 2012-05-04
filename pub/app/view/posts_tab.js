@@ -31,6 +31,7 @@ module.exports = backbone.View.extend({
               , limit: me.limit
             }
           , always: function() {
+                // TODO: make this work
                 console.log('always');
             }
           , success: function(collection, response) { 
@@ -41,11 +42,11 @@ module.exports = backbone.View.extend({
                     me.allLoaded = true;
                 }
                 me.loading = false;
-                //me.getLoaderEl().hide();
+                me.getLoaderEl().hide();
             }
           , error: function() {
                 me.loading = false;
-                //me.getLoaderEl().hide();
+                me.getLoaderEl().hide();
             }
         });
         me.model.each(me.append);
@@ -104,11 +105,11 @@ module.exports = backbone.View.extend({
                     }
 
                     me.loading = false;
-                    //me.getLoaderEl().hide();
+                    me.getLoaderEl().hide();
                 }
               , error: function() {
                     me.loading = false;
-                    //me.getLoaderEl().hide();
+                    me.getLoaderEl().hide();
                 }
             }, { add: true });
         }

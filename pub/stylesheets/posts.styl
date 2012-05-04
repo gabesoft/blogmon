@@ -1,14 +1,11 @@
-@-moz-keyframes rotate
-  from
-    -moz-transform rotate(0deg)
-  to
-    -moz-transform rotate(360deg)
-
-@-webkit-keyframes rotate
-  from
-    -webkit-transform rotate(0deg)
-  to
-    -webkit-transform rotate(360deg)
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
 
 #posts-content
   margin-bottom 20px
@@ -18,43 +15,20 @@
     margin-bottom 10px
 
   #loader
-    //display none
-
+    display none
     line-height 0
-    text-align center
-    vertical-align middle
-
-    float right
-    z-index 100
+    z-index 10
+    font-size 80px
+    color color-khaki
 
     position fixed
     bottom 40px
     right 40px
 
-    font-size 80px
-    //padding 50px
-    padding 20px 0 8px 8px
-
-    //font-size 60px
-    //padding 15px 0 6px 7px
-
-    color color-khaki
-
-
-    //-moz
-    //-webkit
-    //-ms
-    //-o
-
-    -moz-animation-name rotate
-    -moz-animation-duration 1.0s
-    -moz-animation-iteration-count infinite
-    -moz-animation-timing-function linear
-
-    -webkit-animation-name rotate
-    -webkit-animation-duration 1.0s
-    -webkit-animation-iteration-count infinite
-    -webkit-animation-timing-function linear
+    animation(rotate)
+    animation-duration(1.0s)
+    animation-iteration-count(infinite)
+    animation-timing-function(linear)
 
   .description
     a

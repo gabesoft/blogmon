@@ -315,4 +315,4 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #message-banner.active.info{color:#90ee90;border:1px solid #90ee90}
 #message-banner.active.warn{color:#f0e68c;border:1px solid #f0e68c}
 #message-banner.active.error{color:#f00;border:1px solid #f00}
-#loader{-moz-transform-origin:26px -6px;-webkit-transform-origin:27px -6px;-o-transform-origin:26px -6px;-ms-transform-origin:26px -6px}
+#loader{-webkit-transform-origin:27px -1px;-moz-transform-origin:27px -1px;-o-transform-origin:27px -1px;-ms-transform-origin:27px -1px;transform-origin:27px -1px}

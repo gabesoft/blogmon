@@ -5,8 +5,8 @@
 #feeds-list a.title{font-family:font-heading}
 #feeds-list div.header{display:block}
 #feeds-list div.text{display:inline}
-#feeds-list div.delete{border-radius:20px;padding:4px 4px 0 6px;font-size:20px;display:inline-block;float:right}
-#feeds-list div.delete:hover{color:color-red;border:1px solid color-red}
+#feeds-list div.delete{background:none;border:0;font-size:icon-size;display:inline-block;float:right}
+#feeds-list div.delete:hover{color:color-red}
 #feeds-list h4.title{display:inline}
 #feeds-list h4.author{padding-right:10px;display:inline;color:color-wheat}
 #feeds-list h5.description{display:inline-block;color:color-font}
