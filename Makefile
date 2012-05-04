@@ -10,4 +10,11 @@ test:
 						--growl \
 						$(TESTS)
 
+css:
+		./node_modules/stylus/bin/stylus \
+						--use nib \
+						--out pub/css/ \
+						--compress \
+						pub/stylesheets/
+
 .PHONY: test

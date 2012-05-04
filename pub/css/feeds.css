@@ -1,11 +1,11 @@
 #feeds-edit input.search{padding:5px 10px 5px 10px;width:300px;margin:10px 0 10px 0;font-size:16px}
 #feeds-edit div.subscribe.processing{border:1px solid color-sienna;color:color-sienna}
-#feeds-list li{margin:10px 0 5px 0;padding:5px 5px 5px 0;}
+#feeds-list li{margin:15px 0 1 cpx 0;padding:10px;border:1px solid color-link}
 #feeds-list input.view{display:none}
 #feeds-list a.title{font-family:font-heading}
 #feeds-list div.header{display:block}
 #feeds-list div.text{display:inline}
-#feeds-list div.delete{background:none;border:0;font-size:icon-size;display:inline-block;float:right}
+#feeds-list div.delete{font-size:icon-size;display:inline-block;float:right}
 #feeds-list div.delete:hover{color:color-red}
 #feeds-list h4.title{display:inline}
 #feeds-list h4.author{padding-right:10px;display:inline;color:color-wheat}

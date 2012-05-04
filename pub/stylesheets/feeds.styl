@@ -11,9 +11,12 @@
 
 #feeds-list
   li
-    margin 10px 0 5px 0
-    padding 5px 5px 5px 0
-    line(bottom, 1px)
+    margin 15px 0 10px 0
+    padding 10px
+    border 1px solid color-link
+
+  li:last-child
+    margin-bottom 30px
 
   input.view
     display none
@@ -28,17 +31,12 @@
     display inline
 
   div.delete
-    //border-radius 20px
-    //padding 6px 2px 2px 6px
-    background none
-    border 0
     font-size icon-size
     display inline-block
     float right
 
   div.delete:hover
     color color-red
-    //border 1px solid color-red
 
   h4.title
     display inline
