@@ -243,7 +243,6 @@ hello.foo.bar	test/support/js_indent.js	/^        var bar = function(arg3) {    
 hola	test/support/js_indent.js	/^function hola (arg) {                                                       \/\/$/;"	f
 init	./bin/../lib/app/auth.js	/^        init: function(req, res, user, next) {$/;"	f	lineno:83	type:void function(any, any, any, any)
 init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f	lineno:19	type:void function(any, any, any, any)
-init	lib/app/initializer.js	/^var init = function(app) {$/;"	f
 initSession	test/app_auth.js	/^var initSession = function(callback) {$/;"	f
 l	test/support/js_indent.js	/^var l = list                                                                \/\/$/;"	v
 length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {$/;"	f	lineno:166	type:void function(any)
@@ -259,6 +258,7 @@ module.exports.cont	lib/util.js	/^module.exports.cont = function(arr, end, fn) {
 module.exports.curry	lib/util.js	/^module.exports.curry = function(obj, args) {$/;"	f
 module.exports.etags	test/support/data_feed.js	/^    etags: [ {$/;"	p
 module.exports.exists	lib/util.js	/^module.exports.exists = function(obj) {$/;"	f
+module.exports.initModules	lib/app/initializer.js	/^module.exports.initModules = function(app) {$/;"	f
 module.exports.nil	lib/util.js	/^module.exports.nil = function(obj) {$/;"	f
 module.exports.pluck2	lib/util.js	/^module.exports.pluck2 = function(\/* obj, keys *\/) {$/;"	f
 module.exports.skip	lib/util.js	/^module.exports.skip = function(obj, count) {$/;"	f
