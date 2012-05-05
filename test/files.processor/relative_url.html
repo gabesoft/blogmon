@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<span id="title">should disable only relative urls</span>
+    <div id="input">
+        <img src="foo.png"></img>
+        <img src="../images/foo.png" alt="none" />
+        <img src="http://google.com/images/ya.png" alt="none" />
+        <a href="/funpage.html">fun page</a>
+        <a href="http://mydomain.com/cool.html">cool page</a>
+    </div>
+    <div id="expected">
+        <img src=""></img>
+        <img src="" alt="none" />
+        <img src="http://google.com/images/ya.png" alt="none" />
+        <a href="">fun page</a>
+        <a href="http://mydomain.com/cool.html">cool page</a>
+    </div>
+</body>
+</html>

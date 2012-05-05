@@ -22,6 +22,7 @@
       , "eyes"              : "*"
       , "nib"               : "0.4.1"
       , "console-trace"     : "*"
+      , "jsdom"             : "*"
     }
 
   , "devDependencies" : {

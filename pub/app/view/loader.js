@@ -23,11 +23,21 @@ function Loader (config) {
 
 module.exports = Loader;
 
+/*
+ * Loads a page of records.
+ * @reset: true to load the first page and reset the collection 
+ *         false to load the next page of records and append to
+ *         the collection
+ */
 Loader.prototype.load = function(reset) {
     if (this.loading || this.allLoaded) { return; }
 
     var me     = this
       , loader = loaderEl(me);
+
+    if (reset) {
+        me.start = 0;
+    }
 
     loader.show();
     me.loading = true;

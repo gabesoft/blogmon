@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <span id='title'>should remove all script tags</span>
+
+        <div id='input'>
+            <div>
+                <script type="text/javascript" src="http://akamai/jquery.min.js" />
+                    <script language="javascript">
+                    alert("boo");
+                    </script>
+                    <span>hola</span>
+                </div>
+                <div> <p id='a'>hello</p> </div>
+            </div>
+
+            <div id='expected'>
+                <div> <span>hola</span> </div>
+                <div> <p id='a'>hello</p> </div>
+            </div>
+        </div>
+    </body>
+</html>

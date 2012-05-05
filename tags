@@ -100,6 +100,24 @@ Aggregator.run	lib/aggregator.js	/^Aggregator.prototype.run = function() {$/;"	m
 Aggregator.runNow	lib/aggregator.js	/^Aggregator.prototype.runNow = function(feedUri, callback) {$/;"	m
 Aggregator.stop	lib/aggregator.js	/^Aggregator.prototype.stop = function() {$/;"	m
 Aggregator.var.run	lib/aggregator.js	/^    var run = function(agg) {$/;"	f
+Apricot	node_modules/apricot/lib/apricot.js	/^function Apricot(content,live) {$/;"	c
+Apricot._clean	node_modules/apricot/lib/apricot.js	/^  _clean : function(collection) {$/;"	m
+Apricot._wrap	node_modules/apricot/lib/apricot.js	/^  _wrap : function(xhtml, tag) {$/;"	m
+Apricot._wrapHelper	node_modules/apricot/lib/apricot.js	/^  _wrapHelper : function(html, el) {$/;"	m
+Apricot.addClass	node_modules/apricot/lib/apricot.js	/^  addClass: function(className) {$/;"	m
+Apricot.after	node_modules/apricot/lib/apricot.js	/^  after   : function (html) { return this.html('after', html); },$/;"	m
+Apricot.before	node_modules/apricot/lib/apricot.js	/^  before  : function (html) { return this.html('before', html); },$/;"	m
+Apricot.bottom	node_modules/apricot/lib/apricot.js	/^  bottom  : function (html) { return this.html('bottom', html); },$/;"	m
+Apricot.each	node_modules/apricot/lib/apricot.js	/^  each : function(fn) {$/;"	m
+Apricot.find	node_modules/apricot/lib/apricot.js	/^  find : function(pattern) {$/;"	m
+Apricot.hasClass	node_modules/apricot/lib/apricot.js	/^  hasClass: function(className, callback) {$/;"	m
+Apricot.html	node_modules/apricot/lib/apricot.js	/^  html    : function(location, html) {$/;"	m
+Apricot.inner	node_modules/apricot/lib/apricot.js	/^  inner   : function (html) { return this.html('inner', html); },$/;"	m
+Apricot.live	node_modules/apricot/lib/apricot.js	/^  live: function() {$/;"	m
+Apricot.outer	node_modules/apricot/lib/apricot.js	/^  outer   : function (html) { return this.html('outer', html); },$/;"	m
+Apricot.remove	node_modules/apricot/lib/apricot.js	/^  remove  : function (html) { return this.html('remove', html); },$/;"	m
+Apricot.removeClass	node_modules/apricot/lib/apricot.js	/^  removeClass: function(className) {$/;"	m
+Apricot.top	node_modules/apricot/lib/apricot.js	/^  top     : function (html) { return this.html('top', html); },$/;"	m
 DELAY	lib/task.js	/^var DELAY = 'delay',$/;"	v
 FEED_SET	./bin/../lib/model/post.js	/^    FEED_SET = 'post:feeds',$/;"	v	lineno:2	type:string
 Feed	./bin/../lib/model/feed.js	/^function Feed (redis) {$/;"	f	lineno:8	type:any function(any)
@@ -118,6 +136,14 @@ Post	./bin/../lib/model/post.js	/^function Post (redis) {$/;"	f	lineno:8	type:an
 Post	lib/model/post.js	/^function Post (redis) {$/;"	c
 Post.add	lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	m
 Post.get	lib/model/post.js	/^Post.prototype.get = function(feedUris, start, limit, callback) {$/;"	m
+PostSanitizer	lib/processor/post_sanitizer.js	/^PostSanitizer.prototype.clean = function(html, callback) {$/;"	c
+PostSanitizer	lib/processor/post_sanitizer.js	/^function PostSanitizer () {$/;"	f
+PostSanitizer.clean	lib/processor/post_sanitizer.js	/^PostSanitizer.prototype.clean = function(html, callback) {$/;"	m
+PostSanitizer.process	lib/processor/post_sanitizer.js	/^PostSanitizer.prototype.process = function(post, callback) {$/;"	m
+PostSanitizer.var.features.FetchExternalResources	lib/processor/post_sanitizer.js	/^            FetchExternalResources: false \/\/['script', 'img', 'css', 'frame', 'link']$/;"	p
+PostSanitizer.var.features.MutationEvents	lib/processor/post_sanitizer.js	/^          , MutationEvents: false$/;"	p
+PostSanitizer.var.features.ProcessExternalResources	lib/processor/post_sanitizer.js	/^          , ProcessExternalResources: false$/;"	p
+PostSanitizer.var.features.QuerySelector	lib/processor/post_sanitizer.js	/^          , QuerySelector: false$/;"	p
 Posts	pub/app/model/posts.js	/^    var Posts = Backbone.Collection.extend({$/;"	v
 REPORTER	Makefile	/^REPORTER = spec$/;"	m
 SRC	Makefile	/^SRC = $(shell find lib\/*.js)$/;"	m
@@ -186,6 +212,8 @@ checkContextHasUser	test/app_auth.js	/^var checkContextHasUser = function() {$/;
 clear	lib/task.js	/^var clear = function(task) {$/;"	f
 client	./bin/../lib/app/redis_helper.js	/^    client: function(db) {$/;"	f	lineno:22	type:any function(any)
 config	./bin/../lib/app/redis_helper.js	/^var config = parseRedisUrl();$/;"	v	lineno:19	type:<null | Object>
+console.alert	node_modules/apricot/lib/apricot.js	/^    console.alert = function(m) {$/;"	f
+console.console.log	node_modules/apricot/lib/apricot.js	/^      log: function(m) {$/;"	m
 count	./bin/../lib/model/token.js	/^Token.prototype.count = function(name, callback) {$/;"	f	lineno:105	type:void function(any, any)
 create	./bin/../lib/model/token.js	/^Token.prototype.create = function(name, callback) {$/;"	f	lineno:38	type:void function(any, any)
 create	./bin/../lib/model/user.js	/^User.prototype.create = function(name, pass, callback) {$/;"	f	lineno:44	type:void function(any, any, any)
@@ -241,6 +269,7 @@ hello	test/support/js_indent.js	/^function hello (arg) {                        
 hello.foo	test/support/js_indent.js	/^    var foo = function(arg2) {                                              \/\/$/;"	f
 hello.foo.bar	test/support/js_indent.js	/^        var bar = function(arg3) {                                          \/\/$/;"	f
 hola	test/support/js_indent.js	/^function hola (arg) {                                                       \/\/$/;"	f
+http	node_modules/apricot/lib/apricot.js	/^var http = require('http'),$/;"	v
 init	./bin/../lib/app/auth.js	/^        init: function(req, res, user, next) {$/;"	f	lineno:83	type:void function(any, any, any, any)
 init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f	lineno:19	type:void function(any, any, any, any)
 initSession	test/app_auth.js	/^var initSession = function(callback) {$/;"	f
@@ -296,6 +325,7 @@ should	test/model_feed.js	/^var should   = require('should')$/;"	v
 should	test/model_post.js	/^var should = require('should')$/;"	v
 should	test/model_token.js	/^var should  = require('should'),$/;"	v
 should	test/model_user.js	/^var should   = require('should')$/;"	v
+should	test/processor_post_sanitizer.js	/^var should    = require('should')$/;"	v
 state	test/model_user_settings.js	/^      , state  : 'open'$/;"	p
 store	./bin/../lib/app/redis_helper.js	/^    store: function(express) {$/;"	f	lineno:42	type:any function(any)
 subsKey	./bin/../lib/model/feed.js	/^var subsKey = function(key) {$/;"	f	lineno:19	type:string function(string)
@@ -336,6 +366,7 @@ util	lib/feed_finder.js	/^var util    = require('.\/util.js')$/;"	v
 util	lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v
 util	lib/model/user_settings.js	/^var util = require('..\/util.js')$/;"	v
 util	test/support/data_post_large.js	/^var util = require('..\/..\/lib\/util.js');$/;"	v
+var.sandbox.document	node_modules/apricot/lib/apricot.js	/^        document:this.document, $/;"	p
 verify	./bin/../lib/model/token.js	/^Token.prototype.verify = function(token, callback) {$/;"	f	lineno:71	type:void function(any, any)
 visible	test/model_user_settings.js	/^        visible: true$/;"	p
 x	test/support/js_indent.js	/^var x = 1 +                                                                 \/\/ 0$/;"	v
