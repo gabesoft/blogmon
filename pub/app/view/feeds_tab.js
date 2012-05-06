@@ -158,9 +158,6 @@ module.exports = backbone.View.extend({
           , data        : data
         }, { 
             wait: false
-          , success: function(feed, data) {
-                feed.view.render();
-            }
           , error: function(model, response, options) {
                 console.log(response.responseText);
             }

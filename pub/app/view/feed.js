@@ -13,10 +13,14 @@ module.exports = backbone.View.extend({
 
     initialize: function(config) {
         this.template = mustache.compile($('#feed-template').html());
+
         _.bindAll(this
           , 'remove'
+          , 'render'
           , 'visibilityChange'
         );
+
+        this.model.on('change', this.render);
     },
 
     render: function() {

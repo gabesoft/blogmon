@@ -14,7 +14,8 @@ module.exports = backbone.View.extend({
 
     initialize: function(config) {
         this.template = mustache.compile($('#post-template').html());
-        _.bindAll(this, 'onHeaderClick');
+        _.bindAll(this, 'onHeaderClick', 'render');
+        this.model.on('change', this.render);
     },
 
     render: function() {
@@ -95,7 +96,6 @@ module.exports = backbone.View.extend({
               , type: 'GET'
             }).done(function(desc) {
                 me.model.set('description', desc);
-                me.render();
                 callback();
             }).always(function() {
                 content.removeClass(cls);
