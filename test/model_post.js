@@ -204,4 +204,27 @@ describe('post', function() {
             });
         });
     });
+
+    it('should set description by guid', function(done) {
+        repo.add(posts, function() {
+            var post = posts[0]
+              , desc = 'post description';
+            repo.setDescription(post.guid, desc, function() {
+                done();
+            });
+        });
+    });
+
+    it('should get description by guid', function(done) {
+        repo.add(posts, function() {
+            var post = posts[0]
+              , desc = 'post description';
+            repo.setDescription(post.guid, desc, function() {
+                repo.getDescription(post.guid, function(res) {
+                    res.should.equal(desc);
+                    done();
+                });
+            });
+        });
+    });
 });

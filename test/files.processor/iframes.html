@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <span id="title">should remove all iframes</span>
+        <div id="input">
+            <p>text</p>
+            <iframe id="scribd" src="http://www.scribd.com/embeds/content/12" frameborder="0">
+                <head>
+                	<script src="/scripts/base.js" type="javascript"></script>
+                </head>
+                <html>
+                    <body>
+                        <div id="content"></div>
+                    </body>
+                </html>
+            </iframe>
+        </div>
+        <div id="expected">
+            <p>text</p>
+        </div>
+    </body>
+</html>

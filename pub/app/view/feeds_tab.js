@@ -9,7 +9,7 @@ var backbone   = require('../dep/backbone.js')
 module.exports = backbone.View.extend({
     events: {
         "keypress #feeds-edit > input[type='text']" : 'searchOnEnter'
-      , "click #feeds-edit .button.subscribe"       : 'search'
+      , "click #feeds-edit .button.search"          : 'search'
       , "click #search .button.close"               : 'hideSearch'
     },
 
@@ -54,6 +54,8 @@ module.exports = backbone.View.extend({
     addItem: function(item, addfn) {
         var feed = new FeedView({ model: item })
           , list = this.getFeedsEl();
+
+        item.view = feed;
         list[addfn](feed.render().el);
     },
 
@@ -66,7 +68,7 @@ module.exports = backbone.View.extend({
     },
 
     getSubscribeEl: function() {
-        return this.$el.find('.button.subscribe');
+        return this.$el.find('.button.search');
     },
 
     prepend: function(item) {
@@ -146,11 +148,19 @@ module.exports = backbone.View.extend({
     },
 
     subscribe: function(data) {
+        var me = this;
+
         this.model.create({ 
-            uri: data.uri
-          , data: data
+            title       : data.title
+          , description : data.description
+          , link        : data.link
+          , uri         : data.uri
+          , data        : data
         }, { 
-            wait: true
+            wait: false
+          , success: function(feed, data) {
+                feed.view.render();
+            }
           , error: function(model, response, options) {
                 console.log(response.responseText);
             }

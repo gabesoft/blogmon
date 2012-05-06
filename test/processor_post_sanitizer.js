@@ -51,19 +51,11 @@ describe('post_sanitizer', function() {
         });
     });
 
-    //it('should disable img relative urls', function(done) {
-    //var html = '<div><img src="/images/pic.jpg" /><p>text here</p></div>';
-    //proc.clean(html, function(res) {
-    //res.should.equal('<div><img src="" /><p>text here</p></div>');
-    //done();
-    //});
-    //});
-
-    //it('should should not disable img absolute urls', function(done) {
-    //var html = '<div><img src="http://google.com/images/pic.jpg" /><p>text here</p></div>';
-    //proc.clean(html, function(res) {
-    //res.should.equal(html);
-    //done();
-    //});
-    //});
+    it('should handle just text', function(done) {
+        var html = 'a piece of text to be processed';
+        proc.clean(html, function(res) {
+            res.should.equal(html);
+            done();
+        });
+    });
 });

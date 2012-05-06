@@ -77,19 +77,51 @@ module.exports = backbone.View.extend({
         });
     },
 
-    toggleDescription: function(el) {
-        var content   = this.$el.find('.post-content')
-          , ccls      = 'collapsed'
-          , ecls      = 'expanded'
-          , collapsed = content.hasClass(ccls);
+    getContentEl: function() {
+        return this.$el.find('.post-content');
+    },
 
-        if (collapsed) {
-            content.removeClass(ccls);
-            content.addClass(ecls);
+    getDescription: function(callback) {
+        var me      = this
+          , cls     = 'processing'
+          , content = me.getContentEl()
+          , id      = encodeURIComponent(me.model.get('guid'))
+          , desc    = me.model.get('description');
+
+        if (desc === null) {
+            content.addClass(cls);
+            $.ajax({
+                url: _s.sprintf('/posts/%s/description', id)
+              , type: 'GET'
+            }).done(function(desc) {
+                me.model.set('description', desc);
+                me.render();
+                callback();
+            }).always(function() {
+                content.removeClass(cls);
+            });
         } else {
-            content.removeClass(ecls);
-            content.addClass(ccls);
+            callback();
         }
+    },
+
+    toggleDescription: function(el) {
+        var me = this;
+
+        this.getDescription(function() {
+            var content   = me.getContentEl()
+              , ccls      = 'collapsed'
+              , ecls      = 'expanded'
+              , collapsed = content.hasClass(ccls);
+
+            if (collapsed) {
+                content.removeClass(ccls);
+                content.addClass(ecls);
+            } else {
+                content.removeClass(ecls);
+                content.addClass(ccls);
+            }
+        });
     }
 });
 

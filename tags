@@ -136,14 +136,11 @@ Post	./bin/../lib/model/post.js	/^function Post (redis) {$/;"	f	lineno:8	type:an
 Post	lib/model/post.js	/^function Post (redis) {$/;"	c
 Post.add	lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	m
 Post.get	lib/model/post.js	/^Post.prototype.get = function(feedUris, start, limit, callback) {$/;"	m
+Post.getDescription	lib/model/post.js	/^Post.prototype.getDescription = function(guid, callback) {$/;"	m
+Post.setDescription	lib/model/post.js	/^Post.prototype.setDescription = function(guid, description, callback) {$/;"	m
 PostSanitizer	lib/processor/post_sanitizer.js	/^PostSanitizer.prototype.clean = function(html, callback) {$/;"	c
 PostSanitizer	lib/processor/post_sanitizer.js	/^function PostSanitizer () {$/;"	f
 PostSanitizer.clean	lib/processor/post_sanitizer.js	/^PostSanitizer.prototype.clean = function(html, callback) {$/;"	m
-PostSanitizer.process	lib/processor/post_sanitizer.js	/^PostSanitizer.prototype.process = function(post, callback) {$/;"	m
-PostSanitizer.var.features.FetchExternalResources	lib/processor/post_sanitizer.js	/^            FetchExternalResources: false \/\/['script', 'img', 'css', 'frame', 'link']$/;"	p
-PostSanitizer.var.features.MutationEvents	lib/processor/post_sanitizer.js	/^          , MutationEvents: false$/;"	p
-PostSanitizer.var.features.ProcessExternalResources	lib/processor/post_sanitizer.js	/^          , ProcessExternalResources: false$/;"	p
-PostSanitizer.var.features.QuerySelector	lib/processor/post_sanitizer.js	/^          , QuerySelector: false$/;"	p
 Posts	pub/app/model/posts.js	/^    var Posts = Backbone.Collection.extend({$/;"	v
 REPORTER	Makefile	/^REPORTER = spec$/;"	m
 SRC	Makefile	/^SRC = $(shell find lib\/*.js)$/;"	m
@@ -200,6 +197,7 @@ backbone	pub/app/model/feeds.js	/^var backbone = require('..\/dep\/backbone.js')
 backbone	pub/app/model/posts.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/model/searchitems.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/view/feeds_tab.js	/^var backbone   = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/feedstab.js	/^var backbone   = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/message.js	/^var backbone   = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/post.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v

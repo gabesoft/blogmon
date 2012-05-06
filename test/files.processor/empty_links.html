@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <span id="title">should remove empty links</span>
+        <div id="input">
+            <a href="http://google.com">search</a>
+            <p>
+            <a href="/pages/page1.html"> </a>
+            <a href="http://feedads.g.doubleclick.net/~at/h7_2j_u3Z1wyrg-C_Pl1INERSts/0/da">
+                <img border="0" ismap="true" src="http://feedads.g.doubleclick.net/~at/h7_2j_u3Z1wyrg-C_Pl1INERSts/0/di">
+            </a><br />
+            <a href="http://feedads.g.doubleclick.net/~at/h7_2j_u3Z1wyrg-C_Pl1INERSts/1/da">
+                <img border="0" ismap="true" src="http://feedads.g.doubleclick.net/~at/h7_2j_u3Z1wyrg-C_Pl1INERSts/1/di">
+            </a>
+            </p>
+        </div>
+        <div id="expected">
+            <a href="http://google.com">search</a>
+            <p>
+            <a href="http://feedads.g.doubleclick.net/~at/h7_2j_u3Z1wyrg-C_Pl1INERSts/0/da">
+                <img border="0" ismap="true" src="http://feedads.g.doubleclick.net/~at/h7_2j_u3Z1wyrg-C_Pl1INERSts/0/di">
+            </a><br />
+            <a href="http://feedads.g.doubleclick.net/~at/h7_2j_u3Z1wyrg-C_Pl1INERSts/1/da">
+                <img border="0" ismap="true" src="http://feedads.g.doubleclick.net/~at/h7_2j_u3Z1wyrg-C_Pl1INERSts/1/di">
+            </a>
+            </p>
+        </div>
+    </body>
+</html>
