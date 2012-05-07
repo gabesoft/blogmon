@@ -3,6 +3,8 @@ var backbone = require('../dep/backbone.js')
   , _        = require('../dep/underscore.js')
   , mustache = require('../dep/mustache.js');
 
+require('../dep/jquery.color.js');
+
 module.exports = backbone.View.extend({
     tagName: 'li',
 
@@ -39,6 +41,19 @@ module.exports = backbone.View.extend({
         }
 
         return this;
+    },
+
+    highlight: function() {
+        var el = this.$el;
+        el.parent().prepend(el);
+        el.animate({
+            backgroundColor: '#F0E68C'
+        }, {
+            duration: 3000
+          , complete: function() {
+                el.removeAttr('style');
+            }
+        });
     },
 
     getDescriptionEl: function() {

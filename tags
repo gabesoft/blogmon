@@ -97,7 +97,7 @@ ALL_SET	./bin/../lib/model/feed.js	/^    ALL_SET = 'feed:all',$/;"	v	lineno:2	ty
 Aggregator	lib/aggregator.js	/^function Aggregator (redis, interval) {$/;"	c
 Aggregator	test/support/aggregate.js	/^var Aggregator = require('..\/..\/lib\/aggregator.js'),$/;"	v
 Aggregator.run	lib/aggregator.js	/^Aggregator.prototype.run = function() {$/;"	m
-Aggregator.runNow	lib/aggregator.js	/^Aggregator.prototype.runNow = function(feedUri, callback) {$/;"	m
+Aggregator.runNow	lib/aggregator.js	/^Aggregator.prototype.runNow = function(feed, callback) {$/;"	m
 Aggregator.stop	lib/aggregator.js	/^Aggregator.prototype.stop = function() {$/;"	m
 Aggregator.var.run	lib/aggregator.js	/^    var run = function(agg) {$/;"	f
 Apricot	node_modules/apricot/lib/apricot.js	/^function Apricot(content,live) {$/;"	c
@@ -125,6 +125,20 @@ Feed	lib/model/feed.js	/^function Feed (redis) {$/;"	c
 Feed.add	lib/model/feed.js	/^Feed.prototype.add = function(obj, callback) {$/;"	m
 Feed.get	lib/model/feed.js	/^Feed.prototype.get = function(obj, callback) {$/;"	m
 Feed.update	lib/model/feed.js	/^Feed.prototype.update = function(feed, callback) {$/;"	m
+FeedParser	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.parseString = function(string, callback) {$/;"	c
+FeedParser	node_modules/feedparser/lib/feedparser.js	/^function FeedParser () {$/;"	f
+FeedParser._reset	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype._reset = function (){$/;"	m
+FeedParser._setCallback	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype._setCallback = function (callback){$/;"	m
+FeedParser.handleCloseTag	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.handleCloseTag = function (el, scope){$/;"	m
+FeedParser.handleEnd	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.handleEnd = function (scope){$/;"	m
+FeedParser.handleError	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.handleError = function (e, scope){$/;"	m
+FeedParser.handleOpenTag	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.handleOpenTag = function (node, scope){$/;"	m
+FeedParser.handleSaxError	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.handleSaxError = function (e, scope){$/;"	m
+FeedParser.handleText	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.handleText = function (text, scope){$/;"	m
+FeedParser.parseFile	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.parseFile = function(file, callback) {$/;"	m
+FeedParser.parseStream	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.parseStream = function(stream, callback) {$/;"	m
+FeedParser.parseString	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.parseString = function(string, callback) {$/;"	m
+FeedParser.parseUrl	node_modules/feedparser/lib/feedparser.js	/^FeedParser.prototype.parseUrl = function(url, callback) {$/;"	m
 Finder	lib/feed_finder.js	/^Finder.prototype.find = function(link, callback) {$/;"	c
 Finder	lib/feed_finder.js	/^function Finder () {$/;"	f
 Finder.find	lib/feed_finder.js	/^Finder.prototype.find = function(link, callback) {$/;"	m
@@ -244,6 +258,7 @@ flag	test/model_user_settings.js	/^      , flag   : 'blue'$/;"	p
 flash	./bin/../lib/app/config.js	/^        flash: function(req, res) {$/;"	f	lineno:46	type:any function(any, any)
 fn	test/support/js_indent.js	/^        var fn = function(w) {                                              \/\/$/;"	f
 fun	test/support/js_indent.js	/^var fun = function(x, y) {                                                  \/\/$/;"	f
+function.handleAttributes	node_modules/feedparser/lib/feedparser.js	/^  function handleAttributes (attrs, el) {$/;"	f
 get	./bin/../lib/app/auth.js	/^        get: function(req) { return req.cookies[COOKIE]; },$/;"	f	lineno:9	type:any function(any)
 get	./bin/../lib/model/post.js	/^Post.prototype.get = function(feedUris, start, limit, callback) {$/;"	f	lineno:122	type:void function(any, any, any, any)
 get	./bin/../lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"	f	lineno:92	type:void function(any, any)
@@ -262,6 +277,8 @@ getdate	./bin/../lib/model/post.js	/^        getdate   = function(post) { return
 getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	f	lineno:20	type:string function()
 getsalt	./bin/../lib/model/user.js	/^var getsalt = function() {$/;"	v	lineno:20	type:string function()
 guid	test/model_user_settings.js	/^      , guid   : posts[1].guid$/;"	p
+handleItem	node_modules/feedparser/lib/feedparser.js	/^function handleItem (node, type){$/;"	f
+handleMeta	node_modules/feedparser/lib/feedparser.js	/^function handleMeta (node, type) {$/;"	f
 has	./bin/../lib/app/auth.js	/^        has: function(req) { return util.exists(this.get(req)); },$/;"	f	lineno:8	type:any function(any)
 hello	test/support/js_indent.js	/^function hello (arg) {                                                      \/\/$/;"	f
 hello.foo	test/support/js_indent.js	/^    var foo = function(arg2) {                                              \/\/$/;"	f
@@ -316,6 +333,7 @@ render	./bin/../pub/app/view/feeds.js	/^        render: function() {$/;"	f	linen
 req.session.destroy	test/app_auth.js	/^        destroy: initSession$/;"	p
 req.session.user.settings.populatePostSettings	lib/app/auth.js	/^                populatePostSettings: function(posts, callback) {$/;"	m
 req.session.user.settings.setPostSettings	lib/app/auth.js	/^                setPostSettings: function(guid, settings, callback) {$/;"	m
+sax	node_modules/feedparser/lib/feedparser.js	/^var sax = require('sax')$/;"	v
 session	./bin/../lib/app/config.js	/^        session: function(req, res) {$/;"	f	lineno:43	type:any function(any, any)
 setData	./bin/../lib/model/feed.js	/^Feed.prototype.setData = function(uri, data, callback) {$/;"	f	lineno:130	type:void function(any, any, any)
 should	test/aggregator.js	/^var should = require('should')$/;"	v

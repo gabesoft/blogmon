@@ -54,7 +54,6 @@ module.exports = backbone.View.extend({
     addItem: function(item, addfn) {
         var feed = new FeedView({ model: item })
           , list = this.getFeedsEl();
-
         item.view = feed;
         list[addfn](feed.render().el);
     },
@@ -98,6 +97,9 @@ module.exports = backbone.View.extend({
             }
           , type: 'GET'
         }).done(function(data, success, res) {
+            _.each(data, function(r) {
+                r.subscribed = !!me.model.get(r.id);
+            });
             if (data.length === 0) {
                 me.message.render('Could not find a blog matching your input', 'warn');
             } else if (data.length === 1) {
@@ -147,21 +149,30 @@ module.exports = backbone.View.extend({
         this.subscribe(item);
     },
 
+    highlight: function(id) {
+        var feed = this.model.get(id);
+        feed.view.highlight();
+    },
+
     subscribe: function(data) {
         var me = this;
 
-        this.model.create({ 
-            title       : data.title
-          , description : data.description
-          , link        : data.link
-          , uri         : data.uri
-          , data        : data
-        }, { 
-            wait: false
-          , error: function(model, response, options) {
-                console.log(response.responseText);
-            }
-        });
+        if (data.subscribed) {
+            me.highlight(data.id);
+        } else {
+            this.model.create({ 
+                title       : data.title
+              , description : data.description
+              , link        : data.link
+              , uri         : data.uri
+              , data        : data
+            }, { 
+                wait: false
+              , error: function(model, response, options) {
+                    console.log(response.responseText);
+                }
+            });
+        }
         this.input.val('');
     }
 });

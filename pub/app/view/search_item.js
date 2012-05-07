@@ -42,6 +42,9 @@ module.exports = backbone.View.extend({
           , html = this.template(item);
 
         this.$el.html(html);
+        if (item.subscribed) {
+            this.acceptSubscribe();
+        }
         return this;
     }
 });
