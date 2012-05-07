@@ -146,6 +146,9 @@ GUID_SET	./bin/../lib/model/post.js	/^var GUID_SET = 'post:guids', $/;"	v	lineno
 Loader	pub/app/view/loader.js	/^function Loader (config) {$/;"	c
 Loader.load	pub/app/view/loader.js	/^Loader.prototype.load = function(reset) {$/;"	m
 NAMES	./bin/../lib/model/user.js	/^var NAMES  = 'user:name',$/;"	v	lineno:1	type:string
+PGFeed	lib/processor/pgfeed.js	/^PGFeed.prototype.process = function(post, callback) {$/;"	c
+PGFeed	lib/processor/pgfeed.js	/^function PGFeed () {$/;"	f
+PGFeed.process	lib/processor/pgfeed.js	/^PGFeed.prototype.process = function(post, callback) {$/;"	m
 Post	./bin/../lib/model/post.js	/^function Post (redis) {$/;"	f	lineno:8	type:any function(any)
 Post	lib/model/post.js	/^function Post (redis) {$/;"	c
 Post.add	lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	m
@@ -341,6 +344,7 @@ should	test/model_feed.js	/^var should   = require('should')$/;"	v
 should	test/model_post.js	/^var should = require('should')$/;"	v
 should	test/model_token.js	/^var should  = require('should'),$/;"	v
 should	test/model_user.js	/^var should   = require('should')$/;"	v
+should	test/processor_pgfeed.js	/^var should    = require('should')$/;"	v
 should	test/processor_post_sanitizer.js	/^var should    = require('should')$/;"	v
 state	test/model_user_settings.js	/^      , state  : 'open'$/;"	p
 store	./bin/../lib/app/redis_helper.js	/^    store: function(express) {$/;"	f	lineno:42	type:any function(any)

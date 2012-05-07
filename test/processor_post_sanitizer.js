@@ -1,5 +1,4 @@
 var should    = require('should')
-  , mocha     = require('mocha')
   , fs        = require('fs')
   , path      = require('path')
   , eyes      = require('eyes')

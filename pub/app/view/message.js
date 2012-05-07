@@ -21,7 +21,6 @@ module.exports = backbone.View.extend({
           , delay = duration || 5000;
 
         if (!me.visible) { 
-            console.log('show');
             me.visible = true;
             me.$el.text(msg);
             me.$el.addClass('active');
@@ -35,7 +34,6 @@ module.exports = backbone.View.extend({
     hide: function() {
         var me = this;
         if (me.visible) { 
-            console.log('hide');
             me.$el.slideUp(800, function() {
                 me.$el.removeClass('active');
                 me.$el.text('');

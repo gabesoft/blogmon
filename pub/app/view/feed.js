@@ -4,6 +4,7 @@ var backbone = require('../dep/backbone.js')
   , mustache = require('../dep/mustache.js');
 
 require('../dep/jquery.color.js');
+require('../dep/jquery.viewport.js');
 
 module.exports = backbone.View.extend({
     tagName: 'li',
@@ -44,8 +45,13 @@ module.exports = backbone.View.extend({
     },
 
     highlight: function() {
-        var el = this.$el;
-        el.parent().prepend(el);
+        var el     = this.$el
+          , inview = $.inviewport(this.$el, { threshold: 0 });
+
+        if (!inview) {
+            el.parent().prepend(el);
+        }
+
         el.animate({
             backgroundColor: '#F0E68C'
         }, {
@@ -66,9 +72,12 @@ module.exports = backbone.View.extend({
     },
 
     remove: function(e) {
-        var me = this;
+        var me         = this
+          , model      = me.model
+          , collection = model.collection;
 
-        me.model.destroy({ wait: true });
+        collection.remove(model);
+        model.destroy({ wait: true });
         me.$el.fadeOut(function() {
             me.$el.remove();
         });
