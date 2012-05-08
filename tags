@@ -234,8 +234,6 @@ create	./bin/../lib/model/token.js	/^Token.prototype.create = function(name, cal
 create	./bin/../lib/model/user.js	/^User.prototype.create = function(name, pass, callback) {$/;"	f	lineno:44	type:void function(any, any, any)
 crypto	./bin/../lib/model/token.js	/^    crypto = require('crypto');$/;"	v	lineno:4	type:any
 crypto	./bin/../lib/model/user.js	/^    crypto = require('crypto');$/;"	v	lineno:3	type:any
-data.headers	lib/aggregator.js	/^              , headers: {$/;"	p
-data.uri	lib/aggregator.js	/^                uri: uri$/;"	p
 dataKey	./bin/../lib/model/feed.js	/^var dataKey = function(key) {$/;"	f	lineno:23	type:string function(string)
 dataKey	./bin/../lib/model/feed.js	/^var dataKey = function(key) {$/;"	v	lineno:23	type:string function(string)
 date	test/support/data_post_large.js	/^var date = function(str) {$/;"	f
@@ -283,6 +281,7 @@ guid	test/model_user_settings.js	/^      , guid   : posts[1].guid$/;"	p
 handleItem	node_modules/feedparser/lib/feedparser.js	/^function handleItem (node, type){$/;"	f
 handleMeta	node_modules/feedparser/lib/feedparser.js	/^function handleMeta (node, type) {$/;"	f
 has	./bin/../lib/app/auth.js	/^        has: function(req) { return util.exists(this.get(req)); },$/;"	f	lineno:8	type:any function(any)
+headers	lib/aggregator.js	/^              , headers: {$/;"	p
 hello	test/support/js_indent.js	/^function hello (arg) {                                                      \/\/$/;"	f
 hello.foo	test/support/js_indent.js	/^    var foo = function(arg2) {                                              \/\/$/;"	f
 hello.foo.bar	test/support/js_indent.js	/^        var bar = function(arg3) {                                          \/\/$/;"	f
@@ -372,6 +371,7 @@ unsubscribe	./bin/../lib/model/feed.js	/^Feed.prototype.unsubscribe = function(u
 unsubscribe	./bin/../lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	f	lineno:75	type:void function(any, any, any)
 update	./bin/../lib/model/feed.js	/^Feed.prototype.update = function(feed, callback) {$/;"	f	lineno:88	type:void function(any, any)
 update	./bin/../lib/model/token.js	/^Token.prototype.update = function(token, callback) {$/;"	f	lineno:53	type:void function(any, any)
+uri	lib/aggregator.js	/^                uri: uri$/;"	p
 url	./bin/../lib/app/redis_helper.js	/^var url   = require('url'),$/;"	v	lineno:1	type:any
 url	./bin/../lib/model/feed.js	/^    url = require('url');$/;"	v	lineno:6	type:any
 url	./bin/../lib/model/post.js	/^    url = require('url');$/;"	v	lineno:6	type:any

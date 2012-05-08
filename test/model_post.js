@@ -23,6 +23,22 @@ describe('post', function() {
         });
     });
 
+    it('should return the guids of the added posts', function(done) {
+        var p1   = posts.slice(0, 4)
+          , p2   = posts.slice(2, 5)
+          , diff = posts.slice(4, 5);
+
+        repo.add(p1, function(added1) {
+            added1.length.should.equal(p1.length);
+            added1.should.eql(util.pluck(p1, 'guid'));
+            repo.add(p2, function(added2) {
+                added2.length.should.equal(diff.length);
+                added2.should.eql(util.pluck(diff, 'guid'));
+                done();
+            });
+        });
+    });
+
     it('should get posts for one feed', function(done) {
         var uri      = 'http://blog.izs.me/rss'
           , filtered = util.filter(posts, function(post) {

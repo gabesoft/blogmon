@@ -261,6 +261,8 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content .collapsed .header:hover{border:1px solid #f0e68c}
 #posts-content .collapsed .header-inner{padding:0;border:0;-webkit-box-shadow:0 0 0 0;-moz-box-shadow:0 0 0 0;box-shadow:0 0 0 0}
 #posts-content .collapsed .description{display:none}
+#posts-content .collapsed .loader{float:right}
+#posts-content .collapsed.processing{background:#808080;border:1px solid #0f0}
 #posts-content .expanded .header{padding:10px 10px 5px 10px}
 #posts-content .expanded .header-inner{padding-bottom:10px;border-bottom:1px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07)}
 #posts-content .header{border:1px solid #ff8247;border-bottom:0;cursor:pointer}
@@ -270,8 +272,8 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content div.left span.flag.red{color:#ff4500}
 #posts-content div.left span.flag.blue{color:#b2dfee}
 #posts-content div.left h5{display:inline}
-#posts-content h4 a{text-decoration:none;cursor:normal;color:#fff;pointer-events:none}
-#posts-content h5{color:#f0e68c}
+#posts-content .title a{text-decoration:none;cursor:normal;color:#fff;pointer-events:none}
+#posts-content h5.feed-title{color:#f0e68c}
 #posts-content .right{float:right;display:block;}
 #posts-content .right .date{display:inline-block;margin-right:10px;color:#f0e68c}
 #posts-content .right .iconic{color:#ff8247;font-size:26px;text-decoration:none}
@@ -287,8 +289,9 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 }@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
 }#feeds-edit input.search{padding:5px 10px 5px 10px;width:300px;margin:10px 0 10px 0;font-size:16px}
-#feeds-edit div.subscribe.processing{border:1px solid #ff8247;color:#ff8247}
-#feeds-list li{margin:15px 0 1 cpx 0;padding:10px;border:1px solid #84bcde}
+#feeds-edit div.button.search.processing{border:1px solid #ff8247;color:#ff8247}
+#feeds-list li{margin:15px 0 10px 0;padding:10px;border:1px solid #84bcde}
+#feeds-list li:last-child{margin-bottom:30px}
 #feeds-list input.view{display:none}
 #feeds-list a.title{font-family:'MuseoSans500',serif}
 #feeds-list div.header{display:block}

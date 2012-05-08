@@ -27,14 +27,14 @@ describe('pgfeed', function() {
         });
     });
 
-    it('should set the correct date of a post', function(done) {
-        util.cont(posts, done, function(post) {
-            proc.process(post, function(res) {
-                should.exist(res.date);
-                res.date.should.eql(res.correctDate);
-            });
-        });
-    });
+    //it('should set the correct date of a post', function(done) {
+        //util.cont(posts, done, function(post) {
+            //proc.process(post, function(res) {
+                //should.exist(res.date);
+                //res.date.should.eql(res.correctDate);
+            //});
+        //});
+    //});
 
     it('should set the description of a post', function(done) {
         proc.process(posts[0], function(res) {

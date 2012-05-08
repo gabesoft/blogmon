@@ -53,10 +53,21 @@
       line-clear()
     .description
       display none
+    .loader
+      display none
 
   .collapsed.processing
-    background gray
-    border 1px solid color-green
+    background color-gray
+
+    div.left
+      span.flag
+        display none
+
+    .loader
+      display block
+      float left
+      margin 0 10px 0 0
+      z-index 10
 
   .expanded
     .header
@@ -64,6 +75,9 @@
     .header-inner
       padding-bottom 10px
       line('bottom', 1px)
+
+    .loader
+      display none
 
   .header
     border 1px solid color-sienna

@@ -6,6 +6,8 @@
 #posts-content .collapsed .header:hover{border:1px solid color-khaki}
 #posts-content .collapsed .header-inner{padding:0;}
 #posts-content .collapsed .description{display:none}
+#posts-content .collapsed .loader{float:right}
+#posts-content .collapsed.processing{background:#808080;border:1px solid color-green}
 #posts-content .expanded .header{padding:10px 10px 5px 10px}
 #posts-content .expanded .header-inner{padding-bottom:10px;}
 #posts-content .header{border:1px solid color-sienna;border-bottom:0;cursor:pointer}
@@ -15,8 +17,8 @@
 #posts-content div.left span.flag.red{color:color-orange-red}
 #posts-content div.left span.flag.blue{color:color-light-blue2}
 #posts-content div.left h5{display:inline}
-#posts-content h4 a{text-decoration:none;cursor:normal;color:color-heading;pointer-events:none}
-#posts-content h5{color:color-khaki}
+#posts-content .title a{text-decoration:none;cursor:normal;color:color-heading;pointer-events:none}
+#posts-content h5.feed-title{color:color-khaki}
 #posts-content .right{float:right;display:block;}
 #posts-content .right .date{display:inline-block;margin-right:10px;color:color-khaki}
 #posts-content .right .iconic{color:color-sienna;font-size:icon-size;text-decoration:none}

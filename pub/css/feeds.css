@@ -1,6 +1,7 @@
 #feeds-edit input.search{padding:5px 10px 5px 10px;width:300px;margin:10px 0 10px 0;font-size:16px}
-#feeds-edit div.subscribe.processing{border:1px solid color-sienna;color:color-sienna}
-#feeds-list li{margin:15px 0 1 cpx 0;padding:10px;border:1px solid color-link}
+#feeds-edit div.button.search.processing{border:1px solid color-sienna;color:color-sienna}
+#feeds-list li{margin:15px 0 10px 0;padding:10px;border:1px solid color-link}
+#feeds-list li:last-child{margin-bottom:30px}
 #feeds-list input.view{display:none}
 #feeds-list a.title{font-family:font-heading}
 #feeds-list div.header{display:block}
