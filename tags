@@ -146,9 +146,11 @@ GUID_SET	./bin/../lib/model/post.js	/^var GUID_SET = 'post:guids', $/;"	v	lineno
 Loader	pub/app/view/loader.js	/^function Loader (config) {$/;"	c
 Loader.load	pub/app/view/loader.js	/^Loader.prototype.load = function(reset) {$/;"	m
 NAMES	./bin/../lib/model/user.js	/^var NAMES  = 'user:name',$/;"	v	lineno:1	type:string
-PGFeed	lib/processor/pgfeed.js	/^PGFeed.prototype.process = function(post, callback) {$/;"	c
+PGFeed	lib/processor/pgfeed.js	/^PGFeed.prototype.process = function(post) {$/;"	c
 PGFeed	lib/processor/pgfeed.js	/^function PGFeed () {$/;"	f
-PGFeed.process	lib/processor/pgfeed.js	/^PGFeed.prototype.process = function(post, callback) {$/;"	m
+PGFeed.appliesTo	lib/processor/pgfeed.js	/^PGFeed.prototype.appliesTo = function(feedUrl) {$/;"	m
+PGFeed.getDescription	lib/processor/pgfeed.js	/^PGFeed.prototype.getDescription = function(post, defdesc, callback) {$/;"	m
+PGFeed.process	lib/processor/pgfeed.js	/^PGFeed.prototype.process = function(post) {$/;"	m
 Post	./bin/../lib/model/post.js	/^function Post (redis) {$/;"	f	lineno:8	type:any function(any)
 Post	lib/model/post.js	/^function Post (redis) {$/;"	c
 Post.add	lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	m
@@ -304,6 +306,7 @@ module.exports.cont	lib/util.js	/^module.exports.cont = function(arr, end, fn) {
 module.exports.curry	lib/util.js	/^module.exports.curry = function(obj, args) {$/;"	f
 module.exports.etags	test/support/data_feed.js	/^    etags: [ {$/;"	p
 module.exports.exists	lib/util.js	/^module.exports.exists = function(obj) {$/;"	f
+module.exports.http://www.paulgraham.com/property.html	lib/processor/pgfeed_data.js	/^    'http:\/\/www.paulgraham.com\/property.html'         : new Date('03\/01\/2012')$/;"	p
 module.exports.initModules	lib/app/initializer.js	/^module.exports.initModules = function(app) {$/;"	f
 module.exports.nil	lib/util.js	/^module.exports.nil = function(obj) {$/;"	f
 module.exports.pluck2	lib/util.js	/^module.exports.pluck2 = function(\/* obj, keys *\/) {$/;"	f

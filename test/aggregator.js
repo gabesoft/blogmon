@@ -36,4 +36,21 @@ describe('SLOW - aggregator', function() {
             });
         });
     });
+
+    it('should save feed data 2', function(done) {
+        var uri = 'http://www.aaronsw.com/2002/feeds/pgessays.rss';
+        agg.runNow(uri, function(record, saved) {
+            record.uri.should.equal(uri);
+            feed.get(function(feeds) {
+                var found = feeds.filter(function(record) {
+                        return record.uri === uri;
+                    });
+                found.length.should.equal(1);
+                post.get(uri, 0, -1, function(posts) {
+                    posts.length.should.equal(saved);
+                    done();
+                });
+            });
+        });
+    });
 });

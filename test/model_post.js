@@ -63,7 +63,7 @@ describe('post', function() {
     });
 
     it('should add multiple posts', function(done) {
-        repo.add(posts.slice(0, 2), function(count) {
+        repo.add(posts.slice(0, 2), function(added) {
             repo.get([], 0, -1, function(res) {
                 res.length.should.equal(2);
                 res[0].guid.should.equal(posts[0].guid);
@@ -74,12 +74,12 @@ describe('post', function() {
     });
 
     it('should return the proper count when adding posts', function(done) {
-        repo.add(posts.slice(0, 3), function(count) {
-            count.should.equal(3);
-            repo.add(posts.slice(0, 4), function(count2) {
-                count2.should.equal(1);
-                repo.add(posts.slice(0, 2), function(count3) {
-                    count3.should.equal(0);
+        repo.add(posts.slice(0, 3), function(added) {
+            added.length.should.equal(3);
+            repo.add(posts.slice(0, 4), function(added2) {
+                added2.length.should.equal(1);
+                repo.add(posts.slice(0, 2), function(added3) {
+                    added3.length.should.equal(0);
                     done();
                 });
             });
@@ -194,14 +194,14 @@ describe('post', function() {
     });
 
     it('should add posts fast', function(done) {
-        repo.add(large, function(count) {
-            count.should.equal(large.length);
+        repo.add(large, function(added) {
+            added.length.should.equal(large.length);
             done();
         });
     });
 
     it('should get posts fast', function(done) {
-        repo.add(large, function(count) {
+        repo.add(large, function(added) {
             var excluded = {
                     'http://www.mikealrogers.com/site.rss'    : true,
                     'http://www.curlybracecast.com/itunes.rss': true
