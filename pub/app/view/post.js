@@ -3,7 +3,14 @@ var backbone = require('../dep/backbone.js')
   , _        = require('../dep/underscore.js')
   , _s       = require('../dep/underscore.string.js')
   , datef    = require('../dep/date-format.js')
-  , mustache = require('../dep/mustache.js');
+  , mustache = require('../dep/mustache.js')
+
+  , flags = [ 
+        { color: 'none', next: 'red' }
+      , { color: 'red', next: 'blue' }
+      , { color: 'blue', next: 'gray' }
+      , { color: 'gray', next: 'none' }
+    ];
 
 module.exports = backbone.View.extend({
     tagName: 'li',
@@ -44,23 +51,12 @@ module.exports = backbone.View.extend({
     },
 
     updateFlag: function(el) {
-        var red  = el.hasClass('red')
-          , blue = el.hasClass('blue')
-          , flag = 'none';
+        var match = flags.filter(function(f) { return el.hasClass(f.color); })
+          , flag  = match.length === 1 ? match[0] : flags[0];
 
-        if (red) {
-            el.removeClass('red');
-            el.addClass('blue');
-            flag = 'blue';
-        } else if (blue) {
-            el.removeClass('blue');
-            flag = 'none';
-        } else {
-            el.addClass('red');
-            flag = 'red';
-        }
-
-        this.saveFlag(flag);
+        el.removeClass(flag.color);
+        el.addClass(flag.next);
+        this.saveFlag(flag.next);
     },
 
     saveFlag: function(flag) {

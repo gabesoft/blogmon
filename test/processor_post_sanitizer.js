@@ -26,16 +26,13 @@ describe('post_sanitizer', function() {
           , dom      = jsdom.jsdom(data)
           , window   = dom.createWindow()
           , doc      = $(window.document)
-          , test     = {
-                title: util.str.sprintf('%s (%s)', doc.find('#title').html(), file)
-              , input: doc.find('#input').html()
-              , expected: doc.find('#expected').html()
-            };
+          , title    = util.str.sprintf('%s (%s)', doc.find('#title').html(), file)
+          , input    = doc.find('#input').html()
+          , expected = remws(doc.find('#expected').html());
 
-        it.call(me, test.title, function(done) {
-            proc.clean(test.input, function(res) {
-                var actual   = remws(res)
-                  , expected = remws(test.expected);
+        it.call(me, title, function(done) {
+            proc.clean(input, function(res) {
+                var actual = remws(res);
                 actual.should.eql(expected);
                 done();
             });

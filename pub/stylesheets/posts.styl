@@ -10,10 +10,6 @@
 #posts-content
   margin-bottom 20px
 
-  .post-content
-    margin-top 5px
-    margin-bottom 10px
-
   #loader
     display none
     line-height 0
@@ -29,6 +25,10 @@
     animation-duration(1.0s)
     animation-iteration-count(infinite)
     animation-timing-function(linear)
+
+  .post-content
+    margin-top 5px
+    margin-bottom 10px
 
   .description
     a
@@ -58,10 +58,6 @@
 
   .collapsed.processing
     background color-gray
-
-    .left
-      .flag
-        display none
 
     .right
       .iconic
@@ -93,49 +89,68 @@
     border-top 0
     padding 10px
 
-  div.left
-    display block
-
-    span.flag
-      display inline-block
-      font-size icon-size
-      color color-star-inactive
-      padding-right 5px
-
-    span.flag.red
-      color color-orange-red
-
-    span.flag.blue
-      color color-light-blue2
-
-    h5
-      display inline
-
-  .title
-    a
+ .title
+    .link
       text-decoration none
       cursor normal
       color color-heading
       pointer-events none
 
-  h5.feed-title
-    color color-khaki
+  div.top-bar
+    width 100%
+    background color-star-inactive
+    margin-bottom 5px
 
-  .right
-    float right
-    display block
-
-    .date
+    .flag
+    .tool
+    .post-link
       display inline-block
-      margin-right 10px
-      color color-khaki
-
-    .iconic
-      color color-sienna
+      margin-right 5px
       font-size icon-size
-      text-decoration none
-
-    .iconic:hover
-      color color-khaki
+      padding 7px 2px 2px 10px
       cursor pointer
+    a
+      text-decoration none
+      color color-font
+      font-size icon-size
 
+    .left
+      display block
+      padding-left 3px
+
+      .feed-title
+        display inline-block
+        color color-khaki
+        line-height 1em
+        vertical-align top
+        padding-top 6px
+  
+      span.flag
+        display inline-block
+        font-size icon-size
+        color color-star-inactive
+
+      span.flag.red
+        color color-orange-red
+
+      span.flag.blue
+        color color-link
+      
+      span.flag.gray
+        color color-gray
+
+    .right
+      display block
+      float right
+
+      .date
+        display inline-block
+        color color-font
+        float right
+        line-height 1em
+        vertical-align top
+        padding-top 6px
+        margin-right 5px
+
+    .feed-title
+      display inline

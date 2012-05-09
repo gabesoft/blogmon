@@ -2,13 +2,17 @@ script(id='post-template', type='text/html')
   div.post-content.collapsed
     div.header
       div.header-inner
-        span.right
-          h5.date {{dateStr}}
-          a.unselectable.iconic(href='{{link}}', target='_blank', title='open blog in new window') 1
-        div.left
+        div.top-bar
+          div.right
+            h5.date {{dateStr}}
+          div.left
+            span.tool.unselectable.iconic =
+            a.post-link.unselectable.iconic(href='{{link}}', target='_blank', title='open blog in new window') 1
+            span.flag.unselectable.iconic s
+            h5.feed-title {{feedTitle}}
+        div
           img.loader(src='/images/ajax-loader6.gif')
-          span.flag.unselectable.iconic s
-          h5.feed-title {{feedTitle}}
         h5.title {{{title}}}
     div.description {{{description}}}
+    div.bottom-bar
 
