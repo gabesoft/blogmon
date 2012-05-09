@@ -89,21 +89,38 @@
     border-top 0
     padding 10px
 
- .title
-   a
-      text-decoration none
-      cursor normal
-      color color-heading
-      pointer-events none
+    span.content
+      display block
+      margin-bottom 5px
+
+  .title
+     a
+        text-decoration none
+        cursor normal
+        color color-heading
+        pointer-events none
+
+  div.bottom-bar
+    background color-star-inactive
+
+    .toggle-bottom
+      display inline-block
+      margin-right 5px
+      font-size icon-size
+      padding 6px 2px 2px 10px
+      cursor pointer
+
+    .left
+      display block
+      padding-left 3px
 
   div.top-bar
-    width 100%
     background color-star-inactive
     margin-bottom 5px
     padding-bottom 2px
 
     .flag
-    .tool
+    .toggle-top
     .post-link
       display inline-block
       margin-right 5px
@@ -152,6 +169,3 @@
         vertical-align top
         padding-top 7px
         margin-right 5px
-
-    .feed-title
-      display inline
