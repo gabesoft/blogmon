@@ -200,6 +200,9 @@ UserSettings.setPostSettings	lib/model/user_settings.js	/^UserSettings.prototype
 UserSettingsHelper	lib/app/user_settings_helper.js	/^function UserSettingsHelper (redis, userId) {$/;"	c
 UserSettingsHelper.populatePostSettings	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.populatePostSettings = function(posts, callback) {$/;"	m
 UserSettingsHelper.setPostSettings	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.setPostSettings = function(guid, settings, callback) {$/;"	m
+_forEach	pub/app/dep/mustache.js	/^  var _forEach = Array.prototype.forEach;$/;"	v
+_isArray	pub/app/dep/mustache.js	/^  var _isArray = Array.isArray;$/;"	v
+_trim	pub/app/dep/mustache.js	/^  var _trim = String.prototype.trim;$/;"	v
 a	test/support/js_indent.js	/^    function a() {                                                          \/\/$/;"	f
 a	test/support/js_indent.js	/^var a = 1                                                                   \/\/$/;"	v
 a	test/support/js_indent.js	/^var a = 1,                                                                  \/\/$/;"	v
@@ -242,11 +245,17 @@ del	./bin/../lib/app/auth.js	/^        del: function(res) { res.clearCookie(COOK
 e	test/support/js_indent.js	/^var e = function(z) {                                                       \/\/$/;"	f
 encrypt	./bin/../lib/model/user.js	/^var encrypt = function(text, salt) {$/;"	f	lineno:24	type:any function(any, string)
 encrypt	./bin/../lib/model/user.js	/^var encrypt = function(text, salt) {$/;"	v	lineno:24	type:any function(any, string)
+escapeMap."	pub/app/dep/mustache.js	/^    '"': '&quot;',$/;"	p
+escapeMap.&	pub/app/dep/mustache.js	/^    "&": "&amp;",$/;"	p
+escapeMap.'	pub/app/dep/mustache.js	/^    "'": '&#39;'$/;"	p
+escapeMap.<	pub/app/dep/mustache.js	/^    "<": "&lt;",$/;"	p
+escapeMap.>	pub/app/dep/mustache.js	/^    ">": "&gt;",$/;"	p
 exports	./bin/../lib/app/auth.js	/^module.exports = function(redis) {$/;"	f	lineno:1	type:Object function(any)
 exports	./bin/../lib/app/config.js	/^module.exports = function(app, express) {$/;"	f	lineno:1	type:void function(any, any)
 exports	./bin/../lib/app/routes.js	/^module.exports = function(app) {$/;"	f	lineno:1	type:void function(any)
 exports	./bin/../lib/app/routes_auth.js	/^module.exports = function(app, redis) {$/;"	f	lineno:1	type:void function(any, any)
 exports	./bin/../lib/app/routes_main.js	/^module.exports = function(app, redis) {$/;"	f	lineno:1	type:void function(any, any)
+exports.to_html	pub/app/dep/mustache.js	/^  exports.to_html = function (template, view, partials, send) {$/;"	f
 express	server.js	/^var express = require('express'),$/;"	v
 eyes	./bin/../lib/model/post.js	/^    eyes = require('eyes'),$/;"	v	lineno:5	type:any
 eyes	./bin/../lib/model/token.js	/^    eyes   = require('eyes'),$/;"	v	lineno:3	type:any
@@ -259,6 +268,8 @@ findBest	./bin/../lib/model/post.js	/^    var findBest = function(list, index) {
 flag	test/model_user_settings.js	/^      , flag   : 'blue'$/;"	p
 flash	./bin/../lib/app/config.js	/^        flash: function(req, res) {$/;"	f	lineno:46	type:any function(any, any)
 fn	test/support/js_indent.js	/^        var fn = function(w) {                                              \/\/$/;"	f
+forEach	pub/app/dep/mustache.js	/^    forEach = function (obj, callback, scope) {$/;"	f
+forEach	pub/app/dep/mustache.js	/^  var forEach;$/;"	v
 fun	test/support/js_indent.js	/^var fun = function(x, y) {                                                  \/\/$/;"	f
 function.handleAttributes	node_modules/feedparser/lib/feedparser.js	/^  function handleAttributes (attrs, el) {$/;"	f
 get	./bin/../lib/app/auth.js	/^        get: function(req) { return req.cookies[COOKIE]; },$/;"	f	lineno:9	type:any function(any)
@@ -291,6 +302,9 @@ http	node_modules/apricot/lib/apricot.js	/^var http = require('http'),$/;"	v
 init	./bin/../lib/app/auth.js	/^        init: function(req, res, user, next) {$/;"	f	lineno:83	type:void function(any, any, any, any)
 init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f	lineno:19	type:void function(any, any, any, any)
 initSession	test/app_auth.js	/^var initSession = function(callback) {$/;"	f
+isArray	pub/app/dep/mustache.js	/^    isArray = function (obj) {$/;"	f
+isArray	pub/app/dep/mustache.js	/^  var isArray;$/;"	v
+isWhitespace	pub/app/dep/mustache.js	/^  function isWhitespace(string) {$/;"	f
 l	test/support/js_indent.js	/^var l = list                                                                \/\/$/;"	v
 length	./bin/../lib/model/feed.js	/^Feed.prototype.length = function(callback) {$/;"	f	lineno:166	type:void function(any)
 login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {$/;"	f	lineno:56	type:void function(any, any, any, any)
@@ -347,6 +361,7 @@ should	test/model_token.js	/^var should  = require('should'),$/;"	v
 should	test/model_user.js	/^var should   = require('should')$/;"	v
 should	test/processor_pgfeed.js	/^var should    = require('should')$/;"	v
 should	test/processor_post_sanitizer.js	/^var should    = require('should')$/;"	v
+spaceRe	pub/app/dep/mustache.js	/^  var spaceRe = \/^\\s*$\/;$/;"	v
 state	test/model_user_settings.js	/^      , state  : 'open'$/;"	p
 store	./bin/../lib/app/redis_helper.js	/^    store: function(express) {$/;"	f	lineno:42	type:any function(any)
 subsKey	./bin/../lib/model/feed.js	/^var subsKey = function(key) {$/;"	f	lineno:19	type:string function(string)
@@ -367,6 +382,8 @@ tostr	./bin/../lib/model/token.js	/^var tostr = function(token) {$/;"	v	lineno:3
 trav	./bin/../lib/model/feed.js	/^    trav = require('traverse'),$/;"	v	lineno:5	type:any
 trav	./bin/../lib/model/post.js	/^    trav = require('traverse'),$/;"	v	lineno:4	type:any
 trav	./bin/../lib/model/token.js	/^    trav   = require('traverse'),$/;"	v	lineno:2	type:any
+trim	pub/app/dep/mustache.js	/^    trim = function (string) {$/;"	f
+trim	pub/app/dep/mustache.js	/^  var trim;$/;"	v
 unique	./bin/../lib/model/token.js	/^var unique = function() {$/;"	f	lineno:17	type:string function()
 unique	./bin/../lib/model/token.js	/^var unique = function() {$/;"	v	lineno:17	type:string function()
 unsubscribe	./bin/../lib/model/feed.js	/^Feed.prototype.unsubscribe = function(uri, callback) {$/;"	f	lineno:109	type:void function(any, any)

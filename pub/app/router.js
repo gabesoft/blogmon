@@ -2,12 +2,13 @@ var $ = require('jquery')
   , Backbone = require('./dep/backbone.js')
   , PostsTab = require('./view/posts_tab.js')
   , FeedsTab = require('./view/feeds_tab.js');
-      
+
 module.exports = Backbone.Router.extend({
+
     routes: {
-        ""      : "showPosts"
-      , "posts" : "showPosts"
-      , "feeds" : "showFeeds"
+        ""            : "showPosts"
+      , "posts/*path" : "showPosts"
+      , "feeds"       : "showFeeds"
     },
 
     // TODO: the tab views should have hide/show methods

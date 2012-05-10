@@ -1,5 +1,6 @@
 script(id='post-template', type='text/html')
   div.post-content.collapsed
+    a(name='{{anchorName}}')
     div.header
       div.header-inner
         div.top-bar
@@ -17,4 +18,4 @@ script(id='post-template', type='text/html')
       span.content {{{description}}}
       div.bottom-bar
         div.left
-          span.toggle-bottom.unselectable.iconic _
+          a.toggle-bottom.unselectable.iconic(href='{{anchorHref}}') _

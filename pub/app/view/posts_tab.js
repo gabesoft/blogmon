@@ -7,7 +7,7 @@ var backbone    = require('../dep/backbone.js')
   , PostView    = require('./post.js');
 
 module.exports = backbone.View.extend({
-    initialize: function() {
+    initialize: function(config) {
         var me = this;
 
         _.bindAll(me, 'append', 'onLoad', 'loadMore');
