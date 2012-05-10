@@ -3,19 +3,19 @@ script(id='post-template', type='text/html')
     a(name='{{anchorName}}')
     div.header
       div.header-inner
-        div.top-bar
+        div.bar.top-bar
           div.right
-            h5.date {{dateStr}}
+            h5.bar-text.date {{dateStr}}
           div.left
             a.toggle-top.unselectable.iconic(href='{{anchorHref}}') =
             a.post-link.unselectable.iconic(href='{{link}}', target='_blank', title='open blog in new window') 1
             span.flag.unselectable.iconic s
-            h5.feed-title {{feedTitle}}
+            h5.bar-text.feed-title {{feedTitle}}
         div
           img.loader(src='/images/ajax-loader6.gif')
         h5.title {{{title}}}
     div.description 
       span.content {{{description}}}
-      div.bottom-bar
+      div.bar.bottom-bar
         div.left
           a.toggle-bottom.unselectable.iconic(href='{{anchorHref}}') _

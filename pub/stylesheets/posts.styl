@@ -47,23 +47,15 @@
     .header
       border 1px solid color-sienna
       padding 10px 10px 10px 10px
-    .header:hover
-      border 1px solid color-khaki
     .header-inner
       padding 0
       line-clear()
     .description
-      display none
     .loader
       display none
 
   .collapsed.processing
-    background color-gray
-
-    .right
-      .iconic
-        visibility hidden
-
+    background color-font
     .loader
       display block
       float left
@@ -76,7 +68,6 @@
     .header-inner
       padding-bottom 10px
       line('bottom', 1px)
-
     .loader
       display none
 
@@ -101,84 +92,66 @@
         color color-heading
         pointer-events none
 
-  div.bottom-bar
-    background color-star-inactive
+  .flag:hover
+  .flag.none:hover
+  .toggle-top:hover
+  .toggle-bottom:hover
+  .post-link:hover
+    color color-khaki
+
+  .flag
+  .toggle-top
+  .toggle-bottom
+  .post-link
+    display inline-block
+    color color-font
+    text-decoration none
+    margin-right 5px
+    font-size icon-size
+    padding 7px 2px 2px 10px
+    cursor pointer
+
+  .flag
+    color color-star-inactive
+
+  .flag.red
+    color color-orange-red
+
+  .flag.blue
+    color color-link
+  
+  .flag.gray
+    color color-gray
+
+  .bar
+    background color-post-bar
     padding-bottom 2px
 
-    .toggle-bottom:hover
-      color color-khaki
-
-    .toggle-bottom
-      display inline-block
-      color color-font
-      text-decoration none
-      margin-right 5px
-      font-size icon-size
-      padding 7px 2px 2px 10px
-      cursor pointer
-
+  div.bottom-bar
     .left
       display block
       padding-left 3px
 
   div.top-bar
-    background color-star-inactive
     margin-bottom 5px
-    padding-bottom 2px
 
-    .flag:hover
-    .flag.none:hover
-    .toggle-top:hover
-    .post-link:hover
-      color color-khaki
-
-    .flag
-    .toggle-top
-    .post-link
+    .bar-text
       display inline-block
-      margin-right 5px
-      font-size icon-size
-      padding 7px 2px 2px 10px
-      cursor pointer
-    a
-      text-decoration none
-      color color-font
-      font-size icon-size
-
+      line-height 1em
+      vertical-align top
+      padding-top 7px
+  
     .left
       display block
       padding-left 3px
 
       .feed-title
-        display inline-block
         color color-khaki
-        line-height 1em
-        vertical-align top
-        padding-top 7px
   
-      span.flag
-        display inline-block
-        font-size icon-size
-        color color-star-inactive
-
-      span.flag.red
-        color color-orange-red
-
-      span.flag.blue
-        color color-link
-      
-      span.flag.gray
-        color color-gray
-
     .right
       display block
       float right
 
       .date
-        display inline-block
         color color-font
-        float right
-        line-height 1em
-        vertical-align top
-        padding-top 7px
         margin-right 5px
