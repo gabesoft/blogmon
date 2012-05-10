@@ -2,7 +2,7 @@
     "name"            : "blogmon"
   , "description"     : "blog reader"
   , "author"          : "gabriel <gabesoft@gmail.com>"
-  , "version"         : "0.0.1"
+  , "version"         : "0.0.1-1"
   , "private"         : true
 
   , "dependencies"    : {
@@ -39,7 +39,9 @@
   , "main" : "server.js"
 
   , "scripts" : {
-        "start" : "node app.js"
+        "start" : "server.js"
     }
+
+  , "subdomain" : "blogmon"
 }
 

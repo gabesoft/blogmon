@@ -1,10 +1,10 @@
-var express = require('express'),
-    app     = module.exports = express.createServer(),
-    port    = process.env.PORT || 3000,
-    bundle  = require('browserify'),
-    config  = require('./lib/app/config.js'),
-    routes  = require('./lib/app/routes.js'),
-    init    = require('./lib/app/initializer.js');
+var express = require('express')
+  , app     = module.exports = express.createServer()
+  , port    = process.env.PORT || 3000
+  , bundle  = require('browserify')
+  , config  = require('./lib/app/config.js')
+  , routes  = require('./lib/app/routes.js')
+  , init    = require('./lib/app/initializer.js');
 
 var bundle = bundle({
         entry: __dirname + '/pub/app/app.js'

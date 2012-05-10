@@ -50,9 +50,7 @@ module.exports = backbone.View.extend({
     onHeaderClick: function(e) {
         var el = $(e.target);
 
-        if (el.is('a') && el.hasClass('iconic')) {
-            return;
-        } else if (el.is('span') && el.hasClass('flag')) {
+        if (el.is('.flag')) {
             this.updateFlag(el);
         } else if (el.is('.toggle-top') || el.is('.feed-title')) {
             this.toggleDescription(el);
@@ -119,6 +117,8 @@ module.exports = backbone.View.extend({
 
     toggleDescription: function(el) {
         var me = this;
+
+        console.log('toggle');
 
         this.getDescription(function() {
             var content   = me.getContentEl()

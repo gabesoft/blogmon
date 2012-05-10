@@ -7,7 +7,7 @@ script(id='post-template', type='text/html')
           div.right
             h5.date {{dateStr}}
           div.left
-            span.toggle-top.unselectable.iconic =
+            a.toggle-top.unselectable.iconic(href='{{anchorHref}}') =
             a.post-link.unselectable.iconic(href='{{link}}', target='_blank', title='open blog in new window') 1
             span.flag.unselectable.iconic s
             h5.feed-title {{feedTitle}}
