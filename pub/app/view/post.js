@@ -118,8 +118,6 @@ module.exports = backbone.View.extend({
     toggleDescription: function(el) {
         var me = this;
 
-        console.log('toggle');
-
         this.getDescription(function() {
             var content   = me.getContentEl()
               , toggle    = me.$el.find('.toggle-top')
