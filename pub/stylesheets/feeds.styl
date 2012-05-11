@@ -1,45 +1,67 @@
 #feeds-edit
+  border 1px solid color-link
+  padding 10px
+
   input.search
+    font-family font-input
     padding 5px 10px 5px 10px
-    width 300px
-    margin 10px 0 10px 0
+    width 100%
+    margin 10px 0 5px 0
     font-size 16px
+
+  div.button
+    font-family font-input
 
   div.button.search.processing
     border 1px solid color-sienna
     color color-sienna
 
 #feeds-list
+  border 1px solid color-link
+  padding 10px
+  margin-bottom 40px
+  margin-top 5px
+
   li
-    margin 15px 0 10px 0
     padding 10px
-    border 1px solid color-link
+    line('bottom', 1px)
 
   li:last-child
-    margin-bottom 30px
+    line-clear()
 
-  input.view
-    display none
-
-  a.title
-    font-family font-heading
-
-  div.header
-    display block
-
-  div.text
-    display inline
-
-  div.delete
-    font-size icon-size
+  .iconic
     display inline-block
-    float right
+    cursor pointer
+    padding-top 10px
 
-  div.delete:hover
+  .delete
+    font-size icon-size-large
+    padding-right 2px
+    float right
+    color color-input-light
+
+  .delete:hover
     color color-red
 
-  h4.title
+  .visibility
+    font-size icon-size
+    padding-right 10px
+    padding-left 10px
+    color color-light-green
+
+  .visibility.unchecked
+    color color-input-light
+
+  .text
     display inline
+
+  .title
+    display inline
+    text-decoration none
+    color color-font
+
+  .title:hover
+    color color-link
 
   h4.author
     padding-right 10px
@@ -47,8 +69,8 @@
     color color-wheat
 
   h5.description
-    display inline-block
-    color color-font
+    display none
 
   h5.description.error
+    display inline-block
     color color-red

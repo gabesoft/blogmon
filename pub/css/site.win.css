@@ -249,7 +249,7 @@ h3::-webkit-selection{color:#000;background:#c6c6c6}
 h4::-webkit-selection{color:#000;background:#c6c6c6}
 h5::-webkit-selection{color:#000;background:#c6c6c6}
 .tabs{padding:0;float:left}
-.tabs a{display:inline-block;text-decoration:none;border:1px solid #000;color:#c6c6c6;padding:5px 20px;margin:3px}
+.tabs a{display:inline-block;text-decoration:none;font-family:'MuseoSans500',serif;border:1px solid #000;color:#c6c6c6;padding:5px 20px;margin:3px}
 .tabs a.active{color:#dbdbdb;background:none repeat scroll 0 0 rgba(0,0,0,0.30);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset}
 #tabs-nav-container{clear:both;display:table;text-align:center;width:100%}
 #tabs-nav{padding:20px 0 20px 0;margin:0 auto;display:inline;width:100%}
@@ -293,25 +293,28 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
 }@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
-}#feeds-edit input.search{padding:5px 10px 5px 10px;width:300px;margin:10px 0 10px 0;font-size:16px}
+}#feeds-edit input.search{font-family:'MuseoSans500',serif;padding:5px 10px 5px 10px;width:300px;margin:10px 0 10px 0;font-size:16px}
+#feeds-edit div.button{font-family:'MuseoSans500',serif}
 #feeds-edit div.button.search.processing{border:1px solid #ff8247;color:#ff8247}
 #feeds-list li{margin:15px 0 10px 0;padding:10px;border:1px solid #84bcde}
 #feeds-list li:last-child{margin-bottom:30px}
-#feeds-list input.view{display:none}
 #feeds-list a.title{font-family:'MuseoSans500',serif}
 #feeds-list div.header{display:block}
 #feeds-list div.text{display:inline}
-#feeds-list div.delete{font-size:26px;display:inline-block;float:right}
+#feeds-list div.delete{font-size:30px;padding:7px 2px 2px 6px;display:inline-block;float:right;color:#6e6e6e;background:none;}
 #feeds-list div.delete:hover{color:#f00}
-#feeds-list h4.title{display:inline}
+#feeds-list div.visible{display:inline-block;float:left;font-size:25px;padding:7px 10px 0 10px;color:#90ee90}
+#feeds-list div.visible.unchecked{color:#6e6e6e}
+#feeds-list div.visible.unchecked:hover{color:#0f0}
+#feeds-list .title{display:inline;text-decoration:none}
 #feeds-list h4.author{padding-right:10px;display:inline;color:#dadbb1}
-#feeds-list h5.description{display:inline-block;color:#c6c6c6}
-#feeds-list h5.description.error{color:#f00}
+#feeds-list h5.description{display:none;color:#c6c6c6}
+#feeds-list h5.description.error{display:inline-block;color:#f00}
 #search{border:1px solid #f0e68c;margin:5px 0 20px 0;padding:10px 10px 5px 10px;}
 #search div.header{margin:20px 0 10px 0;padding-bottom:10px;border-bottom:2px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07)}
-#search a.close{float:right;text-decoration:none;color:color-input}
+#search a.close{float:right;text-decoration:none;color:color-input;font-family:'MuseoSans500',serif}
 #search li{padding:10px 0 10px 0;border-bottom:1px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07);}
-#search li div.subscribe{margin-top:5px}
+#search li div.subscribe{margin-top:5px;font-family:'MuseoSans500',serif}
 #search li div.subscribe.accepted{color:#90ee90;border:1px solid #90ee90;cursor:default}
 #search li div.subscribe.accepted:hover{color:#90ee90;border:1px solid #90ee90}
 #search li div.subscribe:hover{color:#0f0;border:1px solid #0f0}
@@ -324,5 +327,3 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #message-banner.active.warn{color:#f0e68c;border:1px solid #f0e68c}
 #message-banner.active.error{color:#f00;border:1px solid #f00}
 #loader{-webkit-transform-origin:27px -1px;-moz-transform-origin:27px -1px;-o-transform-origin:27px -1px;-ms-transform-origin:27px -1px;transform-origin:27px -1px}
-#feeds-list div.delete{border:0;background:none}
-#feeds-list div.delete:hover{border:0}

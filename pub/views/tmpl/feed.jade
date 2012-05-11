@@ -1,7 +1,7 @@
 script(id='feed-template', type='text/html')
-  input.view(type='checkbox', checked)
   div.header
-    div.button.unselectable.delete.iconic(title='unsubscribe') x
+    div.unselectable.delete.iconic(title='unsubscribe') X
+    div.unselectable.visibility.iconic(title='toggle feed visibility') y
     div.text
       h4.title
         a.title(href='{{link}}') {{title}}

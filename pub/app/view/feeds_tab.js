@@ -87,6 +87,8 @@ module.exports = backbone.View.extend({
     }, 
 
     search: function(e) {
+        if (this.input.val() === '') { return; }
+
         var me = this;
 
         me.showSearching();

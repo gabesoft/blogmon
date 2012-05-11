@@ -10,8 +10,8 @@ module.exports = backbone.View.extend({
     tagName: 'li',
 
     events: {
-        'click .delete' : 'remove',
-        'click .view'   : 'visibilityChange'
+        'click .delete'     : 'remove',
+        'click .visibility' : 'visibilityChange'
     },
 
     initialize: function(config) {
@@ -66,9 +66,19 @@ module.exports = backbone.View.extend({
         return this.$el.find('.description');
     },
 
+    getVisibilityEl: function() {
+        return this.$el.find('.visibility');
+    },
+
     visibilityChange: function(e) {
-        var visible = $(e.target).is(':checked');
-        console.log('vchange', visible, this.model.get('link'));
+        var el        = this.getVisibilityEl()
+          , cls       = 'unchecked'
+          , unchecked = el.hasClass(cls);
+        if (unchecked) {
+            el.removeClass(cls);
+        } else {
+            el.addClass(cls);
+        }
     },
 
     remove: function(e) {
