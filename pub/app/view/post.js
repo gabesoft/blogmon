@@ -4,10 +4,9 @@ var backbone = require('../dep/backbone.js')
   , _s       = require('../dep/underscore.string.js')
   , datef    = require('../dep/date-format.js')
   , mustache = require('../dep/mustache.js')
-
-  , flags = [ 
+  , flags    = [ 
         { color: 'none', next: 'red' }
-      , { color: 'red', next: 'blue' }
+      , { color: 'red',  next: 'blue' }
       , { color: 'blue', next: 'gray' }
       , { color: 'gray', next: 'none' }
     ];
@@ -30,7 +29,7 @@ module.exports = backbone.View.extend({
 
     anchor: function(guid, href) {
         return (href ? '#' : '') + 'posts/' + encodeURIComponent(guid);
-      },
+    },
 
     render: function() {
         var post = this.model.toJSON()
@@ -59,13 +58,16 @@ module.exports = backbone.View.extend({
 
     onFooterClick: function(e) {
         var el = $(e.target);
+
         if (el.is('.toggle-bottom')) {
             this.toggleDescription(el);
         }
     },
 
     updateFlag: function(el) {
-        var match = flags.filter(function(f) { return el.hasClass(f.color); })
+        var match = flags.filter(function(f) { 
+                return el.hasClass(f.color);
+            })
           , flag  = match.length === 1 ? match[0] : flags[0];
 
         el.removeClass(flag.color);
