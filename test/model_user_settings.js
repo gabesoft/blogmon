@@ -36,7 +36,7 @@ describe('user_settings', function() {
     it('should update post settings', function(done) {
         repo.setPostSettings(s1.guid, s1, function(c1) {
             repo.setPostSettings(s1.guid, s2, function(c2) {
-                repo.getPostSetting(s1.guid, function(settings) {
+                repo.getPostSettings(s1.guid, function(settings) {
                     settings.should.eql(s2);
                     done();
                 });
@@ -46,9 +46,10 @@ describe('user_settings', function() {
 
     it('should get post settings', function(done) {
         repo.setPostSettings(s1.guid, s1, function() {
-            repo.getPostSetting(s1.guid, function(settings) {
+            repo.getPostSettings(s1.guid, function(settings) {
                 should.exist(settings);
                 settings.should.eql(s1);
+                settings.visible.should.be.a('boolean');
                 done();
             });
         });

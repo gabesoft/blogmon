@@ -50,7 +50,7 @@ module.exports = backbone.View.extend({
         var el = $(e.target);
 
         if (el.is('.flag')) {
-            this.updateFlag(el);
+            this.setFlag(el);
         } else if (el.is('.toggle-top') || el.is('.feed-title')) {
             this.toggleDescription(el);
         }
@@ -64,7 +64,7 @@ module.exports = backbone.View.extend({
         }
     },
 
-    updateFlag: function(el) {
+    setFlag: function(el) {
         var match = flags.filter(function(f) { 
                 return el.hasClass(f.color);
             })
@@ -76,18 +76,7 @@ module.exports = backbone.View.extend({
     },
 
     saveFlag: function(flag) {
-        var data     = this.model.toJSON()
-          , settings = data.settings
-          , id       = encodeURIComponent(data.guid);
-
-        settings.flag = flag;
-        $.ajax({
-            url: _s.sprintf('/posts/%s/settings', id)
-          , data: {
-                settings: settings
-            }
-          , type: 'POST'
-        });
+        this.model.setFlag(flag);
     },
 
     getContentEl: function() {
@@ -95,21 +84,13 @@ module.exports = backbone.View.extend({
     },
 
     getDescription: function(callback) {
-        var me      = this
-          , cls     = 'processing'
-          , content = me.getContentEl()
-          , id      = encodeURIComponent(me.model.get('guid'))
-          , desc    = me.model.get('description');
+        var cls     = 'processing'
+          , content = this.getContentEl()
+          , desc    = this.model.get('description');
 
         if (desc === null) {
             content.addClass(cls);
-            $.ajax({
-                url: _s.sprintf('/posts/%s/description', id)
-              , type: 'GET'
-            }).done(function(desc) {
-                me.model.set('description', desc);
-                callback();
-            }).always(function() {
+            this.model.getDescription(callback, function() {
                 content.removeClass(cls);
             });
         } else {

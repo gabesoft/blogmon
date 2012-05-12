@@ -1,6 +1,7 @@
 var backbone = require('../dep/backbone.js')
   , $        = require('jquery')
   , _        = require('../dep/underscore.js')
+  , _s       = require('../dep/underscore.string.js')
   , mustache = require('../dep/mustache.js');
 
 require('../dep/jquery.color.js');
@@ -11,7 +12,7 @@ module.exports = backbone.View.extend({
 
     events: {
         'click .delete'      : 'remove'
-      , 'click .item-vis'    : 'toggleVisibility'
+      , 'click .item-vis'    : 'toggleVisible'
     },
 
     initialize: function(config) {
@@ -20,7 +21,7 @@ module.exports = backbone.View.extend({
         _.bindAll(this
           , 'remove'
           , 'render'
-          , 'toggleVisibility'
+          , 'toggleVisible'
         );
 
         this.model.on('change', this.render);
@@ -36,6 +37,10 @@ module.exports = backbone.View.extend({
         html             = this.template(feed);
 
         this.$el.html(html);
+
+        if (feed.settings) {
+            this.setVisible(feed.settings.visible, false);
+        }
 
         if (hasError) {
             this.getDescriptionEl().addClass('error');
@@ -66,13 +71,10 @@ module.exports = backbone.View.extend({
         return this.$el.find('.description');
     },
 
-    getVisibilityEl: function() {
-        return this.$el.find('.vis');
-    },
-
-    setVisible: function(val) {
-        var el  = this.getVisibilityEl()
+    setVisible: function(val, persist) {
+        var el  = this.$el.find('.vis')
           , cls = 'unchecked';
+
 
         if (val) {
             el.removeClass(cls);
@@ -80,19 +82,19 @@ module.exports = backbone.View.extend({
             el.addClass(cls);
         }
 
-        this.saveVisibility(val);
+        if (persist) {
+            this.model.setVisible(val);
+        }
     },
 
     getVisible: function() {
-        return !this.getVisibilityEl().hasClass('unchecked');
+        return !this.$el
+           .find('.vis')
+           .hasClass('unchecked');
     },
 
-    toggleVisibility: function() {
-        this.setVisible(!this.getVisible());
-    },
-
-    saveVisibility: function(val) {
-        console.log('visible', val);
+    toggleVisible: function() {
+        this.setVisible(!this.getVisible(), true);
     },
 
     remove: function(e) {

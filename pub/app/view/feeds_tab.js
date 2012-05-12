@@ -72,6 +72,7 @@ module.exports = backbone.View.extend({
           , title = this.$el.find('li.list-header');
         item.view = feed;
         addfn(feed.render().el);
+        this.updateVisibility();
     },
 
     prepend: function(item) {
@@ -198,7 +199,7 @@ module.exports = backbone.View.extend({
         }
 
         this.model.each(function(m) {
-            m.view.setVisible(!visible);
+            m.view.setVisible(!visible, true);
         });
     },
 

@@ -194,9 +194,12 @@ User.get	lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"
 User.subscribe	lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	m
 User.unsubscribe	lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	m
 UserSettings	lib/model/user_settings.js	/^function UserSettings (redis, userId) {$/;"	c
+UserSettings.get	lib/model/user_settings.js	/^UserSettings.prototype.get = function(type, id, callback) {$/;"	m
 UserSettings.getAllPostSettings	lib/model/user_settings.js	/^UserSettings.prototype.getAllPostSettings = function(callback) {$/;"	m
+UserSettings.getKey	lib/model/user_settings.js	/^    this.getKey = function(type) {$/;"	m
 UserSettings.getPostSetting	lib/model/user_settings.js	/^UserSettings.prototype.getPostSetting = function(guid, callback) {$/;"	m
-UserSettings.setPostSettings	lib/model/user_settings.js	/^UserSettings.prototype.setPostSettings = function(guid, setting, callback) {$/;"	m
+UserSettings.set	lib/model/user_settings.js	/^UserSettings.prototype.set = function(type, id, settings, callback) {$/;"	m
+UserSettings.setPostSettings	lib/model/user_settings.js	/^UserSettings.prototype.setPostSettings = function(guid, settings, callback) {$/;"	m
 UserSettingsHelper	lib/app/user_settings_helper.js	/^function UserSettingsHelper (redis, userId) {$/;"	c
 UserSettingsHelper.populatePostSettings	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.populatePostSettings = function(posts, callback) {$/;"	m
 UserSettingsHelper.setPostSettings	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.setPostSettings = function(guid, settings, callback) {$/;"	m
@@ -216,6 +219,7 @@ authenticate	./bin/../lib/model/user.js	/^User.prototype.authenticate = function
 b	test/support/js_indent.js	/^        var b = 9,                                                          \/\/$/;"	v
 backbone	pub/app/model/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/model/feeds.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
+backbone	pub/app/model/post.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/model/posts.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/model/searchitems.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v
 backbone	pub/app/view/feed.js	/^var backbone = require('..\/dep\/backbone.js')$/;"	v

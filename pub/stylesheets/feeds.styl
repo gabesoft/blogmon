@@ -1,12 +1,12 @@
 #feeds-edit
   border 1px solid color-link
-  padding 10px
+  padding 10px 20px 20px 20px
 
   input.search
     font-family font-input
-    padding 5px 10px 5px 10px
+    padding 5px
     width 100%
-    margin 10px 0 5px 0
+    margin 10px 0 10px 0
     font-size 16px
 
   div.button
@@ -31,6 +31,8 @@
 
   li.list-header
     line('bottom', 2px)
+    margin-bottom 30px
+
     .header
       display inline-block
       color color-heading
@@ -51,7 +53,7 @@
 
   .vis
     font-size icon-size
-    padding-right 10px
+    padding-right 20px
     padding-left 10px
     color color-light-green
 
@@ -61,6 +63,17 @@
   .vis.partial
     color color-gray-green
 
+  .header-vis
+    padding-right 40px
+
+  .feed-link
+    font-size icon-size
+    text-decoration none
+    color color-font
+
+  .feed-link:hover
+    color color-link
+
   .text
     display inline
 
@@ -69,17 +82,14 @@
     text-decoration none
     color color-font
 
-  .title:hover
-    color color-link
-
-  h4.author
+  .author
     padding-right 10px
     display inline
     color color-wheat
 
-  h5.description
+  .description
     display none
 
-  h5.description.error
+  .description.error
     display inline-block
     color color-red
