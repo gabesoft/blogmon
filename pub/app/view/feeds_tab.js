@@ -8,9 +8,11 @@ var backbone   = require('../dep/backbone.js')
 
 module.exports = backbone.View.extend({
     events: {
-        "keypress #feeds-edit > input[type='text']" : 'searchOnEnter'
-      , "click #feeds-edit .button.search"          : 'search'
-      , "click #search .button.close"               : 'hideSearch'
+        'keypress #feeds-edit > input[type="text"]' : 'searchOnEnter'
+      , 'click #feeds-edit .button.search'          : 'search'
+      , 'click #search .button.close'               : 'hideSearch'
+      , 'click .header-vis'                         : 'toggleVisibility'
+      , 'click .item-vis'                           : 'updateVisibility'
     },
 
     initialize: function() {
@@ -20,6 +22,8 @@ module.exports = backbone.View.extend({
           , 'searchOnEnter'
           , 'subscribe'
           , 'subscribeFromSearch'
+          , 'toggleVisibility'
+          , 'updateVisibility'
           , 'search'
           , 'hideSearch'
           , 'render'
@@ -51,13 +55,6 @@ module.exports = backbone.View.extend({
         return this;
     },
 
-    addItem: function(item, addfn) {
-        var feed = new FeedView({ model: item })
-          , list = this.getFeedsEl();
-        item.view = feed;
-        list[addfn](feed.render().el);
-    },
-
     getFeedsEl: function() {
         return this.$el.find('#feeds-list');
     },
@@ -70,12 +67,21 @@ module.exports = backbone.View.extend({
         return this.$el.find('.button.search');
     },
 
+    addItem: function(item, addfn) {
+        var feed  = new FeedView({ model: item })
+          , title = this.$el.find('li.list-header');
+        item.view = feed;
+        addfn(feed.render().el);
+    },
+
     prepend: function(item) {
-        this.addItem(item, 'prepend');
+        var title = this.$el.find('li.list-header');
+        this.addItem(item, _.bind(title.after, title));
     },
 
     append: function(item) {
-        this.addItem(item, 'append');
+        var list = this.getFeedsEl();
+        this.addItem(item, _.bind(list.append, list));
     },
 
     searchOnEnter: function(e, keyCode) {
@@ -176,5 +182,43 @@ module.exports = backbone.View.extend({
             });
         }
         this.input.val('');
+    }, 
+
+    toggleVisibility: function() {
+        var el      = this.$el.find('.header-vis')
+          , ucls    = 'unchecked'
+          , pcls    = 'partial'
+          , visible = !el.hasClass(ucls);
+
+        el.removeClass(pcls);
+        if (visible) {
+            el.addClass(ucls);
+        } else {
+            el.removeClass(ucls);
+        }
+
+        this.model.each(function(m) {
+            m.view.setVisible(!visible);
+        });
+    },
+
+    updateVisibility: function() {
+        var el      = this.$el.find('.header-vis')
+          , any     = this.$el.find('.item-vis.unchecked')
+          , all     = this.$el.find('.item-vis')
+          , on      = any.length === 0
+          , off     = any.length === all.length
+          , partial = !on && !off
+          , pcls    = 'partial'
+          , ucls    = 'unchecked';
+
+        el.removeClass(pcls);
+        el.removeClass(ucls);
+
+        if (partial) {
+            el.addClass(pcls);
+        } else if (off) {
+            el.addClass(ucls);
+        }
     }
 });

@@ -10,8 +10,8 @@ module.exports = backbone.View.extend({
     tagName: 'li',
 
     events: {
-        'click .delete'     : 'remove',
-        'click .visibility' : 'visibilityChange'
+        'click .delete'      : 'remove'
+      , 'click .item-vis'    : 'toggleVisibility'
     },
 
     initialize: function(config) {
@@ -20,7 +20,7 @@ module.exports = backbone.View.extend({
         _.bindAll(this
           , 'remove'
           , 'render'
-          , 'visibilityChange'
+          , 'toggleVisibility'
         );
 
         this.model.on('change', this.render);
@@ -67,18 +67,32 @@ module.exports = backbone.View.extend({
     },
 
     getVisibilityEl: function() {
-        return this.$el.find('.visibility');
+        return this.$el.find('.vis');
     },
 
-    visibilityChange: function(e) {
-        var el        = this.getVisibilityEl()
-          , cls       = 'unchecked'
-          , unchecked = el.hasClass(cls);
-        if (unchecked) {
+    setVisible: function(val) {
+        var el  = this.getVisibilityEl()
+          , cls = 'unchecked';
+
+        if (val) {
             el.removeClass(cls);
         } else {
             el.addClass(cls);
         }
+
+        this.saveVisibility(val);
+    },
+
+    getVisible: function() {
+        return !this.getVisibilityEl().hasClass('unchecked');
+    },
+
+    toggleVisibility: function() {
+        this.setVisible(!this.getVisible());
+    },
+
+    saveVisibility: function(val) {
+        console.log('visible', val);
     },
 
     remove: function(e) {

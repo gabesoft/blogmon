@@ -293,22 +293,26 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
 }@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
-}#feeds-edit input.search{font-family:'MuseoSans500',serif;padding:5px 10px 5px 10px;width:300px;margin:10px 0 10px 0;font-size:16px}
+}#feeds-edit{border:1px solid #84bcde;padding:10px;}
+#feeds-edit input.search{font-family:'MuseoSans500',serif;padding:5px 10px 5px 10px;width:100%;margin:10px 0 5px 0;font-size:16px}
 #feeds-edit div.button{font-family:'MuseoSans500',serif}
 #feeds-edit div.button.search.processing{border:1px solid #ff8247;color:#ff8247}
-#feeds-list li{margin:15px 0 10px 0;padding:10px;border:1px solid #84bcde}
-#feeds-list li:last-child{margin-bottom:30px}
-#feeds-list a.title{font-family:'MuseoSans500',serif}
-#feeds-list div.header{display:block}
-#feeds-list div.text{display:inline}
-#feeds-list div.delete{font-size:30px;padding:7px 2px 2px 6px;display:inline-block;float:right;color:#6e6e6e;background:none;}
-#feeds-list div.delete:hover{color:#f00}
-#feeds-list div.visible{display:inline-block;float:left;font-size:25px;padding:7px 10px 0 10px;color:#90ee90}
-#feeds-list div.visible.unchecked{color:#6e6e6e}
-#feeds-list div.visible.unchecked:hover{color:#0f0}
-#feeds-list .title{display:inline;text-decoration:none}
+#feeds-list{border:1px solid #84bcde;padding:10px;margin-bottom:40px;margin-top:5px;}
+#feeds-list li{padding:10px;border-bottom:1px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07)}
+#feeds-list li:last-child{border:0;-webkit-box-shadow:0 0 0 0;-moz-box-shadow:0 0 0 0;box-shadow:0 0 0 0}
+#feeds-list li.list-header{border-bottom:2px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07);}
+#feeds-list li.list-header .header{display:inline-block;color:#fff}
+#feeds-list .iconic{display:inline-block;cursor:pointer;padding-top:10px}
+#feeds-list .delete{font-size:30px;padding-right:2px;float:right;color:#6e6e6e}
+#feeds-list .delete:hover{color:#f00}
+#feeds-list .vis{font-size:26px;padding-right:10px;padding-left:10px;color:#90ee90}
+#feeds-list .vis.unchecked{color:#6e6e6e}
+#feeds-list .vis.partial{color:#638b63}
+#feeds-list .text{display:inline}
+#feeds-list .title{display:inline;text-decoration:none;color:#c6c6c6}
+#feeds-list .title:hover{color:#84bcde}
 #feeds-list h4.author{padding-right:10px;display:inline;color:#dadbb1}
-#feeds-list h5.description{display:none;color:#c6c6c6}
+#feeds-list h5.description{display:none}
 #feeds-list h5.description.error{display:inline-block;color:#f00}
 #search{border:1px solid #f0e68c;margin:5px 0 20px 0;padding:10px 10px 5px 10px;}
 #search div.header{margin:20px 0 10px 0;padding-bottom:10px;border-bottom:2px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07)}

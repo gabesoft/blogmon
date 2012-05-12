@@ -29,6 +29,12 @@
   li:last-child
     line-clear()
 
+  li.list-header
+    line('bottom', 2px)
+    .header
+      display inline-block
+      color color-heading
+
   .iconic
     display inline-block
     cursor pointer
@@ -43,14 +49,17 @@
   .delete:hover
     color color-red
 
-  .visibility
+  .vis
     font-size icon-size
     padding-right 10px
     padding-left 10px
     color color-light-green
 
-  .visibility.unchecked
+  .vis.unchecked
     color color-input-light
+
+  .vis.partial
+    color color-gray-green
 
   .text
     display inline
