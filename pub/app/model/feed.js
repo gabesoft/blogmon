@@ -23,7 +23,7 @@ module.exports = backbone.Model.extend({
     }
 
   , setVisible: function(visible) {
-        var settings = this.get('settings')
+        var settings = this.get('settings') || {}
           , id       = this.get('id');
 
         settings.visible = visible;

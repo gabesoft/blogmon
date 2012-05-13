@@ -96,34 +96,29 @@ module.exports = backbone.View.extend({
     search: function(e) {
         if (this.input.val() === '') { return; }
 
-        var me = this;
+        var me    = this
+          , query = me.input.val()
+          , done  = function(data) {
+                _.each(data, function(r) {
+                    r.subscribed = !!me.model.get(r.id);
+                });
+                if (data.length === 0) {
+                    me.message.render('Could not find a blog matching your input', 'warn');
+                } else if (data.length === 1) {
+                    me.message.hide();
+                    me.hideSearch();
+                    me.subscribe(data[0]);
+                } else {
+                    me.message.hide();
+                    me.showSearch(data);
+                }
+            }
+          , always = function() {
+                me.hideSearching();
+            };
 
         me.showSearching();
-        $.ajax({
-            url: '/feeds/search'
-          , data: {
-                searchText: this.input.val()
-            }
-          , type: 'GET'
-        }).done(function(data, success, res) {
-            _.each(data, function(r) {
-                r.subscribed = !!me.model.get(r.id);
-            });
-            if (data.length === 0) {
-                me.message.render('Could not find a blog matching your input', 'warn');
-            } else if (data.length === 1) {
-                me.message.hide();
-                me.hideSearch();
-                me.subscribe(data[0]);
-            } else {
-                me.message.hide();
-                me.showSearch(data);
-            }
-        }).fail(function() {
-            console.log('search fail', arguments);
-        }).always(function() {
-            me.hideSearching();
-        });
+        me.searchView.model.search(query, done, always);
     },
 
     showSearching: function() {
@@ -199,6 +194,7 @@ module.exports = backbone.View.extend({
         }
 
         this.model.each(function(m) {
+            console.log(m.get('title'));
             m.view.setVisible(!visible, true);
         });
     },

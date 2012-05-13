@@ -209,7 +209,7 @@ describe('post', function() {
               , filtered = large.filter(function(post) {
                     return !excluded[post.feedUri];
                 })
-              , hash = util.toHash(filtered, function(post) {
+              , hash = util.toMap(filtered, function(post) {
                     return post.feedUri;
                 })
               , urls = Object.keys(hash);
