@@ -71,7 +71,7 @@ module.exports = backbone.View.extend({
     },
 
     addItem: function(item, addfn) {
-        var feed  = new FeedView({ model: item })
+        var feed  = new FeedView({ model: item, parent: this })
           , title = this.$el.find('li.list-header');
         item.view = feed;
         addfn(feed.render().el);
@@ -79,14 +79,20 @@ module.exports = backbone.View.extend({
         this.updateHeader();
     },
 
+    prependEl: function(el) {
+        this.$el.find('li.list-header').after(el);
+    },
+
+    appendEl: function(el) {
+        this.getFeedsEl().append(el);
+    },
+
     prepend: function(item) {
-        var title = this.$el.find('li.list-header');
-        this.addItem(item, _.bind(title.after, title));
+        this.addItem(item, _.bind(this.prependEl, this));
     },
 
     append: function(item) {
-        var list = this.getFeedsEl();
-        this.addItem(item, _.bind(list.append, list));
+        this.addItem(item, _.bind(this.appendEl, this));
     },
 
     searchOnEnter: function(e, keyCode) {

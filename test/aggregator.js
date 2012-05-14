@@ -53,4 +53,12 @@ describe('SLOW - aggregator', function() {
             });
         });
     });
+
+    it('should ensure absolute feed links', function(done) {
+        var uri = 'http://blog.nodejitsu.com/feed.xml';
+        agg.runNow(uri, function(record, saved) {
+            record.link.should.match(/^http:\/\//);
+            done();
+        });
+    });
 });

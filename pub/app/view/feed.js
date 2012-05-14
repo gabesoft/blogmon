@@ -17,6 +17,7 @@ module.exports = backbone.View.extend({
 
     initialize: function(config) {
         this.template = mustache.compile($('#feed-template').html());
+        this.parent   = config.parent;
 
         _.bindAll(this
           , 'remove'
@@ -54,7 +55,7 @@ module.exports = backbone.View.extend({
           , inview = $.inviewport(this.$el, { threshold: 0 });
 
         if (!inview) {
-            el.parent().prepend(el);
+            this.parent.prependEl(el);
         }
 
         el.animate({
