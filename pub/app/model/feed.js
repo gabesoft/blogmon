@@ -7,9 +7,9 @@ module.exports = backbone.Model.extend({
     url: function(method) {
         switch(method) {
             case 'delete':
-                return '/feeds/' + this.id;
+                return '/feeds/' + encodeURIComponent(this.id);
             case 'update':
-                return '/feeds/' + this.id;
+                return '/feeds/' + encodeURIComponent(this.id);
             default: 
                 return '/feeds';
         }
@@ -24,7 +24,7 @@ module.exports = backbone.Model.extend({
 
   , setVisible: function(visible) {
         var settings = this.get('settings') || {}
-          , id       = this.get('id');
+          , id       = encodeURIComponent(this.get('id'));
 
         settings.visible = visible;
 

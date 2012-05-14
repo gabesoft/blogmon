@@ -201,8 +201,9 @@ UserSettings.getPostSetting	lib/model/user_settings.js	/^UserSettings.prototype.
 UserSettings.set	lib/model/user_settings.js	/^UserSettings.prototype.set = function(type, id, settings, callback) {$/;"	m
 UserSettings.setPostSettings	lib/model/user_settings.js	/^UserSettings.prototype.setPostSettings = function(guid, settings, callback) {$/;"	m
 UserSettingsHelper	lib/app/user_settings_helper.js	/^function UserSettingsHelper (redis, userId) {$/;"	c
-UserSettingsHelper.populatePostSettings	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.populatePostSettings = function(posts, callback) {$/;"	m
-UserSettingsHelper.setPostSettings	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.setPostSettings = function(guid, settings, callback) {$/;"	m
+UserSettingsHelper.getMap	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.getMap = function(type, ids, callback) {$/;"	m
+UserSettingsHelper.populate	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.populate = function(type, items, callback) {$/;"	m
+UserSettingsHelper.set	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.set = function(type, id, settings, callback) {$/;"	m
 _forEach	pub/app/dep/mustache.js	/^  var _forEach = Array.prototype.forEach;$/;"	v
 _isArray	pub/app/dep/mustache.js	/^  var _isArray = Array.isArray;$/;"	v
 _trim	pub/app/dep/mustache.js	/^  var _trim = String.prototype.trim;$/;"	v

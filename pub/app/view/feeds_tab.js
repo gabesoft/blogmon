@@ -1,6 +1,7 @@
 var backbone   = require('../dep/backbone.js')
   , $          = require('jquery')
   , _          = require('../dep/underscore.js')
+  , _s         = require('../dep/underscore.string.js')
   , Feeds      = require('../model/feeds.js')
   , FeedView   = require('./feed.js')
   , SearchView = require('./search_results.js')
@@ -24,6 +25,7 @@ module.exports = backbone.View.extend({
           , 'subscribeFromSearch'
           , 'toggleVisibility'
           , 'updateVisibility'
+          , 'updateHeader'
           , 'search'
           , 'hideSearch'
           , 'render'
@@ -34,6 +36,7 @@ module.exports = backbone.View.extend({
         me.input = me.$el.find('input.search');
         me.model = new Feeds();
         me.model.bind('add', me.prepend);
+        me.model.bind('remove', me.updateHeader);
         me.model.fetch({
             success: function() { 
                 me.model.each(me.append);
@@ -73,6 +76,7 @@ module.exports = backbone.View.extend({
         item.view = feed;
         addfn(feed.render().el);
         this.updateVisibility();
+        this.updateHeader();
     },
 
     prepend: function(item) {
@@ -217,5 +221,11 @@ module.exports = backbone.View.extend({
         } else if (off) {
             el.addClass(ucls);
         }
+    },
+
+    updateHeader: function() {
+        var header = this.$el.find('li.list-header h4.header')
+          , text   = _s.sprintf('Feeds (%s)', this.model.length);
+        header.text(text);
     }
 });
