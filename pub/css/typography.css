@@ -1,4 +1,5 @@
 body{background:none repeat scroll 0 0 color-background;font-family:font-main;color:color-font;line-height:1.2em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+code{font-family:font-code}
 h1,h2,h3,h4,h5,h6{color:color-heading;font-family:font-heading;font-weight:italic}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 h1{font-size:46px;line-height:50px;margin-bottom:14px}
