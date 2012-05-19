@@ -194,16 +194,17 @@ User.get	lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"
 User.subscribe	lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	m
 User.unsubscribe	lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	m
 UserSettings	lib/model/user_settings.js	/^function UserSettings (redis, userId) {$/;"	c
-UserSettings.get	lib/model/user_settings.js	/^UserSettings.prototype.get = function(type, id, callback) {$/;"	m
-UserSettings.getAllPostSettings	lib/model/user_settings.js	/^UserSettings.prototype.getAllPostSettings = function(callback) {$/;"	m
+UserSettings.get	lib/model/user_settings.js	/^UserSettings.prototype.get = function(type, id, name, callback) {$/;"	m
+UserSettings.getAll	lib/model/user_settings.js	/^UserSettings.prototype.getAll = function(type, callback) {$/;"	m
 UserSettings.getKey	lib/model/user_settings.js	/^    this.getKey = function(type) {$/;"	m
-UserSettings.getPostSetting	lib/model/user_settings.js	/^UserSettings.prototype.getPostSetting = function(guid, callback) {$/;"	m
-UserSettings.set	lib/model/user_settings.js	/^UserSettings.prototype.set = function(type, id, settings, callback) {$/;"	m
-UserSettings.setPostSettings	lib/model/user_settings.js	/^UserSettings.prototype.setPostSettings = function(guid, settings, callback) {$/;"	m
+UserSettings.set	lib/model/user_settings.js	/^UserSettings.prototype.set = function(config, callback) {$/;"	m
 UserSettingsHelper	lib/app/user_settings_helper.js	/^function UserSettingsHelper (redis, userId) {$/;"	c
 UserSettingsHelper.getMap	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.getMap = function(type, ids, callback) {$/;"	m
 UserSettingsHelper.populate	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.populate = function(type, items, callback) {$/;"	m
 UserSettingsHelper.set	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.set = function(type, id, settings, callback) {$/;"	m
+UserSettingsHelper.var.config.id	lib/app/user_settings_helper.js	/^          , id: id$/;"	p
+UserSettingsHelper.var.config.type	lib/app/user_settings_helper.js	/^            type: type$/;"	p
+UserSettingsHelper.var.config.value	lib/app/user_settings_helper.js	/^          , value: settings$/;"	p
 _forEach	pub/app/dep/mustache.js	/^  var _forEach = Array.prototype.forEach;$/;"	v
 _isArray	pub/app/dep/mustache.js	/^  var _isArray = Array.isArray;$/;"	v
 _trim	pub/app/dep/mustache.js	/^  var _trim = String.prototype.trim;$/;"	v
@@ -304,6 +305,8 @@ hello.foo	test/support/js_indent.js	/^    var foo = function(arg2) {            
 hello.foo.bar	test/support/js_indent.js	/^        var bar = function(arg3) {                                          \/\/$/;"	f
 hola	test/support/js_indent.js	/^function hola (arg) {                                                       \/\/$/;"	f
 http	node_modules/apricot/lib/apricot.js	/^var http = require('http'),$/;"	v
+id	test/model_user_settings.js	/^      , id    : s1.guid$/;"	p
+id	test/model_user_settings.js	/^      , id    : s2.guid$/;"	p
 init	./bin/../lib/app/auth.js	/^        init: function(req, res, user, next) {$/;"	f	lineno:83	type:void function(any, any, any, any)
 init	./bin/../lib/app/auth.js	/^    var init = function(req, res, user, token) {$/;"	f	lineno:19	type:void function(any, any, any, any)
 initSession	test/app_auth.js	/^var initSession = function(callback) {$/;"	f
@@ -333,7 +336,7 @@ module.exports.sortBy	lib/util.js	/^module.exports.sortBy = function(obj, fieldO
 module.exports.store	lib/app/redis_helper.js	/^    store: function(express) {$/;"	m
 module.exports.str.isBlank	lib/util.js	/^    isBlank: _str.isBlank$/;"	p
 module.exports.take	lib/util.js	/^module.exports.take = function(obj, count) {$/;"	f
-module.exports.toHash	lib/util.js	/^module.exports.toHash = function(arr, toStrFn, toValFn, addFn) {$/;"	f
+module.exports.toMap	lib/util.js	/^module.exports.toMap = function(arr, toStrFn, toValFn, addFn) {$/;"	f
 module.exports.uniqInt	lib/util.js	/^module.exports.uniqInt = function() {$/;"	f
 module.exports.uniqStr	lib/util.js	/^module.exports.uniqStr = function() {$/;"	f
 module.exports.var.succ	lib/app/routes_main.js	/^            var succ = function() { next(); }$/;"	f
@@ -356,6 +359,10 @@ render	./bin/../pub/app/view/feeds.js	/^        render: function() {$/;"	f	linen
 req.session.destroy	test/app_auth.js	/^        destroy: initSession$/;"	p
 req.session.user.settings.populatePostSettings	lib/app/auth.js	/^                populatePostSettings: function(posts, callback) {$/;"	m
 req.session.user.settings.setPostSettings	lib/app/auth.js	/^                setPostSettings: function(guid, settings, callback) {$/;"	m
+res.id	lib/model/user_settings.js	/^              , id   : null$/;"	p
+res.name	lib/model/user_settings.js	/^              , name : 'settings' $/;"	p
+res.type	lib/model/user_settings.js	/^                type : null$/;"	p
+res.value	lib/model/user_settings.js	/^              , value: null$/;"	p
 sax	node_modules/feedparser/lib/feedparser.js	/^var sax = require('sax')$/;"	v
 session	./bin/../lib/app/config.js	/^        session: function(req, res) {$/;"	f	lineno:43	type:any function(any, any)
 setData	./bin/../lib/model/feed.js	/^Feed.prototype.setData = function(uri, data, callback) {$/;"	f	lineno:130	type:void function(any, any, any)
@@ -389,6 +396,7 @@ trav	./bin/../lib/model/post.js	/^    trav = require('traverse'),$/;"	v	lineno:4
 trav	./bin/../lib/model/token.js	/^    trav   = require('traverse'),$/;"	v	lineno:2	type:any
 trim	pub/app/dep/mustache.js	/^    trim = function (string) {$/;"	f
 trim	pub/app/dep/mustache.js	/^  var trim;$/;"	v
+type	test/model_user_settings.js	/^        type  : 'post'$/;"	p
 unique	./bin/../lib/model/token.js	/^var unique = function() {$/;"	f	lineno:17	type:string function()
 unique	./bin/../lib/model/token.js	/^var unique = function() {$/;"	v	lineno:17	type:string function()
 unsubscribe	./bin/../lib/model/feed.js	/^Feed.prototype.unsubscribe = function(uri, callback) {$/;"	f	lineno:109	type:void function(any, any)
@@ -408,7 +416,6 @@ util	./bin/../lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v	li
 util	./bin/../lib/model/user.js	/^    util   = require('..\/util.js'),$/;"	v	lineno:2	type:any
 util	lib/feed_finder.js	/^var util    = require('.\/util.js')$/;"	v
 util	lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v
-util	lib/model/user_settings.js	/^var util = require('..\/util.js')$/;"	v
 util	test/support/data_post_large.js	/^var util = require('..\/..\/lib\/util.js');$/;"	v
 var.sandbox.document	node_modules/apricot/lib/apricot.js	/^        document:this.document, $/;"	p
 verify	./bin/../lib/model/token.js	/^Token.prototype.verify = function(token, callback) {$/;"	f	lineno:71	type:void function(any, any)

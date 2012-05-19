@@ -173,8 +173,8 @@ html body * span.clear,html body * div.clear,html body * li.clear,html body * dd
 .clearfix{display:inline-block}
 * html .clearfix{height:1%}
 .clearfix{display:block}
-body{background:none repeat scroll 0 0 #2f2f2f;font-family:'Courier New','Courier',monospace;color:#c6c6c6;line-height:1.2em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
-code{font-family:'Monaco',monospace}
+body{background:none repeat scroll 0 0 #2f2f2f;font-family:'Courier New','Courier',monospace;font-size:16px;color:#c6c6c6;line-height:1.2em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+code{font-family:'Monaco',monospace;font-size:14px}
 h1,h2,h3,h4,h5,h6{color:#fff;font-family:'MuseoSans500',serif;font-weight:italic}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 h1{font-size:46px;line-height:50px;margin-bottom:14px}

@@ -13,12 +13,28 @@ var should   = require('should')
       , state  : 'closed'
       , guid   : posts[0].guid
     }
-  , s2      = {
+  , s2 = {
         visible: true
       , order  : 1
       , flag   : 'blue'
       , state  : 'open'
       , guid   : posts[1].guid
+    }
+  , d1 = {
+        type  : 'post'
+      , id    : s1.guid
+      , value : s1
+    }
+  , d2 = {
+        type  : 'post'
+      , id    : s2.guid
+      , value : s2
+    }
+  , u1 = {
+        type  : 'post'
+      , id    : s1.guid
+      , value : true
+      , name  : 'unread' 
     };
 
 describe('user_settings', function() {
@@ -27,17 +43,38 @@ describe('user_settings', function() {
     });
 
     it('should set post settings', function(done) {
-        repo.setPostSettings(s1.guid, s1, function(count) {
-            count.should.eql(1);
+        repo.set(d1, function(count) {
+            count.should.eql([1]);
             done();
         });
     });
 
+    it('should set post unread flag', function(done) {
+        repo.set(u1, function(count) {
+            count.should.eql([1]);
+            done();
+        });
+    });
+
+    it('should get post unread flag', function(done) {
+        repo.set(u1, function() {
+            repo.get('post', s1.guid, 'unread', function(res) {
+                should.exist(res.unread);
+                res.unread.should.equal(true);
+                res.unread.should.be.a('boolean');
+                done();
+            });
+        });
+    });
+
     it('should update post settings', function(done) {
-        repo.setPostSettings(s1.guid, s1, function(c1) {
-            repo.setPostSettings(s1.guid, s2, function(c2) {
-                repo.getPostSettings(s1.guid, function(settings) {
-                    settings.should.eql(s2);
+        var data = util.extend({}, d1);
+        data.value = s2;
+
+        repo.set(d1, function(c1) {
+            repo.set(data, function(c2) {
+                repo.get('post', s1.guid, function(res) {
+                    res.settings.should.eql(s2);
                     done();
                 });
             });
@@ -45,23 +82,27 @@ describe('user_settings', function() {
     });
 
     it('should get post settings', function(done) {
-        repo.setPostSettings(s1.guid, s1, function() {
-            repo.getPostSettings(s1.guid, function(settings) {
-                should.exist(settings);
-                settings.should.eql(s1);
-                settings.visible.should.be.a('boolean');
+        repo.set(d1, function() {
+            repo.get('post', s1.guid, function(res) {
+                should.exist(res.settings);
+                res.settings.should.eql(s1);
+                res.settings.visible.should.be.a('boolean');
                 done();
             });
         });
     });
 
     it('should get all post settings', function(done) {
-        repo.setPostSettings(s1.guid, s1, function() {
-            repo.setPostSettings(s2.guid, s2, function() {
-                repo.getAllPostSettings(function(settingsHash) {
-                    settingsHash[s1.guid].should.eql(s1);
-                    settingsHash[s2.guid].should.eql(s2);
-                    done();
+        repo.set(d1, function() {
+            repo.set(u1, function() {
+                repo.set(d2, function() {
+                    repo.getAll('post', function(map) {
+                        map[s1.guid].settings.should.eql(s1);
+                        map[s1.guid].unread.should.equal(true);
+                        map[s2.guid].settings.should.eql(s2);
+                        should.not.exist(map[s2.guid].unread);
+                        done();
+                    });
                 });
             });
         });
