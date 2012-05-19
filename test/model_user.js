@@ -7,9 +7,9 @@ var should   = require('should')
   , user     = new User(redis);
 
 var data = [ 
-    { name: 'u1', pass: 'p1' },
-    { name: 'u2', pass: 'p2' }
-];
+        { name: 'u1', pass: 'p1' },
+        { name: 'u2', pass: 'p2' }
+    ];
 
 describe('user', function() {
     beforeEach(function(done) {
@@ -25,6 +25,23 @@ describe('user', function() {
             record.pass.should.not.equal(data[0].pass);
             record.pass.should.be.a('string');
             done();
+        });
+    });
+
+    it('should get all user names', function(done) {
+        user.create(data[0].name, data[0].pass, function() {
+            user.create(data[1].name, data[1].pass, function() {
+                user.names(function(names) {
+                    var actual = names;
+                    var expected = [data[0].name, data[1].name];
+
+                    actual.sort();
+                    expected.sort();
+
+                    actual.should.eql(expected);
+                    done();
+                });
+            });
         });
     });
 

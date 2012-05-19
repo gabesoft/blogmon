@@ -30,7 +30,7 @@ describe('SLOW - aggregator', function() {
                     });
                 found.length.should.equal(1);
                 post.get(uri, 0, -1, function(posts) {
-                    posts.length.should.equal(saved);
+                    posts.length.should.equal(saved.length);
                     done();
                 });
             });
@@ -47,7 +47,7 @@ describe('SLOW - aggregator', function() {
                     });
                 found.length.should.equal(1);
                 post.get(uri, 0, -1, function(posts) {
-                    posts.length.should.equal(saved);
+                    posts.length.should.equal(saved.length);
                     done();
                 });
             });

@@ -99,7 +99,6 @@ Aggregator	test/support/aggregate.js	/^var Aggregator = require('..\/..\/lib\/ag
 Aggregator.run	lib/aggregator.js	/^Aggregator.prototype.run = function() {$/;"	m
 Aggregator.runNow	lib/aggregator.js	/^Aggregator.prototype.runNow = function(feed, callback) {$/;"	m
 Aggregator.stop	lib/aggregator.js	/^Aggregator.prototype.stop = function() {$/;"	m
-Aggregator.var.run	lib/aggregator.js	/^    var run = function(agg) {$/;"	f
 Apricot	node_modules/apricot/lib/apricot.js	/^function Apricot(content,live) {$/;"	c
 Apricot._clean	node_modules/apricot/lib/apricot.js	/^  _clean : function(collection) {$/;"	m
 Apricot._wrap	node_modules/apricot/lib/apricot.js	/^  _wrap : function(xhtml, tag) {$/;"	m
@@ -191,6 +190,7 @@ User.authenticate	lib/model/user.js	/^User.prototype.authenticate = function(nam
 User.create	lib/model/user.js	/^User.prototype.create = function(name, pass, callback) {$/;"	m
 User.feeds	lib/model/user.js	/^User.prototype.feeds = function(name, callback) {$/;"	m
 User.get	lib/model/user.js	/^User.prototype.get = function(name, callback) {$/;"	m
+User.names	lib/model/user.js	/^User.prototype.names = function(callback) {$/;"	m
 User.subscribe	lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	m
 User.unsubscribe	lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	m
 UserSettings	lib/model/user_settings.js	/^function UserSettings (redis, userId) {$/;"	c
@@ -331,6 +331,7 @@ module.exports.http://www.paulgraham.com/property.html	lib/processor/pgfeed_data
 module.exports.initModules	lib/app/initializer.js	/^module.exports.initModules = function(app) {$/;"	f
 module.exports.nil	lib/util.js	/^module.exports.nil = function(obj) {$/;"	f
 module.exports.pluck2	lib/util.js	/^module.exports.pluck2 = function(\/* obj, keys *\/) {$/;"	f
+module.exports.safeCall	lib/util.js	/^module.exports.safeCall = function(\/*fn, args*\/) {$/;"	f
 module.exports.skip	lib/util.js	/^module.exports.skip = function(obj, count) {$/;"	f
 module.exports.sortBy	lib/util.js	/^module.exports.sortBy = function(obj, fieldOrIterator, context) {$/;"	f
 module.exports.store	lib/app/redis_helper.js	/^    store: function(express) {$/;"	m
