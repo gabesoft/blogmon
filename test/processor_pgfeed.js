@@ -21,7 +21,7 @@ var should    = require('should')
         };
     });
 
-describe('pgfeed', function() {
+describe('SLOW - pgfeed', function() {
     beforeEach(function() {
         posts.forEach(function(p) {
             p.date        = null;

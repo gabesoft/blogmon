@@ -91,10 +91,22 @@ describe('feed', function() {
         });
     });
 
-    it('should get all feeds', function(done) {
+    it('should get all feeds if the uri list is null or undefined', function(done) {
         repo.add(feeds, function() {
             repo.get(function(all) {
                 all.length.should.equal(feeds.length);
+                repo.get(null, function(res) {
+                    res.length.should.equal(feeds.length);
+                    done();
+                });
+            });
+        });
+    });
+
+    it('should get no feeds when the uri list is empty', function(done) {
+        repo.add(feeds, function() {
+            repo.get([], function(all) {
+                all.should.eql([]);
                 done();
             });
         });

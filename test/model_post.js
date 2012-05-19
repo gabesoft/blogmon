@@ -15,7 +15,7 @@ describe('post', function() {
 
     it('should add one post', function(done) {
         repo.add(posts[0], function() {
-            repo.get([], 0, -1, function(res) {
+            repo.get(null, 0, -1, function(res) {
                 res.length.should.equal(1);
                 res[0].guid.should.equal(posts[0].guid);
                 done();
@@ -64,7 +64,7 @@ describe('post', function() {
 
     it('should add multiple posts', function(done) {
         repo.add(posts.slice(0, 2), function(added) {
-            repo.get([], 0, -1, function(res) {
+            repo.get(null, 0, -1, function(res) {
                 res.length.should.equal(2);
                 res[0].guid.should.equal(posts[0].guid);
                 res[1].guid.should.equal(posts[1].guid);
@@ -86,10 +86,19 @@ describe('post', function() {
         });
     });
 
-    it('should get all posts', function(done) {
+    it('should get all posts for a null feed uris array', function(done) {
+        repo.add(posts, function() {
+            repo.get(null, 0, -1, function(res) {
+                res.length.should.equal(posts.length);
+                done();
+            });
+        });
+    });
+
+    it('should get no posts for an empty feed uris array', function(done) {
         repo.add(posts, function() {
             repo.get([], 0, -1, function(res) {
-                res.length.should.equal(posts.length);
+                res.should.eql([]);
                 done();
             });
         });
@@ -129,7 +138,7 @@ describe('post', function() {
         repo.add(l3, function() {
             repo.add(l2, function() {
                 repo.add(l1, function() {
-                    repo.get([], 0, 0, function(res) {
+                    repo.get(null, 0, 0, function(res) {
                         var i = 0;
 
                         for (i = 0; i < length; i += 1) {
@@ -146,7 +155,7 @@ describe('post', function() {
 
     it('should return correct posts according to paging', function(done) {
         repo.add(posts, function() {
-            repo.get([], posts.length - 5, 20, function(res) {
+            repo.get(null, posts.length - 5, 20, function(res) {
                 res.length.should.equal(5);
                 done();
             });
@@ -155,10 +164,10 @@ describe('post', function() {
 
     it('should not skip records at page edge', function(done) {
         repo.add(posts, function() {
-            repo.get([], 0, 60, function(list) {
-                repo.get([], 0, 20, function(l1) {
-                    repo.get([], 20, 20, function(l2) {
-                        repo.get([], 40, 20, function(l3) {
+            repo.get(null, 0, 60, function(list) {
+                repo.get(null, 0, 20, function(l1) {
+                    repo.get(null, 20, 20, function(l2) {
+                        repo.get(null, 40, 20, function(l3) {
                             var all = l1.concat(l2).concat(l3)
                               , zip = util.zip(list, all);
                             all.length.should.equal(list.length);
@@ -175,7 +184,7 @@ describe('post', function() {
 
     it('should not return any posts if paging is out of range', function(done) {
         repo.add(posts, function() {
-            repo.get([], 1000, 20, function(res) {
+            repo.get(null, 1000, 20, function(res) {
                 res.should.eql([]);
                 done();
             });
@@ -185,7 +194,7 @@ describe('post', function() {
     it('should not add posts already added', function(done) {
         repo.add(posts.slice(0, 3), function() {
             repo.add(posts.slice(0, 5), function() {
-                repo.get([], 0, -1, function(res) {
+                repo.get(null, 0, -1, function(res) {
                     res.length.should.equal(5);
                     done();
                 });
