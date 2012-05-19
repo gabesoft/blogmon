@@ -5,9 +5,13 @@ var backbone = require('../dep/backbone.js')
 module.exports = backbone.Model.extend({
     url: '/posts'
 
+  , encodedId: function() {
+        return encodeURIComponent(this.get('guid'));
+    }
+
   , getDescription: function(done, always) {
         var me = this
-          , id = encodeURIComponent(me.get('guid'));
+          , id = me.encodedId();
 
         $.ajax({
             url: _s.sprintf('/posts/%s/description', id)
@@ -22,15 +26,21 @@ module.exports = backbone.Model.extend({
 
   , setFlag: function(flag) {
         var settings = this.get('settings') || {}
-          , id       = encodeURIComponent(this.get('guid'));
+          , id       = this.encodedId();
 
         settings.flag = flag;
 
         $.ajax({
             url : _s.sprintf('/posts/%s/settings', id)
-          , data: {
-                settings: settings
-            }
+          , data: { value: settings }
+          , type: 'POST'
+        });
+    }
+
+  , setRead: function() {
+        $.ajax({
+            url: _s.sprintf('/posts/%s/unread', this.encodedId())
+          , data: { value: false }
           , type: 'POST'
         });
     }

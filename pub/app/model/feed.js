@@ -4,12 +4,16 @@ var backbone = require('../dep/backbone.js')
   , _s       = require('../dep/underscore.string.js');
 
 module.exports = backbone.Model.extend({
-    url: function(method) {
+  encodedId: function() {
+        return encodeURIComponent(this.get('id'));
+    }
+
+  , url: function(method) {
         switch(method) {
             case 'delete':
-                return '/feeds/' + encodeURIComponent(this.id);
+                return '/feeds/' + this.encodedId();
             case 'update':
-                return '/feeds/' + encodeURIComponent(this.id);
+                return '/feeds/' + this.encodedId();
             default: 
                 return '/feeds';
         }
@@ -24,15 +28,13 @@ module.exports = backbone.Model.extend({
 
   , setVisible: function(visible) {
         var settings = this.get('settings') || {}
-          , id       = encodeURIComponent(this.get('id'));
+          , id       = this.encodedId();
 
         settings.visible = visible;
 
         $.ajax({
             url : _s.sprintf('/feeds/%s/settings', id)
-          , data: {
-                settings: settings
-            }
+          , data: { value: settings }
           , type: 'POST'
         });
     }

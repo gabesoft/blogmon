@@ -274,11 +274,12 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content .toggle-top:hover,#posts-content .toggle-bottom:hover,#posts-content .post-link:hover{color:#f0e68c}
 #posts-content .flag,#posts-content .toggle-top,#posts-content .toggle-bottom,#posts-content .post-link{display:inline-block;color:#c6c6c6;text-decoration:none;margin-right:5px;font-size:26px;padding:7px 2px 2px 10px;cursor:pointer}
 #posts-content .toggle-top,#posts-content .toggle-bottom{padding-right:10px}
-#posts-content .flag{color:#3e3e3e}
+#posts-content .flag{color:#2e2e2e}
 #posts-content .flag.red{color:#ff4500}
 #posts-content .flag.blue{color:#84bcde}
-#posts-content .flag.gray{color:#bebebe}
+#posts-content .flag.green{color:#90ee90}
 #posts-content .bar{background:#3e3e3e;padding-bottom:2px}
+#posts-content .bar.unread{background:#4e4e4e;border:1px solid #bebebe}
 #posts-content div.bottom-bar .left{display:block;padding-left:3px}
 #posts-content div.top-bar{margin-bottom:5px;}
 #posts-content div.top-bar .bar-text{display:inline-block;line-height:1em;vertical-align:top;padding-top:7px}

@@ -202,6 +202,8 @@ UserSettingsHelper	lib/app/user_settings_helper.js	/^function UserSettingsHelper
 UserSettingsHelper.getMap	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.getMap = function(type, ids, callback) {$/;"	m
 UserSettingsHelper.populate	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.populate = function(type, items, callback) {$/;"	m
 UserSettingsHelper.set	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.set = function(type, id, settings, callback) {$/;"	m
+UserSettingsHelper.setPostRead	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.setPostRead = function(post, callback) {$/;"	m
+UserSettingsHelper.setPostUnread	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.setPostUnread = function(post, callback) {$/;"	m
 UserSettingsHelper.var.config.id	lib/app/user_settings_helper.js	/^          , id: id$/;"	p
 UserSettingsHelper.var.config.type	lib/app/user_settings_helper.js	/^            type: type$/;"	p
 UserSettingsHelper.var.config.value	lib/app/user_settings_helper.js	/^          , value: settings$/;"	p

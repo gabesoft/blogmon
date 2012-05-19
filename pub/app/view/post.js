@@ -7,8 +7,8 @@ var backbone = require('../dep/backbone.js')
   , flags    = [ 
         { color: 'none', next: 'red' }
       , { color: 'red',  next: 'blue' }
-      , { color: 'blue', next: 'gray' }
-      , { color: 'gray', next: 'none' }
+      , { color: 'blue', next: 'green' }
+      , { color: 'green', next: 'none' }
     ];
 
 module.exports = backbone.View.extend({
@@ -43,7 +43,22 @@ module.exports = backbone.View.extend({
         this.$el.html(html);
         this.$el.find('.flag').addClass(post.settings.flag);
 
+        if (post.unread) {
+            this.$el.find('.top-bar').addClass('unread');
+        }
+
         return this;
+    },
+
+    setRead: function() {
+        var el     = this.$el.find('.top-bar')
+          , model  = this.model
+          , cls    = 'unread'
+          , unread = el.hasClass(cls);
+        if (unread) {
+            el.removeClass(cls);
+            model.setRead();
+        }
     },
 
     onHeaderClick: function(e) {
@@ -51,6 +66,8 @@ module.exports = backbone.View.extend({
 
         if (el.is('.flag')) {
             this.setFlag(el);
+        } else if (el.is('.post-link')) {
+            this.setRead();
         } else if (el.is('.toggle-top') || el.is('.feed-title')) {
             this.toggleDescription(el);
         }
@@ -112,6 +129,7 @@ module.exports = backbone.View.extend({
                 content.removeClass(ccls);
                 content.addClass(ecls);
                 toggle.text('_');
+                me.setRead();
             } else {
                 content.removeClass(ecls);
                 content.addClass(ccls);
