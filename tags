@@ -195,6 +195,7 @@ User.names	lib/model/user.js	/^User.prototype.names = function(callback) {$/;"	m
 User.subscribe	lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	m
 User.unsubscribe	lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	m
 UserSettings	lib/model/user_settings.js	/^function UserSettings (redis, userId) {$/;"	c
+UserSettings.clearUnread	lib/model/user_settings.js	/^UserSettings.prototype.clearUnread = function(feedId, callback) {$/;"	m
 UserSettings.countUnread	lib/model/user_settings.js	/^UserSettings.prototype.countUnread = function(callback) {$/;"	m
 UserSettings.get	lib/model/user_settings.js	/^UserSettings.prototype.get = function(type, id, name, callback) {$/;"	m
 UserSettings.getAll	lib/model/user_settings.js	/^UserSettings.prototype.getAll = function(type, callback) {$/;"	m

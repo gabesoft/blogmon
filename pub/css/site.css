@@ -320,6 +320,7 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #feeds-list .text{display:inline}
 #feeds-list .title{display:inline;text-decoration:none;color:#c6c6c6}
 #feeds-list .author{padding-right:10px;display:inline;color:#dadbb1}
+#feeds-list .unread{padding-right:10px;display:inline;color:#fff}
 #feeds-list .description{display:none}
 #feeds-list .description.error{display:inline-block;color:#f00}
 #search{border:1px solid #f0e68c;margin:5px 0 20px 0;padding:10px 10px 5px 10px;}

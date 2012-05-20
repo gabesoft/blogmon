@@ -90,7 +90,7 @@ describe('user_settings', function() {
     it('should count unread per feed - multiple set', function(done) {
         var feed = 'feed0'
           , pids = util.range(20).map(function(x) { return 'post' + x; });
-      
+
         repo.markUnread(feed, pids.slice(0, 5), function() {
             repo.markUnread(feed, pids.slice(0, 10), function() {
                 repo.markRead(feed, pids.slice(5, 10), function() {
@@ -112,6 +112,23 @@ describe('user_settings', function() {
                 res.unread.should.equal(true);
                 res.unread.should.be.a('boolean');
                 done();
+            });
+        });
+    });
+
+    it('should clear all unread flags', function(done) {
+        var feed = 'feed0'
+          , pids = util.range(20).map(function(x) { return 'post' + x; });
+
+        repo.markUnread(feed, pids, function() {
+            repo.clearUnread(feed, function() {
+                repo.countUnread(function(counts) {
+                    counts.should.eql({ feed0: 0 });
+                    repo.get('post', pids[0], 'unread', function(res) {
+                        should.not.exist(res.unread);
+                        done();
+                    });
+                });
             });
         });
     });

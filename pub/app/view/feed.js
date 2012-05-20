@@ -33,7 +33,8 @@ module.exports = backbone.View.extend({
           , hasError = !!feed.error
           , html     = null;
 
-        feed.authorText  = feed.author ? '(' + feed.author + ')' : '';
+        feed.authorText  = feed.author ? 'by ' + feed.author : '';
+        feed.unreadText  = feed.unreadPosts ? '(' + feed.unreadPosts + ')' : '';
         feed.description = hasError ? feed.error.message : feed.description;
         html             = this.template(feed);
 
