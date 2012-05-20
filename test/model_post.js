@@ -252,4 +252,32 @@ describe('post', function() {
             });
         });
     });
+
+    it('should not add a post multiple times even if it comes through different feeds', function(done) {
+        var p1 = util.extend({}, posts[0])
+          , p2 = util.extend({}, posts[0]);
+
+        p1.feedUri = 'feed1';
+        p2.feedUri = 'feed2';
+
+        repo.add(p1, function() {
+            repo.add(p2, function() {
+                repo.get([p1.feedUri, p2.feedUri], 0, -1, function(res) {
+                    res.length.should.equal(1);
+                    res[0].guid.should.equal(p1.guid);
+                    done();
+                });
+            });
+        });
+    });
+
+    it('should get a post by guid', function(done) {
+        repo.add(posts, function() {
+            var post = posts[0];
+            repo.getPost(post.guid, function(copy) {
+                copy.should.eql(post);
+                done();
+            });
+        });
+    });
 });

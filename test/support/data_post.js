@@ -1,3 +1,5 @@
+var util = require('../../lib/util.js');
+
 var posts = [ 
   { feedUri: 'http://www.mikealrogers.com/site.rss',
     title: 'The Way of Node',
@@ -1100,6 +1102,6 @@ var posts = [
 module.exports.posts = posts.map(function(post) {
   post.date = new Date(post.date);
   post.pubdate = new Date(post.pubdate);
-  post.pubDate = new Date(post.pubDate);
+  post.pubDate = util.has(post, 'pubDate') ? new Date(post.pubDate) : null;
   return post;
 });

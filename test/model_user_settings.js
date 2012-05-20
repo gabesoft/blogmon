@@ -60,8 +60,8 @@ describe('user_settings', function() {
         var feed = 'feed0'
           , pids = util.range(20).map(function(x) { return 'post' + x; });
 
-        repo.setUnread(feed, util.take(pids, 10), function(c1) {
-            repo.setRead(feed, util.take(pids, 5), function(c2) {
+        repo.markUnread(feed, util.take(pids, 10), function(c1) {
+            repo.markRead(feed, util.take(pids, 5), function(c2) {
                 repo.countUnread(function(counts) {
                     counts.should.eql({ feed0: 5 });
                     done();
@@ -77,8 +77,8 @@ describe('user_settings', function() {
           , p1   = util.take(pids, 5)
           , p2   = util.take(util.skip(pids, 5), 10);
 
-        repo.setUnread(f1, p1, function() {
-            repo.setUnread(f2, p2, function() {
+        repo.markUnread(f1, p1, function() {
+            repo.markUnread(f2, p2, function() {
                 repo.countUnread(function(counts) {
                     counts.should.eql({ feed1: 5 , feed2: 10 });
                     done();
@@ -91,10 +91,10 @@ describe('user_settings', function() {
         var feed = 'feed0'
           , pids = util.range(20).map(function(x) { return 'post' + x; });
       
-        repo.setUnread(feed, pids.slice(0, 5), function() {
-            repo.setUnread(feed, pids.slice(0, 10), function() {
-                repo.setRead(feed, pids.slice(5, 10), function() {
-                    repo.setUnread(feed, pids.slice(10), function() {
+        repo.markUnread(feed, pids.slice(0, 5), function() {
+            repo.markUnread(feed, pids.slice(0, 10), function() {
+                repo.markRead(feed, pids.slice(5, 10), function() {
+                    repo.markUnread(feed, pids.slice(10), function() {
                         repo.countUnread(function(counts) {
                             counts.should.eql({ feed0: 15 });
                             done();

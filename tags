@@ -155,6 +155,7 @@ Post	lib/model/post.js	/^function Post (redis) {$/;"	c
 Post.add	lib/model/post.js	/^Post.prototype.add = function(posts, callback) {$/;"	m
 Post.get	lib/model/post.js	/^Post.prototype.get = function(feedUris, start, limit, callback) {$/;"	m
 Post.getDescription	lib/model/post.js	/^Post.prototype.getDescription = function(guid, callback) {$/;"	m
+Post.getPost	lib/model/post.js	/^Post.prototype.getPost = function(guid, callback) {$/;"	m
 Post.setDescription	lib/model/post.js	/^Post.prototype.setDescription = function(guid, description, callback) {$/;"	m
 PostSanitizer	lib/processor/post_sanitizer.js	/^PostSanitizer.prototype.clean = function(html, callback) {$/;"	c
 PostSanitizer	lib/processor/post_sanitizer.js	/^function PostSanitizer () {$/;"	f
@@ -198,18 +199,19 @@ UserSettings.countUnread	lib/model/user_settings.js	/^UserSettings.prototype.cou
 UserSettings.get	lib/model/user_settings.js	/^UserSettings.prototype.get = function(type, id, name, callback) {$/;"	m
 UserSettings.getAll	lib/model/user_settings.js	/^UserSettings.prototype.getAll = function(type, callback) {$/;"	m
 UserSettings.getKey	lib/model/user_settings.js	/^    this.getKey = function(type) {$/;"	m
+UserSettings.markRead	lib/model/user_settings.js	/^UserSettings.prototype.markRead = function(feedId, posts, callback) {$/;"	m
+UserSettings.markUnread	lib/model/user_settings.js	/^UserSettings.prototype.markUnread = function(feedId, posts, callback) {$/;"	m
 UserSettings.set	lib/model/user_settings.js	/^UserSettings.prototype.set = function(config, callback) {$/;"	m
-UserSettings.setRead	lib/model/user_settings.js	/^UserSettings.prototype.setRead = function(feedId, posts, callback) {$/;"	m
-UserSettings.setUnread	lib/model/user_settings.js	/^UserSettings.prototype.setUnread = function(feedId, posts, callback) {$/;"	m
+UserSettings.setUnread	lib/model/user_settings.js	/^UserSettings.prototype.setUnread = function(feedId, posts, value, callback) {$/;"	m
 UserSettingsHelper	lib/app/user_settings_helper.js	/^function UserSettingsHelper (redis, userId) {$/;"	c
 UserSettingsHelper.getMap	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.getMap = function(type, ids, callback) {$/;"	m
 UserSettingsHelper.populate	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.populate = function(type, items, callback) {$/;"	m
-UserSettingsHelper.set	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.set = function(type, id, settings, callback) {$/;"	m
-UserSettingsHelper.setPostRead	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.setPostRead = function(post, callback) {$/;"	m
-UserSettingsHelper.setPostUnread	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.setPostUnread = function(post, callback) {$/;"	m
-UserSettingsHelper.var.config.id	lib/app/user_settings_helper.js	/^          , id: id$/;"	p
-UserSettingsHelper.var.config.type	lib/app/user_settings_helper.js	/^            type: type$/;"	p
-UserSettingsHelper.var.config.value	lib/app/user_settings_helper.js	/^          , value: settings$/;"	p
+UserSettingsHelper.set	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.set = function(type, name, id, value, callback) {$/;"	m
+UserSettingsHelper.setUnread	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.setUnread = function(feedId, posts, value, callback) {$/;"	m
+UserSettingsHelper.var.config.id	lib/app/user_settings_helper.js	/^          , id   : id$/;"	p
+UserSettingsHelper.var.config.name	lib/app/user_settings_helper.js	/^          , name : name$/;"	p
+UserSettingsHelper.var.config.type	lib/app/user_settings_helper.js	/^            type : type$/;"	p
+UserSettingsHelper.var.config.value	lib/app/user_settings_helper.js	/^          , value: value$/;"	p
 _forEach	pub/app/dep/mustache.js	/^  var _forEach = Array.prototype.forEach;$/;"	v
 _isArray	pub/app/dep/mustache.js	/^  var _isArray = Array.isArray;$/;"	v
 _trim	pub/app/dep/mustache.js	/^  var _trim = String.prototype.trim;$/;"	v
@@ -422,6 +424,7 @@ util	./bin/../lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v	li
 util	./bin/../lib/model/user.js	/^    util   = require('..\/util.js'),$/;"	v	lineno:2	type:any
 util	lib/feed_finder.js	/^var util    = require('.\/util.js')$/;"	v
 util	lib/model/token.js	/^var util   = require('..\/util.js'),$/;"	v
+util	test/support/data_post.js	/^var util = require('..\/..\/lib\/util.js');$/;"	v
 util	test/support/data_post_large.js	/^var util = require('..\/..\/lib\/util.js');$/;"	v
 var.sandbox.document	node_modules/apricot/lib/apricot.js	/^        document:this.document, $/;"	p
 verify	./bin/../lib/model/token.js	/^Token.prototype.verify = function(token, callback) {$/;"	f	lineno:71	type:void function(any, any)
