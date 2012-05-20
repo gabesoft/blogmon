@@ -194,10 +194,13 @@ User.names	lib/model/user.js	/^User.prototype.names = function(callback) {$/;"	m
 User.subscribe	lib/model/user.js	/^User.prototype.subscribe = function(name, feed, callback) {$/;"	m
 User.unsubscribe	lib/model/user.js	/^User.prototype.unsubscribe = function(name, feed, callback) {$/;"	m
 UserSettings	lib/model/user_settings.js	/^function UserSettings (redis, userId) {$/;"	c
+UserSettings.countUnread	lib/model/user_settings.js	/^UserSettings.prototype.countUnread = function(callback) {$/;"	m
 UserSettings.get	lib/model/user_settings.js	/^UserSettings.prototype.get = function(type, id, name, callback) {$/;"	m
 UserSettings.getAll	lib/model/user_settings.js	/^UserSettings.prototype.getAll = function(type, callback) {$/;"	m
 UserSettings.getKey	lib/model/user_settings.js	/^    this.getKey = function(type) {$/;"	m
 UserSettings.set	lib/model/user_settings.js	/^UserSettings.prototype.set = function(config, callback) {$/;"	m
+UserSettings.setRead	lib/model/user_settings.js	/^UserSettings.prototype.setRead = function(feedId, posts, callback) {$/;"	m
+UserSettings.setUnread	lib/model/user_settings.js	/^UserSettings.prototype.setUnread = function(feedId, posts, callback) {$/;"	m
 UserSettingsHelper	lib/app/user_settings_helper.js	/^function UserSettingsHelper (redis, userId) {$/;"	c
 UserSettingsHelper.getMap	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.getMap = function(type, ids, callback) {$/;"	m
 UserSettingsHelper.populate	lib/app/user_settings_helper.js	/^UserSettingsHelper.prototype.populate = function(type, items, callback) {$/;"	m

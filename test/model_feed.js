@@ -147,7 +147,7 @@ describe('feed', function() {
         });
     });
 
-    it('should update when adding an existing feed', function(done) {
+    it('should update when adding a feed without id', function(done) {
         repo.add(single, function() {
             repo.get(single.id, function(feed) {
                 feed.date = new Date();
@@ -157,6 +157,21 @@ describe('feed', function() {
                     repo.get(feed.id, function(copy) {
                         copy.date.valueOf().should.equal(feed.date.valueOf());
                         copy.date.valueOf().should.not.equal(single.date.valueOf());
+                        done();
+                    });
+                });
+            });
+        });
+    });
+
+    it('should not update when adding an existing feed - with id', function(done) {
+        repo.add(single, function() {
+            repo.get(single.id, function(feed) {
+                feed.date = new Date();
+                repo.add(feed, function() {
+                    repo.get(single.id, function(copy) {
+                        copy.date.valueOf().should.equal(single.date.valueOf());
+                        copy.date.valueOf().should.not.equal(feed.date.valueOf());
                         done();
                     });
                 });

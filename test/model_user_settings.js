@@ -56,6 +56,55 @@ describe('user_settings', function() {
         });
     });
 
+    it('should count post unread per feed', function(done) {
+        var feed = 'feed0'
+          , pids = util.range(20).map(function(x) { return 'post' + x; });
+
+        repo.setUnread(feed, util.take(pids, 10), function(c1) {
+            repo.setRead(feed, util.take(pids, 5), function(c2) {
+                repo.countUnread(function(counts) {
+                    counts.should.eql({ feed0: 5 });
+                    done();
+                });
+            });
+        });
+    });
+
+    it('should count post unread per feed - multiple feeds', function(done) {
+        var f1   = 'feed1'
+          , f2   = 'feed2'
+          , pids = util.range(20).map(function(x) { return 'post' + x; })
+          , p1   = util.take(pids, 5)
+          , p2   = util.take(util.skip(pids, 5), 10);
+
+        repo.setUnread(f1, p1, function() {
+            repo.setUnread(f2, p2, function() {
+                repo.countUnread(function(counts) {
+                    counts.should.eql({ feed1: 5 , feed2: 10 });
+                    done();
+                });
+            });
+        });
+    });
+
+    it('should count unread per feed - multiple set', function(done) {
+        var feed = 'feed0'
+          , pids = util.range(20).map(function(x) { return 'post' + x; });
+      
+        repo.setUnread(feed, pids.slice(0, 5), function() {
+            repo.setUnread(feed, pids.slice(0, 10), function() {
+                repo.setRead(feed, pids.slice(5, 10), function() {
+                    repo.setUnread(feed, pids.slice(10), function() {
+                        repo.countUnread(function(counts) {
+                            counts.should.eql({ feed0: 15 });
+                            done();
+                        });
+                    });
+                });
+            });
+        });
+    });
+
     it('should get post unread flag', function(done) {
         repo.set(u1, function() {
             repo.get('post', s1.guid, 'unread', function(res) {
