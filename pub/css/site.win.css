@@ -13,6 +13,8 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 @font-face{font-family:'MuseoSans500';src:url("../fonts/MuseoSans_500-webfont.eot");src:url("../fonts/MuseoSans_500-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/MuseoSans_500-webfont.woff") format('woff'),url("../fonts/MuseoSans_500-webfont.ttf") format('truetype'),url("../fonts/MuseoSans_500-webfont.svg#MuseoSans500") format('svg');font-weight:normal;font-style:normal}
 @font-face{font-family:'MuseoSans500Italic';src:url("../fonts/MuseoSans_500_Italic-webfont.eot");src:url("../fonts/MuseoSans_500_Italic-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/MuseoSans_500_Italic-webfont.woff") format('woff'),url("../fonts/MuseoSans_500_Italic-webfont.ttf") format('truetype'),url("../fonts/MuseoSans_500_Italic-webfont.svg#MuseoSans500Italic") format('svg');font-weight:normal;font-style:normal}
 @font-face{font-family:'Monaco';src:url("../fonts/Monaco-webfont.eot");src:url("../fonts/Monaco-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/Monaco-webfont.woff") format('woff'),url("../fonts/Monaco-webfont.ttf") format('truetype'),url("../fonts/Monaco-webfont.svg#Monaco") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'LucindaGrande';src:url("../fonts/LucindaGrande.eot");src:url("../fonts/LucindaGrande.eot?#iefix") format('embedded-opentype'),url("../fonts/LucindaGrande.woff") format('woff'),url("../fonts/LucindaGrande.ttf") format('truetype'),url("../fonts/LucindaGrande.svg#LucindaGrande") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'LucidaGrande-Bold';src:url("../fonts/LucidaGrande-Bold.eot");src:url("../fonts/LucidaGrande-Bold.eot?#iefix") format('embedded-opentype'),url("../fonts/LucidaGrande-Bold.woff") format('woff'),url("../fonts/LucidaGrande-Bold.ttf") format('truetype'),url("../fonts/LucidaGrande-Bold.svg#LucidaGrande-Bold") format('svg');font-weight:normal;font-style:normal}
 @font-face{font-family:'IconicStroke';src:url("../fonts/iconic_stroke.eot");src:local('☺'),url("../fonts/iconic_stroke.ttf") format('truetype'),url("../fonts/iconic_stroke.svg#iconic") format('svg');font-weight:normal;font-style:normal}
 .iconic{font-family:"IconicStroke";font-size:1em}
 .iconic.home:before{content:'!'}
@@ -173,9 +175,9 @@ html body * span.clear,html body * div.clear,html body * li.clear,html body * dd
 .clearfix{display:inline-block}
 * html .clearfix{height:1%}
 .clearfix{display:block}
-body{background:none repeat scroll 0 0 #2f2f2f;font-family:'Courier New','Courier',monospace;font-size:16px;color:#c6c6c6;line-height:1.2em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+body{background:none repeat scroll 0 0 #2f2f2f;font-family:'Lucida Grande',Arial,sans-serif;font-size:15px;color:#c6c6c6;line-height:1.4em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
 code{font-family:'Monaco',monospace;font-size:14px}
-h1,h2,h3,h4,h5,h6{color:#fff;font-family:'MuseoSans500',serif;font-weight:italic}
+h1,h2,h3,h4,h5,h6{color:#fff;font-family:'MuseoSans500',serif}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 h1{font-size:46px;line-height:50px;margin-bottom:14px}
 h2{font-size:35px;line-height:40px;margin-bottom:10px}
@@ -258,7 +260,6 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content{margin-bottom:20px;}
 #posts-content #loader{display:none;line-height:0;z-index:10;font-size:80px;color:#f0e68c;position:fixed;bottom:40px;right:40px;-webkit-animation:rotate;-moz-animation:rotate;-o-animation:rotate;-ms-animation:rotate;animation:rotate;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-o-animation-timing-function:linear;-ms-animation-timing-function:linear;animation-timing-function:linear}
 #posts-content .post-content{margin-top:5px;margin-bottom:10px}
-#posts-content .description .content a,#posts-content .description .content img,#posts-content .description .content div,#posts-content .description .content object,#posts-content .description .content video{margin:0 !important;padding:0 !important;width:auto !important;height:auto !important;max-width:100% !important}
 #posts-content .collapsed .header{border:1px solid #ff8247;padding:10px 10px 10px 10px}
 #posts-content .collapsed .header-inner{padding:0;border:0;-webkit-box-shadow:0 0 0 0;-moz-box-shadow:0 0 0 0;box-shadow:0 0 0 0}
 #posts-content .collapsed .description,#posts-content .collapsed .loader{display:none}
@@ -274,11 +275,12 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content .toggle-top:hover,#posts-content .toggle-bottom:hover,#posts-content .post-link:hover{color:#f0e68c}
 #posts-content .flag,#posts-content .toggle-top,#posts-content .toggle-bottom,#posts-content .post-link{display:inline-block;color:#c6c6c6;text-decoration:none;margin-right:5px;font-size:26px;padding:7px 2px 2px 10px;cursor:pointer}
 #posts-content .toggle-top,#posts-content .toggle-bottom{padding-right:10px}
-#posts-content .flag{color:#3e3e3e}
+#posts-content .flag{color:#2e2e2e}
 #posts-content .flag.red{color:#ff4500}
 #posts-content .flag.blue{color:#84bcde}
-#posts-content .flag.gray{color:#bebebe}
+#posts-content .flag.green{color:#90ee90}
 #posts-content .bar{background:#3e3e3e;padding-bottom:2px}
+#posts-content .bar.unread{background:#4e4e4e;border:1px solid #bebebe}
 #posts-content div.bottom-bar .left{display:block;padding-left:3px}
 #posts-content div.top-bar{margin-bottom:5px;}
 #posts-content div.top-bar .bar-text{display:inline-block;line-height:1em;vertical-align:top;padding-top:7px}
@@ -296,7 +298,11 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
 }@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
-}#feeds-edit{border:1px solid #84bcde;padding:10px 20px 20px 20px;}
+}#posts-content .description .content p,#posts-content .description .content div,#posts-content .description .content span{color:#c6c6c6 !important}
+#posts-content .description .content h1,#posts-content .description .content h2,#posts-content .description .content h3,#posts-content .description .content h4,#posts-content .description .content h5,#posts-content .description .content h6{color:#fff !important;font-family:'Lucida Grande',Arial,sans-serif !important;font-size:21px !important}
+#posts-content .description .content code{color:#dadbb1 !important}
+#posts-content .description .content a,#posts-content .description .content img,#posts-content .description .content div,#posts-content .description .content object,#posts-content .description .content video{margin:0 !important;padding:0 !important;width:auto !important;height:auto !important;max-width:100% !important}
+#feeds-edit{border:1px solid #84bcde;padding:10px 20px 20px 20px;}
 #feeds-edit input.search{font-family:'MuseoSans500',serif;padding:5px;width:100%;margin:10px 0 10px 0;font-size:16px}
 #feeds-edit div.button{font-family:'MuseoSans500',serif}
 #feeds-edit div.button.search.processing{border:1px solid #ff8247;color:#ff8247}
@@ -317,6 +323,7 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #feeds-list .text{display:inline}
 #feeds-list .title{display:inline;text-decoration:none;color:#c6c6c6}
 #feeds-list .author{padding-right:10px;display:inline;color:#dadbb1}
+#feeds-list .unread{padding-right:10px;display:inline;color:#fff}
 #feeds-list .description{display:none}
 #feeds-list .description.error{display:inline-block;color:#f00}
 #search{border:1px solid #f0e68c;margin:5px 0 20px 0;padding:10px 10px 5px 10px;}

@@ -177,7 +177,7 @@ html body * span.clear,html body * div.clear,html body * li.clear,html body * dd
 .clearfix{display:block}
 body{background:none repeat scroll 0 0 #2f2f2f;font-family:'Lucida Grande',Arial,sans-serif;font-size:15px;color:#c6c6c6;line-height:1.4em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
 code{font-family:'Monaco',monospace;font-size:14px}
-h1,h2,h3,h4,h5,h6{color:#fff;font-family:'MuseoSans500',serif;font-weight:italic}
+h1,h2,h3,h4,h5,h6{color:#fff;font-family:'MuseoSans500',serif}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 h1{font-size:46px;line-height:50px;margin-bottom:14px}
 h2{font-size:35px;line-height:40px;margin-bottom:10px}
@@ -260,7 +260,6 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #posts-content{margin-bottom:20px;}
 #posts-content #loader{display:none;line-height:0;z-index:10;font-size:80px;color:#f0e68c;position:fixed;bottom:40px;right:40px;-webkit-animation:rotate;-moz-animation:rotate;-o-animation:rotate;-ms-animation:rotate;animation:rotate;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-o-animation-timing-function:linear;-ms-animation-timing-function:linear;animation-timing-function:linear}
 #posts-content .post-content{margin-top:5px;margin-bottom:10px}
-#posts-content .description .content a,#posts-content .description .content img,#posts-content .description .content div,#posts-content .description .content object,#posts-content .description .content video{margin:0 !important;padding:0 !important;width:auto !important;height:auto !important;max-width:100% !important}
 #posts-content .collapsed .header{border:1px solid #ff8247;padding:10px 10px 10px 10px}
 #posts-content .collapsed .header-inner{padding:0;border:0;-webkit-box-shadow:0 0 0 0;-moz-box-shadow:0 0 0 0;box-shadow:0 0 0 0}
 #posts-content .collapsed .description,#posts-content .collapsed .loader{display:none}
@@ -299,7 +298,11 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
 }@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-o-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}
-}#feeds-edit{border:1px solid #84bcde;padding:10px 20px 20px 20px;}
+}#posts-content .description .content p,#posts-content .description .content div,#posts-content .description .content span{color:#c6c6c6 !important}
+#posts-content .description .content h1,#posts-content .description .content h2,#posts-content .description .content h3,#posts-content .description .content h4,#posts-content .description .content h5,#posts-content .description .content h6{color:#fff !important;font-family:'Lucida Grande',Arial,sans-serif !important;font-size:21px !important}
+#posts-content .description .content code{color:#dadbb1 !important}
+#posts-content .description .content a,#posts-content .description .content img,#posts-content .description .content div,#posts-content .description .content object,#posts-content .description .content video{margin:0 !important;padding:0 !important;width:auto !important;height:auto !important;max-width:100% !important}
+#feeds-edit{border:1px solid #84bcde;padding:10px 20px 20px 20px;}
 #feeds-edit input.search{font-family:'MuseoSans500',serif;padding:5px;width:100%;margin:10px 0 10px 0;font-size:16px}
 #feeds-edit div.button{font-family:'MuseoSans500',serif}
 #feeds-edit div.button.search.processing{border:1px solid #ff8247;color:#ff8247}

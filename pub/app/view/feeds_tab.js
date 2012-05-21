@@ -204,7 +204,6 @@ module.exports = backbone.View.extend({
         }
 
         this.model.each(function(m) {
-            console.log(m.get('title'));
             m.view.setVisible(!visible, true);
         });
     },
