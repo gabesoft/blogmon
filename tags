@@ -327,10 +327,10 @@ login	./bin/../lib/app/auth.js	/^        login: function(req, res, succ, fail) {
 logout	./bin/../lib/app/auth.js	/^        logout: function(req, res, next) {$/;"	f	lineno:70	type:void function(any, any, any)
 module.exports	lib/app/auth.js	/^module.exports = function(redis) {$/;"	f
 module.exports	lib/app/config.js	/^module.exports = function(app, express) {$/;"	f
+module.exports	lib/app/redis_helper.js	/^module.exports = function(app) {$/;"	f
 module.exports	lib/app/routes_auth.js	/^module.exports = function(app) {$/;"	f
 module.exports	lib/app/routes_main.js	/^module.exports = function(app) {$/;"	f
 module.exports.	lib/app/routes_main.js	/^            var succ = function() { next(); }$/;"	f
-module.exports.client	lib/app/redis_helper.js	/^    client: function(db) {$/;"	m
 module.exports.cont	lib/util.js	/^module.exports.cont = function(arr, end, fn) {$/;"	f
 module.exports.curry	lib/util.js	/^module.exports.curry = function(obj, args) {$/;"	f
 module.exports.etags	test/support/data_feed.js	/^    etags: [ {$/;"	p
@@ -342,7 +342,6 @@ module.exports.pluck2	lib/util.js	/^module.exports.pluck2 = function(\/* obj, ke
 module.exports.safeCall	lib/util.js	/^module.exports.safeCall = function(\/*fn, args*\/) {$/;"	f
 module.exports.skip	lib/util.js	/^module.exports.skip = function(obj, count) {$/;"	f
 module.exports.sortBy	lib/util.js	/^module.exports.sortBy = function(obj, fieldOrIterator, context) {$/;"	f
-module.exports.store	lib/app/redis_helper.js	/^    store: function(express) {$/;"	m
 module.exports.str.isBlank	lib/util.js	/^    isBlank: _str.isBlank$/;"	p
 module.exports.take	lib/util.js	/^module.exports.take = function(obj, count) {$/;"	f
 module.exports.toMap	lib/util.js	/^module.exports.toMap = function(arr, toStrFn, toValFn, addFn) {$/;"	f

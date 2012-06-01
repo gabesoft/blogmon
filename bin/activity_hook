@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+var Hook     = require('hook.io').Hook
+  , eyes     = require('eyes')
+  //, err_eyes = require('eyes')
+  , hook     = new Hook({
+        name: 'feed-activity-show'
+      , debug: false
+      , silent: true
+    });
+
+//err_eyes.defaults.styles.all = 'red';
+
+
+hook.connect();
+
+hook.on('hook::ready', function() {
+    hook.on('*::feed-updated', function(data) {
+        eyes.inspect({ 
+            title: data.feed.title
+          , uri  : data.feed.uri
+          , count: data.count
+        });
+    });
+
+    hook.on('*::feed-unchanged', function(feed) {
+        eyes.inspect({ 
+            title: feed.title
+          , uri  : feed.uri
+        });
+    });
+
+    hook.on('*::server-error', function(err) {
+        eyes.inspect(err, null, {
+            styles: { all: 'red', string: 'blue', number: 'cyan' }
+        }); 
+    });
+});

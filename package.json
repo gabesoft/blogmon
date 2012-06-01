@@ -21,6 +21,7 @@
     "eyes": "*",
     "nib": "0.4.1",
     "console-trace": "*",
+    "hook.io": "0.8.10",
     "jsdom": "0.2.14"
   },
   "devDependencies": {
