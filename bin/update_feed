@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+var eyes         = require('eyes')
+  , Feed         = require('../lib/model/feed.js')
+  , Post         = require('../lib/model/post.js')
+  , Aggregator   = require('../lib/aggregator.js')
+  , redis_helper = require('../lib/app/redis_helper.js')({ 
+        modules: { hook: { emit: function() {} } } 
+    }, { 
+        conn: 'redis://127.0.0.1:6380' 
+    })
+  , redis        = redis_helper.client(0)
+  , feed         = new Feed(redis)
+  , post         = new Post(redis)
+  , agg          = new Aggregator(redis, 1)
+  , uri          = 'http://blog.stevenlevithan.com/feed';
+
+agg.runNow(uri, function(rec) {
+    feed.update(rec, function() {
+        feed.get(uri, function(saved) {
+            eyes.inspect(saved, 'updated');
+            process.exit(0);
+        });
+    });
+});
+
