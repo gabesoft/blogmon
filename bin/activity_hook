@@ -2,15 +2,12 @@
 
 var Hook     = require('hook.io').Hook
   , eyes     = require('eyes')
-  //, err_eyes = require('eyes')
   , hook     = new Hook({
         name: 'feed-activity-show'
+      , port: 5001
       , debug: false
       , silent: true
     });
-
-//err_eyes.defaults.styles.all = 'red';
-
 
 hook.connect();
 
