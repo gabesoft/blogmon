@@ -1,19 +1,25 @@
 #!/usr/bin/env node
 
 var eyes         = require('eyes')
+  , util         = require('../lib/util.js')
   , Feed         = require('../lib/model/feed.js')
   , Post         = require('../lib/model/post.js')
   , Aggregator   = require('../lib/aggregator.js')
-  , redis_helper = require('../lib/app/redis_helper.js')({ 
-        modules: { hook: { emit: function() {} } } 
-    }, { 
-        conn: 'redis://127.0.0.1:6380' 
+  , redis_port   = process.argv[3] || '6379'
+  , redis_db     = process.argv[4] || 0
+  , redis_helper = require('../lib/app/redis_helper.js')(null, { 
+        conn: 'redis://127.0.0.1:' + redis_port 
     })
-  , redis        = redis_helper.client(0)
+  , redis        = redis_helper.client(redis_db)
   , feed         = new Feed(redis)
   , post         = new Post(redis)
   , agg          = new Aggregator(redis, 1)
-  , uri          = 'http://blog.stevenlevithan.com/feed';
+  , uri          = process.argv[2];
+
+if (util.nil(uri)) {
+    console.log('usage: update_feed <uri> [<port:6379>] [<database:0>]');
+    process.exit(0);
+}
 
 agg.runNow(uri, function(rec) {
     feed.update(rec, function() {
