@@ -117,6 +117,10 @@ Apricot.outer	node_modules/apricot/lib/apricot.js	/^  outer   : function (html) 
 Apricot.remove	node_modules/apricot/lib/apricot.js	/^  remove  : function (html) { return this.html('remove', html); },$/;"	m
 Apricot.removeClass	node_modules/apricot/lib/apricot.js	/^  removeClass: function(className) {$/;"	m
 Apricot.top	node_modules/apricot/lib/apricot.js	/^  top     : function (html) { return this.html('top', html); },$/;"	m
+Builder	lib/builder.js	/^Builder.prototype.post = function(post, feed) {$/;"	c
+Builder	lib/builder.js	/^function Builder() {$/;"	f
+Builder.feed	lib/builder.js	/^Builder.prototype.feed = function(uri, meta, data, old) {$/;"	m
+Builder.post	lib/builder.js	/^Builder.prototype.post = function(post, feed) {$/;"	m
 DELAY	lib/task.js	/^var DELAY = 'delay',$/;"	v
 FEED_SET	./bin/../lib/model/post.js	/^    FEED_SET = 'post:feeds',$/;"	v	lineno:2	type:string
 Feed	./bin/../lib/model/feed.js	/^function Feed (redis) {$/;"	f	lineno:8	type:any function(any)
