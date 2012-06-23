@@ -1,7 +1,6 @@
 #posts-content{margin-bottom:20px;}
 #posts-content #loader{display:none;line-height:0;z-index:10;font-size:80px;color:color-khaki;position:fixed;bottom:40px;right:40px;}
 #posts-content .post-content{margin-top:5px;margin-bottom:10px}
-#posts-content .description .content a,#posts-content .description .content img,#posts-content .description .content div,#posts-content .description .content object,#posts-content .description .content video{margin:0 !important;padding:0 !important;width:auto !important;height:auto !important;max-width:100% !important}
 #posts-content .collapsed .header{border:1px solid color-sienna;padding:10px 10px 10px 10px}
 #posts-content .collapsed .header-inner{padding:0;}
 #posts-content .collapsed .description,#posts-content .collapsed .loader{display:none}
@@ -20,8 +19,9 @@
 #posts-content .flag{color:color-star-inactive}
 #posts-content .flag.red{color:color-orange-red}
 #posts-content .flag.blue{color:color-link}
-#posts-content .flag.gray{color:color-gray}
+#posts-content .flag.green{color:color-light-green}
 #posts-content .bar{background:color-post-bar;padding-bottom:2px}
+#posts-content .bar.unread{background:color-post-bar-unread;border:1px solid color-gray}
 #posts-content div.bottom-bar .left{display:block;padding-left:3px}
 #posts-content div.top-bar{margin-bottom:5px;}
 #posts-content div.top-bar .bar-text{display:inline-block;line-height:1em;vertical-align:top;padding-top:7px}

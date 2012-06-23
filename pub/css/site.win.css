@@ -203,9 +203,9 @@ a:hover,a:focus{color:#f0f8ff}
 p a,p a:visited{line-height:inherit}
 .unselectable{-moz-user-select:none;-webkit-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 img{max-width:100%}
-#banner{border-bottom:3px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07);padding-top:10px;}
-#banner h3.main{display:inline-block;color:#ff8247}
-#banner h3.info{float:right;display:inline-block}
+#banner{border-bottom:3px solid #121212;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.07);-moz-box-shadow:0 1px 0 rgba(255,255,255,0.07);box-shadow:0 1px 0 rgba(255,255,255,0.07);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #515151), color-stop(1, #2f2f2f));background:-webkit-linear-gradient(top, #515151 0%, #2f2f2f 100%);background:-moz-linear-gradient(top, #515151 0%, #2f2f2f 100%);background:-o-linear-gradient(top, #515151 0%, #2f2f2f 100%);background:-ms-linear-gradient(top, #515151 0%, #2f2f2f 100%);background:linear-gradient(top, #515151 0%, #2f2f2f 100%);padding-top:10px;}
+#banner h3.main{display:inline-block;color:#ff8247;margin-left:5px}
+#banner h3.info{float:right;display:inline-block;margin-right:5px}
 #banner a{color:#f0e68c}
 input[type='text'],input[type='password'],input[type='email'],textarea{color:#6e6e6e;border:0;background:none repeat scroll 0 0 rgba(0,0,0,0.30);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 input[type='text']:focus,input[type='password']:focus,input[type='email']:focus,textarea:focus{color:#dbdbdb;background:none repeat scroll 0 0 rgba(0,0,0,0.30)}
@@ -342,4 +342,13 @@ h5::-webkit-selection{color:#000;background:#c6c6c6}
 #message-banner.active.info{color:#90ee90;border:1px solid #90ee90}
 #message-banner.active.warn{color:#f0e68c;border:1px solid #f0e68c}
 #message-banner.active.error{color:#f00;border:1px solid #f00}
+.login input[type='text'],input[type='password']{width:100%;font-size:1.5em;margin:2px 0 5px 0;padding:2px 0 2px 5px}
+.login input[type='submit']{padding:10px;margin-top:10px;font-size:1.2em;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #8b8989), color-stop(1, #333));background:-webkit-linear-gradient(top, #8b8989 0%, #333 100%);background:-moz-linear-gradient(top, #8b8989 0%, #333 100%);background:-o-linear-gradient(top, #8b8989 0%, #333 100%);background:-ms-linear-gradient(top, #8b8989 0%, #333 100%);background:linear-gradient(top, #8b8989 0%, #333 100%)}
+.login input[type='text'],input[type='password']{border:1px solid #ff8247}
+.login div.message{padding:10px}
+.login span{display:block;font-size:1em;text-align:center}
+.login .error{color:#f00}
+.login .warn{color:#ff0}
+.login .info{color:#6495ed}
+.login a.signup{float:right;margin-top:10px}
 #loader{-webkit-transform-origin:27px -1px;-moz-transform-origin:27px -1px;-o-transform-origin:27px -1px;-ms-transform-origin:27px -1px;transform-origin:27px -1px}

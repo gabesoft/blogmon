@@ -18,5 +18,6 @@
 #feeds-list .text{display:inline}
 #feeds-list .title{display:inline;text-decoration:none;color:color-font}
 #feeds-list .author{padding-right:10px;display:inline;color:color-wheat}
+#feeds-list .unread{padding-right:10px;display:inline;color:color-white}
 #feeds-list .description{display:none}
 #feeds-list .description.error{display:inline-block;color:color-red}
