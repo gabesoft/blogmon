@@ -7,10 +7,11 @@ var express = require('express')
   , init    = require('./lib/app/initializer.js');
 
 var bundle = bundle({
-        entry: __dirname + '/pub/app/app.js'
-      , debug: false
-      , mount: '/all.js'
-      , require: { jquery: 'br-jquery' }
+        entry   : __dirname + '/pub/app/app.js'
+      , debug   : false
+      , mount   : '/all.js'
+      , filter  : process.env.NODE_ENV === 'production' ? require('uglify-js') : String
+      , require : { jquery: 'br-jquery' }
     });
 
 config(app, express);

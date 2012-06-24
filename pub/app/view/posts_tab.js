@@ -10,7 +10,11 @@ module.exports = backbone.View.extend({
     initialize: function(config) {
         var me = this;
 
-        _.bindAll(me, 'append', 'onLoad', 'loadMore');
+        _.bindAll(me
+          , 'append'
+          , 'onLoad'
+          , 'onLoadComplete'
+          , 'loadMore');
 
         me.model  = new Posts();
 
@@ -26,11 +30,25 @@ module.exports = backbone.View.extend({
           , collection: me.model
         });
         me.loader.on('load', me.onLoad);
+        me.loader.on('load-complete', me.onLoadComplete);
         me.loader.load(true);
     },
 
-    onLoad: function() {
-      this.model.each(this.append);
+    reload: function() {
+        this.$el.find('#posts-list').empty();
+        this.loader.load(true);
+    },
+
+    onLoadComplete: function(model, loadedCount) {
+        var el   = this.$el.find('#empty')
+          , text = loadedCount > 0 
+                ? '' 
+                : 'You are not subscribed to any feeds.';
+        el.text(text);
+    },
+
+    onLoad: function(model, list) {
+        this.model.each(this.append);
     },
 
     loadMore: function() {
@@ -43,7 +61,7 @@ module.exports = backbone.View.extend({
 
     append: function(item) {
         var feed = new PostView({ model: item })
-          , list = $('#posts-list');
+          , list = this.$el.find('#posts-list');
         list.append(feed.render().el);
     }
 });

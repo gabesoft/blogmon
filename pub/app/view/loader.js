@@ -17,8 +17,9 @@ function Loader (config) {
     this.limit  = config.pageSize || 20;
     this.loader = config.loader;
 
-    this.loading   = false;
-    this.allLoaded = false;
+    this.loadedCount = 0;
+    this.loading     = false;
+    this.allLoaded   = false;
 }
 
 module.exports = Loader;
@@ -30,14 +31,19 @@ module.exports = Loader;
  *         the collection
  */
 Loader.prototype.load = function(reset) {
-    if (this.loading || this.allLoaded) { return; }
+
+    if (this.loading) { return; }
 
     var me     = this
       , loader = loaderEl(me);
 
     if (reset) {
-        me.start = 0;
+        me.start       = 0;
+        me.loadedCount = 0;
+        me.allLoaded   = false;
     }
+
+    if (this.allLoaded) { return; }
 
     loader.show();
     me.loading = true;
@@ -57,6 +63,8 @@ Loader.prototype.load = function(reset) {
             } else {
                 me.allLoaded = true;
             }
+            me.loadedCount += response.length;
+            me.trigger('load-complete', me.model, me.loadedCount, response);
         }
       , error: function() {
             me.trigger('load-error', arguments);
