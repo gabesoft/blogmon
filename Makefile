@@ -16,6 +16,7 @@ css:
 						--out pub/css/ \
 						--compress \
 						pub/stylesheets/site.styl \
-						pub/stylesheets/site.win.styl
+						pub/stylesheets/site.win.styl \
+						pub/stylesheets/site.lin.styl
 
 .PHONY: test

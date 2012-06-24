@@ -43,8 +43,8 @@ module.exports = backbone.View.extend({
         var el   = this.$el.find('#empty')
           , text = loadedCount > 0 
                 ? '' 
-                : 'Your post list is empty.';
-        el.text(text);
+                : 'Your blog list is empty. <a href="#feeds">Subscribe</a> to some feeds to get started.';
+        el.html(text);
     },
 
     onLoad: function(model, list) {
