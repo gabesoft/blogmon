@@ -28,7 +28,9 @@ module.exports = Backbone.Router.extend({
         this.tabElems.hide();
         this.activateTab('#posts-tab');
         this.postsTab.render();
-        this.postsTab.reload();
+        if (arguments.length === 0) {
+            this.postsTab.reload();
+        }
     },
 
     showFeeds: function() {

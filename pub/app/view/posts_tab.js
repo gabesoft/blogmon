@@ -43,7 +43,7 @@ module.exports = backbone.View.extend({
         var el   = this.$el.find('#empty')
           , text = loadedCount > 0 
                 ? '' 
-                : 'You are not subscribed to any feeds.';
+                : 'Your post list is empty.';
         el.text(text);
     },
 
