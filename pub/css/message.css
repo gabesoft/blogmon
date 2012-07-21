@@ -1,5 +1,0 @@
-#message-banner{display:none}
-#message-banner.active{display:block;text-align:center;width:100%;padding:20px 0 20px 0;margin:20px 0 20px 0;font-size:20px}
-#message-banner.active.info{color:color-light-green;border:1px solid color-light-green}
-#message-banner.active.warn{color:color-khaki;border:1px solid color-khaki}
-#message-banner.active.error{color:color-red;border:1px solid color-red}
