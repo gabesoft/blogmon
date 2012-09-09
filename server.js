@@ -28,3 +28,8 @@ app.listen(port, function() {
 });
 
 app.use(bundle);
+
+process.on('uncaughtException', function(err) {
+    console.error(err);
+    console.log(err.stack);
+});
