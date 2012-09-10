@@ -4,7 +4,8 @@ var express = require('express')
   , bundle  = require('browserify')
   , config  = require('./lib/app/config.js')
   , routes  = require('./lib/app/routes.js')
-  , init    = require('./lib/app/initializer.js');
+  , init    = require('./lib/app/initializer.js')
+  , util    = require('util');
 
 var bundle = bundle({
         entry   : __dirname + '/pub/app/app.js'
@@ -30,6 +31,7 @@ app.listen(port, function() {
 app.use(bundle);
 
 process.on('uncaughtException', function(err) {
-    console.error(err);
-    console.log(err.stack);
+    util.log('uncaught exception');
+    util.error(err);
+    util.error(err.stack);
 });
