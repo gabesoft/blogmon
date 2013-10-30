@@ -1,16 +1,19 @@
-div.container_16
-  header#banner.grid_16(role='banner')
-    h3.main= title
-    h3.info= titleInfo
-  div#content.login.grid_16
-    form(method='post', action='/session')
-      fieldset
-        div.message
-          span.info= flash.info
-          span.warn= flash.warn
-          span.error= flash.error
+extends layouts/login
 
-        input(type='text', name='user[name]', placeholder='username', value=user.name)
-        input(type='password', name='user[pass]', placeholder='password')
-        input(type='submit', value='login')
-        a.signup(href='/users/new') Create an account
+block body
+  div.container_16
+    header#banner.grid_16(role='banner')
+      h3.main= title
+      h3.info= titleInfo
+    div#content.login.grid_16
+      form(method='post', action='/session')
+        fieldset
+          div.message
+            span.info= flash.info
+            span.warn= flash.warn
+            span.error= flash.error
+
+          input(type='text', name='user[name]', placeholder='username', value=user.name)
+          input(type='password', name='user[pass]', placeholder='password')
+          input(type='submit', value='login')
+          a.signup(href='/users/new') Create an account

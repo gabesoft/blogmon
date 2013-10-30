@@ -1,5 +1,6 @@
 var express = require('express')
-  , app     = module.exports = express.createServer()
+  , expose  = require('express-expose')
+  , app     = module.exports = express()
   , port    = process.env.PORT || 3000
   , bundle  = require('browserify')
   , config  = require('./lib/app/config.js')
@@ -24,8 +25,7 @@ routes(app);
 app.modules.agg.run();
 
 app.listen(port, function() {
-    console.log("Express server listening on port %d in %s mode", 
-        app.address().port, app.settings.env);
+    console.log("Express server listening on port %d in %s mode", port, app.settings.env);
 });
 
 app.use(bundle);
