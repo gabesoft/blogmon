@@ -1,0 +1,4 @@
+#banner{background:linear-gradient(top,color-background-light,color-background);padding-top:10px;}
+#banner h3.main{display:inline-block;color:color-sienna;margin-left:5px}
+#banner h3.info{float:right;display:inline-block;margin-right:5px}
+#banner a{color:color-khaki}

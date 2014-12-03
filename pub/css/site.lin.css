@@ -207,10 +207,10 @@ img{max-width:100%}
 #banner h3.main{display:inline-block;color:#ff8247;margin-left:5px}
 #banner h3.info{float:right;display:inline-block;margin-right:5px}
 #banner a{color:#f0e68c}
-input[type='text'],input[type='password'],input[type='email'],textarea{color:#6e6e6e;border:0;background:none repeat scroll 0 0 rgba(0,0,0,0.30);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
-input[type='text']:focus,input[type='password']:focus,input[type='email']:focus,textarea:focus{color:#dbdbdb;background:none repeat scroll 0 0 rgba(0,0,0,0.30)}
-.button,input[type='submit'],input[type='reset'],input[type='button']{cursor:pointer;display:inline-block;background:none repeat scroll 0 0 rgba(255,255,255,0.06);border:1px solid rgba(0,0,0,0.50);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:4px 15px 4px 15px;color:rgba(0,0,0,0.80);text-shadow:0 1px 0 rgba(255,255,255,0.08)}
-a.button{color:rgba(0,0,0,0.80);text-shadow:0 1px 0 rgba(255,255,255,0.08)}
+input[type='text'],input[type='password'],input[type='email'],textarea{color:#6e6e6e;border:0;background:none repeat scroll 0 0 rgba(0,0,0,0.3);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.1),0 1px 7px 0 rgba(0,0,0,0.8) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.1),0 1px 7px 0 rgba(0,0,0,0.8) inset;box-shadow:0 1px 0 rgba(255,255,255,0.1),0 1px 7px 0 rgba(0,0,0,0.8) inset;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
+input[type='text']:focus,input[type='password']:focus,input[type='email']:focus,textarea:focus{color:#dbdbdb;background:none repeat scroll 0 0 rgba(0,0,0,0.3)}
+.button,input[type='submit'],input[type='reset'],input[type='button']{cursor:pointer;display:inline-block;background:none repeat scroll 0 0 rgba(255,255,255,0.06);border:1px solid rgba(0,0,0,0.5);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;padding:4px 15px 4px 15px;color:rgba(0,0,0,0.8);text-shadow:0 1px 0 rgba(255,255,255,0.08)}
+a.button{color:rgba(0,0,0,0.8);text-shadow:0 1px 0 rgba(255,255,255,0.08)}
 .button:hover,input[type='submit']:hover,input[type='reset']:hover,input[type='button']:hover{color:#dbdbdb;text-shadow:0 1px 0 #000}
 .button:active,input[type='submit']:active,input[type='reset']:active,input[type='button']:active{border:1px solid #6e6e6e}
 input[type="text"]::selection{color:#000;background:#c6c6c6}
@@ -254,7 +254,7 @@ h4::-webkit-selection{color:#000;background:#c6c6c6}
 h5::-webkit-selection{color:#000;background:#c6c6c6}
 .tabs{padding:0;float:left}
 .tabs a{display:inline-block;text-decoration:none;font-family:'MuseoSans500',serif;border:1px solid #000;color:#c6c6c6;padding:5px 20px;margin:3px}
-.tabs a.active{color:#dbdbdb;background:none repeat scroll 0 0 rgba(0,0,0,0.30);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset;box-shadow:0 1px 0 rgba(255,255,255,0.10),0 1px 7px 0 rgba(0,0,0,0.80) inset}
+.tabs a.active{color:#dbdbdb;background:none repeat scroll 0 0 rgba(0,0,0,0.3);-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.1),0 1px 7px 0 rgba(0,0,0,0.8) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.1),0 1px 7px 0 rgba(0,0,0,0.8) inset;box-shadow:0 1px 0 rgba(255,255,255,0.1),0 1px 7px 0 rgba(0,0,0,0.8) inset}
 #tabs-nav-container{clear:both;display:table;text-align:center;width:100%}
 #tabs-nav{padding:20px 0 20px 0;margin:0 auto;display:inline;width:100%}
 #posts-content{margin-bottom:20px;}

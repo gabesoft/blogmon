@@ -1,0 +1,28 @@
+body{background:none repeat scroll 0 0 color-background;font-family:font-main;font-size:15px;color:color-font;line-height:1.4em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+code{font-family:font-code;font-size:14px}
+h1,h2,h3,h4,h5,h6{color:color-heading;font-family:font-heading}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+h1{font-size:46px;line-height:50px;margin-bottom:14px}
+h2{font-size:35px;line-height:40px;margin-bottom:10px}
+h3{font-size:28px;line-height:34px;margin-bottom:8px}
+h4{font-size:21px;line-height:30px;margin-bottom:4px}
+h5{font-size:17px;line-height:24px}
+h6{font-size:14px;line-height:21px}
+.subheader{color:color-subheader}
+p{margin:0 0 20px 0}
+p img{margin:0}
+p.lead{font-size:21px;line-height:27px;color:color-subheader}
+em{font-style:italic}
+strong{font-weight:bold;color:color-white}
+small{font-size:80%}
+blockquote,blockquote p{font-size:17px;line-height:24px;color:color-subheader;font-style:italic}
+blockquote{margin:0 0 20px;padding:9px 20px 0 19px;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:12px;color:#555}
+blockquote cite:before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited,blockquote cite a:visited{color:#555}
+hr{border:solid #ddd;border-width:1px 0 0;clear:both;margin:10px 0 30px;height:0}
+a,a:visited{color:color-link;text-decoration:underline;outline:0}
+a:hover,a:focus{color:color-link-hover}
+p a,p a:visited{line-height:inherit}
+.unselectable{-moz-user-select:none;-webkit-user-select:none;-khtml-user-select:none;user-select:none}
+img{max-width:100%}

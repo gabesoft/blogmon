@@ -24,7 +24,8 @@
     "connect-flash": "~0.1.1",
     "jade": "~0.35.0",
     "stylus": "~0.38.0",
-    "br-jquery": "0.0.3"
+    "br-jquery": "0.0.3",
+    "validator": "~3.22.1"
   },
   "devDependencies": {
     "xml2js": "0.1.13",

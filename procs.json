@@ -1,41 +1,47 @@
 {
     "redis": {
+        "args": [
+            "./redis.conf"
+        ],
+        "color": "grey",
         "command": "redis-server"
-      , "color": "grey"
-      , "args" : [ "./redis.conf" ]
-    }
-  , "vogue": {
-        "command": "vogue"
-      , "color": "magenta"
-      , "args": [ "--port 8001" , "./pub" ]
-    }
-  , "stylus": {
-        "command": "./node_modules/stylus/bin/stylus"
-      , "color": "yellow"
-      , "cwd": "/apps/blogmon"
-      , "args": [
-            "--use nib"
-          , "--compress"
-          , "--watch ./pub/stylesheets"
-          , "--out ./pub/css"
-          , "./pub/stylesheets/site.styl"
-          , "./pub/stylesheets/site.win.styl"
-          , "./pub/stylesheets/site.lin.styl"
-        ]
-    }
-  , "server": {
-        "command": "nodemon"
-      , "color": "blue"
-      , "env": {
-            "NODE_ENV": "development"
-          , "PORT": "3000"
+    },
+    "server": {
+        "args": [
+            "--debug ./server.js",
+            "--watch ./lib",
+            "--watch ./pub",
+            "--watch ./server.js"
+        ],
+        "color": "blue",
+        "command": "nodemon",
+        "cwd": "/apps/blogmon",
+        "env": {
+            "NODE_ENV": "development",
+            "PORT": "3000"
         }
-      , "cwd": "/apps/blogmon"
-      , "args": [
-            "--debug ./server.js"
-          , "--watch ./lib"
-          , "--watch ./pub"
-          , "--watch ./server.js"
-        ]
+    },
+    "stylus": {
+        "args": [
+            "--use nib",
+            "--compress",
+            "--watch ./pub/stylesheets",
+            "--out ./pub/css",
+            "./pub/stylesheets/site.styl",
+            "./pub/stylesheets/site.win.styl",
+            "./pub/stylesheets/site.lin.styl"
+        ],
+        "color": "yellow",
+        "command": "./node_modules/stylus/bin/stylus",
+        "cwd": "/apps/blogmon",
+        "resolvePath": true
+    },
+    "vogue": {
+        "args": [
+            "--port 8001",
+            "./pub"
+        ],
+        "color": "magenta",
+        "command": "vogue"
     }
 }
