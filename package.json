@@ -20,7 +20,7 @@
     "jsdom": "0.2.14",
     "request": "~2.27.0",
     "express": "~3.4.4",
-    "express-expose": "~0.3.3",
+    "express-expose": "0.3.3",
     "connect-flash": "~0.1.1",
     "jade": "~0.35.0",
     "stylus": "~0.38.0",
